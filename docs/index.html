@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Penalista Italia — Kit Operativo per Avvocati Penalisti</title>
+<style>
+  :root {
+    --bg: #0f1117; --bg2: #1a1d26; --bg3: #22263a;
+    --border: #2e3347; --accent: #4f8ef7; --accent2: #7c3aed;
+    --text: #e2e8f0; --text2: #94a3b8; --text3: #64748b;
+    --green: #10b981; --orange: #f59e0b;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: var(--bg); color: var(--text); font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif; line-height: 1.7; }
+
+  /* Hero */
+  .hero { max-width: 760px; margin: 0 auto; padding: 5rem 2rem 3rem; text-align: center; }
+  .hero-badge {
+    display: inline-flex; align-items: center; gap: 6px;
+    background: rgba(79,142,247,0.12); border: 1px solid rgba(79,142,247,0.25);
+    color: var(--accent); padding: 5px 14px; border-radius: 20px;
+    font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px;
+    margin-bottom: 1.5rem;
+  }
+  .hero h1 { font-size: 42px; font-weight: 900; margin-bottom: 1rem; letter-spacing: -1px; }
+  .hero h1 span { background: linear-gradient(135deg, var(--accent), var(--accent2)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+  .hero p { font-size: 17px; color: var(--text2); max-width: 560px; margin: 0 auto 2rem; }
+
+  .install-box {
+    background: var(--bg2); border: 1px solid var(--border); border-radius: 12px;
+    padding: 1rem 1.5rem; display: inline-flex; align-items: center; gap: 1rem;
+    font-family: monospace; font-size: 15px; margin-bottom: 2rem;
+  }
+  .install-box .label { font-size: 11px; color: var(--text3); font-family: sans-serif; display: block; margin-bottom: 2px; }
+  .install-box code { color: var(--green); font-size: 15px; }
+
+  .cta-row { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+  .btn {
+    padding: 11px 22px; border-radius: 8px; font-size: 14px; font-weight: 600;
+    text-decoration: none; display: inline-flex; align-items: center; gap: 7px;
+    transition: opacity 0.15s;
+  }
+  .btn:hover { opacity: 0.85; }
+  .btn-primary { background: var(--accent); color: #fff; }
+  .btn-secondary { background: var(--bg2); border: 1px solid var(--border); color: var(--text); }
+
+  /* Sections */
+  .section { max-width: 900px; margin: 0 auto; padding: 3rem 2rem; }
+  .section-title { font-size: 22px; font-weight: 800; margin-bottom: 0.5rem; }
+  .section-sub { color: var(--text3); font-size: 14px; margin-bottom: 2rem; }
+  hr { border: none; border-top: 1px solid var(--border); }
+
+  /* Cards grid */
+  .cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; }
+  .card {
+    background: var(--bg2); border: 1px solid var(--border); border-radius: 12px;
+    padding: 1.25rem; text-decoration: none; transition: border-color 0.15s;
+  }
+  .card:hover { border-color: var(--accent); }
+  .card-icon { font-size: 24px; margin-bottom: 0.75rem; }
+  .card-title { font-size: 14px; font-weight: 700; color: var(--text); margin-bottom: 0.35rem; }
+  .card-desc { font-size: 12px; color: var(--text3); }
+
+  /* Doc links */
+  .doc-links { display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem; }
+  .doc-link {
+    background: var(--bg2); border: 1px solid var(--border); border-radius: 10px;
+    padding: 1rem 1.25rem; text-decoration: none; display: flex; align-items: center; gap: 0.75rem;
+    transition: border-color 0.15s;
+  }
+  .doc-link:hover { border-color: var(--accent); }
+  .doc-link-icon { font-size: 20px; flex-shrink: 0; }
+  .doc-link-title { font-size: 13px; font-weight: 700; color: var(--text); }
+  .doc-link-desc { font-size: 11px; color: var(--text3); }
+
+  /* Skills table */
+  table { width: 100%; border-collapse: collapse; font-size: 13px; }
+  th { text-align: left; padding: 10px 14px; background: var(--bg3); color: var(--text3); font-size: 11px; text-transform: uppercase; letter-spacing: 0.5px; border-bottom: 1px solid var(--border); }
+  td { padding: 10px 14px; border-bottom: 1px solid var(--border); color: var(--text2); }
+  tr:last-child td { border-bottom: none; }
+  td:first-child { font-family: monospace; color: var(--green); font-size: 12px; white-space: nowrap; }
+
+  /* Principle box */
+  .principle {
+    background: linear-gradient(135deg, rgba(79,142,247,0.08), rgba(124,58,237,0.06));
+    border: 1px solid rgba(79,142,247,0.2); border-radius: 16px;
+    padding: 2rem; margin: 2rem 0;
+  }
+  .principle blockquote { font-size: 17px; color: var(--text2); font-style: italic; line-height: 1.8; }
+  .principle cite { display: block; margin-top: 1rem; font-size: 12px; color: var(--text3); font-style: normal; }
+
+  /* Footer */
+  footer {
+    max-width: 900px; margin: 0 auto; padding: 2rem;
+    border-top: 1px solid var(--border); color: var(--text3); font-size: 12px;
+    display: flex; justify-content: space-between; align-items: center; gap: 1rem; flex-wrap: wrap;
+  }
+  footer a { color: var(--accent); text-decoration: none; }
+
+  @media (max-width: 640px) {
+    .hero h1 { font-size: 28px; }
+    .cards { grid-template-columns: 1fr; }
+    .doc-links { grid-template-columns: 1fr; }
+    footer { flex-direction: column; text-align: center; }
+  }
+</style>
+</head>
+<body>
+
+<!-- Hero -->
+<div class="hero">
+  <div class="hero-badge">⚖️ Kit operativo per penalisti italiani</div>
+  <h1><span>Penalista Italia</span></h1>
+  <p>Plugin per Claude Cowork specializzato esclusivamente nel diritto penale italiano. Strategia difensiva, atti processuali, termini, misure cautelari, giurisprudenza, esecuzione penale.</p>
+
+  <div class="install-box">
+    <div>
+      <span class="label">Installa in Cowork → Personalizza → +</span>
+      <code>Synthos-Logic/penalista-italia</code>
+    </div>
+  </div>
+
+  <div class="cta-row">
+    <a class="btn btn-primary" href="METODOLOGIA.html">📚 Guida metodologica</a>
+    <a class="btn btn-secondary" href="INSTALLAZIONE.md">📖 Installa</a>
+    <a class="btn btn-secondary" href="https://github.com/Synthos-Logic/penalista-italia/wiki">📋 Wiki</a>
+    <a class="btn btn-secondary" href="https://github.com/Synthos-Logic/penalista-italia">⭐ GitHub</a>
+  </div>
+</div>
+
+<hr>
+
+<!-- Principio -->
+<div class="section">
+  <div class="principle">
+    <blockquote>
+      "Il kit funziona al massimo quando ha una struttura organizzata. Non è uno strumento di recupero informazioni generiche — è un assistente che lavora <em>nella tua</em> struttura di dati. Investire 10 minuti nell'organizzazione di un fascicolo risparmia ore di lavoro successivo."
+    </blockquote>
+    <cite>— Leggi la guida metodologica prima di iniziare. L'organizzazione è il passaggio che determina l'efficacia reale del kit.</cite>
+  </div>
+</div>
+
+<hr>
+
+<!-- Documentazione -->
+<div class="section">
+  <div class="section-title">Documentazione</div>
+  <div class="section-sub">Tutto quello che ti serve per usare il kit al massimo</div>
+
+  <div class="doc-links">
+    <a class="doc-link" href="METODOLOGIA.html">
+      <span class="doc-link-icon">📐</span>
+      <div>
+        <div class="doc-link-title">Guida Metodologica</div>
+        <div class="doc-link-desc">Come organizzare lo studio digitale, i formati supportati (MD, PDF, DOCX, HTML), il sistema wikilinks, le fonti giuridiche, i mini-progetti</div>
+      </div>
+    </a>
+    <a class="doc-link" href="https://github.com/Synthos-Logic/penalista-italia/wiki">
+      <span class="doc-link-icon">📋</span>
+      <div>
+        <div class="doc-link-title">Wiki GitHub</div>
+        <div class="doc-link-desc">Metodologia, fonti giuridiche, gestione sessioni, sistema wikilinks, mini-progetti, comandi slash, FAQ — 11 pagine</div>
+      </div>
+    </a>
+    <a class="doc-link" href="https://github.com/Synthos-Logic/penalista-italia/wiki/Fonti-Giuridiche-Ufficiali">
+      <span class="doc-link-icon">🔗</span>
+      <div>
+        <div class="doc-link-title">Fonti Giuridiche</div>
+        <div class="doc-link-desc">Normattiva, HUDOC, Massimario Cassazione, DeJure — dove scaricare i testi e come usarli come contesto deterministico</div>
+      </div>
+    </a>
+    <a class="doc-link" href="https://github.com/Synthos-Logic/penalista-italia/wiki/Mini-Progetti">
+      <span class="doc-link-icon">🗂️</span>
+      <div>
+        <div class="doc-link-title">Mini-Progetti</div>
+        <div class="doc-link-desc">Template per pratiche ricorrenti: cautelare, 415-bis, appello, Cassazione, esecuzione penale, D.Lgs. 231</div>
+      </div>
+    </a>
+  </div>
+</div>
+
+<hr>
+
+<!-- Skills -->
+<div class="section">
+  <div class="section-title">6 Skill specializzate</div>
+  <div class="section-sub">Attivabili con comandi slash o descrivendo cosa serve</div>
+
+  <table>
+    <tr><th>Skill</th><th>Descrizione</th></tr>
+    <tr><td>/strategia</td><td>Analisi difensiva del capo di imputazione: elementi costitutivi, criticità accusa, eccezioni processuali, strategie graduate, giurisprudenza Cassazione e CEDU</td></tr>
+    <tr><td>/atti</td><td>Redazione di tutti i principali atti penali: memoria 415-bis, appello, ricorso Cassazione, riesame, revoca cautelare, patteggiamento, abbreviato, messa alla prova</td></tr>
+    <tr><td>/scadenze</td><td>Calcolo preciso di ogni termine: impugnazioni, prescrizione (ante/post Bonafede), improcedibilità Cartabia, termini di fase custodia cautelare</td></tr>
+    <tr><td>/cautelare</td><td>Workflow misure cautelari: analisi presupposti, riesame, revoca/sostituzione, scadenze di fase, istanza di scarcerazione d'urgenza</td></tr>
+    <tr><td>/giurisprudenza</td><td>Ricerca giurisprudenziale penale: mappa sezioni Cassazione, orientamenti per area, contrasti SS.UU., CEDU</td></tr>
+    <tr><td>/esecuzione</td><td>Diritto penitenziario: misure alternative, liberazione anticipata/condizionale, reclami condizioni detentive, calcolo pena residua</td></tr>
+  </table>
+</div>
+
+<hr>
+
+<!-- Cards -->
+<div class="section">
+  <div class="section-title">Perché Penalista Italia</div>
+  <div class="section-sub">Non uno strumento generico. Specializzato esclusivamente sul penale italiano.</div>
+
+  <div class="cards">
+    <a class="card" href="METODOLOGIA.html#formati">
+      <div class="card-icon">📂</div>
+      <div class="card-title">Tutti i formati</div>
+      <div class="card-desc">Lavora con MD, PDF, DOCX e HTML. Il formato MD è preferenziale per i file di lavoro, ma tutti i documenti dello studio sono supportati.</div>
+    </a>
+    <a class="card" href="https://github.com/Synthos-Logic/penalista-italia/wiki/Sistema-Wikilinks">
+      <div class="card-icon">🔗</div>
+      <div class="card-title">Memoria persistente</div>
+      <div class="card-desc">Il sistema wikilinks [[]] collega fascicoli, giurisprudenza e documenti. Il kit ricorda il contesto tra sessioni senza ricaricare tutto.</div>
+    </a>
+    <a class="card" href="https://github.com/Synthos-Logic/penalista-italia/wiki/Fonti-Giuridiche-Ufficiali">
+      <div class="card-icon">📜</div>
+      <div class="card-title">Fonti deterministiche</div>
+      <div class="card-desc">Normattiva, HUDOC, Massimario Cassazione. Quando usi i testi ufficiali come contesto, le risposte sono precise e citabili.</div>
+    </a>
+    <a class="card" href="https://github.com/Synthos-Logic/penalista-italia/wiki/Mini-Progetti">
+      <div class="card-icon">⚡</div>
+      <div class="card-title">Mini-progetti</div>
+      <div class="card-desc">Template per le pratiche ricorrenti: gestione cautelare, risposta 415-bis, appello, Cassazione, esecuzione penale, 231.</div>
+    </a>
+    <a class="card" href="https://github.com/Synthos-Logic/penalista-italia/wiki/Comandi-Slash">
+      <div class="card-icon">⚖️</div>
+      <div class="card-title">Riforma Cartabia integrata</div>
+      <div class="card-desc">L'improcedibilità ex art. 344-bis c.p.p. è uno strumento difensivo, non solo un termine da monitorare. Il kit lo tratta come tale.</div>
+    </a>
+    <a class="card" href="METODOLOGIA.html">
+      <div class="card-icon">🇮🇹</div>
+      <div class="card-title">Solo diritto penale italiano</div>
+      <div class="card-desc">GIP, GUP, indagini, dibattimento, Cassazione penale, Sorveglianza, 231. Non risponde su diritto civile, amministrativo o societario.</div>
+    </a>
+  </div>
+</div>
+
+<footer>
+  <div>
+    <strong>Penalista Italia v1.2.0</strong> — Sviluppato da
+    <a href="https://github.com/Synthos-Logic">Synthos Logic</a> —
+    Licenza <a href="https://github.com/Synthos-Logic/penalista-italia/blob/main/LICENSE">MIT</a>
+  </div>
+  <div>
+    <a href="https://github.com/Synthos-Logic/penalista-italia">GitHub</a> ·
+    <a href="https://github.com/Synthos-Logic/penalista-italia/wiki">Wiki</a> ·
+    <a href="https://github.com/Synthos-Logic/penalista-italia/issues">Segnalazioni</a>
+  </div>
+</footer>
+
+</body>
+</html>

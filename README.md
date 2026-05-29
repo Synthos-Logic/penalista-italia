@@ -23,7 +23,8 @@ Un fascicolo ben strutturato — con i dati dell'indagato, il capo di imputazion
 **Leggere la guida metodologica prima di iniziare non è opzionale — è il passaggio che determina l'efficacia reale del kit.**
 
 📚 **[Guida metodologica completa → Wiki](https://github.com/Synthos-Logic/penalista-italia/wiki)**
-📐 **[Guida metodologica (HTML interattivo)](docs/METODOLOGIA.html)**
+🌐 **[Sito documentazione → GitHub Pages](https://synthos-logic.github.io/penalista-italia/)**
+📐 **[Guida metodologica interattiva](https://synthos-logic.github.io/penalista-italia/METODOLOGIA.html)**
 
 ---
 
@@ -143,7 +144,8 @@ Al momento dell'installazione il plugin chiede:
 | [Comandi Slash](https://github.com/Synthos-Logic/penalista-italia/wiki/Comandi-Slash) | Tutti i comandi con esempi |
 | [FAQ](https://github.com/Synthos-Logic/penalista-italia/wiki/FAQ) | Domande frequenti |
 | [Guida installazione](docs/INSTALLAZIONE.md) | Passo per passo con screenshot |
-| [Metodologia HTML](docs/METODOLOGIA.html) | Guida interattiva con sidebar |
+| [Sito documentazione](https://synthos-logic.github.io/penalista-italia/) | Homepage GitHub Pages |
+| [Metodologia HTML](https://synthos-logic.github.io/penalista-italia/METODOLOGIA.html) | Guida interattiva con sidebar navigabile |
 
 ---
 
