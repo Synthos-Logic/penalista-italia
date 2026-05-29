@@ -1,0 +1,923 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Metodologia — Penalista Italia</title>
+<style>
+  :root {
+    --bg: #0f1117;
+    --bg2: #1a1d26;
+    --bg3: #22263a;
+    --border: #2e3347;
+    --accent: #4f8ef7;
+    --accent2: #7c3aed;
+    --text: #e2e8f0;
+    --text2: #94a3b8;
+    --text3: #64748b;
+    --green: #10b981;
+    --orange: #f59e0b;
+    --red: #ef4444;
+    --code-bg: #161b2e;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+    font-size: 15px;
+    line-height: 1.7;
+  }
+
+  /* Layout */
+  .layout { display: flex; min-height: 100vh; }
+
+  /* Sidebar */
+  .sidebar {
+    width: 260px;
+    background: var(--bg2);
+    border-right: 1px solid var(--border);
+    padding: 2rem 1rem;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    overflow-y: auto;
+    flex-shrink: 0;
+  }
+  .sidebar-logo {
+    display: flex; align-items: center; gap: 10px;
+    margin-bottom: 2rem; padding-bottom: 1.5rem;
+    border-bottom: 1px solid var(--border);
+  }
+  .sidebar-logo .icon {
+    width: 36px; height: 36px;
+    background: linear-gradient(135deg, var(--accent), var(--accent2));
+    border-radius: 8px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 18px;
+  }
+  .sidebar-logo .name { font-weight: 700; font-size: 14px; color: var(--text); }
+  .sidebar-logo .version { font-size: 11px; color: var(--text3); }
+
+  .nav-section { margin-bottom: 1.5rem; }
+  .nav-label {
+    font-size: 10px; font-weight: 700; text-transform: uppercase;
+    letter-spacing: 1.2px; color: var(--text3);
+    margin-bottom: 0.5rem; padding-left: 0.5rem;
+  }
+  .nav-item {
+    display: flex; align-items: center; gap: 8px;
+    padding: 6px 10px; border-radius: 6px;
+    color: var(--text2); text-decoration: none;
+    font-size: 13px; transition: all 0.15s;
+    cursor: pointer;
+  }
+  .nav-item:hover { background: var(--bg3); color: var(--text); }
+  .nav-item.active { background: rgba(79, 142, 247, 0.15); color: var(--accent); }
+  .nav-item .dot {
+    width: 6px; height: 6px; border-radius: 50%;
+    background: currentColor; flex-shrink: 0;
+  }
+
+  /* Main content */
+  .main { flex: 1; max-width: 860px; padding: 3rem 3.5rem; }
+
+  /* Hero */
+  .hero {
+    background: linear-gradient(135deg, rgba(79,142,247,0.1), rgba(124,58,237,0.08));
+    border: 1px solid rgba(79,142,247,0.2);
+    border-radius: 16px;
+    padding: 2.5rem;
+    margin-bottom: 3rem;
+  }
+  .hero-badge {
+    display: inline-flex; align-items: center; gap: 6px;
+    background: rgba(79,142,247,0.15); border: 1px solid rgba(79,142,247,0.3);
+    color: var(--accent); padding: 4px 12px; border-radius: 20px;
+    font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 1px;
+    margin-bottom: 1rem;
+  }
+  .hero h1 { font-size: 28px; font-weight: 800; margin-bottom: 0.75rem; }
+  .hero p { color: var(--text2); font-size: 15px; max-width: 600px; }
+
+  /* Sections */
+  section { margin-bottom: 4rem; }
+  .section-header {
+    display: flex; align-items: center; gap: 12px;
+    margin-bottom: 1.5rem; padding-bottom: 1rem;
+    border-bottom: 1px solid var(--border);
+  }
+  .section-num {
+    width: 32px; height: 32px; border-radius: 8px; flex-shrink: 0;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 13px; font-weight: 700;
+  }
+  .section-num.blue { background: rgba(79,142,247,0.2); color: var(--accent); }
+  .section-num.purple { background: rgba(124,58,237,0.2); color: #a78bfa; }
+  .section-num.green { background: rgba(16,185,129,0.2); color: var(--green); }
+  .section-num.orange { background: rgba(245,158,11,0.2); color: var(--orange); }
+  .section-num.red { background: rgba(239,68,68,0.2); color: var(--red); }
+  .section-title { font-size: 20px; font-weight: 700; }
+  .section-sub { font-size: 12px; color: var(--text3); }
+
+  h2 { font-size: 20px; font-weight: 700; margin: 2.5rem 0 1rem; }
+  h3 { font-size: 15px; font-weight: 700; color: var(--text); margin: 1.5rem 0 0.5rem; }
+  p { color: var(--text2); margin-bottom: 1rem; }
+  strong { color: var(--text); font-weight: 600; }
+
+  /* Cards */
+  .card {
+    background: var(--bg2);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 1.25rem 1.5rem;
+    margin-bottom: 1rem;
+  }
+  .card-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1.5rem; }
+  .card-icon { font-size: 22px; margin-bottom: 0.75rem; }
+  .card-title { font-size: 14px; font-weight: 700; margin-bottom: 0.25rem; }
+  .card-desc { font-size: 12px; color: var(--text3); }
+
+  /* Folder tree */
+  .folder-tree {
+    background: var(--code-bg);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 1.5rem;
+    font-family: 'Monaco', 'Menlo', 'Courier New', monospace;
+    font-size: 13px;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+    overflow-x: auto;
+  }
+  .folder-tree .folder { color: #93c5fd; }
+  .folder-tree .file { color: var(--text2); }
+  .folder-tree .comment { color: var(--text3); font-style: italic; }
+  .folder-tree .highlight { color: var(--green); }
+
+  /* Steps */
+  .steps { counter-reset: step; }
+  .step {
+    display: flex; gap: 1rem; margin-bottom: 1.5rem;
+    counter-increment: step;
+  }
+  .step-num {
+    width: 28px; height: 28px; border-radius: 50%; flex-shrink: 0;
+    background: rgba(79,142,247,0.15); border: 1px solid rgba(79,142,247,0.3);
+    color: var(--accent); font-size: 12px; font-weight: 700;
+    display: flex; align-items: center; justify-content: center;
+    margin-top: 2px;
+  }
+  .step-content h4 { font-size: 14px; font-weight: 700; margin-bottom: 0.35rem; }
+  .step-content p { font-size: 13px; color: var(--text2); margin: 0; }
+
+  /* Source cards */
+  .source-card {
+    background: var(--bg2);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 1.25rem 1.5rem;
+    margin-bottom: 0.75rem;
+    display: flex; align-items: flex-start; gap: 1rem;
+  }
+  .source-badge {
+    padding: 3px 10px; border-radius: 20px;
+    font-size: 10px; font-weight: 700; text-transform: uppercase;
+    letter-spacing: 0.5px; white-space: nowrap; flex-shrink: 0;
+  }
+  .source-badge.free { background: rgba(16,185,129,0.15); color: var(--green); border: 1px solid rgba(16,185,129,0.3); }
+  .source-badge.official { background: rgba(79,142,247,0.15); color: var(--accent); border: 1px solid rgba(79,142,247,0.3); }
+  .source-badge.commercial { background: rgba(245,158,11,0.15); color: var(--orange); border: 1px solid rgba(245,158,11,0.3); }
+  .source-info { flex: 1; }
+  .source-name { font-size: 14px; font-weight: 700; margin-bottom: 0.25rem; }
+  .source-desc { font-size: 12px; color: var(--text3); margin-bottom: 0.5rem; }
+  .source-url { font-size: 11px; color: var(--accent); text-decoration: none; }
+  .source-url:hover { text-decoration: underline; }
+  .source-files { margin-top: 0.5rem; display: flex; flex-wrap: wrap; gap: 0.4rem; }
+  .source-file-tag {
+    background: var(--bg3); border: 1px solid var(--border);
+    color: var(--text2); font-size: 10px; padding: 2px 8px; border-radius: 4px;
+    font-family: monospace;
+  }
+
+  /* Wiki link badge */
+  .wikilink {
+    display: inline-flex; align-items: center; gap: 4px;
+    background: var(--bg3); border: 1px solid var(--border);
+    color: var(--accent); font-size: 12px; padding: 2px 10px; border-radius: 4px;
+    font-family: monospace; text-decoration: none;
+  }
+
+  /* Mini-project card */
+  .mini-project {
+    background: var(--bg2);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  .mini-project-header {
+    display: flex; align-items: center; gap: 10px;
+    margin-bottom: 1rem; padding-bottom: 1rem;
+    border-bottom: 1px solid var(--border);
+  }
+  .mini-project-icon { font-size: 20px; }
+  .mini-project-name { font-size: 15px; font-weight: 700; }
+  .mini-project-desc { font-size: 12px; color: var(--text3); }
+  .mini-project-commands { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+  .cmd {
+    background: var(--code-bg); border: 1px solid var(--border);
+    color: var(--green); font-family: monospace; font-size: 12px;
+    padding: 3px 10px; border-radius: 5px;
+  }
+
+  /* Alert */
+  .alert {
+    border-radius: 10px; padding: 1rem 1.25rem;
+    margin-bottom: 1.5rem; display: flex; gap: 0.75rem; align-items: flex-start;
+  }
+  .alert.blue { background: rgba(79,142,247,0.08); border: 1px solid rgba(79,142,247,0.2); }
+  .alert.orange { background: rgba(245,158,11,0.08); border: 1px solid rgba(245,158,11,0.2); }
+  .alert.green { background: rgba(16,185,129,0.08); border: 1px solid rgba(16,185,129,0.2); }
+  .alert-icon { font-size: 16px; flex-shrink: 0; margin-top: 1px; }
+  .alert p { margin: 0; font-size: 13px; color: var(--text2); }
+  .alert strong { color: var(--text); }
+
+  /* Code inline */
+  code {
+    background: var(--code-bg); border: 1px solid var(--border);
+    color: var(--green); font-family: monospace; font-size: 12px;
+    padding: 1px 6px; border-radius: 4px;
+  }
+
+  /* Table */
+  table { width: 100%; border-collapse: collapse; margin-bottom: 1.5rem; font-size: 13px; }
+  th { text-align: left; padding: 10px 14px; background: var(--bg3); color: var(--text2); font-size: 11px; text-transform: uppercase; letter-spacing: 0.5px; border-bottom: 1px solid var(--border); }
+  td { padding: 10px 14px; border-bottom: 1px solid var(--border); color: var(--text2); }
+  tr:last-child td { border-bottom: none; }
+  td:first-child { color: var(--text); font-weight: 500; }
+
+  /* Divider */
+  hr { border: none; border-top: 1px solid var(--border); margin: 2rem 0; }
+
+  /* Footer */
+  .footer {
+    margin-top: 4rem; padding-top: 2rem;
+    border-top: 1px solid var(--border);
+    color: var(--text3); font-size: 12px;
+    display: flex; align-items: center; justify-content: space-between;
+  }
+  .footer a { color: var(--accent); text-decoration: none; }
+
+  @media (max-width: 768px) {
+    .sidebar { display: none; }
+    .main { padding: 2rem 1.5rem; }
+    .card-grid { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<div class="layout">
+
+  <!-- Sidebar Navigation -->
+  <nav class="sidebar">
+    <div class="sidebar-logo">
+      <div class="icon">⚖️</div>
+      <div>
+        <div class="name">Penalista Italia</div>
+        <div class="version">v1.2.0 — Synthos Logic</div>
+      </div>
+    </div>
+
+    <div class="nav-section">
+      <div class="nav-label">Fondamenti</div>
+      <a class="nav-item" href="#principio"><span class="dot"></span>Il principio</a>
+      <a class="nav-item" href="#struttura"><span class="dot"></span>Struttura cartelle</a>
+      <a class="nav-item" href="#fascicolo"><span class="dot"></span>Aprire un fascicolo</a>
+    </div>
+
+    <div class="nav-section">
+      <div class="nav-label">Sistema memoria</div>
+      <a class="nav-item" href="#wikilinks"><span class="dot"></span>Wikilinks</a>
+      <a class="nav-item" href="#sessioni"><span class="dot"></span>Gestione sessioni</a>
+      <a class="nav-item" href="#scadenziario"><span class="dot"></span>Scadenziario</a>
+    </div>
+
+    <div class="nav-section">
+      <div class="nav-label">Fonti giuridiche</div>
+      <a class="nav-item" href="#fonti-ufficiali"><span class="dot"></span>Fonti ufficiali</a>
+      <a class="nav-item" href="#come-usare-fonti"><span class="dot"></span>Come usarle</a>
+      <a class="nav-item" href="#fonti-personali"><span class="dot"></span>Fonti personali</a>
+    </div>
+
+    <div class="nav-section">
+      <div class="nav-label">Mini-Progetti</div>
+      <a class="nav-item" href="#mini-progetti"><span class="dot"></span>Template pratiche</a>
+      <a class="nav-item" href="#workflow"><span class="dot"></span>Workflow tipo</a>
+    </div>
+
+    <div class="nav-section">
+      <div class="nav-label">Riferimento</div>
+      <a class="nav-item" href="INSTALLAZIONE.html"><span class="dot"></span>Guida installazione</a>
+      <a class="nav-item" href="https://github.com/Synthos-Logic/penalista-italia"><span class="dot"></span>Repository GitHub</a>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="main">
+
+    <!-- Hero -->
+    <div class="hero">
+      <div class="hero-badge">📚 Guida metodologica</div>
+      <h1>Come lavorare con il kit</h1>
+      <p>Non è sufficiente installare le skill — il kit funziona al massimo quando hai una struttura. Questa guida ti insegna l'organizzazione che trasforma uno strumento in un sistema.</p>
+    </div>
+
+    <!-- 1. Il principio fondamentale -->
+    <section id="principio">
+      <div class="section-header">
+        <div class="section-num blue">1</div>
+        <div>
+          <div class="section-title">Il principio fondamentale</div>
+          <div class="section-sub">Perché l'organizzazione viene prima della tecnologia</div>
+        </div>
+      </div>
+
+      <p>Le skill di questo kit — <code>/strategia</code>, <code>/atti</code>, <code>/scadenze</code>, <code>/cautelare</code> — producono risultati eccellenti solo se lavorano su dati organizzati. Un'AI che non conosce il contesto del fascicolo produce risposte generiche. Un'AI che ha il fascicolo aggiornato, le scadenze segnate, la giurisprudenza raccolta e le fonti caricate produce risposte di qualità professionale.</p>
+
+      <div class="alert blue">
+        <span class="alert-icon">💡</span>
+        <p><strong>Il principio:</strong> investire 10 minuti nell'organizzazione di un fascicolo risparmia ore di lavoro successivo. Ogni file creato correttamente è contesto permanente riutilizzabile in tutte le sessioni future.</p>
+      </div>
+
+      <div class="card-grid">
+        <div class="card">
+          <div class="card-icon">🎯</div>
+          <div class="card-title">Senza struttura</div>
+          <div class="card-desc">Ogni sessione riparte da zero. Ridescrivere il caso, rielencare le scadenze, ricercare la giurisprudenza. Il kit lavora come un assistente smemorato.</div>
+        </div>
+        <div class="card">
+          <div class="card-icon">⚡</div>
+          <div class="card-title">Con struttura</div>
+          <div class="card-desc">Il kit legge il fascicolo, carica il contesto, conosce le scadenze e la strategia. Ogni sessione riparte esattamente da dove si è lasciato.</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. Struttura cartelle -->
+    <section id="struttura">
+      <div class="section-header">
+        <div class="section-num blue">2</div>
+        <div>
+          <div class="section-title">Struttura delle cartelle</div>
+          <div class="section-sub">Cosa va dove e perché</div>
+        </div>
+      </div>
+
+      <p>La struttura che il kit crea automaticamente non è arbitraria. Ogni cartella corrisponde a una fase e a un tipo di documento del lavoro penalistico.</p>
+
+      <div class="folder-tree">
+<span class="folder">📁 Penale Italia/</span>  <span class="comment">← la tua cartella di lavoro</span>
+│
+├── <span class="highlight">INDEX.md</span>          <span class="comment">← mappa dello studio: fascicoli attivi, scadenze</span>
+├── <span class="highlight">SISTEMA_MEMORIA.md</span> <span class="comment">← regole del sistema (leggere all'inizio)</span>
+│
+├── <span class="folder">📁 penalista-atti/</span>
+│   ├── <span class="highlight">rossi-2024-corruzione.md</span>    <span class="comment">← fascicolo Rossi</span>
+│   ├── <span class="highlight">bianchi-2024-bancarotta.md</span>
+│   └── <span class="file">memoria-rossi-415bis-20240315.docx</span>
+│
+├── <span class="folder">📁 penalista-giurisprudenza/</span>
+│   ├── <span class="highlight">cass-sez6-corruzione-2024.md</span>  <span class="comment">← sentenze salvate</span>
+│   ├── <span class="highlight">cedu-art5-detenzione.md</span>
+│   └── <span class="file">orientamenti-corruzione.md</span>
+│
+├── <span class="folder">📁 penalista-impugnazioni/</span>
+│   ├── <span class="file">appello-rossi-20240601.docx</span>
+│   └── <span class="file">ricorso-cassazione-verdi.docx</span>
+│
+├── <span class="folder">📁 penalista-memorie/</span>
+│   └── <span class="file">memoria-415bis-rossi.docx</span>
+│
+├── <span class="folder">📁 penalista-pareri/</span>
+│   └── <span class="file">parere-231-azienda-xyz.md</span>
+│
+├── <span class="folder">📁 penalista-scadenze/</span>
+│   └── <span class="highlight">SCADENZIARIO.md</span>  <span class="comment">← hub centrale di tutte le scadenze</span>
+│
+└── <span class="folder">📁 penalista-fonti/</span>   <span class="comment">← AGGIUNGERE MANUALMENTE</span>
+    ├── <span class="file">codice-penale.pdf</span>    <span class="comment">← da Normattiva</span>
+    ├── <span class="file">codice-cpp.pdf</span>
+    └── <span class="file">dlgs-231-2001.pdf</span>
+      </div>
+
+      <div class="alert orange">
+        <span class="alert-icon">⚠️</span>
+        <p><strong>La cartella <code>penalista-fonti/</code></strong> non viene creata automaticamente — devi crearla tu e popolarla con i testi normativi ufficiali scaricati. Vedi la sezione <a href="#fonti-ufficiali" style="color: var(--accent)">Fonti Giuridiche</a>.</p>
+      </div>
+
+      <h3>Naming convention per i fascicoli</h3>
+      <p>Il nome del file è fondamentale per il sistema di memoria. Usa sempre questo formato:</p>
+      <div class="folder-tree">
+<span class="comment"># Formato: COGNOME-ANNO-REATO.md</span>
+<span class="highlight">rossi-2024-corruzione.md</span>
+<span class="highlight">bianchi-2025-bancarotta-fraudolenta.md</span>
+<span class="highlight">verdi-2023-art73-stupefacenti.md</span>
+
+<span class="comment"># Per la giurisprudenza: FONTE-SEZIONE-ARGOMENTO-ANNO.md</span>
+<span class="highlight">cass-sez6-corruzione-funzione-2024.md</span>
+<span class="highlight">cedu-art3-sovraffollamento-2023.md</span>
+      </div>
+    </section>
+
+    <!-- 3. Aprire un fascicolo -->
+    <section id="fascicolo">
+      <div class="section-header">
+        <div class="section-num purple">3</div>
+        <div>
+          <div class="section-title">Aprire un fascicolo digitale</div>
+          <div class="section-sub">La procedura standard per ogni nuovo cliente</div>
+        </div>
+      </div>
+
+      <p>Ogni volta che arriva un nuovo cliente, aprire il fascicolo digitale è il primo atto. Non il secondo, non il terzo — il primo.</p>
+
+      <div class="steps">
+        <div class="step">
+          <div class="step-num">1</div>
+          <div class="step-content">
+            <h4>Usa il comando <code>/penalista-italia:fascicolo</code></h4>
+            <p>Il kit genera automaticamente il file .md con il formato standard, aggiorna INDEX.md e chiede le informazioni essenziali in un'unica domanda.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-num">2</div>
+          <div class="step-content">
+            <h4>Completa il frontmatter</h4>
+            <p>Inserisci: cliente, R.G.N.R., reato con articolo, autorità procedente, fase attuale, eventuali scadenze già note. Queste informazioni vengono caricate automaticamente in ogni sessione successiva.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-num">3</div>
+          <div class="step-content">
+            <h4>Aggiungi le scadenze urgenti</h4>
+            <p>Se ci sono termini già correnti (riesame da proporre, risposta a 415-bis, udienza fissata), aggiornare subito <code>SCADENZIARIO.md</code> con <code>/penalista-italia:scadenze</code>.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-num">4</div>
+          <div class="step-content">
+            <h4>Prima analisi strategica</h4>
+            <p>Incollare il capo di imputazione e usare <code>/penalista-italia:strategia</code>. Il risultato viene salvato nella sezione "Strategia difensiva" del file fascicolo.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-num">5</div>
+          <div class="step-content">
+            <h4>Linkare le fonti rilevanti</h4>
+            <p>Aggiungere nella sezione "Giurisprudenza di riferimento" i wikilinks alle sentenze rilevanti già presenti in <code>penalista-giurisprudenza/</code>. Questo costruisce la rete di conoscenza dello studio nel tempo.</p>
+          </div>
+        </div>
+      </div>
+
+      <h3>Formato standard del fascicolo</h3>
+      <div class="folder-tree">
+<span class="comment">--- frontmatter YAML ---</span>
+<span class="highlight">cliente:</span> Mario Rossi
+<span class="highlight">rgnr:</span> 1234/2024 RGNR Procura di Milano
+<span class="highlight">reato:</span> corruzione propria — art. 318 c.p.
+<span class="highlight">fase:</span> indagini preliminari
+<span class="highlight">stato:</span> avviso 415-bis ricevuto il 2024-02-01
+<span class="highlight">prossima_scadenza:</span> 2024-03-15
+<span class="comment">---</span>
+
+<span class="folder">## Strategia difensiva</span>
+→ vedi [[strategia-corruzione-privata]]
+→ giurisprudenza: [[cass-sez6-corruzione-2024]]
+
+<span class="folder">## Scadenze</span>
+- 2024-03-15: memoria ex art. 415-bis
+
+<span class="folder">## Documenti prodotti</span>
+- [[memoria-rossi-415bis-20240315]]
+      </div>
+    </section>
+
+    <!-- 4. Sistema Wikilinks -->
+    <section id="wikilinks">
+      <div class="section-header">
+        <div class="section-num purple">4</div>
+        <div>
+          <div class="section-title">Il sistema wikilinks</div>
+          <div class="section-sub">Come la memoria dello studio si costruisce nel tempo</div>
+        </div>
+      </div>
+
+      <p>I <strong>wikilinks</strong> — nella forma <code>[[nome-file]]</code> — sono il meccanismo che trasforma una cartella di documenti in una rete di conoscenza collegata. Il kit legge solo i file necessari per il compito del giorno, evitando di ricaricare tutto il contesto ogni volta.</p>
+
+      <div class="card-grid">
+        <div class="card">
+          <div class="card-icon">🔗</div>
+          <div class="card-title">Come funziona un wikilink</div>
+          <div class="card-desc">Scrivi <code>[[cognome-anno-reato]]</code> in qualsiasi punto del file. Il kit interpreta questo come "carica il file corrispondente quando necessario".</div>
+        </div>
+        <div class="card">
+          <div class="card-icon">💾</div>
+          <div class="card-title">Riduzione dei token</div>
+          <div class="card-desc">Il kit carica solo i file linkati rilevanti per il compito. Non devi ricaricare tutto il fascicolo ogni volta — il sistema sa dove trovare le informazioni.</div>
+        </div>
+      </div>
+
+      <h3>Regola pratica: cosa linkare</h3>
+      <table>
+        <tr><th>Tipo di link</th><th>Esempio</th><th>Quando usarlo</th></tr>
+        <tr><td>Fascicolo → Giurisprudenza</td><td><code>[[cass-sez6-corruzione-2024]]</code></td><td>Nella sezione strategia del fascicolo</td></tr>
+        <tr><td>Fascicolo → Documenti</td><td><code>[[memoria-rossi-415bis]]</code></td><td>In "Documenti prodotti" del fascicolo</td></tr>
+        <tr><td>Giurisprudenza → Fascicoli</td><td><code>→ utile in [[rossi-2024-corruzione]]</code></td><td>Nel file sentenza, per sapere dove è usata</td></tr>
+        <tr><td>INDEX → Fascicoli attivi</td><td><code>- [[rossi-2024-corruzione]]</code></td><td>In INDEX.md per ogni fascicolo aperto</td></tr>
+        <tr><td>SCADENZIARIO → Fascicoli</td><td><code>[[bianchi-2024-bancarotta]]</code></td><td>In ogni riga del calendario scadenze</td></tr>
+      </table>
+    </section>
+
+    <!-- 5. Gestione sessioni -->
+    <section id="sessioni">
+      <div class="section-header">
+        <div class="section-num green">5</div>
+        <div>
+          <div class="section-title">Come iniziare ogni sessione</div>
+          <div class="section-sub">Il rituale dei 2 minuti che cambia la qualità del lavoro</div>
+        </div>
+      </div>
+
+      <div class="steps">
+        <div class="step">
+          <div class="step-num">1</div>
+          <div class="step-content">
+            <h4>Aprire INDEX.md</h4>
+            <p>Il primo atto di ogni sessione. INDEX.md mostra i fascicoli attivi e le scadenze imminenti. Identificare su cosa lavorare oggi.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-num">2</div>
+          <div class="step-content">
+            <h4>Indicare il fascicolo al kit</h4>
+            <p>Basta scrivere: <em>"Lavoriamo sul fascicolo Rossi"</em>. Il kit legge il file <code>rossi-2024-corruzione.md</code> e carica il contesto. Nessuna riepilogazione manuale necessaria.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-num">3</div>
+          <div class="step-content">
+            <h4>Al termine: aggiornare</h4>
+            <p>Ogni sessione deve terminare con l'aggiornamento del fascicolo (note, documenti prodotti) e dello scadenziario (nuovi termini emersi).</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="alert green">
+        <span class="alert-icon">✅</span>
+        <p><strong>Buona pratica:</strong> aggiornare la sezione "Note e aggiornamenti" del fascicolo con la data e una riga sintetica su cosa è stato fatto nella sessione. In 6 mesi, quella sezione racconta l'intera storia del procedimento.</p>
+      </div>
+    </section>
+
+    <!-- 6. Fonti giuridiche ufficiali -->
+    <section id="fonti-ufficiali">
+      <div class="section-header">
+        <div class="section-num orange">6</div>
+        <div>
+          <div class="section-title">Fonti giuridiche affidabili</div>
+          <div class="section-sub">I testi ufficiali che rendono il kit deterministico</div>
+        </div>
+      </div>
+
+      <p>La differenza tra un assistente AI generico e un assistente giuridico affidabile sta nelle fonti. Quando fornisci al kit i testi normativi ufficiali come contesto, le risposte diventano precise, citabili, verificabili. L'AI non inventa — legge.</p>
+
+      <div class="alert blue">
+        <span class="alert-icon">📂</span>
+        <p><strong>Dove salvarle:</strong> crea la cartella <code>penalista-fonti/</code> nella tua cartella di lavoro e salva i PDF lì. Per usarle, apri il file nell'app e indica al kit di leggerlo come contesto prima di rispondere.</p>
+      </div>
+
+      <h3>Fonti gratuite e ufficiali — priorità alta</h3>
+
+      <div class="source-card">
+        <div>
+          <span class="source-badge official">Ufficiale</span>
+          <br><span class="source-badge free" style="margin-top:4px; display:inline-flex;">Gratuito</span>
+        </div>
+        <div class="source-info">
+          <div class="source-name">Normattiva — Testi normativi italiani</div>
+          <div class="source-desc">La fonte ufficiale del governo italiano per i testi consolidati delle leggi. Aggiornato automaticamente con le ultime modifiche legislative.</div>
+          <a class="source-url" href="https://www.normattiva.it" target="_blank">→ normattiva.it</a>
+          <div class="source-files">
+            <span class="source-file-tag">Codice Penale (R.D. 1930/1398)</span>
+            <span class="source-file-tag">Codice Procedura Penale (D.P.R. 1988/447)</span>
+            <span class="source-file-tag">D.Lgs. 231/2001</span>
+            <span class="source-file-tag">D.Lgs. 74/2000 (reati fiscali)</span>
+            <span class="source-file-tag">Ord. Penit. L. 354/1975</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="source-card">
+        <div>
+          <span class="source-badge official">Ufficiale</span>
+          <br><span class="source-badge free" style="margin-top:4px; display:inline-flex;">Gratuito</span>
+        </div>
+        <div class="source-info">
+          <div class="source-name">HUDOC — Giurisprudenza Corte EDU</div>
+          <div class="source-desc">Database ufficiale della Corte Europea dei Diritti dell'Uomo. Ricercare per articolo CEDU, Paese (Italy), o nome del caso (es. "Torreggiani"). Scarica in PDF.</div>
+          <a class="source-url" href="https://hudoc.echr.coe.int" target="_blank">→ hudoc.echr.coe.int</a>
+          <div class="source-files">
+            <span class="source-file-tag">Torreggiani c. Italia (2013)</span>
+            <span class="source-file-tag">Scoppola c. Italia (2009)</span>
+            <span class="source-file-tag">Viola c. Italia (2019)</span>
+            <span class="source-file-tag">Contrada c. Italia (2015)</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="source-card">
+        <div>
+          <span class="source-badge official">Ufficiale</span>
+          <br><span class="source-badge free" style="margin-top:4px; display:inline-flex;">Gratuito</span>
+        </div>
+        <div class="source-info">
+          <div class="source-name">Corte di Cassazione — Massimario</div>
+          <div class="source-desc">Massime ufficiali della Corte Suprema di Cassazione, ricercabili per sezione, anno, articolo di legge. Scarica i PDF delle massime rilevanti per tipo di reato.</div>
+          <a class="source-url" href="https://www.cortedicassazione.it/corte-di-cassazione/it/massimario.page" target="_blank">→ cortedicassazione.it/massimario</a>
+          <div class="source-files">
+            <span class="source-file-tag">Massime per sezione penale</span>
+            <span class="source-file-tag">Rassegne tematiche</span>
+            <span class="source-file-tag">Relazioni dell'Ufficio Massimario</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="source-card">
+        <div>
+          <span class="source-badge official">Ufficiale</span>
+          <br><span class="source-badge free" style="margin-top:4px; display:inline-flex;">Gratuito</span>
+        </div>
+        <div class="source-info">
+          <div class="source-name">Gazzetta Ufficiale</div>
+          <div class="source-desc">Per i testi originali di leggi e decreti. Utile per verificare la versione vigente al momento del fatto contestato.</div>
+          <a class="source-url" href="https://www.gazzettaufficiale.it" target="_blank">→ gazzettaufficiale.it</a>
+        </div>
+      </div>
+
+      <h3>Banche dati commerciali — se disponibili</h3>
+
+      <div class="source-card">
+        <div><span class="source-badge commercial">A pagamento</span></div>
+        <div class="source-info">
+          <div class="source-name">DeJure (Giuffrè)</div>
+          <div class="source-desc">La banca dati più completa per la giurisprudenza penale italiana. Massime Cassazione, testo integrale sentenze, dottrina. Se il tuo studio ha un abbonamento, esporta in PDF le sentenze rilevanti e caricale nella cartella fonti.</div>
+        </div>
+      </div>
+
+      <div class="source-card">
+        <div><span class="source-badge commercial">A pagamento</span></div>
+        <div class="source-info">
+          <div class="source-name">OneLeagal / Lex24</div>
+          <div class="source-desc">Alternativi a DeJure, ampiamente usati negli studi penalistici italiani. Stessa metodologia: esportare in PDF, salvare nella cartella fonti, usare come contesto.</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. Come usare le fonti -->
+    <section id="come-usare-fonti">
+      <div class="section-header">
+        <div class="section-num orange">7</div>
+        <div>
+          <div class="section-title">Come usare le fonti nel kit</div>
+          <div class="section-sub">Trasformare un PDF in contesto per il lavoro</div>
+        </div>
+      </div>
+
+      <div class="steps">
+        <div class="step">
+          <div class="step-num">1</div>
+          <div class="step-content">
+            <h4>Scarica il testo da Normattiva o HUDOC</h4>
+            <p>Usa sempre la versione consolidata (aggiornata con tutte le modifiche). Salva il PDF come <code>codice-penale.pdf</code> nella cartella <code>penalista-fonti/</code>.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-num">2</div>
+          <div class="step-content">
+            <h4>Caricalo nella conversazione quando serve</h4>
+            <p>In Cowork, apri il file dalla cartella di lavoro e allegalo alla conversazione. Poi chiedi al kit di "basare la risposta sul testo allegato del codice penale".</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-num">3</div>
+          <div class="step-content">
+            <h4>Per la giurisprudenza: crea una nota wikilink</h4>
+            <p>Quando salvi una sentenza importante, crea un file <code>cass-sezX-argomento-anno.md</code> con la massima e il principio. Linkala dai fascicoli dove è rilevante. Questo è il tuo capitale giurisprudenziale che cresce nel tempo.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="alert orange">
+        <span class="alert-icon">⚠️</span>
+        <p><strong>Aggiornamenti normativi:</strong> le leggi cambiano. Ricordare di sostituire i PDF quando vengono approvate modifiche rilevanti (es. aggiornare il c.p.p. dopo la Riforma Cartabia, il c.p. dopo la Riforma Nordio). Annotare la data di download sul nome del file: <code>codice-penale-2026-05.pdf</code>.</p>
+      </div>
+    </section>
+
+    <!-- 8. Fonti personali -->
+    <section id="fonti-personali">
+      <div class="section-header">
+        <div class="section-num orange">8</div>
+        <div>
+          <div class="section-title">Costruire le fonti dello studio</div>
+          <div class="section-sub">Il capitale giuridico che si accumula nel tempo</div>
+        </div>
+      </div>
+
+      <p>Oltre alle fonti pubbliche, ogni studio ha un patrimonio di conoscenza unico: sentenze favorevoli ottenute, orientamenti del Tribunale locale, pratiche ricorrenti del proprio distretto. Questa conoscenza va capitalizzata.</p>
+
+      <table>
+        <tr><th>Tipo di fonte personale</th><th>Dove salvare</th><th>Formato suggerito</th></tr>
+        <tr><td>Sentenze favorevoli ottenute</td><td><code>penalista-giurisprudenza/</code></td><td><code>cass-sezX-argomento-anno.md</code></td></tr>
+        <tr><td>Orientamenti locali del Tribunale</td><td><code>penalista-giurisprudenza/</code></td><td><code>trib-[città]-argomento.md</code></td></tr>
+        <tr><td>Template atti del tuo studio</td><td><code>penalista-atti/templates/</code></td><td><code>template-memoria-415bis.md</code></td></tr>
+        <tr><td>Prassi locali GIP/GUP</td><td><code>penalista-atti/prassi/</code></td><td><code>prassi-[città]-cautelare.md</code></td></tr>
+        <tr><td>Clienti ricorrenti (categorie)</td><td><code>penalista-atti/</code></td><td>Fascicoli standard per settore</td></tr>
+      </table>
+
+      <div class="alert green">
+        <span class="alert-icon">🌱</span>
+        <p><strong>Crescita progressiva:</strong> non serve costruire tutto in una volta. Ogni fascicolo che completi, ogni sentenza favorevole che ottieni, ogni strategia che funziona — aggiungila al sistema. In 12 mesi avrai un patrimonio digitale che lavora per te.</p>
+      </div>
+    </section>
+
+    <!-- 9. Mini-progetti -->
+    <section id="mini-progetti">
+      <div class="section-header">
+        <div class="section-num red">9</div>
+        <div>
+          <div class="section-title">Mini-Progetti</div>
+          <div class="section-sub">Template per le pratiche ricorrenti</div>
+        </div>
+      </div>
+
+      <p>Un mini-progetto è un insieme preconfezionato di file template + sequenza di comandi per le tipologie di pratica che gestisci frequentemente. Invece di ricominciare da zero, istanzi il template e compili i dati del cliente.</p>
+
+      <div class="mini-project">
+        <div class="mini-project-header">
+          <span class="mini-project-icon">🔒</span>
+          <div>
+            <div class="mini-project-name">Gestione Misura Cautelare</div>
+            <div class="mini-project-desc">Dall'arresto al riesame, dalla revoca alla scadenza dei termini</div>
+          </div>
+        </div>
+        <p style="font-size:13px; color: var(--text2); margin-bottom:0.75rem;">File da creare: fascicolo.md + voce SCADENZIARIO con termini di fase + collegamento a giurisprudenza su gravi indizi e esigenze cautelari</p>
+        <div class="mini-project-commands">
+          <span class="cmd">/fascicolo</span>
+          <span class="cmd">/cautelare</span>
+          <span class="cmd">/scadenze → termini di fase</span>
+          <span class="cmd">/atti → riesame</span>
+          <span class="cmd">/giurisprudenza → art. 274</span>
+        </div>
+      </div>
+
+      <div class="mini-project">
+        <div class="mini-project-header">
+          <span class="mini-project-icon">📄</span>
+          <div>
+            <div class="mini-project-name">Risposta ad Avviso 415-bis</div>
+            <div class="mini-project-desc">Analisi dell'imputazione e costruzione della memoria difensiva prima del rinvio a giudizio</div>
+          </div>
+        </div>
+        <p style="font-size:13px; color: var(--text2); margin-bottom:0.75rem;">File da creare: fascicolo.md con il capo di imputazione + nota di strategia + memoria.docx</p>
+        <div class="mini-project-commands">
+          <span class="cmd">/strategia → capo imputazione</span>
+          <span class="cmd">/giurisprudenza</span>
+          <span class="cmd">/atti → memoria 415-bis</span>
+          <span class="cmd">/scadenze → termine risposta</span>
+        </div>
+      </div>
+
+      <div class="mini-project">
+        <div class="mini-project-header">
+          <span class="mini-project-icon">⚖️</span>
+          <div>
+            <div class="mini-project-name">Appello Penale</div>
+            <div class="mini-project-desc">Dalla sentenza di primo grado alla costruzione dei motivi e deposito</div>
+          </div>
+        </div>
+        <div class="mini-project-commands">
+          <span class="cmd">/scadenze → termine appello</span>
+          <span class="cmd">/strategia → sentenza</span>
+          <span class="cmd">/atti → appello</span>
+          <span class="cmd">/giurisprudenza</span>
+        </div>
+      </div>
+
+      <div class="mini-project">
+        <div class="mini-project-header">
+          <span class="mini-project-icon">🏛️</span>
+          <div>
+            <div class="mini-project-name">Esecuzione Penale</div>
+            <div class="mini-project-desc">Calcolo pena e accesso alle misure alternative alla detenzione</div>
+          </div>
+        </div>
+        <div class="mini-project-commands">
+          <span class="cmd">/esecuzione → calcolo pena</span>
+          <span class="cmd">/scadenze → requisiti misure</span>
+          <span class="cmd">/atti → istanza affidamento</span>
+        </div>
+      </div>
+
+      <div class="mini-project">
+        <div class="mini-project-header">
+          <span class="mini-project-icon">🏢</span>
+          <div>
+            <div class="mini-project-name">Responsabilità ex D.Lgs. 231</div>
+            <div class="mini-project-desc">Procedimento a carico dell'ente: analisi MOG, misure cautelari interdittive, strategia difensiva</div>
+          </div>
+        </div>
+        <div class="mini-project-commands">
+          <span class="cmd">/strategia → reato presupposto</span>
+          <span class="cmd">/cautelare → misure interdittive</span>
+          <span class="cmd">/atti → memoria 231</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- 10. Workflow tipo -->
+    <section id="workflow">
+      <div class="section-header">
+        <div class="section-num red">10</div>
+        <div>
+          <div class="section-title">Workflow tipo: un fascicolo dalla A alla Z</div>
+          <div class="section-sub">Come scorre il lavoro con il kit nel tempo</div>
+        </div>
+      </div>
+
+      <div class="folder-tree">
+<span class="comment">Giorno 1 — Nuovo cliente, avviso ex art. 415-bis</span>
+<span class="highlight">/fascicolo</span>  → crea rossi-2024-corruzione.md
+<span class="highlight">/scadenze</span>   → calcola termine risposta 415-bis
+<span class="highlight">/strategia</span>  → analisi capo di imputazione
+→ INDEX.md aggiornato con la scadenza
+
+<span class="comment">Giorno 3 — Ricerca giurisprudenziale</span>
+<span class="highlight">/giurisprudenza</span>  → orientamenti Sesta Sezione su corruzione
+→ salvata cass-sez6-corruzione-2024.md
+→ linkato in [[rossi-2024-corruzione]]
+
+<span class="comment">Giorno 8 — Redazione memoria</span>
+<span class="highlight">/atti → memoria 415-bis</span>
+→ il kit legge [[rossi-2024-corruzione]] + [[cass-sez6-corruzione-2024]]
+→ produce la memoria con la giurisprudenza già incorporata
+
+<span class="comment">Giorno 15 — UP fissata, serve lista testi</span>
+<span class="highlight">/atti → lista testi</span>
+→ il kit ricorda tutta la strategia dal file fascicolo
+
+<span class="comment">6 mesi dopo — Sentenza di primo grado, appello</span>
+<span class="highlight">/scadenze → termine appello</span>
+<span class="highlight">/atti → appello</span>
+→ il kit ha l'intera storia del fascicolo nei wikilinks
+→ motivi coerenti con la strategia originale
+      </div>
+    </section>
+
+    <hr>
+
+    <!-- Footer -->
+    <div class="footer">
+      <div>
+        <strong>Penalista Italia</strong> — Sviluppato da <a href="https://github.com/Synthos-Logic">Synthos Logic</a>
+      </div>
+      <div>
+        <a href="https://github.com/Synthos-Logic/penalista-italia">GitHub</a> ·
+        <a href="INSTALLAZIONE.html">Installazione</a> ·
+        <a href="https://github.com/Synthos-Logic/penalista-italia/issues">Segnalazioni</a>
+      </div>
+    </div>
+
+  </main>
+</div>
+
+<script>
+  // Active nav item on scroll
+  const sections = document.querySelectorAll('section[id]');
+  const navItems = document.querySelectorAll('.nav-item');
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        navItems.forEach(item => item.classList.remove('active'));
+        const active = document.querySelector(`.nav-item[href="#${entry.target.id}"]`);
+        if (active) active.classList.add('active');
+      }
+    });
+  }, { rootMargin: '-20% 0px -60% 0px' });
+
+  sections.forEach(s => observer.observe(s));
+</script>
+</body>
+</html>
