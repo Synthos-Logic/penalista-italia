@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Metodologia — Penalista Italia</title>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
 <style>
   /* ── DARK MODE (default) ── */
   :root {
@@ -315,6 +316,76 @@
     display: flex; align-items: center; justify-content: space-between;
   }
   .footer a { color: var(--accent); text-decoration: none; }
+
+  /* ── Workflow tabs ── */
+  .wf-tabs { display: flex; gap: 0.5rem; margin-bottom: 1.5rem; }
+  .wf-tab {
+    padding: 8px 18px; border-radius: 8px; font-size: 13px; font-weight: 600;
+    cursor: pointer; border: 1px solid var(--border); background: var(--bg2);
+    color: var(--text2); transition: all 0.15s;
+  }
+  .wf-tab.active { background: var(--accent); color: #fff; border-color: var(--accent); }
+  .wf-tab:hover:not(.active) { border-color: var(--accent); color: var(--text); }
+  .wf-panel { display: none; }
+  .wf-panel.active { display: block; }
+
+  /* ── Mermaid wrapper ── */
+  .mermaid-wrap {
+    background: var(--bg2); border: 1px solid var(--border);
+    border-radius: 12px; padding: 1.5rem; overflow-x: auto;
+    text-align: center; margin-bottom: 1rem;
+  }
+  .mermaid { display: inline-block; }
+
+  /* ── Visual Timeline ── */
+  .timeline { position: relative; padding: 0.5rem 0; }
+  .timeline::before {
+    content: ''; position: absolute; left: 28px; top: 0; bottom: 0;
+    width: 2px; background: linear-gradient(to bottom, var(--accent), var(--accent2));
+    border-radius: 2px;
+  }
+  .tl-item { display: flex; gap: 1rem; margin-bottom: 1.25rem; align-items: flex-start; }
+  .tl-dot {
+    width: 58px; height: 58px; border-radius: 12px; flex-shrink: 0;
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    font-size: 18px; border: 2px solid var(--border); background: var(--bg2);
+    position: relative; z-index: 1;
+  }
+  .tl-dot .tl-day { font-size: 9px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin-top: 2px; }
+  .tl-dot.blue { border-color: var(--accent); background: rgba(79,142,247,0.12); }
+  .tl-dot.blue .tl-day { color: var(--accent); }
+  .tl-dot.green { border-color: var(--green); background: rgba(16,185,129,0.12); }
+  .tl-dot.green .tl-day { color: var(--green); }
+  .tl-dot.orange { border-color: var(--orange); background: rgba(245,158,11,0.12); }
+  .tl-dot.orange .tl-day { color: var(--orange); }
+  .tl-dot.purple { border-color: #a78bfa; background: rgba(167,139,250,0.12); }
+  .tl-dot.purple .tl-day { color: #a78bfa; }
+  .tl-dot.red { border-color: var(--red); background: rgba(239,68,68,0.12); }
+  .tl-dot.red .tl-day { color: var(--red); }
+
+  .tl-card {
+    flex: 1; background: var(--bg2); border: 1px solid var(--border);
+    border-radius: 10px; padding: 0.9rem 1.1rem; margin-top: 4px;
+  }
+  .tl-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 0.4rem; flex-wrap: wrap; gap: 0.4rem; }
+  .tl-title { font-size: 13px; font-weight: 700; color: var(--text); }
+  .tl-cmds { display: flex; flex-wrap: wrap; gap: 0.3rem; }
+  .tl-cmd {
+    font-family: monospace; font-size: 11px; padding: 2px 8px; border-radius: 4px;
+    background: var(--code-bg); border: 1px solid var(--border); color: var(--green);
+  }
+  .tl-text { font-size: 12px; color: var(--text2); line-height: 1.5; }
+  .tl-output {
+    margin-top: 0.5rem; padding: 6px 10px; border-radius: 6px;
+    background: var(--bg3); font-size: 11px; color: var(--text3);
+    border-left: 3px solid var(--accent);
+  }
+  .tl-gap {
+    display: flex; align-items: center; gap: 0.75rem;
+    margin: 0.5rem 0 1rem 70px; color: var(--text3); font-size: 12px;
+  }
+  .tl-gap::before { content: ''; flex: 1; border-top: 1px dashed var(--border); }
+  .tl-gap::after { content: ''; flex: 1; border-top: 1px dashed var(--border); }
 
   @media (max-width: 768px) {
     .sidebar { display: none; }
@@ -1014,32 +1085,167 @@
         </div>
       </div>
 
-      <div class="folder-tree">
-<span class="comment">Giorno 1 — Nuovo cliente, avviso ex art. 415-bis</span>
-<span class="highlight">/fascicolo</span>  → crea rossi-2024-corruzione.md
-<span class="highlight">/scadenze</span>   → calcola termine risposta 415-bis
-<span class="highlight">/strategia</span>  → analisi capo di imputazione
-→ INDEX.md aggiornato con la scadenza
+      <!-- Tabs -->
+      <div class="wf-tabs">
+        <button class="wf-tab active" onclick="showTab('flow')">🗺️ Flusso decisionale</button>
+        <button class="wf-tab" onclick="showTab('case')">📅 Caso tipo: giorno per giorno</button>
+      </div>
 
-<span class="comment">Giorno 3 — Ricerca giurisprudenziale</span>
-<span class="highlight">/giurisprudenza</span>  → orientamenti Sesta Sezione su corruzione
-→ salvata cass-sez6-corruzione-2024.md
-→ linkato in [[rossi-2024-corruzione]]
+      <!-- TAB 1: Mermaid flowchart -->
+      <div class="wf-panel active" id="tab-flow">
+        <p style="font-size:13px; color:var(--text2); margin-bottom:1rem;">Quale comando usare in base alla situazione del cliente. Il flusso parte sempre dall'apertura del fascicolo e si ramifica in base alla fase processuale.</p>
+        <div class="mermaid-wrap">
+          <div class="mermaid">
+flowchart TD
+    START([🆕 Nuovo cliente]) --> FASC["/fascicolo\nApri il fascicolo digitale"]
+    FASC --> FASE{In quale fase\nsi trova il caso?}
 
-<span class="comment">Giorno 8 — Redazione memoria</span>
-<span class="highlight">/atti → memoria 415-bis</span>
-→ il kit legge [[rossi-2024-corruzione]] + [[cass-sez6-corruzione-2024]]
-→ produce la memoria con la giurisprudenza già incorporata
+    FASE -->|📨 Indagini /\nAvviso 415-bis| IND
+    FASE -->|🔒 Misura\ncautelare| CAU
+    FASE -->|⚖️ Sentenza\nimpugnabile| IMP
+    FASE -->|🏠 Sentenza\ndefinitiva| ESE
 
-<span class="comment">Giorno 15 — UP fissata, serve lista testi</span>
-<span class="highlight">/atti → lista testi</span>
-→ il kit ricorda tutta la strategia dal file fascicolo
+    subgraph IND ["📨 Fase Indagini / 415-bis"]
+      direction TB
+      I1["/scadenze\nCalcola il termine di risposta"] --> I2
+      I2["/strategia\nAnalisi capo di imputazione"] --> I3
+      I3["/giurisprudenza\nOrientamenti favorevoli"] --> I4
+      I4["/atti → memoria\nRedigi la memoria difensiva"]
+    end
 
-<span class="comment">6 mesi dopo — Sentenza di primo grado, appello</span>
-<span class="highlight">/scadenze → termine appello</span>
-<span class="highlight">/atti → appello</span>
-→ il kit ha l'intera storia del fascicolo nei wikilinks
-→ motivi coerenti con la strategia originale
+    subgraph CAU ["🔒 Misura Cautelare"]
+      direction TB
+      C1["⚠️ /cautelare\nVERIFICA TERMINI — PRIMA DI TUTTO"] --> C2{Termini\nok?}
+      C2 -->|🚨 Scaduti| C3["/atti → scarcerazione\nIstanza urgente"]
+      C2 -->|✅ In tempo| C4["/atti → riesame\nCostituisci i motivi"]
+    end
+
+    subgraph IMP ["⚖️ Impugnazione"]
+      direction TB
+      M1["/scadenze\nTermine appello / Cassazione"] --> M2
+      M2["/strategia\nIndividua i vizi della sentenza"] --> M3
+      M3["/giurisprudenza\nMassime a supporto"] --> M4
+      M4["/atti → appello\no /atti → ricorso Cassazione"]
+    end
+
+    subgraph ESE ["🏠 Esecuzione Penale"]
+      direction TB
+      E1["/esecuzione\nCalcola pena espiata e requisiti"] --> E2
+      E2["/scadenze\nDate raggiungimento misure"] --> E3
+      E3["/atti → istanza\nAffidamento / Domiciliari / Semilibertà"]
+    end
+
+    style START fill:#4f8ef7,color:#fff,stroke:none
+    style FASC fill:#1a1d26,stroke:#4f8ef7
+    style FASE fill:#22263a,stroke:#7c3aed,color:#e2e8f0
+    style C1 fill:#ef4444,color:#fff,stroke:none
+    style C3 fill:#ef4444,color:#fff,stroke:none
+          </div>
+        </div>
+        <div class="alert blue">
+          <span class="alert-icon">💡</span>
+          <p>Se il cliente ha una <strong>misura cautelare in corso</strong>, verificare <em>sempre</em> i termini di fase con <code>/cautelare</code> prima di qualsiasi altra azione. È il caso in cui il ritardo si paga con la libertà del cliente.</p>
+        </div>
+      </div>
+
+      <!-- TAB 2: Visual timeline -->
+      <div class="wf-panel" id="tab-case">
+        <p style="font-size:13px; color:var(--text2); margin-bottom:1.5rem;">Caso reale: <strong>Mario Rossi, corruzione art. 318 c.p.</strong> — dall'avviso ex art. 415-bis alla sentenza d'appello. Ogni punto mostra il tempo trascorso, l'azione e il comando usato.</p>
+
+        <div class="timeline">
+
+          <!-- Giorno 1 -->
+          <div class="tl-item">
+            <div class="tl-dot blue">📨<span class="tl-day">Giorno 1</span></div>
+            <div class="tl-card">
+              <div class="tl-header">
+                <div class="tl-title">Arriva l'avviso ex art. 415-bis</div>
+                <div class="tl-cmds">
+                  <span class="tl-cmd">/fascicolo</span>
+                  <span class="tl-cmd">/scadenze</span>
+                  <span class="tl-cmd">/strategia</span>
+                </div>
+              </div>
+              <div class="tl-text">Apri il fascicolo digitale con i dati del cliente e il capo di imputazione. Calcola il termine di risposta (20 giorni). Avvia la prima analisi difensiva.</div>
+              <div class="tl-output">✅ Creato rossi-2024-corruzione.md · Scadenza 21/02 in SCADENZIARIO · Prima strategia salvata</div>
+            </div>
+          </div>
+
+          <!-- Giorno 3 -->
+          <div class="tl-item">
+            <div class="tl-dot purple">📚<span class="tl-day">Giorno 3</span></div>
+            <div class="tl-card">
+              <div class="tl-header">
+                <div class="tl-title">Ricerca giurisprudenziale</div>
+                <div class="tl-cmds"><span class="tl-cmd">/giurisprudenza</span></div>
+              </div>
+              <div class="tl-text">Orientamenti favorevoli della Sesta Sezione Cassazione sull'elemento soggettivo della corruzione per la funzione (art. 318). Salvo le massime come note MD e le linko al fascicolo.</div>
+              <div class="tl-output">✅ Creata cass-sez6-corruzione-2024.md · Linkato in [[rossi-2024-corruzione]]</div>
+            </div>
+          </div>
+
+          <!-- Giorno 7 -->
+          <div class="tl-item">
+            <div class="tl-dot blue">🗣️<span class="tl-day">Giorno 7</span></div>
+            <div class="tl-card">
+              <div class="tl-header">
+                <div class="tl-title">Colloquio con il cliente</div>
+                <div class="tl-cmds"><span class="tl-cmd">aggiorna note</span></div>
+              </div>
+              <div class="tl-text">Nuovi elementi emersi: alibi documentabile, estratti conto a supporto. Si aggiornano le note nel fascicolo MD — nessun copia-incolla nella prossima sessione.</div>
+              <div class="tl-output">✅ Note aggiornate nel fascicolo · La strategia si costruisce su questi elementi</div>
+            </div>
+          </div>
+
+          <!-- Giorno 14 -->
+          <div class="tl-item">
+            <div class="tl-dot green">✍️<span class="tl-day">Giorno 14</span></div>
+            <div class="tl-card">
+              <div class="tl-header">
+                <div class="tl-title">Redazione della memoria difensiva</div>
+                <div class="tl-cmds"><span class="tl-cmd">/atti → memoria 415-bis</span></div>
+              </div>
+              <div class="tl-text">Il kit legge automaticamente il fascicolo e la giurisprudenza raccolta. Produce la bozza con le massime già incorporate. Si rivede e si salva in DOCX.</div>
+              <div class="tl-output">✅ memoria-rossi-415bis-20240215.docx · Linkato al fascicolo · Depositata il 15/02</div>
+            </div>
+          </div>
+
+          <div class="tl-gap">3 mesi dopo</div>
+
+          <!-- UP fissata -->
+          <div class="tl-item">
+            <div class="tl-dot orange">⚖️<span class="tl-day">Mese 4</span></div>
+            <div class="tl-card">
+              <div class="tl-header">
+                <div class="tl-title">Udienza Preliminare fissata — lista testi</div>
+                <div class="tl-cmds"><span class="tl-cmd">/scadenze</span><span class="tl-cmd">/atti → lista testi</span></div>
+              </div>
+              <div class="tl-text">Il kit ricorda tutta la strategia dal fascicolo. La lista testi è coerente con gli argomenti difensivi della memoria depositata 3 mesi prima.</div>
+              <div class="tl-output">✅ Scadenza deposito lista testi calcolata · Lista prodotta in continuità con la strategia</div>
+            </div>
+          </div>
+
+          <div class="tl-gap">6 mesi dopo</div>
+
+          <!-- Sentenza -->
+          <div class="tl-item">
+            <div class="tl-dot red">📋<span class="tl-day">Mese 10</span></div>
+            <div class="tl-card">
+              <div class="tl-header">
+                <div class="tl-title">Sentenza di condanna — si impugna</div>
+                <div class="tl-cmds"><span class="tl-cmd">/scadenze</span><span class="tl-cmd">/strategia</span><span class="tl-cmd">/atti → appello</span></div>
+              </div>
+              <div class="tl-text">Si calcola il termine per l'appello (30 giorni dall'avviso di deposito). Si analizzano i vizi della sentenza. L'atto di appello è coerente con la linea difensiva di 10 mesi fa — tutta nei wikilinks.</div>
+              <div class="tl-output">✅ Termini calcolati con precisione · Appello costruito sull'intera storia del fascicolo</div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="alert green" style="margin-top:1.5rem;">
+          <span class="alert-icon">🌱</span>
+          <p><strong>Il valore che si accumula:</strong> dopo 10 mesi, tutta la strategia, la giurisprudenza raccolta e gli atti prodotti sono ancora nei wikilinks. L'appello può essere costruito in continuità con la difesa originale — senza ricominciare da zero.</p>
+        </div>
       </div>
     </section>
 
@@ -1086,6 +1292,31 @@
     const saved = localStorage.getItem('penalista-theme') || 'dark';
     applyTheme(saved);
   })();
+
+  // ── Workflow tabs ──
+  function showTab(id) {
+    document.querySelectorAll('.wf-panel').forEach(p => p.classList.remove('active'));
+    document.querySelectorAll('.wf-tab').forEach(t => t.classList.remove('active'));
+    document.getElementById('tab-' + id).classList.add('active');
+    event.target.classList.add('active');
+  }
+
+  // ── Initialize Mermaid ──
+  mermaid.initialize({
+    startOnLoad: true,
+    theme: document.documentElement.getAttribute('data-theme') === 'light' ? 'default' : 'dark',
+    flowchart: { curve: 'basis', useMaxWidth: true },
+    securityLevel: 'loose'
+  });
+
+  // Re-render Mermaid on theme change
+  const _origApply = applyTheme;
+  applyTheme = function(theme) {
+    _origApply(theme);
+    try {
+      mermaid.initialize({ theme: theme === 'light' ? 'default' : 'dark', startOnLoad: false });
+    } catch(e) {}
+  };
 
   // ── Active nav on scroll ──
   const sections = document.querySelectorAll('section[id]');
