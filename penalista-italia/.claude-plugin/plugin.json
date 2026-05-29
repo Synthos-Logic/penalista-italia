@@ -1,7 +1,7 @@
 {
   "name": "penalista-italia",
-  "version": "1.1.0",
-  "description": "Kit operativo per avvocati penalisti italiani. Strategia difensiva, redazione atti processuali penali, calcolo termini e prescrizione, gestione misure cautelari, compliance D.Lgs. 231/2001. Sviluppato da Synthos Logic.",
+  "version": "1.2.0",
+  "description": "Kit operativo per avvocati penalisti italiani. Strategia difensiva, redazione atti processuali penali, calcolo termini e prescrizione, gestione misure cautelari, ricerca giurisprudenziale penale, diritto penitenziario, compliance D.Lgs. 231/2001. Sviluppato da Synthos Logic.",
   "author": {
     "name": "Synthos Logic"
   },
@@ -16,28 +16,27 @@
     "foro_iscrizione": {
       "type": "string",
       "title": "Foro di iscrizione",
-      "description": "Es: Milano, Roma, Napoli. Verrà usato nelle intestazioni degli atti.",
+      "description": "Es: Milano, Roma, Napoli.",
       "default": "",
       "sensitive": false
     },
     "numero_iscrizione": {
       "type": "string",
       "title": "Numero di iscrizione all'Ordine",
-      "description": "Numero progressivo di iscrizione all'Albo degli Avvocati.",
       "default": "",
       "sensitive": false
     },
     "tribunale_principale": {
       "type": "string",
       "title": "Tribunale di riferimento principale",
-      "description": "Es: Tribunale di Milano. Usato come default per le intestazioni.",
+      "description": "Es: Tribunale di Milano.",
       "default": "",
       "sensitive": false
     },
     "cassazionista": {
       "type": "string",
       "title": "Iscritto all'Albo Cassazionisti?",
-      "description": "Indicare SI o NO. Rilevante per i ricorsi per Cassazione (art. 613 c.p.p.).",
+      "description": "Indicare SI o NO.",
       "default": "NO",
       "sensitive": false
     }
