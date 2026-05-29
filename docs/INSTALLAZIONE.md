@@ -1,6 +1,6 @@
 # Guida all'Installazione — Penalista Italia
 
-Questa guida ti accompagna passo per passo nell'installazione del plugin **Penalista Italia** su Claude Cowork Desktop.
+Questa guida accompagna passo per passo nell'installazione del plugin **Penalista Italia** su Claude Cowork Desktop.
 
 ---
 
@@ -16,113 +16,87 @@ Questa guida ti accompagna passo per passo nell'installazione del plugin **Penal
 
 In Claude Cowork, clicca su **Personalizza** nella barra laterale sinistra.
 
----
-
-## Passo 2 — Accedi ai Plugin Personali
-
-Nella sezione **Plugin personali**, clicca sul pulsante **+** e seleziona **Aggiungi marketplace da GitHub**.
+![Passo 1 — Personalizza Claude](images/installazione/01-personalizza.png)
 
 ---
 
-## Passo 3 — Inserisci il Repository
+## Passo 2 — Aggiungi marketplace
 
-Nel campo che appare, digita esattamente:
+Clicca sul pulsante **+** accanto a "Plugin personali", poi seleziona **Crea plugin** → **Aggiungi marketplace**.
+
+![Passo 2 — Aggiungi marketplace](images/installazione/02-crea-plugin.png)
+
+---
+
+## Passo 3 — Inserisci il repository
+
+Nel campo URL digita esattamente:
 
 ```
 Synthos-Logic/penalista-italia
 ```
 
-Clicca **Sincronizza**.
+oppure l'URL completo `https://github.com/Synthos-Logic/penalista-italia`, poi clicca **Sincronizza**.
+
+![Passo 3a — Dialog vuoto](images/installazione/03-aggiungi-marketplace-vuoto.png)
+
+![Passo 3b — URL inserito](images/installazione/04-aggiungi-marketplace-url.png)
 
 ---
 
-## Passo 4 — Installa il Plugin
+## Passo 4 — Installa il plugin
 
-Dopo la sincronizzazione, comparirà la scheda **Penalista Italia**. Clicca su **Installa**.
+Dopo la sincronizzazione appare la scheda **Penalista Italia** di Synthos Logic. Clicca sul **+** per installarlo.
+
+![Passo 4 — Installa](images/installazione/05-directory-plugin.png)
 
 ---
 
-## Passo 5 — Configura i Dati dello Studio
+## Passo 5 — Conferma installazione
 
-Clicca sull'icona della **ruota dentata ⚙️** accanto al plugin installato. Compila i campi:
+Vedrai la notifica **"Penalista Italia è installato e pronto all'uso"** insieme alle skill disponibili.
+
+![Passo 5 — Installato](images/installazione/06-installato.png)
+
+---
+
+## Passo 6 — Configura i dati dello studio
+
+Clicca sull'icona **⚙️** accanto al plugin installato e compila:
 
 | Campo | Descrizione | Esempio |
 |---|---|---|
-| Nome e cognome | Il tuo nome completo per le intestazioni degli atti | Mario Rossi |
+| Nome e cognome | Il tuo nome per le intestazioni degli atti | Mario Rossi |
 | Foro di iscrizione | Il tuo Ordine di appartenenza | Milano |
-| Numero iscrizione | Numero all'Albo degli Avvocati | 12345 |
-| Tribunale principale | Il tribunale dove lavori più frequentemente | Tribunale di Milano |
-| Cassazionista | Sei iscritto all'Albo Speciale? | SI / NO |
+| Numero iscrizione | Numero all'Albo | 12345 |
+| Tribunale principale | Il tribunale dove lavori più spesso | Tribunale di Milano |
+| Cassazionista | Iscritto all'Albo Speciale? | SI / NO |
 
 ---
 
-## Passo 6 — Seleziona la Cartella di Lavoro
+## Passo 7 — Attiva sincronizzazione automatica
 
-Al primo avvio, Cowork ti chiederà di selezionare una cartella sul tuo computer per i file dello studio. Scegli la cartella dove vuoi archiviare i fascicoli digitali.
-
-La struttura verrà creata automaticamente:
-```
-📁 [cartella scelta]/
-├── 📁 penalista-atti/
-├── 📁 penalista-giurisprudenza/
-├── 📁 penalista-impugnazioni/
-├── 📁 penalista-memorie/
-├── 📁 penalista-pareri/
-└── 📁 penalista-scadenze/
-    └── SCADENZIARIO.md
-```
+Per ricevere aggiornamenti automatici: **Personalizza** → **Sfoglia plugin** → **Personale** → clicca **…** accanto a *penalista-italia* → attiva **Sincronizza automaticamente**.
 
 ---
 
-## Passo 7 — Attiva la Sincronizzazione Automatica
+## Passo 8 — Verifica
 
-Per ricevere gli aggiornamenti automaticamente: **Personalizza** → **Sfoglia plugin** → **Personali** → clicca sui tre puntini (**…**) accanto a *penalista-italia* → attiva **Sincronizza automaticamente**.
-
----
-
-## Passo 8 — Verifica l'Installazione
-
-Apri una nuova conversazione e scrivi:
-
-```
-Analizza questo capo di imputazione: [incolla il testo]
-```
-
-Se il plugin è installato correttamente, vedrai l'analisi difensiva strutturata in 10 sezioni.
+Apri una nuova conversazione e scrivi `/penalista-italia:aiuto` — vedrai la guida completa con tutti i comandi disponibili.
 
 ---
 
-## Utilizzo delle skill
+## Utilizzo rapido
 
-Le skill si attivano automaticamente in base al contesto. Non è necessario usare comandi speciali.
-
-**Esempi di utilizzo:**
-
-```
-"Come mi difendo da questa accusa di corruzione?"
-→ si attiva penalista-strategia — analisi difensiva completa
-
-"Scrivi l'istanza di riesame per il sig. Bianchi, in custodia dal 15 marzo"
-→ si attivano penalista-cautelare + penalista-atti
-
-"Quando scade la prescrizione per una truffa commessa il 3 maggio 2019?"
-→ si attiva penalista-scadenze — calcolo con ragionamento completo
-
-"Prepara i motivi di appello avverso la sentenza del Tribunale di Roma"
-→ si attiva penalista-atti — guida alla redazione dell'atto di appello
-```
-
----
-
-## Sistema di memoria — Gestione fascicoli
-
-Il kit usa un sistema di file `.md` collegati da **wikilinks** `[[]]` per mantenere il contesto tra sessioni e ridurre il consumo di token.
-
-**Come iniziare un fascicolo:**
-
-1. Nella cartella `penalista-atti/`, crea un file `cognome-anno-reato.md`
-2. Usa il formato standard indicato nel file `SISTEMA_MEMORIA.md`
-3. Ogni sessione, indica il fascicolo attivo — il kit caricherà solo il contesto necessario
+| Comando | Funzione |
+|---|---|
+| `/penalista-italia:strategia` | Analisi difensiva di un capo di imputazione |
+| `/penalista-italia:atti` | Redazione di atti processuali penali |
+| `/penalista-italia:scadenze` | Calcolo termini processuali |
+| `/penalista-italia:cautelare` | Gestione misure cautelari |
+| `/penalista-italia:prescrizione` | Calcolo prescrizione |
+| `/penalista-italia:fascicolo` | Crea fascicolo nel sistema memoria |
+| `/penalista-italia:aiuto` | Guida completa |
 
 ---
 
@@ -130,17 +104,14 @@ Il kit usa un sistema di file `.md` collegati da **wikilinks** `[[]]` per manten
 
 | Problema | Soluzione |
 |---|---|
-| "Sync failed" | Verifica di aver digitato esattamente `Synthos-Logic/penalista-italia` |
-| Le skill non si attivano | Verifica che il plugin sia attivo (toggle blu nella pagina del plugin) |
-| I dati dello studio non compaiono negli atti | Verifica di aver compilato tutti i campi nella configurazione (⚙️) |
-| Il SCADENZIARIO non si aggiorna | Aprire il file `penalista-scadenze/SCADENZIARIO.md` e chiedere al kit di aggiornarlo |
+| "Sync failed" | Verifica di aver inserito esattamente `Synthos-Logic/penalista-italia` |
+| Le skill non si attivano | Verifica che il plugin sia attivo (toggle blu) |
+| I dati non compaiono negli atti | Completa la configurazione ⚙️ con nome, foro e tribunale |
 
 ---
 
 ## Supporto
 
-Per segnalazioni e richieste: [github.com/Synthos-Logic/penalista-italia/issues](https://github.com/Synthos-Logic/penalista-italia/issues)
-
----
+[github.com/Synthos-Logic/penalista-italia/issues](https://github.com/Synthos-Logic/penalista-italia/issues)
 
 [← Torna al README](../README.md)
