@@ -294,6 +294,7 @@
     <div class="nav-section">
       <div class="nav-label">Fondamenti</div>
       <a class="nav-item" href="#principio"><span class="dot"></span>Il principio</a>
+      <a class="nav-item" href="#formati"><span class="dot"></span>Formati documentali</a>
       <a class="nav-item" href="#struttura"><span class="dot"></span>Struttura cartelle</a>
       <a class="nav-item" href="#fascicolo"><span class="dot"></span>Aprire un fascicolo</a>
     </div>
@@ -366,10 +367,99 @@
       </div>
     </section>
 
-    <!-- 2. Struttura cartelle -->
-    <section id="struttura">
+    <!-- NUOVA: Formati documentali -->
+    <section id="formati">
       <div class="section-header">
         <div class="section-num blue">2</div>
+        <div>
+          <div class="section-title">I formati documentali</div>
+          <div class="section-sub">MD preferenziale, ma PDF, DOCX e HTML sono tutti supportati</div>
+        </div>
+      </div>
+
+      <p>Il kit lavora con <strong>tutti i formati di file</strong> che uno studio penalistico usa quotidianamente. La distinzione fondamentale non è tecnica — è funzionale: alcuni file fanno parte della <em>rete di conoscenza attiva</em> (quelli che il kit legge e collega automaticamente), altri sono <em>documenti di archivio</em> che si allegano quando necessario.</p>
+
+      <div class="alert blue">
+        <span class="alert-icon">💡</span>
+        <p><strong>Regola pratica:</strong> usa il formato <code>.md</code> per tutto ciò che il kit deve ricordare e collegare. Usa il formato originale (PDF, DOCX, HTML) per i documenti ricevuti da terzi o prodotti in forma definitiva.</p>
+      </div>
+
+      <table>
+        <tr>
+          <th>Formato</th>
+          <th>Uso ideale</th>
+          <th>Come funziona nel kit</th>
+        </tr>
+        <tr>
+          <td><code>.md</code> ⭐</td>
+          <td>Fascicoli, note strategia, giurisprudenza, scadenze, pareri</td>
+          <td>Il kit legge, scrive e collega automaticamente via <code>[[wikilinks]]</code>. È il formato della memoria attiva dello studio.</td>
+        </tr>
+        <tr>
+          <td><code>.pdf</code></td>
+          <td>Ordinanze, sentenze ricevute, CNR, testi normativi, perizie</td>
+          <td>Allegare alla conversazione quando necessario. Il kit legge il contenuto e lo analizza. Non può creare link automatici da un PDF.</td>
+        </tr>
+        <tr>
+          <td><code>.docx</code></td>
+          <td>Atti processuali prodotti in forma definitiva, template dello studio</td>
+          <td>Allegare per lavorarci (modifica, analisi) o usare la skill <code>docx</code>. Il kit può leggere e riscrivere documenti Word.</td>
+        </tr>
+        <tr>
+          <td><code>.html</code></td>
+          <td>Guide interne, riferimenti normativi strutturati, pagine di studio</td>
+          <td>Allegare o aprire come riferimento. Il kit legge il testo strutturato.</td>
+        </tr>
+        <tr>
+          <td><code>.txt</code></td>
+          <td>Appunti veloci, trascrizioni, note grezze</td>
+          <td>Leggibile direttamente. Consigliabile convertire in <code>.md</code> per i contenuti che devono restare nel sistema.</td>
+        </tr>
+      </table>
+
+      <h3>Come usare i documenti non-MD nel workflow</h3>
+
+      <div class="steps">
+        <div class="step">
+          <div class="step-num">1</div>
+          <div class="step-content">
+            <h4>Ricevi un'ordinanza cautelare (PDF)</h4>
+            <p>Salvala in <code>penalista-atti/documenti-ricevuti/</code> con nome descrittivo: <code>ordinanza-rossi-20240310.pdf</code>. Poi in conversazione: <em>"Allego l'ordinanza cautelare di Rossi — analizza i gravi indizi e le esigenze cautelari"</em> + <code>/cautelare</code>. Il kit legge il PDF e costruisce la strategia di riesame.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-num">2</div>
+          <div class="step-content">
+            <h4>Produci una memoria difensiva (DOCX)</h4>
+            <p>Usa <code>/atti → memoria 415-bis</code>. Il kit genera la bozza in testo strutturato. Per convertirla in DOCX formattato, usa la skill <code>docx</code> o salva manualmente. Annota il link nel fascicolo MD: <code>- [[memoria-rossi-415bis-20240315.docx]]</code>.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-num">3</div>
+          <div class="step-content">
+            <h4>Carica il codice penale aggiornato (PDF)</h4>
+            <p>Scarica il testo consolidato da Normattiva, salvalo in <code>penalista-fonti/codice-penale-2026.pdf</code>. Quando lavori su un'analisi che richiede il testo preciso di un articolo: allega il PDF e di' <em>"Basati sul testo del c.p. allegato"</em>. Il kit cita l'articolo esattamente come scritto.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-num">4</div>
+          <div class="step-content">
+            <h4>Salva una sentenza CEDU (PDF) e collegala al fascicolo</h4>
+            <p>Salva il PDF in <code>penalista-giurisprudenza/cedu-torreggiani-2013.pdf</code>. Crea anche una nota MD <code>cedu-torreggiani-2013.md</code> con la massima e il principio. Linkala dal fascicolo: <code>→ [[cedu-torreggiani-2013]]</code>. La nota MD si carica automaticamente; il PDF si allega quando serve il testo integrale.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="alert orange">
+        <span class="alert-icon">⚠️</span>
+        <p><strong>PDF e DOCX non si collegano automaticamente</strong> via wikilinks — il kit non "naviga" da un PDF all'altro. Per questo il consiglio è: crea sempre una <em>nota riassuntiva</em> in <code>.md</code> per ogni documento importante che ricevi, con la massima essenziale e il link al file originale. La nota MD entra nella rete di conoscenza; il PDF originale è l'archivio di riferimento.</p>
+      </div>
+    </section>
+
+    <!-- 3. Struttura cartelle -->
+    <section id="struttura">
+      <div class="section-header">
+        <div class="section-num blue">3</div>
         <div>
           <div class="section-title">Struttura delle cartelle</div>
           <div class="section-sub">Cosa va dove e perché</div>
@@ -381,36 +471,52 @@
       <div class="folder-tree">
 <span class="folder">📁 Penale Italia/</span>  <span class="comment">← la tua cartella di lavoro</span>
 │
-├── <span class="highlight">INDEX.md</span>          <span class="comment">← mappa dello studio: fascicoli attivi, scadenze</span>
-├── <span class="highlight">SISTEMA_MEMORIA.md</span> <span class="comment">← regole del sistema (leggere all'inizio)</span>
+├── <span class="highlight">INDEX.md</span>               <span class="comment">← mappa studio: fascicoli attivi, scadenze urgenti</span>
+├── <span class="highlight">SISTEMA_MEMORIA.md</span>    <span class="comment">← regole del sistema (leggere all'inizio)</span>
+├── <span class="highlight">ISTRUZIONI_PROGETTO.md</span> <span class="comment">← base di conoscenza procedurale del kit</span>
 │
-├── <span class="folder">📁 penalista-atti/</span>
-│   ├── <span class="highlight">rossi-2024-corruzione.md</span>    <span class="comment">← fascicolo Rossi</span>
+├── <span class="folder">📁 penalista-atti/</span>        <span class="comment">← fascicoli attivi + documenti ricevuti</span>
+│   ├── <span class="highlight">rossi-2024-corruzione.md</span>       <span class="comment">← fascicolo .md (rete di conoscenza)</span>
 │   ├── <span class="highlight">bianchi-2024-bancarotta.md</span>
-│   └── <span class="file">memoria-rossi-415bis-20240315.docx</span>
+│   ├── <span class="file">ordinanza-rossi-20240310.pdf</span>    <span class="comment">← documento ricevuto (PDF)</span>
+│   ├── <span class="file">cnr-bianchi-pf-bologna.pdf</span>      <span class="comment">← CNR della PG</span>
+│   └── <span class="folder">📁 documenti-ricevuti/</span>           <span class="comment">← atti notificati, ordinanze, sentenze ricevute</span>
+│       ├── <span class="file">ordinanza-gip-20240310.pdf</span>
+│       └── <span class="file">avviso-415bis-rossi.pdf</span>
 │
-├── <span class="folder">📁 penalista-giurisprudenza/</span>
-│   ├── <span class="highlight">cass-sez6-corruzione-2024.md</span>  <span class="comment">← sentenze salvate</span>
-│   ├── <span class="highlight">cedu-art5-detenzione.md</span>
-│   └── <span class="file">orientamenti-corruzione.md</span>
+├── <span class="folder">📁 penalista-giurisprudenza/</span>  <span class="comment">← note giurisprudenziali + PDF sentenze</span>
+│   ├── <span class="highlight">cass-sez6-corruzione-2024.md</span>  <span class="comment">← nota MD (massima + principio + link al fascicolo)</span>
+│   ├── <span class="highlight">cedu-art3-sovraffollamento.md</span>  <span class="comment">← nota CEDU</span>
+│   ├── <span class="file">cedu-torreggiani-2013.pdf</span>       <span class="comment">← sentenza originale HUDOC</span>
+│   └── <span class="file">massimario-cass-corruzione.pdf</span>  <span class="comment">← rassegna Massimario</span>
 │
-├── <span class="folder">📁 penalista-impugnazioni/</span>
-│   ├── <span class="file">appello-rossi-20240601.docx</span>
-│   └── <span class="file">ricorso-cassazione-verdi.docx</span>
+├── <span class="folder">📁 penalista-impugnazioni/</span>  <span class="comment">← atti di impugnazione prodotti</span>
+│   ├── <span class="highlight">appello-rossi-20240601.md</span>      <span class="comment">← bozza e note strategia</span>
+│   ├── <span class="file">appello-rossi-20240601.docx</span>    <span class="comment">← versione definitiva Word</span>
+│   └── <span class="file">ricorso-cassazione-verdi.pdf</span>   <span class="comment">← copia depositata</span>
 │
-├── <span class="folder">📁 penalista-memorie/</span>
-│   └── <span class="file">memoria-415bis-rossi.docx</span>
+├── <span class="folder">📁 penalista-memorie/</span>    <span class="comment">← memorie difensive</span>
+│   ├── <span class="highlight">memoria-rossi-415bis.md</span>       <span class="comment">← contenuto e note</span>
+│   └── <span class="file">memoria-rossi-415bis.docx</span>     <span class="comment">← versione Word definitiva</span>
 │
-├── <span class="folder">📁 penalista-pareri/</span>
-│   └── <span class="file">parere-231-azienda-xyz.md</span>
+├── <span class="folder">📁 penalista-pareri/</span>     <span class="comment">← pareri pro veritate</span>
+│   ├── <span class="highlight">parere-231-azienda-xyz.md</span>
+│   └── <span class="file">parere-231-azienda-xyz.pdf</span>    <span class="comment">← versione firmata e consegnata</span>
 │
 ├── <span class="folder">📁 penalista-scadenze/</span>
-│   └── <span class="highlight">SCADENZIARIO.md</span>  <span class="comment">← hub centrale di tutte le scadenze</span>
+│   └── <span class="highlight">SCADENZIARIO.md</span>       <span class="comment">← hub centrale di tutte le scadenze</span>
 │
-└── <span class="folder">📁 penalista-fonti/</span>   <span class="comment">← AGGIUNGERE MANUALMENTE</span>
-    ├── <span class="file">codice-penale.pdf</span>    <span class="comment">← da Normattiva</span>
-    ├── <span class="file">codice-cpp.pdf</span>
-    └── <span class="file">dlgs-231-2001.pdf</span>
+└── <span class="folder">📁 penalista-fonti/</span>     <span class="comment">← testi normativi ufficiali (AGGIUNGERE MANUALMENTE)</span>
+    ├── <span class="file">codice-penale-2026-05.pdf</span>    <span class="comment">← da Normattiva — aggiornare dopo riforme</span>
+    ├── <span class="file">codice-cpp-2026-05.pdf</span>
+    ├── <span class="file">dlgs-231-2001.pdf</span>
+    ├── <span class="file">dlgs-74-2000-reati-fiscali.pdf</span>
+    └── <span class="file">ordinamento-penitenziario.pdf</span>
+      </div>
+
+      <div class="alert green">
+        <span class="alert-icon">✅</span>
+        <p><strong>La regola del doppio file:</strong> per ogni documento importante (sentenza, ordinanza, atto prodotto), mantieni <strong>due versioni</strong>: un file <code>.md</code> con la nota riassuntiva che entra nella rete di conoscenza, e il file originale (PDF/DOCX) come archivio di riferimento. I due si complementano.</p>
       </div>
 
       <div class="alert orange">
@@ -432,10 +538,10 @@
       </div>
     </section>
 
-    <!-- 3. Aprire un fascicolo -->
+    <!-- 4. Aprire un fascicolo -->
     <section id="fascicolo">
       <div class="section-header">
-        <div class="section-num purple">3</div>
+        <div class="section-num purple">4</div>
         <div>
           <div class="section-title">Aprire un fascicolo digitale</div>
           <div class="section-sub">La procedura standard per ogni nuovo cliente</div>
