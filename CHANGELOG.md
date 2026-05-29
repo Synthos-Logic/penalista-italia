@@ -5,6 +5,16 @@ Formato basato su [Keep a Changelog](https://keepachangelog.com/it/1.0.0/).
 
 ---
 
+## [1.1.0] — 2026-05-29
+
+### Aggiunto
+- 8 slash commands: `/strategia`, `/atti`, `/scadenze`, `/cautelare`, `/prescrizione`, `/fascicolo`, `/versione`, `/aiuto`
+- Comando `/prescrizione` con calcolo guidato doppio regime ante/post Bonafede
+- Comando `/fascicolo` per creazione automatica fascicolo nel sistema di memoria wikilinks
+- Comando `/aiuto` con riferimento completo e esempi d'uso pratici
+
+---
+
 ## [1.0.0] — 2026-05-29
 
 ### Prima release pubblica
@@ -22,7 +32,7 @@ Formato basato su [Keep a Changelog](https://keepachangelog.com/it/1.0.0/).
 - Indagini preliminari → udienza preliminare → dibattimento → impugnazioni → Cassazione
 - Riti speciali: abbreviato, patteggiamento, messa alla prova, direttissimo, immediato
 - Misure cautelari personali e reali
-- Nullità e inutilizzabilità processuali (artt. 177-191 c.p.p.)
+- Nullità e inutilizzabilità processuali (artt. 177–191 c.p.p.)
 - Intercettazioni e captatore informatico
 - Investigazioni difensive (artt. 391-bis ss. c.p.p.)
 - Improcedibilità ex art. 344-bis c.p.p. (Riforma Cartabia)
@@ -33,11 +43,7 @@ Formato basato su [Keep a Changelog](https://keepachangelog.com/it/1.0.0/).
 
 ## Roadmap
 
-### [1.1.0] — prossima release
-- Slash commands: `/strategia`, `/riesame`, `/scadenze`, `/prescrizione`, `/cautelare`
-- Template fascicolo con generazione automatica struttura cartelle
-- Skill `penalista-231` dedicata
-
-### [1.2.0]
-- Integrazione ricerca giurisprudenziale (Cassazione penale)
+### [1.2.0] — prossima release
+- Integrazione ricerca giurisprudenziale Cassazione penale
 - Skill `penalista-esecuzione` per diritto penitenziario e Tribunale di Sorveglianza
+- Screenshot guida installazione
