@@ -60,23 +60,41 @@ Vedrai la notifica **"Penalista Italia è installato e pronto all'uso"** insieme
 
 ---
 
-## Passo 6 — Configura i dati dello studio
+## Passo 6 — Configura i dati del tuo studio
 
-Clicca sull'icona **⚙️** accanto al plugin installato e compila:
+Per permettere a Claude di compilare correttamente le intestazioni di ogni atto (nome, foro, tribunale), devi inserire i tuoi dati in un file di configurazione.
 
-| Campo | Descrizione | Esempio |
-|---|---|---|
-| Nome e cognome | Il tuo nome per le intestazioni degli atti | Mario Rossi |
-| Foro di iscrizione | Il tuo Ordine di appartenenza | Milano |
-| Numero iscrizione | Numero all'Albo | 12345 |
-| Tribunale principale | Il tribunale dove lavori più spesso | Tribunale di Milano |
-| Cassazionista | Iscritto all'Albo Speciale? | SI / NO |
+**Come trovare il file:**
+
+Dopo l'installazione del plugin, il file si trova nella cartella di Claude Cowork sul tuo computer:
+
+- **Mac:** `~/.claude/plugins/penalista-italia/CLAUDE.md`
+  *(apri Finder → Vai alla cartella... → incolla il percorso)*
+- **Windows:** `%USERPROFILE%\.claude\plugins\penalista-italia\CLAUDE.md`
+
+Apri il file con qualsiasi editor di testo (TextEdit su Mac, Blocco Note su Windows) e compila i campi:
+
+```
+AVVOCATO:          Avv. Mario Rossi
+FORO:              Foro di Milano
+N. ISCRIZIONE:     12345
+TRIBUNALE:         Tribunale Ordinario di Milano
+CASSAZIONISTA:     NO
+```
+
+Salva il file. Da quel momento Claude userà questi dati in tutte le intestazioni degli atti.
+
+> **Nota:** questo file è locale sul tuo computer — non viene mai pubblicato online.
 
 ---
 
 ## Passo 7 — Attiva sincronizzazione automatica
 
-Per ricevere aggiornamenti automatici: **Personalizza** → **Sfoglia plugin** → **Personale** → clicca **…** accanto a *penalista-italia* → attiva **Sincronizza automaticamente**.
+Per ricevere aggiornamenti del plugin senza doverlo reinstallare manualmente:
+
+**Personalizza** → **Sfoglia plugin** → **Personale** → clicca **…** accanto a *penalista-italia* → attiva **Sincronizza automaticamente**
+
+Da quel momento, ogni aggiornamento pubblicato su GitHub viene scaricato automaticamente da Cowork.
 
 ---
 
