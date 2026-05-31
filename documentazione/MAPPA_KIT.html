@@ -1,0 +1,1124 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kit Penalista Italiano — Mappa + Guida Installazione</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background: #0f1117; color: #e0e0e0; min-height: 100vh; padding: 0; }
+
+  /* NAV */
+  .nav { position: sticky; top: 0; z-index: 100; background: #0f1117ee; backdrop-filter: blur(12px); border-bottom: 1px solid #1e2130; padding: 12px 20px; display: flex; gap: 8px; justify-content: center; flex-wrap: wrap; }
+  .nav a { color: #888; text-decoration: none; font-size: 0.82rem; padding: 6px 16px; border-radius: 20px; border: 1px solid transparent; transition: all 0.2s; }
+  .nav a:hover, .nav a.active { color: #fff; border-color: #3b82f6; background: #3b82f620; }
+
+  .container { max-width: 1200px; margin: 0 auto; padding: 40px 20px; }
+
+  h1 { font-size: 2rem; font-weight: 300; color: #fff; margin-bottom: 8px; letter-spacing: -0.5px; }
+  .subtitle { color: #888; font-size: 0.95rem; margin-bottom: 48px; }
+
+  /* VERSION BADGE */
+  .version-badge { display: inline-flex; align-items: center; gap: 8px; background: #10b98115; border: 1px solid #10b98133; border-radius: 20px; padding: 4px 14px; font-size: 0.75rem; color: #34d399; margin-bottom: 12px; }
+  .version-badge .v { font-weight: 700; }
+  .version-badge .date { color: #6ee7b780; }
+
+  /* KB STYLES */
+  .kb-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; margin-bottom: 32px; }
+  .kb-card { background: #1a1d27; border: 1px solid #2a2d3a; border-radius: 10px; padding: 20px; }
+  .kb-card::before { content: ''; display: block; height: 2px; border-radius: 2px; margin-bottom: 14px; }
+  .kb-meta::before { background: linear-gradient(90deg, #6366f1, #818cf8); }
+  .kb-norm::before { background: linear-gradient(90deg, #0ea5e9, #38bdf8); }
+  .kb-giur::before { background: linear-gradient(90deg, #f59e0b, #fbbf24); }
+  .kb-dott::before { background: linear-gradient(90deg, #8b5cf6, #a78bfa); }
+  .kb-prassi::before { background: linear-gradient(90deg, #10b981, #34d399); }
+  .kb-agg::before { background: linear-gradient(90deg, #ec4899, #f472b6); }
+  .kb-card h4 { font-size: 0.85rem; font-weight: 600; color: #fff; margin-bottom: 4px; }
+  .kb-card .kb-path { font-family: 'SF Mono', 'Fira Code', monospace; font-size: 0.7rem; color: #555; margin-bottom: 10px; display: block; }
+  .kb-card p { font-size: 0.78rem; color: #888; line-height: 1.5; }
+  .kb-badge { display: inline-block; background: #fbbf2420; border: 1px solid #fbbf2440; border-radius: 4px; padding: 2px 8px; font-size: 0.68rem; color: #fbbf24; margin-top: 8px; }
+  .kb-badge.green { background: #10b98120; border-color: #10b98140; color: #34d399; }
+
+  .hierarchy { background: #12141c; border: 1px solid #1e2130; border-radius: 10px; padding: 24px; margin: 24px 0; }
+  .hierarchy h4 { color: #fff; font-size: 0.9rem; margin-bottom: 16px; }
+  .hier-row { display: flex; align-items: center; gap: 12px; padding: 8px 0; border-bottom: 1px solid #1a1d2744; font-size: 0.82rem; }
+  .hier-row:last-child { border-bottom: none; }
+  .hier-level { width: 28px; height: 28px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 0.8rem; flex-shrink: 0; }
+  .l1 { background: #ef444430; color: #f87171; border: 1px solid #ef444460; }
+  .l2 { background: #f59e0b30; color: #fbbf24; border: 1px solid #f59e0b60; }
+  .l3 { background: #3b82f630; color: #60a5fa; border: 1px solid #3b82f660; }
+  .l4 { background: #8b5cf630; color: #a78bfa; border: 1px solid #8b5cf660; }
+  .l5 { background: #6b728030; color: #9ca3af; border: 1px solid #6b728060; }
+  .hier-label { color: #ccc; flex: 1; }
+  .hier-note { color: #555; font-size: 0.75rem; }
+
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 20px; margin-bottom: 48px; }
+
+  .card { background: #1a1d27; border: 1px solid #2a2d3a; border-radius: 12px; padding: 28px; transition: all 0.2s; position: relative; overflow: hidden; }
+  .card:hover { border-color: #4a4d5a; transform: translateY(-2px); }
+  .card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px; }
+
+  .card-atti::before { background: linear-gradient(90deg, #3b82f6, #60a5fa); }
+  .card-memorie::before { background: linear-gradient(90deg, #8b5cf6, #a78bfa); }
+  .card-impugnazioni::before { background: linear-gradient(90deg, #ef4444, #f87171); }
+  .card-giurisprudenza::before { background: linear-gradient(90deg, #f59e0b, #fbbf24); }
+  .card-pareri::before { background: linear-gradient(90deg, #10b981, #34d399); }
+  .card-scadenze::before { background: linear-gradient(90deg, #ec4899, #f472b6); }
+
+  .card-icon { font-size: 1.8rem; margin-bottom: 16px; }
+  .card h2 { font-size: 1.1rem; font-weight: 600; color: #fff; margin-bottom: 8px; }
+  .card-name { font-family: 'SF Mono', 'Fira Code', monospace; font-size: 0.75rem; color: #666; margin-bottom: 14px; display: block; }
+  .card p { font-size: 0.88rem; line-height: 1.6; color: #aaa; margin-bottom: 16px; }
+
+  .tag-list { display: flex; flex-wrap: wrap; gap: 6px; }
+  .tag { background: #252836; border: 1px solid #333; border-radius: 6px; padding: 3px 10px; font-size: 0.72rem; color: #999; }
+
+  .section-title { font-size: 1.3rem; font-weight: 400; color: #fff; margin-bottom: 24px; padding-bottom: 12px; border-bottom: 1px solid #2a2d3a; }
+
+  .doc-structure { background: #1a1d27; border: 1px solid #2a2d3a; border-radius: 12px; padding: 32px; margin-bottom: 48px; }
+  .tree { font-family: 'SF Mono', 'Fira Code', monospace; font-size: 0.82rem; line-height: 2; color: #aaa; }
+  .tree .folder { color: #fbbf24; }
+  .tree .skill-ref { color: #60a5fa; font-style: italic; }
+  .tree .highlight { color: #34d399; font-weight: 600; }
+
+  .flow { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 12px; margin-bottom: 48px; }
+  .flow-step { background: #1a1d27; border: 1px solid #2a2d3a; border-radius: 10px; padding: 20px 16px; text-align: center; position: relative; }
+  .flow-step .num { font-size: 2rem; font-weight: 700; color: #333; margin-bottom: 8px; }
+  .flow-step .label { font-size: 0.82rem; color: #ccc; line-height: 1.4; }
+
+  .footer { text-align: center; padding: 40px 0; color: #444; font-size: 0.8rem; border-top: 1px solid #1a1d27; }
+  .footer a { color: #60a5fa; text-decoration: none; }
+
+  /* GUIDA STYLES */
+  .guide-section { scroll-margin-top: 60px; }
+
+  .step-block { background: #1a1d27; border: 1px solid #2a2d3a; border-radius: 12px; padding: 32px; margin-bottom: 24px; position: relative; }
+  .step-block.highlight-step { border-color: #3b82f644; }
+
+  .step-number { display: inline-flex; align-items: center; justify-content: center; width: 36px; height: 36px; border-radius: 50%; background: #3b82f6; color: #fff; font-weight: 700; font-size: 1rem; margin-bottom: 16px; }
+  .step-number.green { background: #10b981; }
+  .step-number.amber { background: #f59e0b; }
+  .step-number.red { background: #ef4444; }
+  .step-number.purple { background: #8b5cf6; }
+
+  .step-title { font-size: 1.1rem; font-weight: 600; color: #fff; margin-bottom: 12px; }
+
+  .step-text { font-size: 0.9rem; line-height: 1.8; color: #bbb; }
+  .step-text strong { color: #fff; }
+  .step-text em { color: #fbbf24; font-style: normal; }
+
+  .action-box { background: #12141c; border: 1px solid #252836; border-radius: 8px; padding: 16px 20px; margin: 16px 0; font-family: 'SF Mono', 'Fira Code', monospace; font-size: 0.82rem; color: #60a5fa; line-height: 1.8; overflow-x: auto; }
+  .action-box .comment { color: #555; }
+  .action-box .highlight { color: #34d399; }
+  .action-box .warn { color: #fbbf24; }
+
+  .tip-box { background: #10b98115; border: 1px solid #10b98133; border-radius: 8px; padding: 16px 20px; margin: 16px 0; font-size: 0.85rem; color: #6ee7b7; line-height: 1.6; }
+  .tip-box::before { content: 'SUGGERIMENTO'; display: block; font-weight: 700; font-size: 0.7rem; letter-spacing: 1px; margin-bottom: 6px; color: #34d399; }
+
+  .warn-box { background: #f59e0b12; border: 1px solid #f59e0b33; border-radius: 8px; padding: 16px 20px; margin: 16px 0; font-size: 0.85rem; color: #fcd34d; line-height: 1.6; }
+  .warn-box::before { content: 'ATTENZIONE'; display: block; font-weight: 700; font-size: 0.7rem; letter-spacing: 1px; margin-bottom: 6px; color: #f59e0b; }
+
+  .screenshot-placeholder { background: #12141c; border: 2px dashed #2a2d3a; border-radius: 10px; padding: 40px 20px; text-align: center; color: #444; font-size: 0.85rem; margin: 16px 0; }
+
+  .checklist { list-style: none; padding: 0; margin: 16px 0; }
+  .checklist li { padding: 8px 0 8px 32px; position: relative; font-size: 0.88rem; color: #bbb; line-height: 1.5; border-bottom: 1px solid #1a1d2744; }
+  .checklist li::before { content: '☐'; position: absolute; left: 4px; top: 8px; font-size: 1rem; color: #555; }
+  .checklist li.done::before { content: '☑'; color: #34d399; }
+
+  .vocab-table { width: 100%; border-collapse: collapse; margin: 16px 0; }
+  .vocab-table th { text-align: left; padding: 10px 14px; background: #12141c; color: #888; font-weight: 600; font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.5px; border-bottom: 1px solid #252836; }
+  .vocab-table td { padding: 10px 14px; border-bottom: 1px solid #1a1d27; font-size: 0.85rem; color: #bbb; vertical-align: top; }
+  .vocab-table td:first-child { color: #60a5fa; font-weight: 600; white-space: nowrap; }
+
+  .example-chat { background: #12141c; border-radius: 10px; overflow: hidden; margin: 16px 0; }
+  .chat-msg { padding: 14px 20px; font-size: 0.85rem; line-height: 1.6; }
+  .chat-user { background: #1a2332; color: #93c5fd; border-left: 3px solid #3b82f6; }
+  .chat-user::before { content: 'TU SCRIVI:'; display: block; font-size: 0.65rem; font-weight: 700; letter-spacing: 1px; color: #3b82f6; margin-bottom: 4px; }
+  .chat-claude { background: #1a1d27; color: #ccc; border-left: 3px solid #8b5cf6; }
+  .chat-claude::before { content: 'CLAUDE RISPONDE:'; display: block; font-size: 0.65rem; font-weight: 700; letter-spacing: 1px; color: #8b5cf6; margin-bottom: 4px; }
+
+  .divider { height: 1px; background: linear-gradient(90deg, transparent, #2a2d3a, transparent); margin: 64px 0; }
+
+  .toc { background: #1a1d27; border: 1px solid #2a2d3a; border-radius: 12px; padding: 28px; margin-bottom: 48px; }
+  .toc h3 { color: #fff; font-size: 1rem; margin-bottom: 16px; }
+  .toc a { display: block; color: #888; text-decoration: none; font-size: 0.85rem; padding: 6px 0; border-bottom: 1px solid #1a1d2744; transition: color 0.2s; }
+  .toc a:hover { color: #60a5fa; }
+  .toc a .toc-num { color: #3b82f6; font-weight: 600; margin-right: 8px; }
+
+  @media (max-width: 600px) {
+    .grid { grid-template-columns: 1fr; }
+    h1 { font-size: 1.5rem; }
+    .container { padding: 20px 12px; }
+    .nav { padding: 8px 12px; }
+    .nav a { font-size: 0.75rem; padding: 4px 10px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- NAVIGATION -->
+<nav class="nav">
+  <a href="#mappa" class="active">Mappa Kit</a>
+  <a href="#kb">Knowledge Base</a>
+  <a href="#schede-reato">Schede Reato</a>
+  <a href="#guida">Guida Passo-Passo</a>
+  <a href="#vocabolario">Vocabolario</a>
+  <a href="#primo-fascicolo">Primo Fascicolo</a>
+  <a href="#esempi">Esempi d'Uso</a>
+  <a href="#faq">FAQ</a>
+</nav>
+
+<div class="container">
+
+  <!-- ============================================================ -->
+  <!-- SEZIONE 1: MAPPA KIT (quella che c'era già) -->
+  <!-- ============================================================ -->
+  <div id="mappa" class="guide-section">
+
+  <div class="version-badge"><span class="v">v2.1</span><span class="date">Maggio 2026</span></div>
+  <h1>Kit Penalista Italiano</h1>
+  <p class="subtitle">6 skill Cowork · Knowledge Base giurisprudenziale · template documentale — pronto per la personalizzazione</p>
+
+  <h3 class="section-title">Le 6 skill</h3>
+  <div class="grid">
+
+    <div class="card card-atti">
+      <div class="card-icon">📂</div>
+      <h2>Analisi Atti Processuali</h2>
+      <span class="card-name">penalista-atti</span>
+      <p>Schedatura e analisi critica di informative, ordinanze cautelari, decreti, perizie, intercettazioni. Produce: scheda fascicolo, timeline fatti, matrice prove, segnalazione vizi procedurali.</p>
+      <div class="tag-list">
+        <span class="tag">CNR</span>
+        <span class="tag">informativa</span>
+        <span class="tag">intercettazioni</span>
+        <span class="tag">perizie</span>
+        <span class="tag">nullità</span>
+        <span class="tag">inutilizzabilità</span>
+      </div>
+    </div>
+
+    <div class="card card-memorie">
+      <div class="card-icon">✍️</div>
+      <h2>Memorie Difensive</h2>
+      <span class="card-name">penalista-memorie</span>
+      <p>Redazione di memorie 415-bis, note d'udienza, eccezioni preliminari, liste testi art. 468, conclusioni scritte. Template per ogni fase processuale con stile forense rigoroso.</p>
+      <div class="tag-list">
+        <span class="tag">memoria 415-bis</span>
+        <span class="tag">note udienza</span>
+        <span class="tag">lista testi</span>
+        <span class="tag">conclusioni</span>
+        <span class="tag">eccezioni</span>
+      </div>
+    </div>
+
+    <div class="card card-impugnazioni">
+      <div class="card-icon">⚖️</div>
+      <h2>Impugnazioni</h2>
+      <span class="card-name">penalista-impugnazioni</span>
+      <p>Appello penale, riesame (art. 309), appello cautelare, ricorso per Cassazione, opposizione a decreto penale. Struttura, motivi tassativi, regole di inammissibilità.</p>
+      <div class="tag-list">
+        <span class="tag">appello</span>
+        <span class="tag">riesame</span>
+        <span class="tag">Cassazione</span>
+        <span class="tag">art. 606</span>
+        <span class="tag">specificità motivi</span>
+      </div>
+    </div>
+
+    <div class="card card-giurisprudenza">
+      <div class="card-icon">🔍</div>
+      <h2>Ricerca Giurisprudenziale</h2>
+      <span class="card-name">penalista-giurisprudenza</span>
+      <p>Mappatura orientamenti, analisi sentenze caricate, rassegne tematiche, individuazione contrasti tra sezioni. Framework di ricerca per banche dati con parole chiave mirate.</p>
+      <div class="tag-list">
+        <span class="tag">Sez. Unite</span>
+        <span class="tag">orientamenti</span>
+        <span class="tag">contrasti</span>
+        <span class="tag">CEDU</span>
+        <span class="tag">[VERIFICARE]</span>
+      </div>
+    </div>
+
+    <div class="card card-pareri">
+      <div class="card-icon">📋</div>
+      <h2>Pareri Pro Veritate</h2>
+      <span class="card-name">penalista-pareri</span>
+      <p>Pareri pro veritate, consulenze legali scritte, valutazioni rischio penale, due diligence penale. Struttura completa con sussunzione, analisi rischi, suggerimenti operativi.</p>
+      <div class="tag-list">
+        <span class="tag">parere</span>
+        <span class="tag">risk assessment</span>
+        <span class="tag">qualificazione giuridica</span>
+        <span class="tag">prognosi</span>
+      </div>
+    </div>
+
+    <div class="card card-scadenze">
+      <div class="card-icon">⏰</div>
+      <h2>Termini e Scadenze</h2>
+      <span class="card-name">penalista-scadenze</span>
+      <p>Calcolo termini impugnazione, custodia cautelare, prescrizione (inclusa riforma Cartabia), termini indagini. Prospetti scadenze per fascicolo con livello di affidabilità.</p>
+      <div class="tag-list">
+        <span class="tag">prescrizione</span>
+        <span class="tag">custodia cautelare</span>
+        <span class="tag">sospensione feriale</span>
+        <span class="tag">Cartabia</span>
+      </div>
+    </div>
+
+  </div>
+
+  <h3 class="section-title">Flusso di lavoro tipico su un fascicolo</h3>
+  <div class="flow">
+    <div class="flow-step"><div class="num">1</div><div class="label">Carica gli atti<br><strong style="color:#60a5fa">penalista-atti</strong></div></div>
+    <div class="flow-step"><div class="num">2</div><div class="label">Calcola i termini<br><strong style="color:#f472b6">penalista-scadenze</strong></div></div>
+    <div class="flow-step"><div class="num">3</div><div class="label">Cerca giurisprudenza<br><strong style="color:#fbbf24">penalista-giurispr.</strong></div></div>
+    <div class="flow-step"><div class="num">4</div><div class="label">Redigi la difesa<br><strong style="color:#a78bfa">penalista-memorie</strong></div></div>
+    <div class="flow-step"><div class="num">5</div><div class="label">Impugna se serve<br><strong style="color:#f87171">penalista-impugn.</strong></div></div>
+    <div class="flow-step"><div class="num">6</div><div class="label">Parere al cliente<br><strong style="color:#34d399">penalista-pareri</strong></div></div>
+  </div>
+
+  <h3 class="section-title">Template cartella documentale</h3>
+  <div class="doc-structure">
+    <div class="tree">
+      <span class="highlight">FASCICOLI/</span><br>
+      └── <span class="folder">2026_ROSSI_Truffa_aggravata/</span><br>
+      &nbsp;&nbsp;&nbsp;&nbsp;├── <span class="folder">00_SCHEDA_FASCICOLO/</span> <span class="skill-ref">← penalista-atti + scadenze</span><br>
+      &nbsp;&nbsp;&nbsp;&nbsp;├── <span class="folder">01_ATTI_ACCUSA/</span><br>
+      &nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;├── informativa/<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;├── ordinanza_cautelare/<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;├── perizie_accusa/<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;└── richieste_PM/<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;├── <span class="folder">02_ATTI_DIFESA/</span> <span class="skill-ref">← memorie + impugnazioni</span><br>
+      &nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;├── memorie/<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;├── istanze/<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;├── impugnazioni/<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;├── liste_testi/<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;└── consulenze_tecniche/<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;├── <span class="folder">03_PROVVEDIMENTI_GIUDICE/</span><br>
+      &nbsp;&nbsp;&nbsp;&nbsp;├── <span class="folder">04_INTERCETTAZIONI/</span><br>
+      &nbsp;&nbsp;&nbsp;&nbsp;├── <span class="folder">05_GIURISPRUDENZA/</span> <span class="skill-ref">← penalista-giurisprudenza</span><br>
+      &nbsp;&nbsp;&nbsp;&nbsp;├── <span class="folder">06_PARERI/</span> <span class="skill-ref">← penalista-pareri</span><br>
+      &nbsp;&nbsp;&nbsp;&nbsp;├── <span class="folder">07_CORRISPONDENZA/</span><br>
+      &nbsp;&nbsp;&nbsp;&nbsp;├── <span class="folder">08_VERBALI_UDIENZA/</span><br>
+      &nbsp;&nbsp;&nbsp;&nbsp;└── <span class="folder">09_NOTE_INTERNE/</span><br>
+    </div>
+  </div>
+
+  </div><!-- /mappa -->
+
+  <div class="divider"></div>
+
+  <!-- ============================================================ -->
+  <!-- SEZIONE KB: KNOWLEDGE BASE -->
+  <!-- ============================================================ -->
+  <div id="kb" class="guide-section">
+
+  <div class="version-badge"><span class="v">v2.0</span></div>
+  <h1>Knowledge Base</h1>
+  <p class="subtitle">Il corpus documentale ufficiale del kit — la "verità" su cui ragiona Claude.</p>
+
+  <div class="step-block" style="border-color:#6366f133">
+    <div class="step-title">Cos'è la Knowledge Base</div>
+    <div class="step-text">
+      <p style="margin-bottom:12px">La Knowledge Base è la biblioteca giuridica integrata nel kit. Contiene fonti ufficiali che Claude consulta <strong>prima di rispondere</strong> su questioni giurisprudenziali. Più è ricca, più le risposte sono accurate e verificabili.</p>
+      <p style="margin-bottom:12px">A differenza della conoscenza "a memoria" di Claude (che può contenere errori sui numeri delle sentenze), le fonti nella KB sono documenti reali, verificati, prodotti da organi ufficiali. <strong>Quando Claude cita dalla KB, la fonte è tracciabile e controllabile.</strong></p>
+      <div class="warn-box">
+        I documenti della KB sono presenti nella cartella <strong>KNOWLEDGE_BASE/</strong> del progetto. Quando colleghi la cartella del progetto a Cowork, Claude può leggere direttamente i PDF delle rassegne.
+      </div>
+    </div>
+  </div>
+
+  <h3 class="section-title">Struttura della KB</h3>
+  <div class="kb-grid">
+
+    <div class="kb-card kb-meta">
+      <h4>00 — Meta</h4>
+      <span class="kb-path">KNOWLEDGE_BASE/00_META/</span>
+      <p>Regole per l'AI: gerarchia delle fonti, istruzioni su come pesare Sezioni Unite vs. sezioni semplici vs. merito. Registro di tutti i documenti presenti.</p>
+      <span class="kb-badge green">⚙ Istruzioni per Claude</span>
+    </div>
+
+    <div class="kb-card kb-norm">
+      <h4>01 — Normativa</h4>
+      <span class="kb-path">KNOWLEDGE_BASE/01_NORMATIVA/</span>
+      <p>Codice penale, codice di procedura penale, normativa speciale (D.Lgs. 74/2000, D.Lgs. 231/2001, D.Lgs. 159/2011) con testi aggiornati.</p>
+      <span class="kb-badge">🔜 Da popolare</span>
+    </div>
+
+    <div class="kb-card kb-giur">
+      <h4>02 — Giurisprudenza</h4>
+      <span class="kb-path">KNOWLEDGE_BASE/02_GIURISPRUDENZA/</span>
+      <p>Sezioni Unite Penali, Cassazione per reato e istituto, Corte Costituzionale, CEDU. Cuore della KB. Già presenti le rassegne ufficiali 2023-2024.</p>
+      <span class="kb-badge green">✅ 9 volumi presenti</span>
+    </div>
+
+    <div class="kb-card kb-dott">
+      <h4>03 — Dottrina</h4>
+      <span class="kb-path">KNOWLEDGE_BASE/03_DOTTRINA/</span>
+      <p>Commentari al c.p. e c.p.p., monografie tematiche, riviste specializzate (Cassazione Penale, Riv. it. dir. proc. pen.).</p>
+      <span class="kb-badge">🔜 Da popolare</span>
+    </div>
+
+    <div class="kb-card kb-prassi">
+      <h4>04 — Prassi Studio</h4>
+      <span class="kb-path">KNOWLEDGE_BASE/04_PRASSI_STUDIO/</span>
+      <p>Conoscenza proprietaria: memorie tipo, pareri anonimi, schede tematiche costruite dallo studio nel tempo. La fonte più preziosa e unica.</p>
+      <span class="kb-badge">🔜 Da popolare con casi reali</span>
+    </div>
+
+    <div class="kb-card kb-agg">
+      <h4>05 — Aggiornamento</h4>
+      <span class="kb-path">KNOWLEDGE_BASE/05_AGGIORNAMENTO/</span>
+      <p>Relazioni inaugurali anno giudiziario, circolari CNF, materiali convegni. Fonti "calde" che fotografano il diritto vivente.</p>
+      <span class="kb-badge">🔜 Da popolare</span>
+    </div>
+
+    <div class="kb-card" style="border-color:#10b98155">
+      <div style="height:2px;border-radius:2px;background:linear-gradient(90deg,#10b981,#34d399);margin-bottom:14px"></div>
+      <h4>06 — Schede Reato ★ NUOVO v2.1</h4>
+      <span class="kb-path">KNOWLEDGE_BASE/06_SCHEDE_REATO/</span>
+      <p>Schede operative per reato: elementi costitutivi, pene, prescrizione, linee difensive, giurisprudenza chiave. 13 schede pronte su 8 macro-categorie. La sezione da alimentare dopo ogni fascicolo.</p>
+      <span class="kb-badge green">✅ 13 schede presenti</span>
+    </div>
+
+  </div>
+
+  <h3 class="section-title">Fonti presenti oggi — Massimari ufficiali Corte di Cassazione</h3>
+  <div class="doc-structure">
+    <div class="tree">
+      <span class="highlight">KNOWLEDGE_BASE/02_GIURISPRUDENZA/</span><br><br>
+
+      <span class="folder">cassazione_penale/rassegne_massimario/</span>
+      <span class="skill-ref"> ← Sezioni Penali, Ufficio del Massimario</span><br>
+      &nbsp;&nbsp;├── <span style="color:#fbbf24">2024_Massimario_Penale_VolumeUnico.pdf</span>
+      <span style="color:#555">  (Anno 2024 — volume unico)</span><br>
+      &nbsp;&nbsp;├── <span style="color:#fbbf24">2023_Massimario_Penale_VolumeI.pdf</span>
+      <span style="color:#555">  (Anno 2023 — 252 pp.)</span><br>
+      &nbsp;&nbsp;└── <span style="color:#fbbf24">2023_Massimario_Penale_VolumeII.pdf</span>
+      <span style="color:#555">  (Anno 2023 — 176 pp.)</span><br><br>
+
+      <span class="folder">cassazione_civile/rassegne_annuali/</span>
+      <span class="skill-ref"> ← Sezioni Civili, Ufficio del Massimario</span><br>
+      &nbsp;&nbsp;├── <span style="color:#60a5fa">2024_Massimario_Civile_VolumeI.pdf</span>
+      <span style="color:#555">  (Anno 2024 — Principi diritto sostanziale)</span><br>
+      &nbsp;&nbsp;├── <span style="color:#60a5fa">2024_Massimario_Civile_VolumeII.pdf</span>
+      <span style="color:#555">  (Anno 2024)</span><br>
+      &nbsp;&nbsp;├── <span style="color:#60a5fa">2024_Massimario_Civile_VolumeIII.pdf</span>
+      <span style="color:#555">  (Anno 2024)</span><br>
+      &nbsp;&nbsp;├── <span style="color:#60a5fa">2023_Massimario_Civile_VolumeI.pdf</span>
+      <span style="color:#555">  (Anno 2023 — 320 pp.)</span><br>
+      &nbsp;&nbsp;├── <span style="color:#60a5fa">2023_Massimario_Civile_VolumeII.pdf</span>
+      <span style="color:#555">  (Anno 2023 — 268 pp.)</span><br>
+      &nbsp;&nbsp;└── <span style="color:#60a5fa">2023_Massimario_Civile_VolumeIII.pdf</span>
+      <span style="color:#555">  (Anno 2023 — 288 pp.)</span><br>
+    </div>
+  </div>
+
+  <div class="tip-box">
+    <strong>Perché il Massimario Civile in uno studio penale?</strong> Le rassegne delle Sezioni Civili sono rilevanti per: parte civile nel processo penale (risarcimento ex art. 185 c.p.), principio del ne bis in idem (art. 50 Carta di Nizza), diritti fondamentali CEDU (artt. 6, 7, 8), tutela degli stranieri. L'avvocato penalista che gestisce procedimenti con risvolti patrimoniali o coinvolgenti cittadini stranieri trova in questi volumi giurisprudenza preziosa e altrimenti dispersa.
+  </div>
+
+  <h3 class="section-title">Gerarchia delle fonti — Come Claude deve usarle</h3>
+  <div class="hierarchy">
+    <h4>In ordine decrescente di autorità</h4>
+    <div class="hier-row">
+      <div class="hier-level l1">1</div>
+      <div class="hier-label"><strong style="color:#fff">Sezioni Unite Penali</strong> — principi di diritto vincolanti per tutti i giudici</div>
+      <div class="hier-note">Prevalenza assoluta</div>
+    </div>
+    <div class="hier-row">
+      <div class="hier-level l1">1</div>
+      <div class="hier-label"><strong style="color:#fff">Corte Costituzionale — sentenze ablative</strong> — norma penale abrogata</div>
+      <div class="hier-note">Rende inapplicabile la norma</div>
+    </div>
+    <div class="hier-row">
+      <div class="hier-level l2">2</div>
+      <div class="hier-label"><strong style="color:#ccc">Cassazione Penale — sezioni semplici</strong> + Rassegne Massimario ★</div>
+      <div class="hier-note">Orientamento prevalente</div>
+    </div>
+    <div class="hier-row">
+      <div class="hier-level l3">3</div>
+      <div class="hier-label"><strong style="color:#93c5fd">CEDU / CGUE</strong> — applicazione diretta se incompatibile con norma interna</div>
+      <div class="hier-note">Primauté europea</div>
+    </div>
+    <div class="hier-row">
+      <div class="hier-level l4">4</div>
+      <div class="hier-label"><strong style="color:#c4b5fd">Dottrina</strong> — commentari, monografie, riviste</div>
+      <div class="hier-note">Orienta, non crea diritto</div>
+    </div>
+    <div class="hier-row">
+      <div class="hier-level l5">5</div>
+      <div class="hier-label"><strong style="color:#9ca3af">Giurisprudenza di merito</strong> — Corti d'Appello e Tribunali</div>
+      <div class="hier-note">Prassi locale, non vincolante</div>
+    </div>
+  </div>
+
+  <div class="step-block">
+    <div class="step-title">Come aggiungere documenti alla KB</div>
+    <div class="step-text">
+      <p style="margin-bottom:12px">La KB cresce con il lavoro dello studio. Per aggiungere una nuova fonte:</p>
+      <p style="margin-bottom:8px">1. Copia il PDF nella cartella giusta (es. sentenza Sezioni Unite → <code style="color:#60a5fa">02_GIURISPRUDENZA/sezioni_unite_penali/</code>)</p>
+      <p style="margin-bottom:8px">2. Usa la convenzione di nome: <code style="color:#60a5fa">ANNO_CassPen_n12345_truffa-contrattuale.pdf</code></p>
+      <p style="margin-bottom:8px">3. Aggiorna il <code style="color:#60a5fa">KNOWLEDGE_BASE/00_META/REGISTRO_DOCUMENTI.md</code> con i dati del nuovo documento</p>
+      <p style="margin-bottom:8px">4. Da quel momento Claude potrà consultarlo nelle sessioni di lavoro</p>
+      <div class="tip-box">
+        Puoi anche dire a Claude: "Ho aggiunto il file X nella cartella Y della Knowledge Base. Prendine nota nel registro." Claude aggiornerà il REGISTRO_DOCUMENTI.md automaticamente.
+      </div>
+    </div>
+  </div>
+
+  </div><!-- /kb -->
+
+  <div class="divider"></div>
+
+  <!-- ============================================================ -->
+  <!-- SEZIONE SCHEDE REATO -->
+  <!-- ============================================================ -->
+  <div id="schede-reato" class="guide-section">
+
+  <div class="version-badge"><span class="v">★ NUOVO v2.1</span><span class="date">Maggio 2026</span></div>
+  <h1>Schede Reato</h1>
+  <p class="subtitle">Il patrimonio operativo dello studio — 13 schede pronte su reati comuni, da arricchire con la prassi propria.</p>
+
+  <div class="step-block" style="border-color:#10b98133">
+    <div class="step-title">Cos'è una Scheda Reato e perché è la parte più importante da alimentare</div>
+    <div class="step-text">
+      <p style="margin-bottom:12px">Le Schede Reato sono file <code style="color:#60a5fa">.md</code> che raccolgono, per ogni fattispecie penale, tutto quello che il penalista deve sapere: elementi costitutivi, pene, prescrizione, misure cautelari, linee difensive tipiche, giurisprudenza chiave, e — la parte più preziosa — la <strong>prassi del singolo studio</strong>.</p>
+      <p style="margin-bottom:12px">A differenza dei Massimari ufficiali (fonti fisse), le Schede Reato sono <strong>vive</strong>: crescono con ogni fascicolo chiuso. Dopo ogni caso, l'avvocato aggiunge una riga nella sezione "Prassi dello studio" della scheda corrispondente. Con il tempo diventano il vantaggio competitivo più importante dello studio — una memoria istituzionale che nessun database commerciale può replicare.</p>
+      <div class="tip-box">
+        <strong>Flusso consigliato dopo ogni fascicolo chiuso:</strong> apri la scheda del reato pertinente → aggiungi nella sezione "Prassi dello studio" l'argomento difensivo usato e il risultato → se hai scoperto giurisprudenza nuova, aggiungila nella sezione "Giurisprudenza chiave". 5 minuti di lavoro che valgono oro al prossimo caso simile.
+      </div>
+    </div>
+  </div>
+
+  <h3 class="section-title">Le 8 macro-categorie — 13 schede pronte</h3>
+
+  <div class="kb-grid" style="grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));">
+
+    <div class="kb-card" style="border-color:#f59e0b33">
+      <div style="height:2px;border-radius:2px;background:linear-gradient(90deg,#f59e0b,#fbbf24);margin-bottom:14px"></div>
+      <h4>A — Reati contro il Patrimonio</h4>
+      <span class="kb-path">06_SCHEDE_REATO/A_REATI_PATRIMONIO/</span>
+      <p>Truffa (art. 640), Furto/Rapina/Estorsione (artt. 624, 628, 629), Appropriazione indebita (art. 646), Riciclaggio/Autoriciclaggio (artt. 648-bis, 648-ter.1)</p>
+      <span class="kb-badge green">4 schede ✅</span>
+    </div>
+
+    <div class="kb-card" style="border-color:#ec489933">
+      <div style="height:2px;border-radius:2px;background:linear-gradient(90deg,#ec4899,#f472b6);margin-bottom:14px"></div>
+      <h4>B — Reati contro la Persona</h4>
+      <span class="kb-path">06_SCHEDE_REATO/B_REATI_PERSONA/</span>
+      <p>Maltrattamenti/Stalking (artt. 572, 612-bis), Omicidio e Lesioni stradali (artt. 589-bis, 590-bis). Codice Rosso Rafforzato (L. 168/2023).</p>
+      <span class="kb-badge green">2 schede ✅</span>
+    </div>
+
+    <div class="kb-card" style="border-color:#0ea5e933">
+      <div style="height:2px;border-radius:2px;background:linear-gradient(90deg,#0ea5e9,#38bdf8);margin-bottom:14px"></div>
+      <h4>C — Reati Tributari</h4>
+      <span class="kb-path">06_SCHEDE_REATO/C_REATI_TRIBUTARI/</span>
+      <p>D.Lgs. 74/2000 completo: dichiarazione fraudolenta (artt. 2-3), infedele/omessa (artt. 4-5), emissione fatture false (art. 8), sottrazione fraudolenta (art. 11). Ne bis in idem. Cause non punibilità.</p>
+      <span class="kb-badge green">1 scheda completa ✅</span>
+    </div>
+
+    <div class="kb-card" style="border-color:#6366f133">
+      <div style="height:2px;border-radius:2px;background:linear-gradient(90deg,#6366f1,#818cf8);margin-bottom:14px"></div>
+      <h4>D — Reati contro la PA</h4>
+      <span class="kb-path">06_SCHEDE_REATO/D_REATI_PA/</span>
+      <p>Peculato (art. 314), Concussione (art. 317), Corruzione artt. 318-319-ter, Turbata libertà degli incanti (art. 353). Include nota su abrogazione art. 323 (riforma Nordio 2024).</p>
+      <span class="kb-badge green">1 scheda ✅</span>
+    </div>
+
+    <div class="kb-card" style="border-color:#8b5cf633">
+      <div style="height:2px;border-radius:2px;background:linear-gradient(90deg,#8b5cf6,#a78bfa);margin-bottom:14px"></div>
+      <h4>E — Reati Societari e Fallimentari</h4>
+      <span class="kb-path">06_SCHEDE_REATO/E_REATI_SOCIETARI_FALLIMENTARI/</span>
+      <p>Bancarotta fraudolenta/semplice (artt. 216-217 L.F. / artt. 322-323 CCII), False comunicazioni sociali (artt. 2621-2622 c.c.). Riforma CCII 2022.</p>
+      <span class="kb-badge green">2 schede ✅</span>
+    </div>
+
+    <div class="kb-card" style="border-color:#3b82f633">
+      <div style="height:2px;border-radius:2px;background:linear-gradient(90deg,#3b82f6,#60a5fa);margin-bottom:14px"></div>
+      <h4>F — Reati Informatici</h4>
+      <span class="kb-path">06_SCHEDE_REATO/F_REATI_INFORMATICI/</span>
+      <p>Accesso abusivo (art. 615-ter), Frode informatica (art. 640-ter), Revenge porn (art. 612-ter). Prove digitali, catena di custodia, log di accesso.</p>
+      <span class="kb-badge green">1 scheda ✅</span>
+    </div>
+
+    <div class="kb-card" style="border-color:#10b98133">
+      <div style="height:2px;border-radius:2px;background:linear-gradient(90deg,#10b981,#34d399);margin-bottom:14px"></div>
+      <h4>G — Stupefacenti</h4>
+      <span class="kb-path">06_SCHEDE_REATO/G_STUPEFACENTI/</span>
+      <p>Detenzione/spaccio (art. 73 DPR 309/1990) con fatto di lieve entità (co. 5). Associazione per traffico (art. 74). Distinzione consumatore/spacciatore.</p>
+      <span class="kb-badge green">1 scheda ✅</span>
+    </div>
+
+    <div class="kb-card" style="border-color:#ef444433">
+      <div style="height:2px;border-radius:2px;background:linear-gradient(90deg,#ef4444,#f87171);margin-bottom:14px"></div>
+      <h4>H — Criminalità Organizzata</h4>
+      <span class="kb-path">06_SCHEDE_REATO/H_CRIMINALITA_ORGANIZZATA/</span>
+      <p>Associazione per delinquere (art. 416), Associazione mafiosa (art. 416-bis). Codice Antimafia (D.Lgs. 159/2011). Regime 41-bis. Misure di prevenzione patrimoniali.</p>
+      <span class="kb-badge green">1 scheda ✅</span>
+    </div>
+
+  </div>
+
+  <h3 class="section-title">Cosa mettere dentro ogni Scheda Reato — La struttura standard</h3>
+  <div class="step-block">
+    <div class="step-text">
+      <p style="margin-bottom:16px">Ogni scheda segue 11 sezioni. Le prime 6 sono precompilate nel kit. Le ultime 3 sono quelle che lo studio deve alimentare:</p>
+
+      <table class="vocab-table">
+        <tr><th>#</th><th>Sezione</th><th>Chi compila</th><th>Cosa contiene</th></tr>
+        <tr><td>1</td><td>Identificazione</td><td>Kit (precompilata)</td><td>Norma, categoria, procedibilità, bene giuridico</td></tr>
+        <tr><td>2</td><td>Elementi costitutivi</td><td>Kit (precompilata)</td><td>Condotta, evento, nesso, elemento soggettivo</td></tr>
+        <tr><td>3</td><td>Circostanze</td><td>Kit (precompilata)</td><td>Aggravanti e attenuanti specifiche</td></tr>
+        <tr><td>4</td><td>Pena</td><td>Kit (precompilata)</td><td>Tabella reclusione/multa per ipotesi</td></tr>
+        <tr><td>5</td><td>Prescrizione</td><td>Kit (precompilata)</td><td>Termini + impatto riforma Cartabia</td></tr>
+        <tr><td>6</td><td>Misure cautelari</td><td>Kit (precompilata)</td><td>Custodia cautelare, misure patrimoniali</td></tr>
+        <tr><td>7</td><td>Questioni difensive ricorrenti</td><td>Kit (precompilata) + <strong style="color:#34d399">Studio alimenta</strong></td><td>Linee difensive tipiche + quelle che lo studio ha usato</td></tr>
+        <tr><td>8</td><td>Giurisprudenza chiave</td><td>Kit (bozza) + <strong style="color:#34d399">Studio verifica e arricchisce</strong></td><td>SU, Cassazione — tutte con [VERIFICARE] fino a verifica su banca dati</td></tr>
+        <tr><td>9</td><td>Normativa in KB</td><td>Kit (precompilata)</td><td>Link ai file normativi presenti in KB</td></tr>
+        <tr><td>10</td><td><strong style="color:#34d399">Prassi dello studio ★</strong></td><td><strong style="color:#34d399">Solo lo studio</strong></td><td>Casi gestiti, argomenti rodati, orientamenti del distretto — il vero vantaggio competitivo</td></tr>
+        <tr><td>11</td><td><strong style="color:#34d399">Aggiornamenti recenti ★</strong></td><td><strong style="color:#34d399">Studio aggiorna</strong></td><td>Modifiche normative 2024-2025, sentenze nuove, pendenze SU</td></tr>
+      </table>
+
+      <div class="tip-box" style="margin-top:20px">
+        <strong>Come aggiungere una nuova scheda reato</strong><br>
+        1. Copia il file <code style="color:#60a5fa">06_SCHEDE_REATO/00_README.md</code> — in fondo c'è il template standard<br>
+        2. Crea un nuovo file nella cartella della macro-categoria giusta (es. <code style="color:#60a5fa">A_REATI_PATRIMONIO/ESTAFA.md</code>)<br>
+        3. Compila le sezioni 1-6 con i dati della norma<br>
+        4. Segnala le sentenze da verificare con <strong>[VERIFICARE]</strong><br>
+        5. Di' a Claude: "Ho creato la scheda per il reato X. Aggiorna il REGISTRO_DOCUMENTI."
+      </div>
+    </div>
+  </div>
+
+  <h3 class="section-title">Flusso — Come Claude usa le Schede Reato nel lavoro quotidiano</h3>
+  <div class="flow">
+    <div class="flow-step"><div class="num">1</div><div class="label">Ricevi l'incarico<br><strong style="color:#aaa">es: truffa aggravata</strong></div></div>
+    <div class="flow-step"><div class="num">2</div><div class="label">Claude legge la scheda<br><strong style="color:#fbbf24">A_REATI_PATRIMONIO/<br>TRUFFA.md</strong></div></div>
+    <div class="flow-step"><div class="num">3</div><div class="label">Consulta i Massimari<br><strong style="color:#60a5fa">02_GIURISPRUDENZA/<br>rassegne_massimario/</strong></div></div>
+    <div class="flow-step"><div class="num">4</div><div class="label">Legge la prassi studio<br><strong style="color:#34d399">sezione 10 della scheda</strong></div></div>
+    <div class="flow-step"><div class="num">5</div><div class="label">Produce l'atto<br><strong style="color:#a78bfa">memoria / parere / calcolo</strong></div></div>
+    <div class="flow-step"><div class="num">6</div><div class="label">Fascicolo chiuso → aggiorna<br><strong style="color:#10b981">sezione 10 e 11</strong></div></div>
+  </div>
+
+  </div><!-- /schede-reato -->
+
+  <div class="divider"></div>
+
+  <!-- ============================================================ -->
+  <!-- SEZIONE 2: GUIDA PASSO-PASSO FOR DUMMIES -->
+  <!-- ============================================================ -->
+  <div id="guida" class="guide-section">
+
+  <h1>Guida Passo-Passo</h1>
+  <p class="subtitle">Da zero a operativo in 30 minuti. Nessuna competenza tecnica richiesta.</p>
+
+  <div class="toc">
+    <h3>Indice</h3>
+    <a href="#vocab"><span class="toc-num">0</span> Vocabolario minimo (2 minuti)</a>
+    <a href="#step1"><span class="toc-num">1</span> Scaricare e aprire Claude Desktop (5 min)</a>
+    <a href="#step2"><span class="toc-num">2</span> Creare il primo fascicolo di prova dentro il kit (5 min)</a>
+    <a href="#step3"><span class="toc-num">3</span> Installare le 6 skill del Kit Penalista (10 min)</a>
+    <a href="#step4"><span class="toc-num">4</span> Collegare la cartella Penale-Italia a Cowork (2 min)</a>
+    <a href="#step5"><span class="toc-num">5</span> Primo test: verificare che tutto funzioni (5 min)</a>
+    <a href="#step6"><span class="toc-num">6</span> Creare il primo fascicolo vero (quando serve)</a>
+    <a href="#step7"><span class="toc-num">7</span> Personalizzare e aggiungere il proprio documentale</a>
+  </div>
+
+  <!-- STEP 0: VOCABOLARIO -->
+  <div id="vocabolario" class="guide-section"></div>
+  <div id="vocab" class="step-block">
+    <div class="step-number amber">0</div>
+    <div class="step-title">Vocabolario minimo — le 5 parole che devi conoscere</div>
+    <div class="step-text">
+      <p style="margin-bottom:12px">Prima di tutto: non devi sapere programmare. Non devi sapere niente di informatica. Devi solo capire queste 5 parole:</p>
+
+      <table class="vocab-table">
+        <tr><th>Termine</th><th>Cosa significa in pratica</th></tr>
+        <tr>
+          <td>Cowork</td>
+          <td>Una funzione dell'app Claude Desktop. Pensa a Cowork come a un <strong>praticante molto veloce</strong> che sa leggere documenti, scrivere atti, e fare ricerche — ma a cui devi sempre controllare il lavoro. Si apre dall'app Claude sul tuo computer.</td>
+        </tr>
+        <tr>
+          <td>Skill</td>
+          <td>Un "foglio di istruzioni" che insegna a Claude come fare un lavoro specifico. Senza skill, Claude è generico. <strong>Con le skill del Kit Penalista, Claude sa come si struttura una memoria 415-bis, un ricorso in Cassazione, ecc.</strong> Sono dei file di testo che metti in una cartella.</td>
+        </tr>
+        <tr>
+          <td>Cartella / Folder</td>
+          <td>Le normali cartelle del tuo computer (tipo quelle dove salvi i PDF dei fascicoli). Niente di speciale. Cowork può leggere e scrivere nelle cartelle che gli indichi tu.</td>
+        </tr>
+        <tr>
+          <td>Seleziona cartella</td>
+          <td>Il bottone dentro Cowork per dire: "lavora su questa cartella del mio computer". <strong>È come dire al praticante "ecco, il fascicolo Rossi è in quel cassetto".</strong></td>
+        </tr>
+        <tr>
+          <td>SKILL.md</td>
+          <td>Il file che contiene le istruzioni della skill. Ogni skill è una cartella con dentro un file chiamato SKILL.md. Non devi modificarlo (a meno che tu non voglia personalizzare). Lo copi e basta.</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+
+  <!-- STEP 1 -->
+  <div id="step1" class="step-block highlight-step">
+    <div class="step-number">1</div>
+    <div class="step-title">Scaricare e aprire Claude Desktop</div>
+    <div class="step-text">
+      <p style="margin-bottom:16px"><strong>Se non hai ancora Claude Desktop:</strong></p>
+
+      <p style="margin-bottom:12px">1. Vai su <strong>claude.ai/download</strong> dal tuo browser</p>
+      <p style="margin-bottom:12px">2. Scarica la versione per il tuo sistema (Mac o Windows)</p>
+      <p style="margin-bottom:12px">3. Installalo come qualsiasi altro programma (doppio click, trascina nelle Applicazioni se Mac)</p>
+      <p style="margin-bottom:12px">4. Aprilo e accedi con il tuo account Claude (se non ce l'hai, creane uno su claude.ai)</p>
+      <p style="margin-bottom:24px">5. Devi avere un abbonamento <strong>Claude Pro</strong> (20$/mese) o <strong>Claude Team/Enterprise</strong></p>
+
+      <p style="margin-bottom:16px"><strong>Attivare Cowork:</strong></p>
+
+      <p style="margin-bottom:12px">1. Apri Claude Desktop</p>
+      <p style="margin-bottom:12px">2. In basso a sinistra, cerca il selettore che dice <em>"Chat"</em></p>
+      <p style="margin-bottom:12px">3. Cliccaci e seleziona <em>"Cowork"</em></p>
+      <p style="margin-bottom:12px">4. Se non vedi "Cowork", vai in <strong>Impostazioni → Feature Preview</strong> e attivalo</p>
+
+      <div class="screenshot-placeholder">
+        [ Qui vedresti la schermata di Claude Desktop con il selettore Chat / Cowork in basso a sinistra ]
+      </div>
+
+      <div class="tip-box">
+        Se usi un Mac, potresti dover concedere i permessi di accesso ai file. Quando Claude ti chiede di accedere a una cartella, clicca "Consenti". È come autorizzare qualsiasi altra app a vedere i tuoi documenti.
+      </div>
+    </div>
+  </div>
+
+  <!-- STEP 2 -->
+  <div id="step2" class="step-block">
+    <div class="step-number green">2</div>
+    <div class="step-title">Trovare la cartella FASCICOLI nel kit e creare un fascicolo di prova</div>
+    <div class="step-text">
+      <p style="margin-bottom:16px"><strong>Non devi creare nessuna cartella nuova.</strong> Il kit che hai ricevuto (la cartella <strong>Penale-Italia</strong>) contiene già una cartella <strong>FASCICOLI/</strong> pronta all'uso. È lì che andranno tutti i tuoi fascicoli reali.</p>
+
+      <div class="warn-box">
+        <strong>Posizione corretta della cartella Penale-Italia:</strong> mettila dove vuoi sul tuo computer (Documenti, Desktop, un disco esterno...) — ma non spostarla dopo aver fatto il Passo 4. Claude la cerca dove l'hai indicata la prima volta.
+      </div>
+
+      <p style="margin-bottom:16px">Per familiarizzare, crea un fascicolo di prova dentro <strong>Penale-Italia/FASCICOLI/</strong>:</p>
+
+      <p style="margin-bottom:8px; font-weight:600; color:#fff;">Su Mac:</p>
+      <p style="margin-bottom:8px">1. Apri il <strong>Finder</strong> e naviga fino a <strong>Penale-Italia → FASCICOLI</strong></p>
+      <p style="margin-bottom:8px">2. Tasto destro → <em>Nuova cartella</em> → chiamala <strong>2026_TEST_Prova</strong></p>
+      <p style="margin-bottom:24px">3. Entra in 2026_TEST_Prova e crea le sotto-cartelle del fascicolo (vedi struttura qui sotto)</p>
+
+      <p style="margin-bottom:8px; font-weight:600; color:#fff;">Su Windows:</p>
+      <p style="margin-bottom:8px">1. Apri <strong>Esplora File</strong> e naviga fino a <strong>Penale-Italia → FASCICOLI</strong></p>
+      <p style="margin-bottom:8px">2. Tasto destro → <em>Nuovo → Cartella</em> → chiamala <strong>2026_TEST_Prova</strong></p>
+      <p style="margin-bottom:24px">3. Entra in 2026_TEST_Prova e crea le sotto-cartelle</p>
+
+      <p style="margin-bottom:16px"><strong>Struttura di ogni fascicolo:</strong></p>
+      <div class="action-box">
+        <span class="highlight">Penale-Italia/FASCICOLI/2026_TEST_Prova/</span><br>
+        ├── 00_SCHEDA_FASCICOLO/<br>
+        ├── 01_ATTI_ACCUSA/<br>
+        ├── 02_ATTI_DIFESA/<br>
+        ├── 03_PROVVEDIMENTI_GIUDICE/<br>
+        ├── 04_INTERCETTAZIONI/<br>
+        ├── 05_GIURISPRUDENZA/<br>
+        ├── 06_PARERI/<br>
+        ├── 07_CORRISPONDENZA/<br>
+        ├── 08_VERBALI_UDIENZA/<br>
+        └── 09_NOTE_INTERNE/
+      </div>
+
+      <div class="tip-box">
+        <strong>Risparmia tempo:</strong> non devi creare le sotto-cartelle a mano ogni volta. Una volta collegato il kit (Passo 4), basta dire a Claude: "Crea la struttura cartelle per un nuovo fascicolo: 2026_BIANCHI_Bancarotta" e lui la crea in pochi secondi.
+      </div>
+
+      <div class="warn-box">
+        La convenzione per il nome del fascicolo è: <strong>ANNO_COGNOME_Reato</strong> (es. 2026_ROSSI_Truffa_aggravata). Usala sempre: ti permette di trovare i fascicoli anche senza Claude e mantiene ordinata la cartella nel tempo.
+      </div>
+    </div>
+  </div>
+
+  <!-- STEP 3 -->
+  <div id="step3" class="step-block highlight-step">
+    <div class="step-number red">3</div>
+    <div class="step-title">Installare le 6 skill del Kit Penalista</div>
+    <div class="step-text">
+      <p style="margin-bottom:16px">Questo è il passaggio più "tecnico", ma è semplice: devi copiare 6 cartelle in un punto specifico del tuo computer. Ecco dove:</p>
+
+      <p style="margin-bottom:16px"><strong>Dove vanno le skill:</strong></p>
+
+      <div class="action-box">
+        <span class="comment"><!-- Su Mac: --></span><br>
+        <span class="warn">Mac:</span> /Users/<span class="highlight">[IL_TUO_NOME_UTENTE]</span>/.claude/skills/<br><br>
+        <span class="comment"><!-- Su Windows: --></span><br>
+        <span class="warn">Windows:</span> C:\Users\<span class="highlight">[IL_TUO_NOME_UTENTE]</span>\.claude\skills\
+      </div>
+
+      <p style="margin-bottom:16px"><strong>Come trovare questa cartella:</strong></p>
+
+      <p style="margin-bottom:8px; font-weight:600; color:#fff;">Su Mac:</p>
+      <p style="margin-bottom:8px">1. Apri il <strong>Finder</strong></p>
+      <p style="margin-bottom:8px">2. Nel menu in alto, clicca <strong>Vai → Vai alla cartella...</strong> (oppure premi <em>Cmd + Shift + G</em>)</p>
+      <p style="margin-bottom:8px">3. Incolla questo percorso: <strong style="color:#60a5fa">~/.claude/skills</strong></p>
+      <p style="margin-bottom:8px">4. Premi Invio</p>
+      <p style="margin-bottom:24px">5. Se la cartella "skills" non esiste, creala tu: vai in <strong>~/.claude/</strong> e crea una cartella chiamata <strong>skills</strong></p>
+
+      <p style="margin-bottom:8px; font-weight:600; color:#fff;">Su Windows:</p>
+      <p style="margin-bottom:8px">1. Apri <strong>Esplora File</strong></p>
+      <p style="margin-bottom:8px">2. Nella barra degli indirizzi in alto, incolla: <strong style="color:#60a5fa">%USERPROFILE%\.claude\skills</strong></p>
+      <p style="margin-bottom:8px">3. Premi Invio</p>
+      <p style="margin-bottom:24px">4. Se non esiste, crea le cartelle .claude e poi skills dentro di essa</p>
+
+      <div class="warn-box">
+        Su Mac, la cartella <strong>.claude</strong> è una "cartella nascosta" (inizia con un punto). Nel Finder, premi <strong>Cmd + Shift + .</strong> (punto) per vedere le cartelle nascoste. Su Windows, vai in Visualizza → Elementi nascosti.
+      </div>
+
+      <p style="margin-bottom:16px"><strong>Ora copia le 6 cartelle skill:</strong></p>
+      <p style="margin-bottom:8px">1. Prendi le 6 cartelle del kit che hai ricevuto:</p>
+
+      <div class="action-box">
+        penalista-atti/<br>
+        penalista-memorie/<br>
+        penalista-impugnazioni/<br>
+        penalista-giurisprudenza/<br>
+        penalista-pareri/<br>
+        penalista-scadenze/
+      </div>
+
+      <p style="margin-bottom:8px">2. Copiale (trascina o Copia/Incolla) dentro la cartella <strong>skills</strong> che hai trovato al passaggio precedente</p>
+      <p style="margin-bottom:16px">3. Il risultato finale deve essere così:</p>
+
+      <div class="action-box">
+        <span class="highlight">.claude/skills/</span><br>
+        ├── <span class="warn">penalista-atti/</span><br>
+        │&nbsp;&nbsp;&nbsp;└── SKILL.md<br>
+        ├── <span class="warn">penalista-memorie/</span><br>
+        │&nbsp;&nbsp;&nbsp;└── SKILL.md<br>
+        ├── <span class="warn">penalista-impugnazioni/</span><br>
+        │&nbsp;&nbsp;&nbsp;└── SKILL.md<br>
+        ├── <span class="warn">penalista-giurisprudenza/</span><br>
+        │&nbsp;&nbsp;&nbsp;└── SKILL.md<br>
+        ├── <span class="warn">penalista-pareri/</span><br>
+        │&nbsp;&nbsp;&nbsp;└── SKILL.md<br>
+        └── <span class="warn">penalista-scadenze/</span><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;└── SKILL.md
+      </div>
+
+      <div class="tip-box">
+        Ogni cartella contiene UN solo file: SKILL.md. Non rinominarlo, non spostarlo fuori dalla sua cartella, non cambiare l'estensione. Deve restare esattamente così.
+      </div>
+    </div>
+  </div>
+
+  <!-- STEP 4 -->
+  <div id="step4" class="step-block">
+    <div class="step-number purple">4</div>
+    <div class="step-title">Collegare l'intera cartella Penale-Italia a Cowork</div>
+    <div class="step-text">
+      <p style="margin-bottom:16px">Ora dici a Cowork dove si trova il kit. <strong>Attenzione: devi selezionare la cartella <em>intera</em> Penale-Italia</strong> — non solo la sottocartella FASCICOLI.</p>
+
+      <div class="warn-box">
+        <strong>Perché tutta la cartella Penale-Italia e non solo FASCICOLI?</strong><br>
+        Selezionando solo FASCICOLI, Claude non riesce ad accedere alla Knowledge Base (i Massimari, le Schede Reato), al file CLAUDE.md con le sue istruzioni operative, né alla gerarchia delle fonti. Il kit funziona al 20% del potenziale. Devi dare accesso a tutto.
+      </div>
+
+      <p style="margin-bottom:8px">1. Apri <strong>Claude Desktop</strong></p>
+      <p style="margin-bottom:8px">2. Seleziona la modalità <strong>Cowork</strong> (in basso a sinistra)</p>
+      <p style="margin-bottom:8px">3. Clicca su <strong>"Seleziona cartella"</strong> (o "Select folder") — lo trovi nella barra sotto la chat</p>
+      <p style="margin-bottom:8px">4. Naviga e seleziona la cartella <strong>Penale-Italia</strong> (quella principale che contiene tutto il kit)</p>
+      <p style="margin-bottom:16px">5. Conferma</p>
+
+      <div class="action-box">
+        <span class="comment">Cartella corretta da selezionare:</span><br>
+        <span class="highlight">Penale-Italia/</span>  ← seleziona questa<br><br>
+        <span class="comment">NON selezionare queste sottocartelle singolarmente:</span><br>
+        <span style="color:#ef4444">✗</span>  Penale-Italia/FASCICOLI/<br>
+        <span style="color:#ef4444">✗</span>  Penale-Italia/KNOWLEDGE_BASE/<br>
+        <span style="color:#34d399">✓</span>  Penale-Italia/  ← corretta
+      </div>
+
+      <p style="margin-bottom:16px">Fatto. Ora Claude può vedere fascicoli, Knowledge Base, schede reato e tutto il resto del kit.</p>
+
+      <div class="tip-box">
+        Se in futuro ricevi una versione aggiornata del kit, basta sostituire i file nella cartella Penale-Italia. La prossima volta che apri Cowork, Claude lavora già con i contenuti aggiornati — senza fare nulla.
+      </div>
+    </div>
+  </div>
+
+  <!-- STEP 5 -->
+  <div id="step5" class="step-block highlight-step">
+    <div class="step-number green">5</div>
+    <div class="step-title">Primo test: verificare che tutto funzioni</div>
+    <div class="step-text">
+      <p style="margin-bottom:16px">Ora facciamo un test veloce per verificare che le skill siano installate e la cartella sia collegata. Scrivi questo nella chat di Cowork:</p>
+
+      <div class="example-chat">
+        <div class="chat-msg chat-user">
+          Ho un fascicolo per truffa aggravata art. 640 comma 2 n. 1 c.p. L'indagato si chiama Mario Rossi, il PM è il Dott. Bianchi presso la Procura di Milano. Siamo in fase di indagini, ho appena ricevuto l'avviso 415-bis. Mi calcoli il termine per depositare la memoria?
+        </div>
+        <div class="chat-msg chat-claude">
+          [Claude attiverà la skill penalista-scadenze e calcolerà il termine di 20 giorni dalla notifica dell'avviso 415-bis, indicando la data esatta e se c'è sospensione feriale]
+        </div>
+      </div>
+
+      <p style="margin-bottom:16px"><strong>Come capire se le skill funzionano:</strong></p>
+
+      <ul class="checklist">
+        <li>Claude menziona il termine di 20 giorni (art. 415-bis c.p.p.)</li>
+        <li>Claude chiede la data esatta di notifica dell'avviso per calcolare la scadenza</li>
+        <li>Claude parla di sospensione feriale (se siamo vicini ad agosto)</li>
+        <li>Claude produce un output strutturato (non un generico "circa 20 giorni")</li>
+        <li>Se vedi tutto questo, le skill funzionano!</li>
+      </ul>
+
+      <div class="tip-box">
+        Se Claude risponde in modo generico senza struttura, probabilmente le skill non sono state trovate. Verifica che le cartelle siano nella posizione giusta (Passo 3) e riavvia Claude Desktop.
+      </div>
+    </div>
+  </div>
+
+  <!-- STEP 6 -->
+  <div id="step6" class="step-block">
+    <div id="primo-fascicolo" class="guide-section"></div>
+    <div class="step-number">6</div>
+    <div class="step-title">Creare il primo fascicolo vero</div>
+    <div class="step-text">
+      <p style="margin-bottom:16px">Quando hai un fascicolo reale su cui lavorare, ecco il flusso completo:</p>
+
+      <p style="margin-bottom:16px; font-weight:600; color:#fff;">Fase A — Preparare il fascicolo</p>
+      <p style="margin-bottom:8px">1. Crea la cartella del fascicolo (es. <strong>2026_ROSSI_Truffa_aggravata</strong>) dentro <strong>Penale-Italia/FASCICOLI/</strong></p>
+      <p style="margin-bottom:8px">2. Crea le sotto-cartelle (oppure chiedi a Claude di farlo)</p>
+      <p style="margin-bottom:16px">3. Metti i PDF degli atti nelle cartelle giuste (informativa in 01_ATTI_ACCUSA, ecc.)</p>
+
+      <p style="margin-bottom:16px; font-weight:600; color:#fff;">Fase B — Analizzare gli atti</p>
+      <div class="example-chat">
+        <div class="chat-msg chat-user">
+          Nella cartella 2026_ROSSI_Truffa_aggravata/01_ATTI_ACCUSA/informativa/ c'è il PDF dell'informativa della GdF. Analizzalo e crea la scheda del fascicolo.
+        </div>
+        <div class="chat-msg chat-claude">
+          [Claude legge il PDF, usa la skill penalista-atti, e produce: scheda sintetica, timeline dei fatti, elementi a favore e a sfavore, vizi procedurali rilevati. Salva tutto in 00_SCHEDA_FASCICOLO/]
+        </div>
+      </div>
+
+      <p style="margin-bottom:16px; font-weight:600; color:#fff;">Fase C — Calcolare i termini</p>
+      <div class="example-chat">
+        <div class="chat-msg chat-user">
+          L'avviso 415-bis mi è stato notificato il 28 marzo 2026. Il mio assistito è a piede libero. Fammi il prospetto scadenze completo.
+        </div>
+        <div class="chat-msg chat-claude">
+          [Claude usa penalista-scadenze: termine memoria 20gg → scadenza 17/04/2026, calcola prescrizione, verifica sospensione feriale. Salva in 00_SCHEDA_FASCICOLO/prospetto_scadenze.md]
+        </div>
+      </div>
+
+      <p style="margin-bottom:16px; font-weight:600; color:#fff;">Fase D — Scrivere la difesa</p>
+      <div class="example-chat">
+        <div class="chat-msg chat-user">
+          Preparami una bozza di memoria difensiva 415-bis. La strategia è: il fatto non sussiste perché manca l'elemento dell'artificio. In subordine, il profitto è di lieve entità (art. 640 comma 3 c.p.).
+        </div>
+        <div class="chat-msg chat-claude">
+          [Claude usa penalista-memorie: produce la memoria con intestazione completa, sezione FATTO, sezione DIRITTO con argomentazione sulla mancanza dell'artificio, subordinata sulla lieve entità, conclusioni con richiesta di archiviazione. Salva in 02_ATTI_DIFESA/memorie/]
+        </div>
+      </div>
+
+      <div class="warn-box">
+        <strong>Claude produce BOZZE, non atti finali.</strong> Ogni documento va riletto, corretto e perfezionato dall'avvocato prima di essere depositato. I riferimenti giurisprudenziali marcati [VERIFICARE] vanno controllati su banca dati. Mai depositare un atto senza revisione umana.
+      </div>
+    </div>
+  </div>
+
+  <!-- STEP 7 -->
+  <div id="step7" class="step-block">
+    <div class="step-number amber">7</div>
+    <div class="step-title">Personalizzare il kit con le preferenze del tuo studio</div>
+    <div class="step-text">
+      <p style="margin-bottom:16px">Una volta che hai preso confidenza, puoi personalizzare il kit in tre modi:</p>
+
+      <p style="margin-bottom:16px; font-weight:600; color:#fff;">A — Aggiungere i tuoi modelli di atti</p>
+      <p style="margin-bottom:8px">Crea una cartella <strong>MODELLI_STUDIO</strong> dentro <strong>Penale-Italia/FASCICOLI/</strong> e mettici i tuoi template preferiti (la tua intestazione tipo, le tue formule standard, i tuoi modelli di memorie). Poi di' a Claude:</p>
+
+      <div class="example-chat">
+        <div class="chat-msg chat-user">
+          Quando scrivi atti per me, usa l'intestazione e lo stile che trovi nella cartella MODELLI_STUDIO.
+        </div>
+      </div>
+
+      <p style="margin-bottom:16px; font-weight:600; color:#fff;">B — Alimentare le Schede Reato con la tua esperienza</p>
+      <p style="margin-bottom:8px">Dopo ogni fascicolo chiuso, apri la scheda del reato corrispondente in <strong>Penale-Italia/KNOWLEDGE_BASE/06_SCHEDE_REATO/</strong> e aggiungi nella sezione "Prassi dello studio" l'argomento difensivo che hai usato e il risultato. Nel tempo questa diventa la parte più preziosa del kit.</p>
+
+      <p style="margin-bottom:16px; font-weight:600; color:#fff;">C — Personalizzare le skill (per utenti avanzati)</p>
+      <p style="margin-bottom:8px">Puoi modificare le istruzioni che guidano Claude. I file <strong>SKILL.md</strong> sono normali file di testo che puoi aprire con TextEdit (Mac) o Blocco Note (Windows).</p>
+
+      <p style="margin-bottom:8px; font-weight:600; color:#fff;">Come trovare i file SKILL.md:</p>
+
+      <p style="margin-bottom:8px; font-weight:600;">Su Mac:</p>
+      <p style="margin-bottom:4px">1. Apri il <strong>Finder</strong></p>
+      <p style="margin-bottom:4px">2. Nel menu in alto: <strong>Vai → Vai alla cartella...</strong> (oppure premi <em>Cmd + Shift + G</em>)</p>
+      <p style="margin-bottom:4px">3. Incolla esattamente: <strong style="color:#60a5fa">~/.claude/skills</strong> e premi Invio</p>
+      <p style="margin-bottom:4px">4. Se non vedi nessuna cartella, premi prima <strong>Cmd + Shift + .</strong> (punto) per mostrare le cartelle nascoste</p>
+      <p style="margin-bottom:16px">5. Entra nella cartella della skill da modificare (es. <strong>penalista-memorie/</strong>) e apri <strong>SKILL.md</strong> con TextEdit</p>
+
+      <p style="margin-bottom:8px; font-weight:600;">Su Windows:</p>
+      <p style="margin-bottom:4px">1. Apri <strong>Esplora File</strong></p>
+      <p style="margin-bottom:4px">2. Nella barra degli indirizzi, incolla: <strong style="color:#60a5fa">%USERPROFILE%\.claude\skills</strong> e premi Invio</p>
+      <p style="margin-bottom:4px">3. Se non vedi la cartella, in <em>Visualizza</em> attiva <em>Elementi nascosti</em></p>
+      <p style="margin-bottom:16px">4. Entra nella cartella della skill (es. <strong>penalista-memorie\</strong>) e apri <strong>SKILL.md</strong> con Blocco Note</p>
+
+      <p style="margin-bottom:12px"><strong>Cosa puoi aggiungere in fondo al file SKILL.md:</strong></p>
+
+      <div class="action-box">
+        <span class="comment">## Preferenze del mio studio</span><br>
+        - Usa sempre "Con osservanza" nelle conclusioni, mai "Con riserva"<br>
+        - Intestazione: "Avv. [Nome Cognome] — Foro di [Città] — Tel. [xxx]"<br>
+        - Formato giurisprudenza: Cass. Pen., Sez. [X], n. XXXXX/ANNO<br>
+        - Non usare "Ill.mo", usa "Ecc.mo" per la Corte d'Assise<br>
+        - Salva le bozze in 02_ATTI_DIFESA/memorie/
+      </div>
+
+      <div class="tip-box">
+        Non serve saper programmare. I file SKILL.md sono scritti in italiano normale. Aggiungi le tue preferenze, salva, chiudi e riapri Claude Desktop. Dalla sessione successiva Claude le seguirà automaticamente.
+      </div>
+
+      <div class="warn-box">
+        <strong>Dopo aver modificato una SKILL.md, chiudi e riapri sempre Claude Desktop.</strong> Le skill vengono caricate all'avvio — le modifiche non hanno effetto nelle sessioni già aperte.
+      </div>
+    </div>
+  </div>
+
+  </div><!-- /guida -->
+
+  <div class="divider"></div>
+
+  <!-- ============================================================ -->
+  <!-- SEZIONE 3: ESEMPI D'USO REALI -->
+  <!-- ============================================================ -->
+  <div id="esempi" class="guide-section">
+
+  <h1>Esempi d'Uso Reali</h1>
+  <p class="subtitle">Cosa puoi scrivere nella chat di Cowork per ottenere risultati utili.</p>
+
+  <div class="step-block">
+    <div class="step-title" style="color:#60a5fa">Analizzare un'informativa lunga</div>
+    <div class="example-chat">
+      <div class="chat-msg chat-user">
+        Ho caricato nella cartella 01_ATTI_ACCUSA l'informativa della Guardia di Finanza (180 pagine). Leggila e fammi: 1) una scheda sintetica del fascicolo, 2) la timeline di tutti i fatti contestati, 3) una lista di tutti i vizi procedurali che noti.
+      </div>
+    </div>
+  </div>
+
+  <div class="step-block">
+    <div class="step-title" style="color:#a78bfa">Preparare un riesame urgente</div>
+    <div class="example-chat">
+      <div class="chat-msg chat-user">
+        Il mio assistito è stato arrestato ieri con ordinanza del GIP di Roma per concorso in bancarotta fraudolenta. Ho 10 giorni per il riesame. L'ordinanza è nella cartella del fascicolo. Leggila e preparami una bozza di istanza di riesame concentrandoti sulla mancanza di esigenze cautelari: è incensurato, ha famiglia, lavoro stabile, e ha già messo a disposizione tutta la documentazione contabile.
+      </div>
+    </div>
+  </div>
+
+  <div class="step-block">
+    <div class="step-title" style="color:#f87171">Verificare la prescrizione</div>
+    <div class="example-chat">
+      <div class="chat-msg chat-user">
+        Fatto commesso il 15 giugno 2019. Reato: appropriazione indebita art. 646 c.p. (pena massima 3 anni). Primo atto interruttivo: decreto di citazione a giudizio notificato il 10 marzo 2022. Sentenza di primo grado il 12 ottobre 2024 (condanna). Siamo in appello. Questo reato è prescritto o si prescrive a breve? Regime Cartabia o vecchio?
+      </div>
+    </div>
+  </div>
+
+  <div class="step-block">
+    <div class="step-title" style="color:#fbbf24">Trovare giurisprudenza su un punto specifico</div>
+    <div class="example-chat">
+      <div class="chat-msg chat-user">
+        Ho bisogno di giurisprudenza sulla nozione di "artificio e raggiro" nella truffa contrattuale. In particolare: quando il semplice inadempimento contrattuale non integra la truffa. Dammi una mappa degli orientamenti attuali della Cassazione con i riferimenti da verificare su Italgiure.
+      </div>
+    </div>
+  </div>
+
+  <div class="step-block">
+    <div class="step-title" style="color:#34d399">Parere per un cliente imprenditore</div>
+    <div class="example-chat">
+      <div class="chat-msg chat-user">
+        Un mio cliente ha una SRL che ha emesso fatture per operazioni inesistenti per circa 80.000 euro. Non è ancora stato iscritto nel registro indagati (per quanto ne sappiamo). Mi chiede: rischia qualcosa? Qual è il reato? Ci sono strategie per limitare il danno? Preparami un parere pro veritate.
+      </div>
+    </div>
+  </div>
+
+  </div><!-- /esempi -->
+
+  <div class="divider"></div>
+
+  <!-- ============================================================ -->
+  <!-- SEZIONE 4: FAQ -->
+  <!-- ============================================================ -->
+  <div id="faq" class="guide-section">
+
+  <h1>Domande Frequenti</h1>
+  <p class="subtitle">Le risposte alle domande che ti verranno sicuramente in mente.</p>
+
+  <div class="step-block">
+    <div class="step-title">Claude può vedere i miei fascicoli?</div>
+    <div class="step-text">
+      <p>Claude vede SOLO la cartella che gli indichi tu con "Seleziona cartella", e solo durante la sessione di lavoro. I dati non vengono usati per addestrare il modello (con il piano Pro). Se hai dubbi sulla riservatezza, consulta la privacy policy di Anthropic. Per fascicoli particolarmente sensibili, puoi lavorare su copie anonimizzate.</p>
+    </div>
+  </div>
+
+  <div class="step-block">
+    <div class="step-title">Posso fidarmi della giurisprudenza che cita Claude?</div>
+    <div class="step-text">
+      <p><strong>No, non senza verifica.</strong> Questo è il punto più importante di tutta la guida. Claude conosce i principi giurisprudenziali consolidati, ma può sbagliare i numeri delle sentenze, le date, o attribuire un principio alla sezione sbagliata. Per questo ogni skill ha la regola [VERIFICARE]: ogni sentenza citata a memoria va controllata su banca dati (Italgiure, DeJure, Pluris). Le skill sono progettate per dirti onestamente dove non è sicuro.</p>
+    </div>
+  </div>
+
+  <div class="step-block">
+    <div class="step-title">Posso depositare direttamente un atto scritto da Claude?</div>
+    <div class="step-text">
+      <p><strong>Mai.</strong> Claude produce bozze. Il lavoro finale — la revisione, il perfezionamento, la scelta strategica, la firma — è e resta dell'avvocato. Claude è un assistente che ti fa risparmiare tempo sulla prima stesura e sull'analisi, non un sostituto del giudizio professionale. La responsabilità dell'atto depositato è sempre e solo tua.</p>
+    </div>
+  </div>
+
+  <div class="step-block">
+    <div class="step-title">Devo avere una connessione internet?</div>
+    <div class="step-text">
+      <p>Sì. Claude funziona tramite internet — non è un programma che gira solo sul tuo computer. I tuoi file restano sul tuo computer, ma la conversazione con Claude richiede una connessione. In tribunale senza WiFi, Claude non funziona.</p>
+    </div>
+  </div>
+
+  <div class="step-block">
+    <div class="step-title">Quanto costa?</div>
+    <div class="step-text">
+      <p>L'abbonamento Claude Pro costa 20 dollari al mese (circa 18-19 euro). Include Cowork. Le skill del Kit Penalista sono gratuite — sono file di testo che installi tu. Non ci sono costi aggiuntivi.</p>
+    </div>
+  </div>
+
+  <div class="step-block">
+    <div class="step-title">Posso usarlo su più computer?</div>
+    <div class="step-text">
+      <p>Sì. Installi Claude Desktop su ogni computer, accedi con lo stesso account, e copi le skill su ciascuno. La cartella FASCICOLI puoi tenerla su un cloud (Dropbox, OneDrive, iCloud Drive) e accedervi da qualsiasi computer.</p>
+    </div>
+  </div>
+
+  <div class="step-block">
+    <div class="step-title">Le skill si aggiornano da sole?</div>
+    <div class="step-text">
+      <p>No. Sono file locali sul tuo computer. Se esce una versione aggiornata del kit (es. dopo una riforma processuale), dovrai scaricare i nuovi file e sostituirli. Ma puoi anche aggiornarli tu stesso: basta aprire il SKILL.md con un editor di testo e aggiungere o modificare le istruzioni.</p>
+    </div>
+  </div>
+
+  <div class="step-block">
+    <div class="step-title">Posso aggiungere altre skill?</div>
+    <div class="step-text">
+      <p>Assolutamente sì. Il kit è una base. Puoi aggiungere skill per: indagini difensive, esecuzione penale, diritto penitenziario, patrocinio a spese dello Stato, rapporti con la stampa, gestione dell'udienza, ecc. Basta creare una nuova cartella in .claude/skills/ con dentro un file SKILL.md che descrive cosa deve fare Claude. Oppure puoi chiedere a Claude stesso di creartela (skill "skill-creator").</p>
+    </div>
+  </div>
+
+  </div><!-- /faq -->
+
+  <div class="footer">
+    Kit Penalista Italiano <strong style="color:#34d399">v2.1</strong> — Maggio 2026<br>
+    Creato con <a href="#">Cowork</a> · Personalizzabile e estendibile<br>
+    <span style="color:#555;font-size:0.75rem">v1.0 Aprile 2026 — v2.0 Maggio 2026 (Knowledge Base) — v2.1 Maggio 2026 (Schede Reato)</span><br>
+    <span style="color:#555">v1.0 Aprile 2026 · v2.0 Maggio 2026 (Knowledge Base + 9 volumi Massimario ufficiale)</span><br><br>
+    <span style="color:#333">Questo kit è un punto di partenza. La pratica forense richiede sempre il giudizio professionale dell'avvocato.</span>
+  </div>
+
+</div>
+</body>
+</html>

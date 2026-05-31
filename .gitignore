@@ -1,0 +1,73 @@
+# ============================================================
+# .gitignore — Kit Penalista Italiano
+# ============================================================
+
+# ----------------------------------------------------------
+# CREDENZIALI — MAI TRACCIARE
+# ----------------------------------------------------------
+
+# Token GitHub (creato da Pablo per autenticazione dal sandbox)
+.github_token
+.env
+.secrets
+
+# ----------------------------------------------------------
+# DATI SENSIBILI — mai tracciare
+# ----------------------------------------------------------
+
+# Fascicoli reali dello studio (dati riservati dei clienti)
+FASCICOLI/*/
+
+# Prassi dello studio (fascicoli anonimizzati — dati proprietari)
+KNOWLEDGE_BASE/04_PRASSI_STUDIO/*/
+
+# ----------------------------------------------------------
+# SISTEMA OPERATIVO
+# ----------------------------------------------------------
+
+# macOS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+.fseventsd
+.TemporaryItems
+__MACOSX/
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+
+# ----------------------------------------------------------
+# EDITOR E IDE
+# ----------------------------------------------------------
+.vscode/
+.idea/
+*.swp
+*.swo
+*.sublime-workspace
+
+# ----------------------------------------------------------
+# TEMPORANEI E LOG
+# ----------------------------------------------------------
+*.tmp
+*.log
+*.bak
+*.orig
+
+# File Office temporanei
+~$*.docx
+~$*.xlsx
+~$*.pptx
+
+# ----------------------------------------------------------
+# CLAUDE / COWORK INTERNO
+# ----------------------------------------------------------
+.auto-memory/
+.claude/projects/
