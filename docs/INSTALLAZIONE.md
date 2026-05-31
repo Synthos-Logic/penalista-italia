@@ -98,15 +98,13 @@ Claude ti farà alcune domande (nome, foro, tribunale, numero iscrizione) e salv
 
 Per ricevere aggiornamenti del plugin senza doverlo reinstallare manualmente:
 
-**Attiva la sincronizzazione automatica:**
-**Personalizza** → **Sfoglia plugin** → **Personale** → clicca **…** accanto a *penalista-italia* → attiva **Sincronizza automaticamente**
+Quando è disponibile un aggiornamento, comparirà il pulsante **Aggiorna** nella scheda del plugin:
 
-Da quel momento, Cowork verificherà e scaricherà gli aggiornamenti all'avvio dell'applicazione.
+**Personalizza** → **Plugin personali** → clicca su **Penalista Italia** → clicca **Aggiorna**
 
-**Per forzare un aggiornamento immediato:**
-**Personalizza** → **Sfoglia plugin** → **Personale** → clicca **…** accanto a *penalista-italia* → **Sincronizza ora**
+L'aggiornamento scarica l'ultima versione del plugin con tutti i nuovi comandi e skill.
 
-> Se hai installato il plugin prima di un aggiornamento e non vedi i nuovi comandi, usa **Sincronizza ora** per scaricarli manualmente.
+> Se non vedi ancora il pulsante "Aggiorna" dopo un nuovo rilascio, chiudi e riapri Claude Desktop — Cowork controlla gli aggiornamenti all'avvio.
 
 ---
 
@@ -138,8 +136,8 @@ Apri una nuova conversazione e scrivi `/penalista-italia:aiuto` — vedrai la gu
 | "Sync failed" | Verifica di aver inserito esattamente `Synthos-Logic/penalista-italia` |
 | Le skill non si attivano | Verifica che il plugin sia attivo (toggle blu) |
 | I dati non compaiono negli atti | Esegui `/penalista-italia:configura` per impostare nome, foro e tribunale |
-| Non vedo i nuovi comandi dopo un aggiornamento | Vai in Personalizza → Sfoglia plugin → Personale → **…** → **Sincronizza ora** |
-| Il comando `/configura` non esiste | Esegui Sincronizza ora per scaricare l'ultima versione del plugin |
+| Non vedo i nuovi comandi dopo un aggiornamento | Vai in Personalizza → Plugin personali → Penalista Italia → clicca **Aggiorna** |
+| Il pulsante Aggiorna non compare | Chiudi e riapri Claude Desktop — controlla gli aggiornamenti all'avvio |
 
 ---
 
