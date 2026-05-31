@@ -4,6 +4,26 @@ Questa guida accompagna passo per passo nell'installazione del plugin **Penalist
 
 ---
 
+## Prima di iniziare — Chat, Cowork o un progetto per cliente?
+
+Se hai appena scoperto Claude, potresti chiederti come organizzarti. Ecco la risposta diretta:
+
+| Situazione | Cosa usare |
+|---|---|
+| Domanda rapida su un termine o una norma | **Chat normale** — nessun progetto necessario |
+| Lavorare su documenti di causa (informative, ordinanze, perizie) | **Cowork** — con la cartella dello studio collegata |
+| Gestire più fascicoli nel tempo | **Un unico progetto Cowork per tutto lo studio** |
+
+**La scelta consigliata per chi usa questo plugin seriamente: un unico progetto Cowork per lo studio.**
+
+Dentro quel progetto crei una cartella per ogni fascicolo (es. `2026_ROSSI_Truffa/`, `2026_BIANCHI_Bancarotta/`). Claude distingue i casi grazie alla struttura delle cartelle e al sistema `/fascicolo` — non hai bisogno di aprire un progetto diverso per ogni cliente.
+
+> **Non creare un progetto Cowork separato per ogni cliente.** Perderesti il contesto cross-case e dovresti reinstallare il plugin ogni volta. È l'errore più comune dei nuovi utenti.
+
+I comandi slash (`/strategia`, `/atti`, `/scadenze`...) funzionano in qualsiasi contesto — anche in una chat normale, anche senza documenti allegati. Collegare la cartella dello studio serve solo quando vuoi che Claude legga i PDF dei tuoi fascicoli.
+
+---
+
 ## Prerequisiti
 
 - [Claude Cowork Desktop](https://claude.ai) installato e aggiornato all'ultima versione

@@ -28,12 +28,28 @@ Un fascicolo ben strutturato — con i dati dell'indagato, il capo di imputazion
 
 ---
 
+## Come organizzarsi — Chat, Cowork o un progetto per cliente?
+
+Se stai iniziando, questa è la risposta diretta:
+
+| Situazione | Cosa usare |
+|---|---|
+| Domanda rapida su una norma o un termine | Chat normale — nessun progetto necessario |
+| Lavorare con documenti di causa (PDF, informative, ordinanze) | Progetto Cowork con la cartella dello studio |
+| Gestire più fascicoli nel tempo | **Un unico progetto Cowork per tutto lo studio** |
+
+Dentro quel progetto crei una sottocartella per ogni fascicolo (`2026_ROSSI_Truffa/`, `2026_BIANCHI_Bancarotta/`...). Claude distingue i casi dalla struttura delle cartelle — non serve aprire un progetto separato per ogni cliente.
+
+> I comandi slash funzionano in qualsiasi contesto, anche senza cartelle. La cartella collegata serve solo quando vuoi che Claude legga i tuoi documenti.
+
+---
+
 ## Installazione rapida
 
 1. In Claude Cowork, clicca **Personalizza** → **Sfoglia plugin** → **Personali** → **+** → **Aggiungi marketplace da GitHub**
 2. Inserisci `Synthos-Logic/penalista-italia` e clicca **Sincronizza**
 3. Clicca **Installa** sulla scheda *Penalista Italia*
-4. Configura i dati dello studio (nome, foro, tribunale di riferimento)
+4. Apri una nuova chat e scrivi `/penalista-italia:configura` per impostare nome, foro e tribunale
 
 📖 **[Guida all'installazione passo per passo con screenshot](docs/INSTALLAZIONE.md)**
 
