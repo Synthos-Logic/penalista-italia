@@ -82,13 +82,19 @@ Vedrai la notifica **"Penalista Italia è installato e pronto all'uso"** insieme
 
 ## Passo 6 — Configura i dati del tuo studio
 
-Apri una nuova conversazione in Cowork e scrivi:
+Clicca su **Personalizza** (il pulsante in alto a destra nella scheda del plugin) per aprire il modulo di configurazione.
 
-```
-/penalista-italia:configura
-```
+Compila i campi:
 
-Claude ti farà alcune domande (nome, foro, tribunale, numero iscrizione) e salverà tutto automaticamente. Nessun file da trovare, nessuna cartella nascosta.
+| Campo | Descrizione | Esempio |
+|---|---|---|
+| Nome e cognome dell'avvocato | Usato nelle intestazioni degli atti | Avv. Mario Rossi |
+| Foro di iscrizione | Il tuo Ordine di appartenenza | Milano |
+| Numero di iscrizione all'Ordine | Numero progressivo all'Albo | 12345 |
+| Tribunale di riferimento principale | Il tribunale dove lavori più spesso | Tribunale di Milano |
+| Iscritto all'Albo Cassazionisti? | Rilevante per i ricorsi in Cassazione | SI oppure NO |
+
+Clicca **Salva**. Da quel momento Claude usa questi dati in tutte le intestazioni degli atti.
 
 ![Passo 6 — Configura](images/installazione/07-dettaglio-installato.png)
 

@@ -1,5 +1,14 @@
 # Changelog — Penalista Italia
 
+## [2.2.1] — 2026-05-31
+
+### Fix critico
+- `penalista-italia/.claude-plugin/plugin.json`: versione aggiornata da 1.2.0 a 2.2.0 — questo era il file che Cowork legge per determinare la versione installata; senza questo fix il plugin appariva sempre alla versione precedente anche dopo reinstallazione
+- `docs/INSTALLAZIONE.md` Passo 6: ripristinata la configurazione via pulsante ⚙️ Personalizza (la UI nativa esiste e funziona — il `userConfig` con i 5 campi era già presente nel plugin.json)
+
+---
+
+
 ## [2.2.0] — 2026-05-31
 
 ### Aggiunto
