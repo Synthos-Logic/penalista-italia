@@ -44,6 +44,17 @@ Dentro quel progetto crei una sottocartella per ogni fascicolo (`2026_ROSSI_Truf
 
 ---
 
+---
+
+## 🔒 Privacy
+
+I file fisici dei tuoi fascicoli restano sul tuo computer. Il testo che chiedi a Claude di analizzare transita sui server di Anthropic per l'elaborazione — è il meccanismo necessario per far funzionare l'AI.
+
+Prima di usare il kit con dati reali di clienti: la **Legge 132/2025 art. 13** impone di informare i clienti dell'uso dell'AI. Il CNF ha pubblicato uno schema di informativa.
+
+📖 **[Pagina completa Privacy → Wiki](https://github.com/Synthos-Logic/penalista-italia/wiki/Privacy)**
+
+
 ## Installazione rapida
 
 1. In Claude Cowork, clicca **Personalizza** → **Sfoglia plugin** → **Personali** → **+** → **Aggiungi marketplace da GitHub**

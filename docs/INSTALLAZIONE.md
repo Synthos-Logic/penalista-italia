@@ -135,6 +135,19 @@ Apri una nuova conversazione e scrivi `/penalista-italia:aiuto` — vedrai la gu
 
 ---
 
+## 🔒 Privacy e sicurezza dei dati
+
+> Prima di usare il kit con dati reali di clienti, leggi la pagina dedicata.
+
+**In sintesi:**
+- I file fisici restano sul tuo computer — non vengono caricati su nessun server
+- Il testo dei documenti che chiedi a Claude di analizzare transita sui server di Anthropic per l'elaborazione (è il meccanismo necessario per far funzionare l'AI)
+- La **Legge 132/2025 art. 13** (in vigore dal 10 ottobre 2025) impone di informare il cliente prima di usare strumenti AI nell'ambito del mandato
+- Il CNF ha pubblicato uno schema di informativa da consegnare ai clienti
+
+📖 **[Pagina completa Privacy → Wiki](https://github.com/Synthos-Logic/penalista-italia/wiki/Privacy)**
+
+
 ## Supporto
 
 [github.com/Synthos-Logic/penalista-italia/issues](https://github.com/Synthos-Logic/penalista-italia/issues)
