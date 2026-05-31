@@ -1,0 +1,16 @@
+# macOS
+.DS_Store
+__MACOSX/
+
+# Windows
+Thumbs.db
+
+# Credenziali
+.github_token
+.env
+.secrets
+
+# Temporanei
+*.tmp
+*.log
+~$*

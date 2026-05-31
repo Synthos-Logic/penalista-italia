@@ -1,6 +1,6 @@
 # Penalista Italia — Kit Operativo per Avvocati Penalisti
 
-[![Version](https://img.shields.io/badge/versione-1.2.0-blue)](https://github.com/Synthos-Logic/penalista-italia/releases)
+[![Version](https://img.shields.io/badge/versione-2.1.0-blue)](https://github.com/Synthos-Logic/penalista-italia/releases)
 [![License: MIT](https://img.shields.io/badge/licenza-MIT-green)](LICENSE)
 [![Platform](https://img.shields.io/badge/piattaforma-Claude%20Cowork-orange)](https://claude.ai)
 [![Wiki](https://img.shields.io/badge/📚_Wiki-metodologia-blueviolet)](https://github.com/Synthos-Logic/penalista-italia/wiki)
