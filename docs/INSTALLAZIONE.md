@@ -98,9 +98,15 @@ Claude ti farà alcune domande (nome, foro, tribunale, numero iscrizione) e salv
 
 Per ricevere aggiornamenti del plugin senza doverlo reinstallare manualmente:
 
+**Attiva la sincronizzazione automatica:**
 **Personalizza** → **Sfoglia plugin** → **Personale** → clicca **…** accanto a *penalista-italia* → attiva **Sincronizza automaticamente**
 
-Da quel momento, ogni aggiornamento pubblicato su GitHub viene scaricato automaticamente da Cowork.
+Da quel momento, Cowork verificherà e scaricherà gli aggiornamenti all'avvio dell'applicazione.
+
+**Per forzare un aggiornamento immediato:**
+**Personalizza** → **Sfoglia plugin** → **Personale** → clicca **…** accanto a *penalista-italia* → **Sincronizza ora**
+
+> Se hai installato il plugin prima di un aggiornamento e non vedi i nuovi comandi, usa **Sincronizza ora** per scaricarli manualmente.
 
 ---
 
@@ -132,6 +138,8 @@ Apri una nuova conversazione e scrivi `/penalista-italia:aiuto` — vedrai la gu
 | "Sync failed" | Verifica di aver inserito esattamente `Synthos-Logic/penalista-italia` |
 | Le skill non si attivano | Verifica che il plugin sia attivo (toggle blu) |
 | I dati non compaiono negli atti | Esegui `/penalista-italia:configura` per impostare nome, foro e tribunale |
+| Non vedo i nuovi comandi dopo un aggiornamento | Vai in Personalizza → Sfoglia plugin → Personale → **…** → **Sincronizza ora** |
+| Il comando `/configura` non esiste | Esegui Sincronizza ora per scaricare l'ultima versione del plugin |
 
 ---
 

@@ -112,12 +112,15 @@ Il kit è progettato per lavorare con **tutti i formati di file** che uno studio
 
 ## Configurazione
 
-Al momento dell'installazione il plugin chiede:
-- **Nome e cognome** dell'avvocato (per le intestazioni degli atti)
-- **Foro di iscrizione** (es. Milano)
-- **Numero di iscrizione** all'Ordine
-- **Tribunale di riferimento** principale
-- **Iscrizione all'Albo Cassazionisti** (per i ricorsi per Cassazione)
+Dopo l'installazione, apri una nuova chat e scrivi:
+
+```
+/penalista-italia:configura
+```
+
+Claude ti farà alcune domande (nome, foro, numero iscrizione, tribunale, cassazionista) e salverà tutto automaticamente. Va fatto una sola volta.
+
+> Per aggiornare i dati in seguito, basta rieseguire `/penalista-italia:configura`.
 
 ---
 
