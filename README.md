@@ -1,6 +1,6 @@
 # Penalista Italia — Kit Operativo per Avvocati Penalisti
 
-[![Version](https://img.shields.io/badge/versione-2.1.0-blue)](https://github.com/Synthos-Logic/penalista-italia/releases)
+[![Version](https://img.shields.io/badge/versione-2.2.0-blue)](https://github.com/Synthos-Logic/penalista-italia/releases)
 [![License: MIT](https://img.shields.io/badge/licenza-MIT-green)](LICENSE)
 [![Platform](https://img.shields.io/badge/piattaforma-Claude%20Cowork-orange)](https://claude.ai)
 [![Wiki](https://img.shields.io/badge/📚_Wiki-metodologia-blueviolet)](https://github.com/Synthos-Logic/penalista-italia/wiki)
@@ -54,7 +54,7 @@ Un fascicolo ben strutturato — con i dati dell'indagato, il capo di imputazion
 
 ### 10 comandi slash
 
-`/strategia` `/atti` `/scadenze` `/cautelare` `/prescrizione` `/giurisprudenza` `/esecuzione` `/fascicolo` `/versione` `/aiuto`
+`/configura` `/strategia` `/atti` `/scadenze` `/cautelare` `/prescrizione` `/giurisprudenza` `/esecuzione` `/fascicolo` `/versione` `/aiuto`
 
 ### Knowledge base procedurale integrata
 - Mappa completa del processo penale italiano (indagini → Cassazione)

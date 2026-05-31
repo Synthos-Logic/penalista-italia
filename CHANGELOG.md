@@ -1,5 +1,19 @@
 # Changelog — Penalista Italia
 
+## [2.2.0] — 2026-05-31
+
+### Aggiunto
+- Comando `/penalista-italia:configura` — setup guidato conversazionale dei dati studio (nome, foro, iscrizione, tribunale, cassazionista); Claude raccoglie i dati via chat e salva tutto automaticamente, senza che luutente debba trovare o modificare file nascosti
+
+### Migliorato
+- `docs/INSTALLAZIONE.md` Passo 6: sostituito il percorso a file nascosto con un singolo comando `/configura`
+- Aggiunto `/configura` come primo comando nella tabella di utilizzo rapido
+- Aggiornato Problemi comuni: rimosso riferimento a icona ⚙️ inesistente
+
+---
+
+
+
 ## [2.1.0] — 2026-05-31
 
 ### Aggiunto

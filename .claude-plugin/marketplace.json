@@ -8,7 +8,7 @@
     {
       "name": "penalista-italia",
       "description": "Kit operativo per avvocati penalisti italiani — strategia difensiva, redazione atti processuali, calcolo termini, gestione misure cautelari e compliance 231. Specializzato esclusivamente sul diritto penale italiano.",
-      "version": "1.0.0",
+      "version": "2.2.0",
       "source": "./penalista-italia",
       "author": {
         "name": "Synthos Logic"

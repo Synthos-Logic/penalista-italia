@@ -62,29 +62,15 @@ Vedrai la notifica **"Penalista Italia è installato e pronto all'uso"** insieme
 
 ## Passo 6 — Configura i dati del tuo studio
 
-Per permettere a Claude di compilare correttamente le intestazioni di ogni atto (nome, foro, tribunale), devi inserire i tuoi dati in un file di configurazione.
-
-**Come trovare il file:**
-
-Dopo l'installazione del plugin, il file si trova nella cartella di Claude Cowork sul tuo computer:
-
-- **Mac:** `~/.claude/plugins/penalista-italia/CLAUDE.md`
-  *(apri Finder → Vai alla cartella... → incolla il percorso)*
-- **Windows:** `%USERPROFILE%\.claude\plugins\penalista-italia\CLAUDE.md`
-
-Apri il file con qualsiasi editor di testo (TextEdit su Mac, Blocco Note su Windows) e compila i campi:
+Apri una nuova conversazione in Cowork e scrivi:
 
 ```
-AVVOCATO:          Avv. Mario Rossi
-FORO:              Foro di Milano
-N. ISCRIZIONE:     12345
-TRIBUNALE:         Tribunale Ordinario di Milano
-CASSAZIONISTA:     NO
+/penalista-italia:configura
 ```
 
-Salva il file. Da quel momento Claude userà questi dati in tutte le intestazioni degli atti.
+Claude ti farà alcune domande (nome, foro, tribunale, numero iscrizione) e salverà tutto automaticamente. Nessun file da trovare, nessuna cartella nascosta.
 
-> **Nota:** questo file è locale sul tuo computer — non viene mai pubblicato online.
+![Passo 6 — Configura](images/installazione/07-dettaglio-installato.png)
 
 ---
 
@@ -108,6 +94,7 @@ Apri una nuova conversazione e scrivi `/penalista-italia:aiuto` — vedrai la gu
 
 | Comando | Funzione |
 |---|---|
+| `/penalista-italia:configura` | **Prima cosa da fare** — configura nome, foro, tribunale |
 | `/penalista-italia:strategia` | Analisi difensiva di un capo di imputazione |
 | `/penalista-italia:atti` | Redazione di atti processuali penali |
 | `/penalista-italia:scadenze` | Calcolo termini processuali |
@@ -124,7 +111,7 @@ Apri una nuova conversazione e scrivi `/penalista-italia:aiuto` — vedrai la gu
 |---|---|
 | "Sync failed" | Verifica di aver inserito esattamente `Synthos-Logic/penalista-italia` |
 | Le skill non si attivano | Verifica che il plugin sia attivo (toggle blu) |
-| I dati non compaiono negli atti | Completa la configurazione ⚙️ con nome, foro e tribunale |
+| I dati non compaiono negli atti | Esegui `/penalista-italia:configura` per impostare nome, foro e tribunale |
 
 ---
 
