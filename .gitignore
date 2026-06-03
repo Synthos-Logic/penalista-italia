@@ -14,3 +14,6 @@ Thumbs.db
 *.tmp
 *.log
 ~$*
+
+# Massimari PDF (troppo grandi — aggiungere localmente)
+KNOWLEDGE_BASE/**/*.pdf
