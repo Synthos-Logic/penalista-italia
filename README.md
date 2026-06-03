@@ -8,34 +8,34 @@ Kit operativo completo per avvocati penalisti italiani su Claude Cowork.
 
 ---
 
-## Installazione — 3 passi
+## Installazione â 3 passi
 
 ### 1. Scarica il kit
-Clicca **Code → Download ZIP** in questa pagina. Decomprimi e rinomina la cartella in `Penale-Italia`.
+Clicca **Code â Download ZIP** in questa pagina. Decomprimi e rinomina la cartella in `Penale-Italia`.
 
 ### 2. Installa le 6 skill
 Copia le 6 cartelle da `skills/` nella cartella di Claude:
 
-**Mac:** Finder → Vai → Vai alla cartella → incolla `~/.claude/skills` → copia le 6 cartelle.
+**Mac:** Finder â Vai â Vai alla cartella â incolla `~/.claude/skills` â copia le 6 cartelle.
 
-**Windows:** Esplora File → barra indirizzi → `%USERPROFILE%\.claude\skills` → copia le 6 cartelle.
+**Windows:** Esplora File â barra indirizzi â `%USERPROFILE%\.claude\skills` â copia le 6 cartelle.
 
 Cartelle da copiare: `penalista-atti`, `penalista-cautelare`, `penalista-esecuzione`, `penalista-giurisprudenza`, `penalista-scadenze`, `penalista-strategia`.
 
-> **Mac:** la cartella `.claude` è nascosta — premi `Cmd+Shift+.` per vederla. Se la cartella `skills` non esiste, creala dentro `.claude`.
+> **Mac:** la cartella `.claude` Ã¨ nascosta â premi `Cmd+Shift+.` per vederla. Se la cartella `skills` non esiste, creala dentro `.claude`.
 
 ### 3. Collega il kit a Cowork
-Apri Claude Desktop → Cowork → **"Seleziona cartella"** → seleziona la cartella `Penale-Italia` (tutta). Riavvia Claude Desktop.
+Apri Claude Desktop â Cowork â **"Seleziona cartella"** â seleziona la cartella `Penale-Italia` (tutta). Riavvia Claude Desktop.
 
 ---
 
 ## Configura i dati del tuo studio
-Apri `CLAUDE.md` e compila la sezione "Dati dello studio" con nome, foro, tribunale, numero iscrizione. Salva. Claude userà questi dati nelle intestazioni degli atti.
+Apri `CLAUDE.md` e compila la sezione "Dati dello studio" con nome, foro, tribunale, numero iscrizione. Salva. Claude userÃ  questi dati nelle intestazioni degli atti.
 
 ---
 
 ## Aggiornamento
-1. Scarica il nuovo ZIP (Code → Download ZIP)
+1. Scarica il nuovo ZIP (Code â Download ZIP)
 2. Sostituisci la cartella `Penale-Italia`
 3. Se ci sono nuove skill: copia le nuove cartelle in `~/.claude/skills/`
 4. Riavvia Claude Desktop
@@ -52,12 +52,12 @@ Un unico progetto Cowork per tutto lo studio. Una cartella per ogni fascicolo de
 ### 6 Skill operative
 | Skill | Funzione |
 |---|---|
-| `penalista-strategia` | Analisi difensiva del capo di imputazione |
-| `penalista-atti` | Redazione atti (memoria, appello, riesame, Cassazione) |
-| `penalista-scadenze` | Calcolo termini (prescrizione, custodia, impugnazioni, Cartabia) |
-| `penalista-cautelare` | Misure cautelari: analisi, riesame, revoca, scadenze di fase |
-| `penalista-giurisprudenza` | Orientamenti Cassazione, contrasti, CEDU |
-| `penalista-esecuzione` | Diritto penitenziario: misure alternative, liberazione anticipata, 41-bis |
+| `penalista-atti` | Analisi e schedatura di atti processuali (informative, ordinanze, intercettazioni, perizie) |
+| `penalista-memorie` | Redazione memorie difensive 415-bis, note udienza, lista testi, conclusioni scritte |
+| `penalista-impugnazioni` | Appello, riesame (art. 309), ricorso Cassazione, opposizione a decreto penale |
+| `penalista-giurisprudenza` | Ricerca orientamenti Cassazione, contrasti tra sezioni, CEDU |
+| `penalista-pareri` | Pareri pro veritate, risk assessment penale, qualificazione giuridica |
+| `penalista-scadenze` | Calcolo termini (prescrizione, custodia cautelare, impugnazioni, Cartabia) |
 
 ### Knowledge Base
 - 13 Schede Reato operative (8 macro-categorie)
