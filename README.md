@@ -30,14 +30,18 @@ Clicca **Code -> Download ZIP** in questa pagina. Decomprimi e rinomina la carte
 
 ### Passo 2 - Installa le 6 skill
 
-Copia le 6 cartelle da `skills/` nella cartella skill di Claude.
+Il kit include uno script di installazione automatica per entrambe le piattaforme.
 
-**Mac:** Finder -> menu Vai -> Vai alla cartella (o **Cmd+Shift+G**) -> incolla `~/.claude/skills`
-**Windows:** Esplora File -> barra indirizzi -> incolla `%USERPROFILE%\.claude\skills`
+**Su Mac** -- apri il Terminale, trascina il file `install.sh` dentro la finestra e premi Invio:
+- Lo script crea la cartella `~/.claude/skills` se non esiste
+- Copia le 6 skill automaticamente
+- Conferma ogni skill installata
 
-> La cartella `.claude` e' nascosta per default. Il metodo "Vai alla cartella" la raggiunge direttamente senza doverla rendere visibile. Se `skills` non esiste ancora, creala dentro `.claude`.
+**Su Windows** -- doppio clic su `install.bat`:
+- La finestra cmd si apre, mostra l'avanzamento e si chiude con il risultato
+- Se Windows chiede conferma per eseguire lo script: clicca "Esegui comunque"
 
-**Le 6 cartelle da copiare:** `penalista-strategia`, `penalista-atti`, `penalista-scadenze`, `penalista-cautelare`, `penalista-giurisprudenza`, `penalista-esecuzione`
+> **Preferisci farlo a mano?** I dettagli per Mac e Windows sono nella [guida installazione completa](documentazione/INSTALLAZIONE.md).
 
 ### Passo 3 - Collega il kit a Cowork
 
