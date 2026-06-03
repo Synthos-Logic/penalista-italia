@@ -7,38 +7,38 @@ Kit operativo per avvocati penalisti italiani su Claude Cowork.
 
 ---
 
-## Installazione — 3 passi
+## Installazione - 3 passi
 
-### Passo 1 — Scarica il kit
+### Passo 1 - Scarica il kit
 
-Clicca **Code → Download ZIP**, decomprimi e rinomina la cartella in `Penale-Italia`.
+Clicca **Code -> Download ZIP**, decomprimi e rinomina la cartella in `Penale-Italia`.
 
-### Passo 2 — Installa le 6 skill
+### Passo 2 - Installa le 6 skill
 
 Copia le 6 cartelle da `skills/` nella cartella skill di Claude.
 
 **Su Mac:**
 
 1. Apri il **Finder**
-2. Nel menu in alto: **Vai → Vai alla cartella...** (o premi **Cmd+Shift+G**)
-3. Incolla: `~/.claude/skills` e premi Invio
-4. Se non trova la cartella: vai prima a `~/.claude`, crea la cartella `skills`
-5. Copia le 6 cartelle da `Penale-Italia/skills/` dentro `skills`
+2. Nel menu in alto: **Vai -> Vai alla cartella...** (oppure premi **Cmd+Shift+G**)
+3. Nella finestra che appare, incolla: `~/.claude/skills` e premi Invio
+4. Se compare "cartella non trovata": incolla prima `~/.claude`, crea la cartella `skills` dentro, poi ripeti il punto 3
+5. Copia le 6 cartelle da `Penale-Italia/skills/` dentro `~/.claude/skills/`
 
-> La cartella `.claude` è nascosta. Se non la vedi: premi **Cmd+Shift+.** nel Finder. Il metodo "Vai alla cartella" funziona anche senza vedere le cartelle nascoste.
+> **Cartella nascosta:** `.claude` inizia con un punto ed e' nascosta per default. Il metodo "Vai alla cartella" funziona anche senza vederla. Se vuoi vederla: premi **Cmd+Shift+.** nel Finder.
 
 **Su Windows:**
 
 1. Apri **Esplora File**
-2. Nella barra indirizzi incolla: `%USERPROFILE%\.claude\skills` e premi Invio
-3. Se non esiste: crea `.claude` nella home, poi `skills` dentro
+2. Nella barra degli indirizzi incolla: `%USERPROFILE%\.claude\skills` e premi Invio
+3. Se non esiste: crea `.claude` nella cartella home, poi `skills` dentro di essa
 4. Copia le 6 cartelle
 
-**Le 6 cartelle:** `penalista-strategia`, `penalista-atti`, `penalista-scadenze`, `penalista-cautelare`, `penalista-giurisprudenza`, `penalista-esecuzione`
+**Cartelle da copiare:** `penalista-strategia`, `penalista-atti`, `penalista-scadenze`, `penalista-cautelare`, `penalista-giurisprudenza`, `penalista-esecuzione`
 
-### Passo 3 — Collega il kit a Cowork
+### Passo 3 - Collega il kit a Cowork
 
-Claude Desktop → Cowork → **Seleziona cartella** → seleziona `Penale-Italia` (tutta). Riavvia Claude Desktop.
+Claude Desktop -> Cowork -> **Seleziona cartella** -> seleziona `Penale-Italia` (tutta). Riavvia Claude Desktop.
 
 ---
 
@@ -58,7 +58,7 @@ CASSAZIONISTA:     NO
 
 ## Aggiornamento
 
-1. Scarica il nuovo ZIP (Code → Download ZIP)
+1. Scarica il nuovo ZIP (Code -> Download ZIP)
 2. Sostituisci la cartella `Penale-Italia`
 3. Se ci sono nuove skill: copia le nuove cartelle in `~/.claude/skills/`
 4. Riavvia Claude Desktop
@@ -75,7 +75,7 @@ CASSAZIONISTA:     NO
 | `penalista-atti` | Redazione atti: memoria 415-bis, appello, riesame, Cassazione |
 | `penalista-scadenze` | Termini: prescrizione, custodia cautelare, impugnazioni, Cartabia |
 | `penalista-cautelare` | Misure cautelari: analisi, riesame, revoca, scadenze di fase |
-| `penalista-giurisprudenza` | Orientamenti Cassazione, contrasti, CEDU |
+| `penalista-giurisprudenza` | Orientamenti Cassazione, contrasti tra sezioni, CEDU |
 | `penalista-esecuzione` | Diritto penitenziario: misure alternative, liberazione, 41-bis |
 
 ### Knowledge Base
