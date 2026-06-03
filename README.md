@@ -6,23 +6,19 @@
 [![Wiki](https://img.shields.io/badge/Wiki-metodologia-blueviolet)](https://github.com/Synthos-Logic/penalista-italia/wiki)
 [![Sviluppato da](https://img.shields.io/badge/sviluppato%20da-Synthos%20Logic-purple)](https://github.com/Synthos-Logic)
 
-**Kit operativo per avvocati penalisti italiani su Claude Cowork. Specializzato esclusivamente sul diritto penale italiano.**
+**Kit operativo specializzato esclusivamente per avvocati penalisti italiani.** Strategia difensiva, redazione atti processuali, calcolo termini, gestione misure cautelari, ricerca giurisprudenziale, diritto penitenziario.
 
-> **Non e' uno strumento generico per avvocati.** E' progettato per il penalista che lavora quotidianamente su GIP, GUP, dibattimento, impugnazioni, misure cautelari e Cassazione penale. Non risponde su diritto civile, amministrativo o societario.
+> **Calibrato su GIP, GUP, indagini, dibattimento, impugnazioni, misure cautelari e Cassazione penale.** Synthos Logic ha costruito questo kit insieme a professionisti del foro, in un progetto pilota reale con avvocati penalisti in attivita'.
 
 ---
 
-## Prima di iniziare: la metodologia e' fondamentale
+## La metodologia fa la differenza
 
-Il kit non e' un motore di ricerca che risponde a domande generiche. E' un assistente che **lavora nella struttura che tu costruisci**.
+Il kit e' un assistente che **lavora nella struttura che tu costruisci**. Un fascicolo ben organizzato -- con i dati dell'indagato, il capo di imputazione, le scadenze e i link alla giurisprudenza rilevante -- abilita risposte di precisione professionale, memoria della strategia tra sessioni successive, atti coerenti con il lavoro gia' fatto.
 
-Un fascicolo ben strutturato -- con i dati dell'indagato, il capo di imputazione, le scadenze e i link alla giurisprudenza rilevante -- permette al kit di rispondere con precisione professionale, ricordare la strategia stabilita nelle sessioni precedenti, e produrre atti coerenti con il lavoro gia' fatto. Senza questa struttura, ogni sessione riparte da zero.
+Investire dieci minuti nell'organizzazione di un fascicolo restituisce ore di lavoro nel tempo.
 
-**Leggere la guida metodologica prima di iniziare non e' opzionale -- e' il passaggio che determina l'efficacia reale del kit.**
-
-Wiki [Guida metodologica completa](https://github.com/Synthos-Logic/penalista-italia/wiki)
-Sito [Sito documentazione](https://synthos-logic.github.io/penalista-italia/)
-Guida [Metodologia interattiva](https://synthos-logic.github.io/penalista-italia/METODOLOGIA.html)
+Wiki [Guida metodologica completa](https://github.com/Synthos-Logic/penalista-italia/wiki) | Sito [Documentazione](https://synthos-logic.github.io/penalista-italia/) | Guida [Metodologia interattiva](https://synthos-logic.github.io/penalista-italia/METODOLOGIA.html)
 
 ---
 
@@ -30,18 +26,18 @@ Guida [Metodologia interattiva](https://synthos-logic.github.io/penalista-italia
 
 ### Passo 1 - Scarica il kit
 
-Clicca **Code -> Download ZIP**, decomprimi e rinomina la cartella in `Penale-Italia`.
+Clicca **Code -> Download ZIP** in questa pagina. Decomprimi e rinomina la cartella in `Penale-Italia`.
 
 ### Passo 2 - Installa le 6 skill
 
 Copia le 6 cartelle da `skills/` nella cartella skill di Claude.
 
-**Su Mac:** Finder -> menu Vai -> Vai alla cartella (o **Cmd+Shift+G**) -> incolla `~/.claude/skills`
-**Su Windows:** Esplora File -> barra indirizzi -> `%USERPROFILE%\.claude\skills`
+**Mac:** Finder -> menu Vai -> Vai alla cartella (o **Cmd+Shift+G**) -> incolla `~/.claude/skills`
+**Windows:** Esplora File -> barra indirizzi -> incolla `%USERPROFILE%\.claude\skills`
 
-> La cartella `.claude` e' nascosta. Su Mac usa "Vai alla cartella" (funziona anche senza vedere i file nascosti). Se non esiste, crea prima `.claude` e poi `skills` dentro.
+> La cartella `.claude` e' nascosta per default. Il metodo "Vai alla cartella" la raggiunge direttamente senza doverla rendere visibile. Se `skills` non esiste ancora, creala dentro `.claude`.
 
-**Le 6 cartelle:** `penalista-strategia`, `penalista-atti`, `penalista-scadenze`, `penalista-cautelare`, `penalista-giurisprudenza`, `penalista-esecuzione`
+**Le 6 cartelle da copiare:** `penalista-strategia`, `penalista-atti`, `penalista-scadenze`, `penalista-cautelare`, `penalista-giurisprudenza`, `penalista-esecuzione`
 
 ### Passo 3 - Collega il kit a Cowork
 
@@ -49,9 +45,9 @@ Claude Desktop -> Cowork -> **Seleziona cartella** -> seleziona la cartella `Pen
 
 ---
 
-## Configurazione
+## Configurazione dati studio
 
-Apri il file `CLAUDE.md` con TextEdit (Mac) o Blocco Note (Windows) e compila la sezione "Dati dello studio":
+Apri `CLAUDE.md` con TextEdit (Mac) o Blocco Note (Windows) e compila la sezione "Dati dello studio":
 
 ```
 AVVOCATO:          Avv. Mario Rossi
@@ -61,48 +57,48 @@ TRIBUNALE:         Tribunale di Milano
 CASSAZIONISTA:     NO
 ```
 
-Da quel momento Claude usa questi dati in tutte le intestazioni degli atti.
+Da quel momento Claude usa questi dati nelle intestazioni di ogni atto processuale prodotto.
 
 ---
 
 ## 6 Skill specializzate
 
-| Skill | Descrizione |
+| Skill | Cosa fa |
 |---|---|
 | `penalista-strategia` | Analisi difensiva del capo di imputazione: elementi costitutivi, criticita' dell'accusa, eccezioni processuali, strategie graduate, giurisprudenza Cassazione e CEDU |
-| `penalista-atti` | Redazione di tutti i principali atti processuali penali: memoria 415-bis, appello, ricorso Cassazione, riesame, revoca cautelare, patteggiamento, abbreviato |
-| `penalista-scadenze` | Calcolo preciso di ogni termine processuale: impugnazioni, prescrizione, custodia cautelare, improcedibilita' Cartabia, udienza di convalida |
-| `penalista-cautelare` | Workflow completo misure cautelari: analisi presupposti, riesame, revoca/sostituzione, scadenze di fase, scarcerazione urgente |
-| `penalista-giurisprudenza` | Mappatura orientamenti Cassazione, analisi sentenze, contrasti tra sezioni, giurisprudenza CEDU, integrazione wikilinks |
-| `penalista-esecuzione` | Diritto penitenziario: misure alternative, liberazione anticipata/condizionale, permessi, reclami, regime 41-bis, calcolo pena residua |
+| `penalista-atti` | Redazione di tutti i principali atti: memoria 415-bis, appello, ricorso Cassazione, riesame, revoca cautelare, patteggiamento, abbreviato, messa alla prova |
+| `penalista-scadenze` | Calcolo preciso di ogni termine processuale: impugnazioni, prescrizione ante/post Bonafede, custodia cautelare, improcedibilita' Cartabia, udienza di convalida |
+| `penalista-cautelare` | Workflow completo misure cautelari: analisi presupposti, costruzione motivi riesame, revoca e sostituzione, scadenze di fase, scarcerazione urgente |
+| `penalista-giurisprudenza` | Mappatura orientamenti Cassazione, analisi sentenze, individuazione contrasti tra sezioni, giurisprudenza CEDU, integrazione wikilinks |
+| `penalista-esecuzione` | Diritto penitenziario: misure alternative, liberazione anticipata e condizionale, permessi premio, reclami condizioni detentive, regime 41-bis |
 
 ---
 
-## Come funziona il sistema documentale
+## Il sistema documentale
 
-Il kit lavora con **tutti i formati** di uno studio penalistico:
+Il kit lavora con tutti i formati che uno studio penalistico usa ogni giorno:
 
-| Formato | Uso consigliato | Come funziona |
+| Formato | Uso | Come funziona |
 |---|---|---|
-| `.md` | Fascicoli, note strategia, giurisprudenza | Il kit legge e collega automaticamente via wikilinks |
-| `.pdf` | Ordinanze, sentenze, testi normativi, CNR | Allegare alla conversazione -- il kit analizza il contenuto |
-| `.docx` | Atti prodotti, template, bozze | Allegare o usare la skill docx per lavorarci |
-| `.html` | Guide, riferimenti, documentazione | Allegare o aprire come riferimento nella conversazione |
+| `.md` | Fascicoli, note strategia, giurisprudenza interna | Collegamento automatico via wikilinks, caricamento selettivo del contesto |
+| `.pdf` | Ordinanze, sentenze, CNR, testi normativi | Allegare alla conversazione -- il kit legge e analizza |
+| `.docx` | Atti prodotti, template, bozze | Allegare o usare la skill docx per lavorarci direttamente |
+| `.html` | Guide, riferimenti, documentazione interna | Allegare o aprire come riferimento nella conversazione |
 
-> Il formato `.md` e' preferenziale per i file di lavoro perche' supporta i wikilinks e il caricamento selettivo del contesto.
+> Il formato `.md` e' ottimale per i file di lavoro: supporta i wikilinks, abilita il caricamento selettivo del contesto e riduce il consumo di token.
 
 ---
 
 ## Perche' Penalista Italia
 
-**Non uno strumento generico. Specializzato esclusivamente sul penale italiano.**
+Un kit costruito da chi conosce il processo penale italiano -- testato sul campo con avvocati in attivita' nel corso di un progetto pilota reale.
 
-- **Tutti i formati** -- Lavora con MD, PDF, DOCX e HTML. I documenti dello studio sono supportati cos' come arrivano.
-- **Memoria persistente** -- Il sistema wikilinks collega fascicoli, giurisprudenza e documenti. Il kit ricorda il contesto tra sessioni senza ricaricare tutto.
-- **Fonti deterministiche** -- Normativa, HUDOC, Massimario Cassazione. Quando usi i testi ufficiali come contesto, le risposte sono precise e citabili.
-- **Mini-progetti** -- Template per le pratiche ricorrenti: gestione cautelare, risposta 415-bis, appello, Cassazione, esecuzione penale, D.Lgs. 231.
-- **Riforma Cartabia integrata** -- L'improcedibilita' ex art. 344-bis c.p.p. e' uno strumento difensivo, non solo un termine da monitorare.
-- **Solo diritto penale italiano** -- GIP, GUP, indagini, dibattimento, Cassazione penale, Sorveglianza, 231. Non risponde su diritto civile o amministrativo.
+- **Specializzazione verticale** -- GIP, GUP, dibattimento, impugnazioni, Cassazione penale, Sorveglianza, D.Lgs. 231. Ogni risposta e' calibrata su questo specifico perimetro.
+- **Memoria persistente tra sessioni** -- Il sistema wikilinks collega fascicoli, giurisprudenza e documenti. La strategia concordata in una sessione e' disponibile nella successiva.
+- **Fonti deterministiche** -- Normativa ufficiale, HUDOC, Massimario Cassazione. Quando usi i testi come contesto, le risposte sono precise, tracciabili e citabili.
+- **Template operativi** -- Pratiche ricorrenti gia' strutturate: gestione cautelare, risposta 415-bis, appello, ricorso Cassazione, esecuzione penale, D.Lgs. 231.
+- **Riforma Cartabia come strumento difensivo** -- L'improcedibilita' ex art. 344-bis c.p.p. trattata come leva della difesa, con calcolo integrato nei termini processuali.
+- **Aggiornato con la prassi reale** -- La Knowledge Base include schede operative per i reati piu' frequenti negli studi penali italiani, costruite con avvocati in attivita'.
 
 ---
 
@@ -110,14 +106,18 @@ Il kit lavora con **tutti i formati** di uno studio penalistico:
 
 1. Scarica il nuovo ZIP (Code -> Download ZIP)
 2. Sostituisci la cartella `Penale-Italia`
-3. Se ci sono nuove skill: copia le nuove cartelle in `~/.claude/skills/`
+3. Se il changelog indica nuove skill: copia le nuove cartelle in `~/.claude/skills/`
 4. Riavvia Claude Desktop
 
 ---
 
-## Privacy
+## Privacy e dati
 
-I file fisici restano sul tuo computer. Il testo che chiedi di analizzare transita sui server di Anthropic per l'elaborazione.
-La **Legge 132/2025 art. 13** impone di informare i clienti dell'uso dell'AI. Il CNF ha pubblicato uno schema di informativa.
+I file fisici rimangono sul computer dello studio. Il testo portato in analisi transita sui server Anthropic esclusivamente per l'elaborazione.
+La **Legge 132/2025 art. 13** regola l'obbligo di informativa ai clienti sull'uso di strumenti AI. Il CNF ha pubblicato uno schema di informativa pronto all'uso.
 
-[Pagina Privacy completa](https://github.com/Synthos-Logic/penalista-italia/wiki/Privacy) | [Guida installazione dettagliata](documentazione/INSTALLAZIONE.md)
+[Pagina Privacy completa -- Wiki](https://github.com/Synthos-Logic/penalista-italia/wiki/Privacy) | [Guida installazione dettagliata](documentazione/INSTALLAZIONE.md)
+
+---
+
+*Sviluppato da [Synthos Logic](https://github.com/Synthos-Logic) -- Intelligenza artificiale applicata alla pratica professionale italiana.*
