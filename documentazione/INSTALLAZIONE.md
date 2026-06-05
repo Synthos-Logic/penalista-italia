@@ -27,18 +27,34 @@ Vai su [github.com/Synthos-Logic/penalista-italia](https://github.com/Synthos-Lo
 
 ## Passo 2 — Installa le 6 skill
 
-Copia le 6 cartelle da `skills/` nella cartella skill di Claude:
+Il kit include uno script di installazione automatica che gestisce tutto senza dover toccare cartelle nascoste.
 
-**Mac:**
-1. Finder → menu Vai → Vai alla cartella → incolla `~/.claude/skills`
-2. Se non esiste, crea la cartella `skills` dentro `.claude`
-3. Copia le 6 cartelle: `penalista-strategia`, `penalista-atti`, `penalista-scadenze`, `penalista-cautelare`, `penalista-giurisprudenza`, `penalista-esecuzione`
+### Metodo rapido — script automatico (consigliato)
 
-> La cartella `.claude` è nascosta. Premi `Cmd+Shift+.` nel Finder per vederla.
+**Su Mac:**
+1. Apri il **Terminale** (cerca "Terminale" nel Launchpad o in Spotlight)
+2. Trascina il file **`install.sh`** dalla cartella `Penale-Italia` dentro la finestra del Terminale
+3. Premi **Invio**
 
-**Windows:**
-1. Esplora File → barra indirizzi → `%USERPROFILE%\.claude\skills`
-2. Copia le 6 cartelle
+Lo script crea la cartella `~/.claude/skills` se non esiste, copia le 6 skill e conferma ogni installazione.
+
+**Su Windows:**
+1. Nella cartella `Penale-Italia`, fai **doppio clic su `install.bat`**
+2. Se Windows chiede conferma: clicca **"Esegui comunque"**
+
+La finestra cmd mostra l'avanzamento e al termine indica di riavviare Claude Desktop.
+
+### Metodo manuale (alternativa)
+
+Se preferisci copiare i file a mano:
+
+**Mac:** Finder → menu Vai → Vai alla cartella (o **Cmd+Shift+G**) → incolla `~/.claude/skills` → copia le 6 cartelle
+
+**Windows:** Esplora File → barra indirizzi → incolla `%USERPROFILE%\.claude\skills` → copia le 6 cartelle
+
+> Su Mac la cartella `.claude` è nascosta. Il metodo "Vai alla cartella" la raggiunge direttamente senza renderla visibile. Se `skills` non esiste, creala dentro `.claude` prima di copiare.
+
+**Le 6 cartelle:** `penalista-strategia`, `penalista-atti`, `penalista-scadenze`, `penalista-cautelare`, `penalista-giurisprudenza`, `penalista-esecuzione`
 
 ---
 
