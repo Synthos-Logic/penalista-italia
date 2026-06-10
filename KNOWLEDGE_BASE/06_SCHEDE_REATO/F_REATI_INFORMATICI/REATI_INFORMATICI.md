@@ -1,5 +1,7 @@
 # Reati Informatici — Scheda Operativa
-*Artt. 615-ter, 617-quater, 635-bis, 640-ter c.p. — L. 547/1993 — Aggiornata: Maggio 2026*
+*Artt. 615-ter, 617-quater, 635-bis, 640-ter c.p. — L. 547/1993 — Aggiornata: Giugno 2026*
+
+> ⚠️ **Novità 2026 — prova elettronica transfrontaliera.** I D.lgs. 215 e 216 del 30/12/2025 (G.U. 15/1/2026, in vigore dal 30/1/2026) attuano il pacchetto e-evidence UE (Reg. 2023/1543, Dir. 2023/1544): Ordine europeo di produzione (EPOC) e di conservazione (EPOC-PR) di prove elettroniche, con contatto diretto autorità giudiziaria → fornitore di servizi. Piena applicazione dal 18/8/2026. Per la difesa: verificare sempre competenza dell'autorità emittente, regolarità della procedura e possibilità di riesame dell'ordine — nuove questioni di utilizzabilità. Dettagli in [[AGGIORNAMENTO_NORMATIVO_2025-2026]].
 
 ---
 

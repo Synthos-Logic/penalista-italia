@@ -1,5 +1,5 @@
 # Registro Documenti — Knowledge Base Penale Italia
-*Aggiornato: 8 maggio 2026 — v2.1*
+*Aggiornato: 10 giugno 2026 — v3.1*
 
 Questo file è l'indice completo di tutti i documenti presenti nella KB.
 Aggiornarlo ogni volta che si aggiunge un nuovo documento.
@@ -17,6 +17,14 @@ Aggiornarlo ogni volta che si aggiunge un nuovo documento.
 | `2023_Massimario_Penale_VolumeII.pdf` | Rassegna della Giurisprudenza di Legittimità — Gli orientamenti delle Sezioni Penali, Anno 2023 | 2023 | Penali | Volume II (176 pp.) |
 
 **Percorso:** `02_GIURISPRUDENZA/cassazione_penale/rassegne_massimario/`
+
+> 🔜 **Da scaricare — rassegne mensili 2025:** l'Ufficio del Massimario pubblica rassegne mensili penali, disponibili fino a dicembre 2025. Fonti: cortedicassazione.it → Relazioni e documenti penale; portaledelmassimario.ipzs.it. Aggiungere i PDF in questa cartella con convenzione `2025_Rassegna_Mensile_[Mese]_Penale.pdf`.
+
+### Documenti normativi e di aggiornamento
+
+| File | Contenuto | Stato |
+|------|-----------|-------|
+| `00_META/AGGIORNAMENTO_NORMATIVO_2025-2026.md` | Quadro novità: rinvio GIP collegiale (feb. 2027), interrogatorio preventivo, L. 80/2025 Decreto Sicurezza, D.lgs. 215-216/2025 e-evidence, rassegne mensili 2025 | ✅ Presente (v3.1) |
 
 ### Cassazione Civile
 

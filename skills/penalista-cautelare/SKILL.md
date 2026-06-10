@@ -9,6 +9,18 @@ Questa skill gestisce l'intero ciclo difensivo delle misure cautelari personali:
 
 ---
 
+## ⚠️ Quadro normativo vigente (verificato giugno 2026)
+
+Due novità della Riforma Nordio (L. 114/2024) incidono direttamente su questa skill:
+
+**1. Interrogatorio preventivo (art. 291 co. 1-bis c.p.p.) — IN VIGORE.**
+Salvo i casi eccettuati (esigenze cautelari incompatibili con il preavviso, reati di maggiore gravità, pericolo attuale di fuga o inquinamento), il giudice deve interrogare la persona **prima** di applicare la misura, con registrazione audio/video integrale. Per la difesa è un'occasione nuova: preparare il cliente, valutare il silenzio, depositare documentazione sulle esigenze cautelari **prima** che la misura sia disposta. L'omissione dell'interrogatorio fuori dai casi consentiti è motivo di impugnazione — verificarla sempre nell'analisi dell'ordinanza (Modulo 2).
+
+**2. GIP collegiale per la custodia in carcere (art. 328 co. 1-quinquies c.p.p.) — NON ANCORA IN VIGORE.**
+L'entrata in vigore, originariamente fissata al 25 agosto 2026, è stata **differita a fine febbraio 2027** (decreto-legge approvato dal CdM il 4 giugno 2026) [VERIFICARE estremi G.U.]. Fino ad allora decide il GIP monocratico. Dettagli in [[AGGIORNAMENTO_NORMATIVO_2025-2026]].
+
+---
+
 ## Prima di procedere
 
 Identifica la situazione cautelare. Chiedi in un'unica domanda le informazioni mancanti:
@@ -41,6 +53,8 @@ I reati gravi includono: associazione mafiosa, terrorismo, sequestro di persona 
 | Cassazione | **45 giorni** | **3 mesi** |
 
 **Output:** mostrare la scadenza del termine di fase attuale, con data precisa.
+
+> ⚠️ **Tabella semplificata.** I termini dell'art. 303 c.p.p. variano anche in base alla pena edittale del reato contestato (fasce diverse entro la stessa fase). Prima di comunicare una scadenza al difensore, **verificare sempre il termine sul testo vigente dell'art. 303 c.p.p.** (PDF in `penalista-fonti/` o Normattiva) e applicare la regola conservativa: nel dubbio, il termine più breve.
 
 **Se il termine è già scaduto o scade entro 48 ore:** → EMERGENZA CAUTELARE — passare immediatamente al Modulo 5 (istanza di scarcerazione).
 

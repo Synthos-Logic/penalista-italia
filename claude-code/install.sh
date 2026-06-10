@@ -1,5 +1,7 @@
 #!/bin/bash
 # ============================================================
+# ⚠️  SOLO PER UTENTI CLAUDE CODE (CLI). L'app desktop Claude/Cowork NON legge ~/.claude/skills:
+# per Cowork usare l'installazione assistita (vedi INSTALLAZIONE_ASSISTITA.md nella radice del kit).
 # Penalista Italia - Installazione skill su Mac
 # Trascina questo file nel Terminale e premi Invio
 # ============================================================
@@ -21,7 +23,7 @@ else
 fi
 echo ""
 
-SKILLS=("penalista-strategia" "penalista-atti" "penalista-scadenze" "penalista-cautelare" "penalista-giurisprudenza" "penalista-esecuzione")
+SKILLS=("penalista-strategia" "penalista-atti" "penalista-scadenze" "penalista-cautelare" "penalista-giurisprudenza" "penalista-esecuzione" "penalista-inizia" "penalista-verifica")
 
 OK=0; ERR=0
 for skill in "${SKILLS[@]}"; do

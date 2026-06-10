@@ -1,4 +1,4 @@
-# Guida all'Installazione — Kit Penalista Italiano v3.0
+# Guida all'Installazione — Kit Penalista Italiano v3.1
 
 ---
 
@@ -16,6 +16,7 @@
 
 - Claude Desktop con Cowork installato e aggiornato
 - Account Claude Pro o superiore
+- In **Impostazioni → Capacità**: "Esecuzione di codice e creazione di file" attivo (le skill lo richiedono)
 
 ---
 
@@ -25,60 +26,50 @@ Vai su [github.com/Synthos-Logic/penalista-italia](https://github.com/Synthos-Lo
 
 ---
 
-## Passo 2 — Installa le 6 skill
+## Passo 2 — Collega il kit a Cowork
 
-Il kit include uno script di installazione automatica che gestisce tutto senza dover toccare cartelle nascoste.
-
-### Metodo rapido — script automatico (consigliato)
-
-**Su Mac:**
-1. Apri il **Terminale** (cerca "Terminale" nel Launchpad o in Spotlight)
-2. Trascina il file **`install.sh`** dalla cartella `Penale-Italia` dentro la finestra del Terminale
-3. Premi **Invio**
-
-Lo script crea la cartella `~/.claude/skills` se non esiste, copia le 6 skill e conferma ogni installazione.
-
-**Su Windows:**
-1. Nella cartella `Penale-Italia`, fai **doppio clic su `install.bat`**
-2. Se Windows chiede conferma: clicca **"Esegui comunque"**
-
-La finestra cmd mostra l'avanzamento e al termine indica di riavviare Claude Desktop.
-
-### Metodo manuale (alternativa)
-
-Se preferisci copiare i file a mano:
-
-**Mac:** Finder → menu Vai → Vai alla cartella (o **Cmd+Shift+G**) → incolla `~/.claude/skills` → copia le 6 cartelle
-
-**Windows:** Esplora File → barra indirizzi → incolla `%USERPROFILE%\.claude\skills` → copia le 6 cartelle
-
-> Su Mac la cartella `.claude` è nascosta. Il metodo "Vai alla cartella" la raggiunge direttamente senza renderla visibile. Se `skills` non esiste, creala dentro `.claude` prima di copiare.
-
-**Le 6 cartelle:** `penalista-strategia`, `penalista-atti`, `penalista-scadenze`, `penalista-cautelare`, `penalista-giurisprudenza`, `penalista-esecuzione`
-
----
-
-## Passo 3 — Collega il kit a Cowork
-
-Apri Claude Desktop → Cowork → **"Seleziona cartella"** → seleziona `Penale-Italia` (tutta). Riavvia Claude Desktop.
+Apri Claude Desktop → Cowork → **"Seleziona cartella"** → seleziona `Penale-Italia` (tutta).
 
 > Seleziona la cartella intera, non solo `FASCICOLI/`. Claude ha bisogno anche della Knowledge Base e del CLAUDE.md.
 
 ---
 
+## Passo 3 — Installa le 8 skill
+
+### Metodo consigliato — installazione assistita (nessun file da toccare)
+
+Con la cartella `Penale-Italia` selezionata in Cowork, incolla questo messaggio a Claude:
+
+```
+Leggi il file INSTALLAZIONE_ASSISTITA.md ed esegui l'installazione assistita delle skill.
+```
+
+Claude ti presenterà **8 schede con il pulsante "Salva skill"**: clicca il pulsante su ciascuna. Fine. Poi verifica in **Personalizza → Skills** che le 8 skill risultino attive (interruttore acceso).
+
+### Metodo manuale (alternativa)
+
+1. Nella cartella `Penale-Italia/skills/` trovi 8 cartelle: `penalista-inizia`, `penalista-strategia`, `penalista-atti`, `penalista-scadenze`, `penalista-cautelare`, `penalista-giurisprudenza`, `penalista-esecuzione`, `penalista-verifica`
+2. Comprimi ogni cartella in uno ZIP (Mac: tasto destro → **Comprimi**; Windows: tasto destro → **Invia a → Cartella compressa**)
+3. In Claude: **Personalizza → Skills → "+" → Carica una skill** → seleziona lo ZIP
+4. Ripeti per tutte e 8 le skill, poi verifica che siano attive
+
+### ⚠️ Cosa NON fare
+
+- **Non copiare le cartelle in `~/.claude/skills`** se usi l'app desktop/Cowork: quel percorso vale **solo per Claude Code (lo strumento da terminale per sviluppatori)**. L'app desktop non lo legge — le skill risulterebbero "installate" ma invisibili.
+- **Non chiedere a Claude di "installare le skill" senza il file INSTALLAZIONE_ASSISTITA.md**: senza istruzioni, Claude può solo copiare le cartelle nel posto sbagliato.
+
+> **Usi Claude Code (CLI)?** Allora sì: gli script sono nella cartella `claude-code/`. Su Mac apri il Terminale nella cartella del kit e lancia `bash claude-code/install.sh` (NON eseguirlo con doppio clic o trascinamento: lo ZIP di GitHub non conserva i permessi di esecuzione e otterresti "permission denied"). Su Windows: doppio clic su `claude-code\install.bat`. Gli script copiano le 8 skill in `~/.claude/skills`, che Claude Code legge regolarmente.
+
+---
+
 ## Passo 4 — Configura i dati del tuo studio
 
-Apri `CLAUDE.md` nella cartella `Penale-Italia` con TextEdit (Mac) o Blocco Note (Windows). Compila:
+Due strade equivalenti:
 
-```
-AVVOCATO:          Avv. Mario Rossi
-FORO:              Foro di Milano
-N. ISCRIZIONE:     12345
-TRIBUNALE:         Tribunale di Milano
-CASSAZIONISTA:     NO
-```
+- **La più semplice:** scrivi a Claude **"Iniziamo"** — la skill di onboarding ti chiede i dati (nome, foro, tribunale) e compila tutto lei.
+- **Manuale:** apri `CLAUDE.md` nella cartella `Penale-Italia` con TextEdit (Mac) o Blocco Note (Windows) e compila la sezione "Dati dello studio". Salva.
 
-Salva. Claude usa questi dati nelle intestazioni degli atti.
+Claude usa questi dati nelle intestazioni degli atti.
 
 ---
 
@@ -88,16 +79,19 @@ Scrivi in Cowork:
 
 > "Ho un fascicolo per truffa aggravata. Calcola il termine per la memoria 415-bis notificata il 1 giugno 2026."
 
-Claude deve rispondere con una data precisa (21 giugno 2026) e il calcolo dettagliato. Se risponde in modo generico, verifica i passi 2 e 3 e riavvia Claude Desktop.
+Claude deve rispondere con una data precisa (21 giugno 2026) e il calcolo dettagliato. Se risponde in modo generico, verifica in **Personalizza → Skills** che `penalista-scadenze` sia attiva.
 
 ---
 
 ## Aggiornamento
 
-1. Scarica il nuovo ZIP (Code → Download ZIP)
-2. Sostituisci la cartella `Penale-Italia`
-3. Se il changelog indica nuove skill: copia le nuove cartelle in `~/.claude/skills/`
-4. Riavvia Claude Desktop
+> ⚠️ **Non sostituire mai la cartella `Penale-Italia` a mano:** dentro ci sono i tuoi fascicoli (`FASCICOLI/`) e i dati del tuo studio (`CLAUDE.md`). Sostituendola li perderesti.
+
+1. Scarica il nuovo ZIP (**Code → Download ZIP**)
+2. Trascina il file ZIP (senza decomprimerlo) **dentro la cartella `Penale-Italia`**
+3. Incolla a Claude: *"Ho scaricato l'aggiornamento. Leggi AGGIORNAMENTO_ASSISTITO.md ed esegui l'aggiornamento del kit."*
+
+Claude confronta le versioni, ti riassume le novità, aggiorna i file del kit **senza toccare fascicoli e dati studio**, e ti presenta le skill nuove o aggiornate da reinstallare con un clic ("Salva skill"). Se una skill risulta già esistente: **Personalizza → Skills** → elimina la versione vecchia → clicca di nuovo "Salva skill".
 
 ---
 
@@ -114,7 +108,10 @@ I file restano sul tuo computer. Il testo analizzato transita sui server Anthrop
 
 | Problema | Soluzione |
 |---|---|
-| Skill non attive | Verifica che le cartelle siano in `~/.claude/skills/` con `SKILL.md` dentro. Riavvia. |
+| Le skill non compaiono | Apri **Personalizza → Skills**: se non ci sono, ripeti il Passo 3. Se sono spente, attiva l'interruttore |
+| La sezione Skills non è visibile | **Impostazioni → Capacità** → attiva "Esecuzione di codice e creazione di file" |
+|  Ho usato gli script claude-code/ ma le skill non ci sono in Claude | Normale: quel metodo vale solo per Claude Code. Usa il Passo 3 (installazione assistita) |
+| Claude ha "installato" da solo ma non funziona nulla | Ha copiato le cartelle nel posto sbagliato. Elimina le copie e usa il Passo 3 |
+| Errore al caricamento dello ZIP | Lo ZIP deve contenere la cartella della skill come radice (non i file sciolti) e il nome cartella deve coincidere con la skill |
 | Claude non vede i documenti | Seleziona tutta la cartella `Penale-Italia`, non una sottocartella |
-| Claude non usa il tuo nome | Apri `CLAUDE.md` e compila "Dati dello studio" |
-| Cartella `.claude` non esiste (Mac) | Apri Terminale: `mkdir -p ~/.claude/skills` |
+| Claude non usa il tuo nome | Scrivi "Iniziamo" oppure compila `CLAUDE.md` a mano |

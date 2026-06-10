@@ -9,6 +9,12 @@ Questa skill copre la fase che inizia quando la sentenza è definitiva e il clie
 
 ---
 
+## ⚠️ Novità normativa (verificato giugno 2026)
+
+La **L. 9 giugno 2025, n. 80** (conversione del D.L. Sicurezza 48/2025) ha introdotto il reato di **rivolta all'interno di istituto penitenziario**: reclusione 1–5 anni per la partecipazione a sommossa mediante violenza, minaccia o resistenza agli ordini; fino a 8 anni per chi la organizza o dirige; fino a 20 anni se ne derivano lesioni gravi o morte. Il reato si configura solo per violazione di ordini impartiti per la tutela dell'ordine e della sicurezza interna — non per ordini generici: è il primo terreno difensivo. La legge modifica anche altre disposizioni dell'ordinamento penitenziario. Quadro completo in [[AGGIORNAMENTO_NORMATIVO_2025-2026]]; fonte primaria: Relazione dell'Ufficio del Massimario sul D.L. 48/2025.
+
+---
+
 ## Prima di iniziare
 
 Se la situazione non è già chiara, chiedi in un'unica domanda:

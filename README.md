@@ -1,6 +1,6 @@
 # Penalista Italia -- Kit Operativo per Avvocati Penalisti
 
-[![Versione](https://img.shields.io/badge/versione-3.0.0-blue)](https://github.com/Synthos-Logic/penalista-italia/releases)
+[![Versione](https://img.shields.io/badge/versione-3.1.0-blue)](https://github.com/Synthos-Logic/penalista-italia/releases)
 [![Licenza](https://img.shields.io/badge/licenza-MIT-green)](LICENSE)
 [![Piattaforma](https://img.shields.io/badge/piattaforma-Claude%20Cowork-orange)](https://claude.ai)
 [![Wiki](https://img.shields.io/badge/Wiki-metodologia-blueviolet)](https://github.com/Synthos-Logic/penalista-italia/wiki)
@@ -14,7 +14,7 @@
 
 ## La metodologia fa la differenza
 
-Il kit e' un assistente che **lavora nella struttura che tu costruisci**. Un fascicolo ben organizzato -- con i dati dell'indagato, il capo di imputazione, le scadenze e i link alla giurisprudenza rilevante -- abilita risposte di precisione professionale, memoria della strategia tra sessioni successive, atti coerenti con il lavoro gia' fatto.
+Il kit e' un assistente che **lavora in una struttura organizzata — e la struttura la costruisce lui**. Fascicoli, indici, scadenziario e collegamenti tra documenti: li crea e li mantiene il kit a ogni operazione. Un fascicolo ben organizzato -- con i dati dell'indagato, il capo di imputazione, le scadenze e la giurisprudenza rilevante -- abilita risposte di precisione professionale, memoria della strategia tra sessioni successive, atti coerenti con il lavoro gia' fatto. Per partire basta scrivere **"Iniziamo"**: la skill di onboarding accompagna il primo avvio passo per passo.
 
 Investire dieci minuti nell'organizzazione di un fascicolo restituisce ore di lavoro nel tempo.
 
@@ -28,24 +28,21 @@ Wiki [Guida metodologica completa](https://github.com/Synthos-Logic/penalista-it
 
 Clicca **Code -> Download ZIP** in questa pagina. Decomprimi e rinomina la cartella in `Penale-Italia`.
 
-### Passo 2 - Installa le 6 skill
+### Passo 2 - Collega il kit a Cowork
 
-Il kit include uno script di installazione automatica per entrambe le piattaforme.
+Claude Desktop -> Cowork -> **Seleziona cartella** -> seleziona la cartella `Penale-Italia` intera.
 
-**Su Mac** -- apri il Terminale, trascina il file `install.sh` dentro la finestra e premi Invio:
-- Lo script crea la cartella `~/.claude/skills` se non esiste
-- Copia le 6 skill automaticamente
-- Conferma ogni skill installata
+### Passo 3 - Installa le 8 skill (installazione assistita)
 
-**Su Windows** -- doppio clic su `install.bat`:
-- La finestra cmd si apre, mostra l'avanzamento e si chiude con il risultato
-- Se Windows chiede conferma per eseguire lo script: clicca "Esegui comunque"
+Con la cartella selezionata, incolla questo messaggio a Claude:
 
-> **Preferisci farlo a mano?** I dettagli per Mac e Windows sono nella [guida installazione completa](documentazione/INSTALLAZIONE.md).
+```
+Leggi il file INSTALLAZIONE_ASSISTITA.md ed esegui l'installazione assistita delle skill.
+```
 
-### Passo 3 - Collega il kit a Cowork
+Claude presenta **8 schede con il pulsante "Salva skill"**: un clic per ciascuna e l'installazione e' fatta. Niente Terminale, niente cartelle nascoste. Verifica finale in **Personalizza -> Skills**.
 
-Claude Desktop -> Cowork -> **Seleziona cartella** -> seleziona la cartella `Penale-Italia` intera. Riavvia Claude Desktop.
+> **Importante:** nell'app desktop le skill si installano SOLO cosi' (o caricando gli ZIP a mano da Personalizza -> Skills). Il percorso `~/.claude/skills` e gli script `install.sh`/`install.bat` valgono **solo per chi usa Claude Code da terminale**. Dettagli e metodo manuale nella [guida installazione completa](documentazione/INSTALLAZIONE.md).
 
 ---
 
@@ -65,16 +62,18 @@ Da quel momento Claude usa questi dati nelle intestazioni di ogni atto processua
 
 ---
 
-## 6 Skill specializzate
+## 8 Skill specializzate
 
 | Skill | Cosa fa |
 |---|---|
+| `penalista-inizia` 🆕 | Onboarding guidato: dal primo "Iniziamo" al primo fascicolo operativo in 15 minuti, su un caso vero. Configura i dati studio e accompagna l'avvocato senza richiedere lettura di documentazione |
 | `penalista-strategia` | Analisi difensiva del capo di imputazione: elementi costitutivi, criticita' dell'accusa, eccezioni processuali, strategie graduate, giurisprudenza Cassazione e CEDU |
 | `penalista-atti` | Redazione di tutti i principali atti: memoria 415-bis, appello, ricorso Cassazione, riesame, revoca cautelare, patteggiamento, abbreviato, messa alla prova |
 | `penalista-scadenze` | Calcolo preciso di ogni termine processuale: impugnazioni, prescrizione ante/post Bonafede, custodia cautelare, improcedibilita' Cartabia, udienza di convalida |
 | `penalista-cautelare` | Workflow completo misure cautelari: analisi presupposti, costruzione motivi riesame, revoca e sostituzione, scadenze di fase, scarcerazione urgente |
 | `penalista-giurisprudenza` | Mappatura orientamenti Cassazione, analisi sentenze, individuazione contrasti tra sezioni, giurisprudenza CEDU, integrazione wikilinks |
 | `penalista-esecuzione` | Diritto penitenziario: misure alternative, liberazione anticipata e condizionale, permessi premio, reclami condizioni detentive, regime 41-bis |
+| `penalista-verifica` 🆕 | Controllo qualita' pre-deposito: verifica indipendente di ogni citazione giurisprudenziale contro la Knowledge Base, ricalcolo dei termini, coerenza atto-fascicolo. Report con esito 🟢/🟡/🔴 |
 
 ---
 
@@ -108,10 +107,13 @@ Un kit costruito da chi conosce il processo penale italiano -- testato sul campo
 
 ## Aggiornamento
 
+> ⚠️ **Non sostituire mai la cartella `Penale-Italia` a mano:** dentro ci sono i tuoi fascicoli e i dati del tuo studio.
+
 1. Scarica il nuovo ZIP (Code -> Download ZIP)
-2. Sostituisci la cartella `Penale-Italia`
-3. Se il changelog indica nuove skill: copia le nuove cartelle in `~/.claude/skills/`
-4. Riavvia Claude Desktop
+2. Trascina il file ZIP (senza decomprimerlo) dentro la cartella `Penale-Italia`
+3. Incolla a Claude: *"Ho scaricato l'aggiornamento. Leggi AGGIORNAMENTO_ASSISTITO.md ed esegui l'aggiornamento del kit."*
+
+Claude aggiorna i file del kit **preservando fascicoli e dati studio**, ti riassume le novita' e ti presenta le skill aggiornate da reinstallare con un clic.
 
 ---
 

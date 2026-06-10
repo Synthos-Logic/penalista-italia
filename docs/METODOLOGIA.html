@@ -404,7 +404,7 @@
       <div class="icon">⚖️</div>
       <div>
         <div class="name">Penalista Italia</div>
-        <div class="version">v1.2.0 — Synthos Logic</div>
+        <div class="version">v3.1.0 — Synthos Logic</div>
       </div>
     </div>
 
@@ -415,17 +415,16 @@
     </div>
 
     <div class="nav-section">
-      <div class="nav-label">Fondamenti</div>
-      <a class="nav-item" href="#principio"><span class="dot"></span>Il principio</a>
-      <a class="nav-item" href="#formati"><span class="dot"></span>Formati documentali</a>
-      <a class="nav-item" href="#struttura"><span class="dot"></span>Struttura cartelle</a>
+      <div class="nav-label">Inizia qui</div>
+      <a class="nav-item" href="#percorso"><span class="dot"></span>Il percorso dell'avvocato</a>
       <a class="nav-item" href="#fascicolo"><span class="dot"></span>Aprire un fascicolo</a>
+      <a class="nav-item" href="#sessioni"><span class="dot"></span>La routine quotidiana</a>
     </div>
 
     <div class="nav-section">
-      <div class="nav-label">Sistema memoria</div>
-      <a class="nav-item" href="#wikilinks"><span class="dot"></span>Wikilinks</a>
-      <a class="nav-item" href="#sessioni"><span class="dot"></span>Gestione sessioni</a>
+      <div class="nav-label">Le pratiche</div>
+      <a class="nav-item" href="#mini-progetti"><span class="dot"></span>Template pratiche</a>
+      <a class="nav-item" href="#workflow"><span class="dot"></span>Workflow tipo</a>
       <a class="nav-item" href="#scadenziario"><span class="dot"></span>Scadenziario</a>
     </div>
 
@@ -437,14 +436,16 @@
     </div>
 
     <div class="nav-section">
-      <div class="nav-label">Mini-Progetti</div>
-      <a class="nav-item" href="#mini-progetti"><span class="dot"></span>Template pratiche</a>
-      <a class="nav-item" href="#workflow"><span class="dot"></span>Workflow tipo</a>
+      <div class="nav-label">Come funziona il motore</div>
+      <a class="nav-item" href="#principio"><span class="dot"></span>Il principio</a>
+      <a class="nav-item" href="#formati"><span class="dot"></span>Formati documentali</a>
+      <a class="nav-item" href="#struttura"><span class="dot"></span>Struttura cartelle</a>
+      <a class="nav-item" href="#wikilinks"><span class="dot"></span>Wikilinks</a>
     </div>
 
     <div class="nav-section">
       <div class="nav-label">Riferimento</div>
-      <a class="nav-item" href="INSTALLAZIONE.html"><span class="dot"></span>Guida installazione</a>
+      <a class="nav-item" href="https://github.com/Synthos-Logic/penalista-italia/blob/main/documentazione/INSTALLAZIONE.md"><span class="dot"></span>Guida installazione</a>
       <a class="nav-item" href="https://github.com/Synthos-Logic/penalista-italia"><span class="dot"></span>Repository GitHub</a>
     </div>
   </nav>
@@ -456,8 +457,50 @@
     <div class="hero">
       <div class="hero-badge">📚 Guida metodologica</div>
       <h1>Come lavorare con il kit</h1>
-      <p>Non è sufficiente installare le skill — il kit funziona al massimo quando hai una struttura. Questa guida ti insegna l'organizzazione che trasforma uno strumento in un sistema.</p>
+      <p>Non serve leggere tutta questa guida per iniziare. Parti dal <a href="#percorso">percorso dell'avvocato</a> qui sotto: tre tappe, e il resto della guida diventa consultazione, non studio.</p>
     </div>
+
+    <!-- 0. Il percorso dell'avvocato -->
+    <section id="percorso">
+      <div class="section-header">
+        <div class="section-num blue">★</div>
+        <div>
+          <div class="section-title">Il percorso dell'avvocato</div>
+          <div class="section-sub">Tre tappe per essere operativo — il resto lo gestisce il kit</div>
+        </div>
+      </div>
+
+      <p>Questo kit è costruito perché <strong>tu faccia l'avvocato e il sistema faccia il sistema</strong>. Cartelle, collegamenti tra documenti, indici e scadenziario: li crea e li mantiene il kit. Le uniche cose che dipendono da te sono tre, e le impari in una giornata di lavoro normale.</p>
+
+      <div class="steps">
+        <div class="step">
+          <div class="step-num">1</div>
+          <div class="step-content">
+            <h4>Giorno 1 — Tre azioni e sei operativo</h4>
+            <p>Installa il kit (<a href="https://github.com/Synthos-Logic/penalista-italia/blob/main/documentazione/INSTALLAZIONE.md">guida installazione</a>, 10 minuti). Apri <code>CLAUDE.md</code> e compila i dati del tuo studio: nome, foro, tribunale. Poi scrivi a Claude: <em>"Iniziamo"</em> — il kit ti accompagna nel primo avvio e apre con te il primo fascicolo. Non devi sapere nient'altro.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-num">2</div>
+          <div class="step-content">
+            <h4>La tua prima pratica — segui un template</h4>
+            <p>Prendi un caso vero che hai sul tavolo e segui il <a href="#mini-progetti">mini-progetto</a> corrispondente: risposta a un 415-bis, una misura cautelare in corso, un appello da costruire. Ogni template ti dice quali comandi usare e in che ordine. Alla fine avrai il fascicolo digitale completo — costruito lavorando, non studiando.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-num">3</div>
+          <div class="step-content">
+            <h4>La routine — 2 minuti a sessione</h4>
+            <p>Da lì in poi il metodo è uno solo: apri la sessione dicendo <em>"Lavoriamo sul fascicolo Rossi"</em>, lavora, e chiudi chiedendo al kit di aggiornare fascicolo e scadenziario. Tutto qui. I dettagli nella sezione <a href="#sessioni">routine quotidiana</a>.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="alert blue">
+        <span class="alert-icon">💡</span>
+        <p><strong>E tutto il resto di questa guida?</strong> Le sezioni su formati, struttura cartelle e wikilinks spiegano <em>come funziona il motore</em>. Leggile se ti incuriosisce o quando vuoi spremere di più dal sistema — ma il kit funziona anche se non le leggi mai: quelle operazioni le fa lui.</p>
+      </div>
+    </section>
 
     <!-- 1. Il principio fondamentale -->
     <section id="principio">
@@ -740,8 +783,13 @@
         <div class="section-num purple">4</div>
         <div>
           <div class="section-title">Il sistema wikilinks</div>
-          <div class="section-sub">Come la memoria dello studio si costruisce nel tempo</div>
+          <div class="section-sub">Il meccanismo interno della memoria — li gestisce il kit, non tu</div>
         </div>
+      </div>
+
+      <div class="alert green">
+        <span class="alert-icon">✅</span>
+        <p><strong>La cosa più importante di questa sezione:</strong> i wikilinks <strong>li crea e li mantiene il kit</strong>, automaticamente, ogni volta che apri un fascicolo o produci un documento. Tu devi solo saperli riconoscere: quando vedi <code>[[un-nome-tra-doppie-parentesi]]</code>, è un collegamento che il sistema usa per ritrovare i tuoi documenti. Non devi scriverli a mano. Tutto ciò che segue è per chi vuole capire il motore.</p>
       </div>
 
       <p>I <strong>wikilinks</strong> — nella forma <code>[[nome-file]]</code> — sono il meccanismo che trasforma una cartella di documenti in una rete di conoscenza collegata. Il kit legge solo i file necessari per il compito del giorno, evitando di ricaricare tutto il contesto ogni volta.</p>
@@ -750,16 +798,16 @@
         <div class="card">
           <div class="card-icon">🔗</div>
           <div class="card-title">Come funziona un wikilink</div>
-          <div class="card-desc">Scrivi <code>[[cognome-anno-reato]]</code> in qualsiasi punto del file. Il kit interpreta questo come "carica il file corrispondente quando necessario".</div>
+          <div class="card-desc"><code>[[cognome-anno-reato]]</code> in un file significa "carica il file corrispondente quando necessario". È l'equivalente digitale del rimando a un altro faldone.</div>
         </div>
         <div class="card">
           <div class="card-icon">💾</div>
-          <div class="card-title">Riduzione dei token</div>
-          <div class="card-desc">Il kit carica solo i file linkati rilevanti per il compito. Non devi ricaricare tutto il fascicolo ogni volta — il sistema sa dove trovare le informazioni.</div>
+          <div class="card-title">Perché esistono</div>
+          <div class="card-desc">Il kit carica solo i file rilevanti per il compito del giorno. La strategia decisa tre settimane fa è lì quando serve, senza che tu la riassuma di nuovo.</div>
         </div>
       </div>
 
-      <h3>Regola pratica: cosa linkare</h3>
+      <h3>Per chi vuole intervenire a mano: cosa linka il kit (e cosa puoi linkare tu)</h3>
       <table>
         <tr><th>Tipo di link</th><th>Esempio</th><th>Quando usarlo</th></tr>
         <tr><td>Fascicolo → Giurisprudenza</td><td><code>[[cass-sez6-corruzione-2024]]</code></td><td>Nella sezione strategia del fascicolo</td></tr>
@@ -1258,7 +1306,7 @@ flowchart TD
       </div>
       <div>
         <a href="https://github.com/Synthos-Logic/penalista-italia">GitHub</a> ·
-        <a href="INSTALLAZIONE.html">Installazione</a> ·
+        <a href="https://github.com/Synthos-Logic/penalista-italia/blob/main/documentazione/INSTALLAZIONE.md">Installazione</a> ·
         <a href="https://github.com/Synthos-Logic/penalista-italia/issues">Segnalazioni</a>
       </div>
     </div>

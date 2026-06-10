@@ -1,137 +1,106 @@
-# Guida all'Installazione — Penalista Italia
-
-Questa guida accompagna passo per passo nell'installazione del plugin **Penalista Italia** su Claude Cowork Desktop.
+# Guida all'Installazione — Kit Penalista Italiano v3.1
 
 ---
 
 ## Prima di iniziare — Chat, Cowork o un progetto per cliente?
 
-Se hai appena scoperto Claude, potresti chiederti come organizzarti. Ecco la risposta diretta:
-
 | Situazione | Cosa usare |
 |---|---|
-| Domanda rapida su un termine o una norma | **Chat normale** — nessun progetto necessario |
-| Lavorare su documenti di causa (informative, ordinanze, perizie) | **Cowork** — con la cartella dello studio collegata |
+| Domanda rapida su una norma | Chat normale |
+| Lavorare con documenti di causa | Cowork con la cartella del kit |
 | Gestire più fascicoli nel tempo | **Un unico progetto Cowork per tutto lo studio** |
-
-**La scelta consigliata per chi usa questo plugin seriamente: un unico progetto Cowork per lo studio.**
-
-Dentro quel progetto crei una cartella per ogni fascicolo (es. `2026_ROSSI_Truffa/`, `2026_BIANCHI_Bancarotta/`). Claude distingue i casi grazie alla struttura delle cartelle e al sistema `/fascicolo` — non hai bisogno di aprire un progetto diverso per ogni cliente.
-
-> **Non creare un progetto Cowork separato per ogni cliente.** Perderesti il contesto cross-case e dovresti reinstallare il plugin ogni volta. È l'errore più comune dei nuovi utenti.
-
-I comandi slash (`/strategia`, `/atti`, `/scadenze`...) funzionano in qualsiasi contesto — anche in una chat normale, anche senza documenti allegati. Collegare la cartella dello studio serve solo quando vuoi che Claude legga i PDF dei tuoi fascicoli.
 
 ---
 
 ## Prerequisiti
 
-- [Claude Cowork Desktop](https://claude.ai) installato e aggiornato all'ultima versione
-- Account Claude attivo (Piano Pro o superiore)
-- Connessione internet attiva
+- Claude Desktop con Cowork installato e aggiornato
+- Account Claude Pro o superiore
+- In **Impostazioni → Capacità**: "Esecuzione di codice e creazione di file" attivo (le skill lo richiedono)
 
 ---
 
-## Passo 1 — Apri Personalizza
+## Passo 1 — Scarica il kit
 
-In Claude Cowork, clicca su **Personalizza** nella barra laterale sinistra.
-
-![Passo 1 — Personalizza Claude](images/installazione/01-personalizza.png)
+Vai su [github.com/Synthos-Logic/penalista-italia](https://github.com/Synthos-Logic/penalista-italia) e clicca **Code → Download ZIP**. Decomprimi e rinomina la cartella in `Penale-Italia`.
 
 ---
 
-## Passo 2 — Aggiungi marketplace
+## Passo 2 — Collega il kit a Cowork
 
-Clicca sul pulsante **+** accanto a "Plugin personali", poi seleziona **Crea plugin** → **Aggiungi marketplace**.
+Apri Claude Desktop → Cowork → **"Seleziona cartella"** → seleziona `Penale-Italia` (tutta).
 
-![Passo 2 — Aggiungi marketplace](images/installazione/02-crea-plugin.png)
+> Seleziona la cartella intera, non solo `FASCICOLI/`. Claude ha bisogno anche della Knowledge Base e del CLAUDE.md.
 
 ---
 
-## Passo 3 — Inserisci il repository
+## Passo 3 — Installa le 8 skill
 
-Nel campo URL digita esattamente:
+### Metodo consigliato — installazione assistita (nessun file da toccare)
+
+Con la cartella `Penale-Italia` selezionata in Cowork, incolla questo messaggio a Claude:
 
 ```
-Synthos-Logic/penalista-italia
+Leggi il file INSTALLAZIONE_ASSISTITA.md ed esegui l'installazione assistita delle skill.
 ```
 
-oppure l'URL completo `https://github.com/Synthos-Logic/penalista-italia`, poi clicca **Sincronizza**.
+Claude ti presenterà **8 schede con il pulsante "Salva skill"**: clicca il pulsante su ciascuna. Fine. Poi verifica in **Personalizza → Skills** che le 8 skill risultino attive (interruttore acceso).
 
-![Passo 3a — Dialog vuoto](images/installazione/03-aggiungi-marketplace-vuoto.png)
+### Metodo manuale (alternativa)
 
-![Passo 3b — URL inserito](images/installazione/04-aggiungi-marketplace-url.png)
+1. Nella cartella `Penale-Italia/skills/` trovi 8 cartelle: `penalista-inizia`, `penalista-strategia`, `penalista-atti`, `penalista-scadenze`, `penalista-cautelare`, `penalista-giurisprudenza`, `penalista-esecuzione`, `penalista-verifica`
+2. Comprimi ogni cartella in uno ZIP (Mac: tasto destro → **Comprimi**; Windows: tasto destro → **Invia a → Cartella compressa**)
+3. In Claude: **Personalizza → Skills → "+" → Carica una skill** → seleziona lo ZIP
+4. Ripeti per tutte e 8 le skill, poi verifica che siano attive
 
----
+### ⚠️ Cosa NON fare
 
-## Passo 4 — Installa il plugin
+- **Non copiare le cartelle in `~/.claude/skills`** se usi l'app desktop/Cowork: quel percorso vale **solo per Claude Code (lo strumento da terminale per sviluppatori)**. L'app desktop non lo legge — le skill risulterebbero "installate" ma invisibili.
+- **Non chiedere a Claude di "installare le skill" senza il file INSTALLAZIONE_ASSISTITA.md**: senza istruzioni, Claude può solo copiare le cartelle nel posto sbagliato.
 
-Dopo la sincronizzazione appare la scheda **Penalista Italia** di Synthos Logic. Clicca sul **+** per installarlo.
-
-![Passo 4 — Installa](images/installazione/05-directory-plugin.png)
-
----
-
-## Passo 5 — Conferma installazione
-
-Vedrai la notifica **"Penalista Italia è installato e pronto all'uso"** insieme alle skill disponibili.
-
-![Passo 5 — Installato](images/installazione/06-installato.png)
+> **Usi Claude Code (CLI)?** Allora sì: gli script sono nella cartella `claude-code/`. Su Mac apri il Terminale nella cartella del kit e lancia `bash claude-code/install.sh` (NON eseguirlo con doppio clic o trascinamento: lo ZIP di GitHub non conserva i permessi di esecuzione e otterresti "permission denied"). Su Windows: doppio clic su `claude-code\install.bat`. Gli script copiano le 8 skill in `~/.claude/skills`, che Claude Code legge regolarmente.
 
 ---
 
-## Passo 6 — Configura i dati del tuo studio
+## Passo 4 — Configura i dati del tuo studio
 
-Clicca su **Personalizza** (il pulsante in alto a destra nella scheda del plugin) per aprire il modulo di configurazione.
+Due strade equivalenti:
 
-Compila i campi:
+- **La più semplice:** scrivi a Claude **"Iniziamo"** — la skill di onboarding ti chiede i dati (nome, foro, tribunale) e compila tutto lei.
+- **Manuale:** apri `CLAUDE.md` nella cartella `Penale-Italia` con TextEdit (Mac) o Blocco Note (Windows) e compila la sezione "Dati dello studio". Salva.
 
-| Campo | Descrizione | Esempio |
-|---|---|---|
-| Nome e cognome dell'avvocato | Usato nelle intestazioni degli atti | Avv. Mario Rossi |
-| Foro di iscrizione | Il tuo Ordine di appartenenza | Milano |
-| Numero di iscrizione all'Ordine | Numero progressivo all'Albo | 12345 |
-| Tribunale di riferimento principale | Il tribunale dove lavori più spesso | Tribunale di Milano |
-| Iscritto all'Albo Cassazionisti? | Rilevante per i ricorsi in Cassazione | SI oppure NO |
-
-Clicca **Salva**. Da quel momento Claude usa questi dati in tutte le intestazioni degli atti.
-
-![Passo 6 — Configura](images/installazione/07-dettaglio-installato.png)
+Claude usa questi dati nelle intestazioni degli atti.
 
 ---
 
-## Passo 7 — Attiva sincronizzazione automatica
+## Passo 5 — Verifica
 
-Per ricevere aggiornamenti del plugin senza doverlo reinstallare manualmente:
+Scrivi in Cowork:
 
-Quando è disponibile un aggiornamento, comparirà il pulsante **Aggiorna** nella scheda del plugin:
+> "Ho un fascicolo per truffa aggravata. Calcola il termine per la memoria 415-bis notificata il 1 giugno 2026."
 
-**Personalizza** → **Plugin personali** → clicca su **Penalista Italia** → clicca **Aggiorna**
-
-L'aggiornamento scarica l'ultima versione del plugin con tutti i nuovi comandi e skill.
-
-> Se non vedi ancora il pulsante "Aggiorna" dopo un nuovo rilascio, chiudi e riapri Claude Desktop — Cowork controlla gli aggiornamenti all'avvio.
+Claude deve rispondere con una data precisa (21 giugno 2026) e il calcolo dettagliato. Se risponde in modo generico, verifica in **Personalizza → Skills** che `penalista-scadenze` sia attiva.
 
 ---
 
-## Passo 8 — Verifica
+## Aggiornamento
 
-Apri una nuova conversazione e scrivi `/penalista-italia:aiuto` — vedrai la guida completa con tutti i comandi disponibili.
+> ⚠️ **Non sostituire mai la cartella `Penale-Italia` a mano:** dentro ci sono i tuoi fascicoli (`FASCICOLI/`) e i dati del tuo studio (`CLAUDE.md`). Sostituendola li perderesti.
+
+1. Scarica il nuovo ZIP (**Code → Download ZIP**)
+2. Trascina il file ZIP (senza decomprimerlo) **dentro la cartella `Penale-Italia`**
+3. Incolla a Claude: *"Ho scaricato l'aggiornamento. Leggi AGGIORNAMENTO_ASSISTITO.md ed esegui l'aggiornamento del kit."*
+
+Claude confronta le versioni, ti riassume le novità, aggiorna i file del kit **senza toccare fascicoli e dati studio**, e ti presenta le skill nuove o aggiornate da reinstallare con un clic ("Salva skill"). Se una skill risulta già esistente: **Personalizza → Skills** → elimina la versione vecchia → clicca di nuovo "Salva skill".
 
 ---
 
-## Utilizzo rapido
+## 🔒 Privacy
 
-| Comando | Funzione |
-|---|---|
-| `/penalista-italia:configura` | **Prima cosa da fare** — configura nome, foro, tribunale |
-| `/penalista-italia:strategia` | Analisi difensiva di un capo di imputazione |
-| `/penalista-italia:atti` | Redazione di atti processuali penali |
-| `/penalista-italia:scadenze` | Calcolo termini processuali |
-| `/penalista-italia:cautelare` | Gestione misure cautelari |
-| `/penalista-italia:prescrizione` | Calcolo prescrizione |
-| `/penalista-italia:fascicolo` | Crea fascicolo nel sistema memoria |
-| `/penalista-italia:aiuto` | Guida completa |
+I file restano sul tuo computer. Il testo analizzato transita sui server Anthropic.
+**Legge 132/2025 art. 13**: informare i clienti prima di usare strumenti AI.
+
+[Pagina Privacy completa](https://github.com/Synthos-Logic/penalista-italia/wiki/Privacy)
 
 ---
 
@@ -139,29 +108,10 @@ Apri una nuova conversazione e scrivi `/penalista-italia:aiuto` — vedrai la gu
 
 | Problema | Soluzione |
 |---|---|
-| "Sync failed" | Verifica di aver inserito esattamente `Synthos-Logic/penalista-italia` |
-| Le skill non si attivano | Verifica che il plugin sia attivo (toggle blu) |
-| I dati non compaiono negli atti | Esegui `/penalista-italia:configura` per impostare nome, foro e tribunale |
-| Non vedo i nuovi comandi dopo un aggiornamento | Vai in Personalizza → Plugin personali → Penalista Italia → clicca **Aggiorna** |
-| Il pulsante Aggiorna non compare | Chiudi e riapri Claude Desktop — controlla gli aggiornamenti all'avvio |
-
----
-
-## 🔒 Privacy e sicurezza dei dati
-
-> Prima di usare il kit con dati reali di clienti, leggi la pagina dedicata.
-
-**In sintesi:**
-- I file fisici restano sul tuo computer — non vengono caricati su nessun server
-- Il testo dei documenti che chiedi a Claude di analizzare transita sui server di Anthropic per l'elaborazione (è il meccanismo necessario per far funzionare l'AI)
-- La **Legge 132/2025 art. 13** (in vigore dal 10 ottobre 2025) impone di informare il cliente prima di usare strumenti AI nell'ambito del mandato
-- Il CNF ha pubblicato uno schema di informativa da consegnare ai clienti
-
-📖 **[Pagina completa Privacy → Wiki](https://github.com/Synthos-Logic/penalista-italia/wiki/Privacy)**
-
-
-## Supporto
-
-[github.com/Synthos-Logic/penalista-italia/issues](https://github.com/Synthos-Logic/penalista-italia/issues)
-
-[← Torna al README](../README.md)
+| Le skill non compaiono | Apri **Personalizza → Skills**: se non ci sono, ripeti il Passo 3. Se sono spente, attiva l'interruttore |
+| La sezione Skills non è visibile | **Impostazioni → Capacità** → attiva "Esecuzione di codice e creazione di file" |
+|  Ho usato gli script claude-code/ ma le skill non ci sono in Claude | Normale: quel metodo vale solo per Claude Code. Usa il Passo 3 (installazione assistita) |
+| Claude ha "installato" da solo ma non funziona nulla | Ha copiato le cartelle nel posto sbagliato. Elimina le copie e usa il Passo 3 |
+| Errore al caricamento dello ZIP | Lo ZIP deve contenere la cartella della skill come radice (non i file sciolti) e il nome cartella deve coincidere con la skill |
+| Claude non vede i documenti | Seleziona tutta la cartella `Penale-Italia`, non una sottocartella |
+| Claude non usa il tuo nome | Scrivi "Iniziamo" oppure compila `CLAUDE.md` a mano |
