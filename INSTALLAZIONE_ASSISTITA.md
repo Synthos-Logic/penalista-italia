@@ -22,6 +22,8 @@ Sei in una sessione Cowork con la cartella `Penale-Italia` selezionata. L'utente
 
 ### Procedura corretta
 
+0-bis. **Controllo versioni precedenti (utenti del progetto pilota).** Guarda le skill e i plugin disponibili nella tua sessione: se vedi il **plugin "Penalista Italia"** (skill con prefisso `penalista-italia:`) o vecchie skill `penalista-*` standalone, avverti l'utente PRIMA di procedere: *"Ha installato una versione precedente del kit. Prima di salvare le nuove skill: Personalizza → Plugin → disinstalli 'Penalista Italia', e in Personalizza → Skills elimini le skill penalista-* esistenti. Poi mi scriva 'fatto' e proseguiamo."* Senza questa pulizia le versioni vecchie continuano a rispondere al posto delle nuove.
+
 0. **Se la cartella selezionata non contiene le 8 skill aggiornate** (perché l'utente ha una versione precedente del kit, o nessun kit): scarica le skill direttamente dal repository. Elenca i file di ogni skill con l'API GitHub (`https://api.github.com/repos/Synthos-Logic/penalista-italia/contents/skills/<nome-skill>`) e scarica ciascun file dal corrispondente URL raw (`https://raw.githubusercontent.com/Synthos-Logic/penalista-italia/main/skills/<nome-skill>/...`), ricostruendo le cartelle in una posizione temporanea. Poi prosegui normalmente dal punto 2. Suggerisci comunque all'utente, a fine installazione, di scaricare il kit completo (ZIP da GitHub) per avere Knowledge Base e documentazione aggiornate.
 
 1. Individua le cartelle skill in `skills/` (sono 8: `penalista-inizia`, `penalista-strategia`, `penalista-atti`, `penalista-scadenze`, `penalista-cautelare`, `penalista-giurisprudenza`, `penalista-esecuzione`, `penalista-verifica`). Verifica che ognuna contenga `SKILL.md`.

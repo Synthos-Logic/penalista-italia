@@ -1,5 +1,14 @@
 # Changelog — Penalista Italia
 
+## [3.1.2] — 2026-06-10
+
+### Fix da test sul campo
+
+- **Corretta la data del test di verifica (Passo 5):** il 20° giorno dalla notifica del 1° giugno 2026 cade domenica 21 giugno → la scadenza operativa corretta è **lunedì 22 giugno 2026** (proroga ex art. 172 co. 3 c.p.p.). Errore individuato da una skill del kit stesso durante un test. Il test di verifica ora controlla anche la gestione dei giorni festivi.
+- **Migrazione dal vecchio plugin:** nuova sezione nelle guide e controllo preliminare nell'installazione assistita — chi ha il vecchio plugin "Penalista Italia" (marketplace) o vecchie skill standalone deve rimuoverli prima di installare le 8 nuove, altrimenti le versioni vecchie continuano a rispondere. Nuova voce in "Problemi comuni": *Claude parla di "6 skill"*.
+
+---
+
 ## [3.1.1] — 2026-06-10
 
 ### Fix — prompt di installazione e aggiornamento autosufficienti

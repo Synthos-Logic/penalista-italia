@@ -1,4 +1,4 @@
-# Guida all'Installazione — Kit Penalista Italiano v3.1.1
+# Guida all'Installazione — Kit Penalista Italiano v3.1.2
 
 ---
 
@@ -79,7 +79,7 @@ Scrivi in Cowork:
 
 > "Ho un fascicolo per truffa aggravata. Calcola il termine per la memoria 415-bis notificata il 1 giugno 2026."
 
-Claude deve rispondere con una data precisa (21 giugno 2026) e il calcolo dettagliato. Se risponde in modo generico, verifica in **Personalizza → Skills** che `penalista-scadenze` sia attiva.
+Claude deve rispondere con il calcolo dettagliato e la scadenza operativa di **lunedì 22 giugno 2026**: il 20° giorno cade domenica 21, e l'art. 172 co. 3 c.p.p. proroga il termine al primo giorno non festivo. Se risponde "21 giugno" senza la proroga, o in modo generico, verifica in **Personalizza → Skills** che `penalista-scadenze` sia attiva.
 
 ---
 
@@ -92,6 +92,16 @@ Claude deve rispondere con una data precisa (21 giugno 2026) e il calcolo dettag
 3. Incolla a Claude: *"Ho scaricato l'aggiornamento del kit Penalista Italia: eseguilo seguendo AGGIORNAMENTO_ASSISTITO.md; se il file non è nella cartella selezionata, scaricalo da https://raw.githubusercontent.com/Synthos-Logic/penalista-italia/main/AGGIORNAMENTO_ASSISTITO.md e segui le sue istruzioni."*
 
 Claude confronta le versioni, ti riassume le novità, aggiorna i file del kit **senza toccare fascicoli e dati studio**, e ti presenta le skill nuove o aggiornate da reinstallare con un clic ("Salva skill"). Se una skill risulta già esistente: **Personalizza → Skills** → elimina la versione vecchia → clicca di nuovo "Salva skill".
+
+---
+
+## Vieni dal vecchio plugin? (utenti del progetto pilota)
+
+Se in passato hai installato **Penalista Italia come plugin** (via marketplace) o hai caricato singole skill a mano, prima di installare le 8 skill fai pulizia — altrimenti le versioni vecchie rispondono al posto delle nuove:
+
+1. **Personalizza → Plugin** → se c'è "Penalista Italia": disinstallalo (era l'architettura precedente, non riceve più aggiornamenti)
+2. **Personalizza → Skills** → elimina le eventuali skill `penalista-*` già presenti
+3. Procedi con il Passo 3 (installazione assistita)
 
 ---
 
@@ -115,3 +125,4 @@ I file restano sul tuo computer. Il testo analizzato transita sui server Anthrop
 | Errore al caricamento dello ZIP | Lo ZIP deve contenere la cartella della skill come radice (non i file sciolti) e il nome cartella deve coincidere con la skill |
 | Claude non vede i documenti | Seleziona tutta la cartella `Penale-Italia`, non una sottocartella |
 | Claude non usa il tuo nome | Scrivi "Iniziamo" oppure compila `CLAUDE.md` a mano |
+| Claude parla di "6 skill" o risponde con vecchie versioni | Hai ancora il vecchio plugin o vecchie skill: vedi "Vieni dal vecchio plugin?" qui sopra |
