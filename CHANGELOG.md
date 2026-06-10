@@ -1,5 +1,13 @@
 # Changelog — Penalista Italia
 
+## [3.1.1] — 2026-06-10
+
+### Fix — prompt di installazione e aggiornamento autosufficienti
+
+Il prompt di installazione assistita falliva se la cartella selezionata non conteneva `INSTALLAZIONE_ASSISTITA.md` (kit precedente alla v3.1 o cartella parziale). Ora entrambi i prompt includono il fallback: se il file non è nella cartella, Claude lo scarica direttamente da GitHub (raw URL) e prosegue. `INSTALLAZIONE_ASSISTITA.md` ha inoltre un passo 0: se mancano anche le cartelle skill, Claude le recupera dal repository via API GitHub — l'installazione funziona perfino prima di aver scaricato il kit. Versioni allineate a 3.1.1 in tutti i documenti.
+
+---
+
 ## [3.1.0] — 2026-06-10
 
 ### 🔧 FIX CRITICO — Installazione skill su Cowork (segnalazione tester)

@@ -1,6 +1,6 @@
 # Penalista Italia -- Kit Operativo per Avvocati Penalisti
 
-[![Versione](https://img.shields.io/badge/versione-3.1.0-blue)](https://github.com/Synthos-Logic/penalista-italia/releases)
+[![Versione](https://img.shields.io/badge/versione-3.1.1-blue)](https://github.com/Synthos-Logic/penalista-italia/releases)
 [![Licenza](https://img.shields.io/badge/licenza-MIT-green)](LICENSE)
 [![Piattaforma](https://img.shields.io/badge/piattaforma-Claude%20Cowork-orange)](https://claude.ai)
 [![Wiki](https://img.shields.io/badge/Wiki-metodologia-blueviolet)](https://github.com/Synthos-Logic/penalista-italia/wiki)
@@ -37,7 +37,7 @@ Claude Desktop -> Cowork -> **Seleziona cartella** -> seleziona la cartella `Pen
 Con la cartella selezionata, incolla questo messaggio a Claude:
 
 ```
-Leggi il file INSTALLAZIONE_ASSISTITA.md ed esegui l'installazione assistita delle skill.
+Installa le skill del kit Penalista Italia seguendo il file INSTALLAZIONE_ASSISTITA.md; se il file non è nella cartella selezionata, scaricalo da https://raw.githubusercontent.com/Synthos-Logic/penalista-italia/main/INSTALLAZIONE_ASSISTITA.md e segui le sue istruzioni.
 ```
 
 Claude presenta **8 schede con il pulsante "Salva skill"**: un clic per ciascuna e l'installazione e' fatta. Niente Terminale, niente cartelle nascoste. Verifica finale in **Personalizza -> Skills**.
@@ -111,7 +111,7 @@ Un kit costruito da chi conosce il processo penale italiano -- testato sul campo
 
 1. Scarica il nuovo ZIP (Code -> Download ZIP)
 2. Trascina il file ZIP (senza decomprimerlo) dentro la cartella `Penale-Italia`
-3. Incolla a Claude: *"Ho scaricato l'aggiornamento. Leggi AGGIORNAMENTO_ASSISTITO.md ed esegui l'aggiornamento del kit."*
+3. Incolla a Claude: *"Ho scaricato l'aggiornamento del kit Penalista Italia: eseguilo seguendo AGGIORNAMENTO_ASSISTITO.md; se il file non è nella cartella selezionata, scaricalo da https://raw.githubusercontent.com/Synthos-Logic/penalista-italia/main/AGGIORNAMENTO_ASSISTITO.md e segui le sue istruzioni."*
 
 Claude aggiorna i file del kit **preservando fascicoli e dati studio**, ti riassume le novita' e ti presenta le skill aggiornate da reinstallare con un clic.
 

@@ -1,4 +1,4 @@
-# Guida all'Installazione — Kit Penalista Italiano v3.1
+# Guida all'Installazione — Kit Penalista Italiano v3.1.1
 
 ---
 
@@ -41,7 +41,7 @@ Apri Claude Desktop → Cowork → **"Seleziona cartella"** → seleziona `Penal
 Con la cartella `Penale-Italia` selezionata in Cowork, incolla questo messaggio a Claude:
 
 ```
-Leggi il file INSTALLAZIONE_ASSISTITA.md ed esegui l'installazione assistita delle skill.
+Installa le skill del kit Penalista Italia seguendo il file INSTALLAZIONE_ASSISTITA.md; se il file non è nella cartella selezionata, scaricalo da https://raw.githubusercontent.com/Synthos-Logic/penalista-italia/main/INSTALLAZIONE_ASSISTITA.md e segui le sue istruzioni.
 ```
 
 Claude ti presenterà **8 schede con il pulsante "Salva skill"**: clicca il pulsante su ciascuna. Fine. Poi verifica in **Personalizza → Skills** che le 8 skill risultino attive (interruttore acceso).
@@ -89,7 +89,7 @@ Claude deve rispondere con una data precisa (21 giugno 2026) e il calcolo dettag
 
 1. Scarica il nuovo ZIP (**Code → Download ZIP**)
 2. Trascina il file ZIP (senza decomprimerlo) **dentro la cartella `Penale-Italia`**
-3. Incolla a Claude: *"Ho scaricato l'aggiornamento. Leggi AGGIORNAMENTO_ASSISTITO.md ed esegui l'aggiornamento del kit."*
+3. Incolla a Claude: *"Ho scaricato l'aggiornamento del kit Penalista Italia: eseguilo seguendo AGGIORNAMENTO_ASSISTITO.md; se il file non è nella cartella selezionata, scaricalo da https://raw.githubusercontent.com/Synthos-Logic/penalista-italia/main/AGGIORNAMENTO_ASSISTITO.md e segui le sue istruzioni."*
 
 Claude confronta le versioni, ti riassume le novità, aggiorna i file del kit **senza toccare fascicoli e dati studio**, e ti presenta le skill nuove o aggiornate da reinstallare con un clic ("Salva skill"). Se una skill risulta già esistente: **Personalizza → Skills** → elimina la versione vecchia → clicca di nuovo "Salva skill".
 

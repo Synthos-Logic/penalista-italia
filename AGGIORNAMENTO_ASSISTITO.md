@@ -7,7 +7,7 @@
 > 3. In Cowork, incolla questo messaggio a Claude:
 >
 > ```
-> Ho scaricato l'aggiornamento. Leggi AGGIORNAMENTO_ASSISTITO.md ed esegui l'aggiornamento del kit.
+> Ho scaricato l'aggiornamento del kit Penalista Italia: eseguilo seguendo AGGIORNAMENTO_ASSISTITO.md; se il file non è nella cartella selezionata, scaricalo da https://raw.githubusercontent.com/Synthos-Logic/penalista-italia/main/AGGIORNAMENTO_ASSISTITO.md e segui le sue istruzioni.
 > ```
 >
 > Claude aggiorna tutto **senza toccare i tuoi fascicoli e i dati del tuo studio**, ti dice cosa è cambiato e, se ci sono skill nuove o aggiornate, te le presenta da installare con un clic.
