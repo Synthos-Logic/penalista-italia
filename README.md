@@ -1,6 +1,6 @@
 # Penalista Italia -- Kit Operativo per Avvocati Penalisti
 
-[![Versione](https://img.shields.io/badge/versione-3.2.2-blue)](https://github.com/Synthos-Logic/penalista-italia/releases)
+[![Versione](https://img.shields.io/badge/versione-3.2.3-blue)](https://github.com/Synthos-Logic/penalista-italia/releases)
 [![Licenza](https://img.shields.io/badge/licenza-MIT-green)](LICENSE)
 [![Piattaforma](https://img.shields.io/badge/piattaforma-Claude%20Cowork-orange)](https://claude.ai)
 [![Wiki](https://img.shields.io/badge/Wiki-metodologia-blueviolet)](https://github.com/Synthos-Logic/penalista-italia/wiki)
@@ -22,11 +22,9 @@ Wiki [Guida metodologica completa](https://github.com/Synthos-Logic/penalista-it
 
 ---
 
-## Installazione
+## Installazione -- 2 passi, 5 minuti
 
-**Basta il Passo 1 per iniziare.** I Passi 2 e 3 aggiungono l'archivio dello studio — la memoria del kit sui tuoi casi — e puoi farli anche dopo.
-
-### Passo 1 -- Installa il plugin (le 8 skill, in un colpo solo)
+### Passo 1 -- Installa il plugin
 
 In Claude Desktop:
 
@@ -36,15 +34,15 @@ In Claude Desktop:
 
 Fatto: le 8 skill sono attive. **Gli aggiornamenti arrivano da soli** (vedi sotto).
 
-### Passo 2 -- Aggiungi la cartella dello studio (consigliato)
+### Passo 2 -- Installa la struttura di lavoro
 
-Il plugin da solo non ricorda i tuoi casi tra una conversazione e l'altra. La cartella dello studio e' l'archivio che dà al kit la memoria: fascicoli, dati dello studio, Knowledge Base con i tuoi PDF.
+Clicca **Code -> Download ZIP** in questa pagina. Decomprimi, rinomina la cartella in `Penale-Italia` e collegala: Claude Desktop -> Cowork -> **Seleziona cartella** -> `Penale-Italia`.
 
-Clicca **Code -> Download ZIP** in questa pagina. Decomprimi, rinomina la cartella in `Penale-Italia` e collegala: Claude Desktop -> Cowork -> **Seleziona cartella** -> `Penale-Italia`. Puoi farlo subito o quando inizi a lavorare sui casi reali.
+### Fatto -- scrivi "Iniziamo"
 
-### Passo 3 -- Scrivi "Iniziamo"
+Il kit si presenta, ti chiede i dati dello studio (una volta sola) e apre con te il primo fascicolo.
 
-Il kit si presenta, ti chiede i dati dello studio (nome, foro, tribunale) e apre con te il primo fascicolo. Quindici minuti, su un caso vero.
+> **Che cosa hai appena installato?** Il Passo 1 monta il **motore**: le competenze del kit (le 8 skill). Il Passo 2 monta l'**archivio**: la cartella dove il kit conserva i tuoi fascicoli, le scadenze e i dati del tuo studio. Servono entrambi: il motore senza archivio risponde alle domande, ma non conserva il lavoro sui tuoi casi.
 
 > Guida con immagini passo-passo: [Installazione dettagliata](docs/INSTALLAZIONE.md) · Senza GitHub/marketplace? [Installazione alternativa](documentazione/INSTALLAZIONE_ALTERNATIVA.md)
 

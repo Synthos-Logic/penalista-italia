@@ -1,5 +1,13 @@
 # Changelog — Penalista Italia
 
+## [3.2.3] — 2026-06-11
+
+### Installazione: due passi, zero decisioni
+
+Eliminata l'ambiguità introdotta nella 3.2.2 ("consigliato", "non obbligatorio"): la procedura è semplicemente **Passo 1 plugin, Passo 2 struttura di lavoro**, da fare entrambi. La spiegazione di che cosa fa ciascun passo (motore / archivio) è in una nota sotto i passaggi, per chi vuole capire. Allineati README, guida e homepage.
+
+---
+
 ## [3.2.2] — 2026-06-11
 
 ### Chiarezza sull'installazione (segnalazione dal campo)
