@@ -512,7 +512,7 @@
         </div>
       </div>
 
-      <p>Le skill di questo kit — <code>/strategia</code>, <code>/atti</code>, <code>/scadenze</code>, <code>/cautelare</code> — producono risultati eccellenti solo se lavorano su dati organizzati. Un'AI che non conosce il contesto del fascicolo produce risposte generiche. Un'AI che ha il fascicolo aggiornato, le scadenze segnate, la giurisprudenza raccolta e le fonti caricate produce risposte di qualità professionale.</p>
+      <p>Le skill di questo kit — strategia, atti, scadenze, cautelare — producono risultati eccellenti solo se lavorano su dati organizzati. Un'AI che non conosce il contesto del fascicolo produce risposte generiche. Un'AI che ha il fascicolo aggiornato, le scadenze segnate, la giurisprudenza raccolta e le fonti caricate produce risposte di qualità professionale.</p>
 
       <div class="alert blue">
         <span class="alert-icon">💡</span>
@@ -590,7 +590,7 @@
           <div class="step-num">1</div>
           <div class="step-content">
             <h4>Ricevi un'ordinanza cautelare (PDF)</h4>
-            <p>Salvala in <code>penalista-atti/documenti-ricevuti/</code> con nome descrittivo: <code>ordinanza-rossi-20240310.pdf</code>. Poi in conversazione: <em>"Allego l'ordinanza cautelare di Rossi — analizza i gravi indizi e le esigenze cautelari"</em> + <code>/cautelare</code>. Il kit legge il PDF e costruisce la strategia di riesame.</p>
+            <p>Allegala in conversazione: <em>"Allego l'ordinanza cautelare di Rossi — archiviala nel fascicolo e analizza i gravi indizi e le esigenze cautelari"</em>. Il kit la salva nella cartella del fascicolo con nome descrittivo, legge il PDF e costruisce la strategia di riesame.</p>
           </div>
         </div>
         <div class="step">
@@ -604,7 +604,7 @@
           <div class="step-num">3</div>
           <div class="step-content">
             <h4>Carica il codice penale aggiornato (PDF)</h4>
-            <p>Scarica il testo consolidato da Normattiva, salvalo in <code>penalista-fonti/codice-penale-2026.pdf</code>. Quando lavori su un'analisi che richiede il testo preciso di un articolo: allega il PDF e di' <em>"Basati sul testo del c.p. allegato"</em>. Il kit cita l'articolo esattamente come scritto.</p>
+            <p>Scarica il testo consolidato da Normattiva, salvalo in <code>KNOWLEDGE_BASE/01_NORMATIVA/codice-penale-2026.pdf</code>. Quando lavori su un'analisi che richiede il testo preciso di un articolo: allega il PDF e di' <em>"Basati sul testo del c.p. allegato"</em>. Il kit cita l'articolo esattamente come scritto.</p>
           </div>
         </div>
         <div class="step">
@@ -635,50 +635,21 @@
       <p>La struttura che il kit crea automaticamente non è arbitraria. Ogni cartella corrisponde a una fase e a un tipo di documento del lavoro penalistico.</p>
 
       <div class="folder-tree">
-<span class="folder">📁 Penale Italia/</span>  <span class="comment">← la tua cartella di lavoro</span>
+<span class="folder">📁 Penale-Italia/</span>               <span class="comment">← la cartella di lavoro (struttura di lavoro)</span>
 │
-├── <span class="highlight">INDEX.md</span>               <span class="comment">← mappa studio: fascicoli attivi, scadenze urgenti</span>
-├── <span class="highlight">SISTEMA_MEMORIA.md</span>    <span class="comment">← regole del sistema (leggere all'inizio)</span>
-├── <span class="highlight">ISTRUZIONI_PROGETTO.md</span> <span class="comment">← base di conoscenza procedurale del kit</span>
+├── <span class="highlight">CLAUDE.md</span>                <span class="comment">← dati dello studio + istruzioni per il kit</span>
+├── <span class="highlight">INDEX.md</span>                 <span class="comment">← mappa studio: fascicoli attivi, scadenze (lo crea il kit)</span>
 │
-├── <span class="folder">📁 penalista-atti/</span>        <span class="comment">← fascicoli attivi + documenti ricevuti</span>
-│   ├── <span class="highlight">rossi-2024-corruzione.md</span>       <span class="comment">← fascicolo .md (rete di conoscenza)</span>
-│   ├── <span class="highlight">bianchi-2024-bancarotta.md</span>
-│   ├── <span class="file">ordinanza-rossi-20240310.pdf</span>    <span class="comment">← documento ricevuto (PDF)</span>
-│   ├── <span class="file">cnr-bianchi-pf-bologna.pdf</span>      <span class="comment">← CNR della PG</span>
-│   └── <span class="folder">📁 documenti-ricevuti/</span>           <span class="comment">← atti notificati, ordinanze, sentenze ricevute</span>
-│       ├── <span class="file">ordinanza-gip-20240310.pdf</span>
-│       └── <span class="file">avviso-415bis-rossi.pdf</span>
+├── <span class="folder">📁 FASCICOLI/</span>             <span class="comment">← un fascicolo per caso — li crea e organizza il kit</span>
+│   └── <span class="folder">📁 2026_ROSSI_Truffa/</span>  <span class="comment">← scheda, scadenziario, strategia, atti, documenti</span>
 │
-├── <span class="folder">📁 penalista-giurisprudenza/</span>  <span class="comment">← note giurisprudenziali + PDF sentenze</span>
-│   ├── <span class="highlight">cass-sez6-corruzione-2024.md</span>  <span class="comment">← nota MD (massima + principio + link al fascicolo)</span>
-│   ├── <span class="highlight">cedu-art3-sovraffollamento.md</span>  <span class="comment">← nota CEDU</span>
-│   ├── <span class="file">cedu-torreggiani-2013.pdf</span>       <span class="comment">← sentenza originale HUDOC</span>
-│   └── <span class="file">massimario-cass-corruzione.pdf</span>  <span class="comment">← rassegna Massimario</span>
+├── <span class="folder">📁 KNOWLEDGE_BASE/</span>        <span class="comment">← massimari, schede reato, gerarchia fonti</span>
+│   ├── <span class="folder">📁 01_NORMATIVA/</span>      <span class="comment">← i tuoi PDF da Normattiva (aggiungili qui)</span>
+│   ├── <span class="folder">📁 02_GIURISPRUDENZA/</span> <span class="comment">← massimari Cassazione (PDF)</span>
+│   └── <span class="folder">📁 06_SCHEDE_REATO/</span>   <span class="comment">← 13 schede operative per reato</span>
 │
-├── <span class="folder">📁 penalista-impugnazioni/</span>  <span class="comment">← atti di impugnazione prodotti</span>
-│   ├── <span class="highlight">appello-rossi-20240601.md</span>      <span class="comment">← bozza e note strategia</span>
-│   ├── <span class="file">appello-rossi-20240601.docx</span>    <span class="comment">← versione definitiva Word</span>
-│   └── <span class="file">ricorso-cassazione-verdi.pdf</span>   <span class="comment">← copia depositata</span>
-│
-├── <span class="folder">📁 penalista-memorie/</span>    <span class="comment">← memorie difensive</span>
-│   ├── <span class="highlight">memoria-rossi-415bis.md</span>       <span class="comment">← contenuto e note</span>
-│   └── <span class="file">memoria-rossi-415bis.docx</span>     <span class="comment">← versione Word definitiva</span>
-│
-├── <span class="folder">📁 penalista-pareri/</span>     <span class="comment">← pareri pro veritate</span>
-│   ├── <span class="highlight">parere-231-azienda-xyz.md</span>
-│   └── <span class="file">parere-231-azienda-xyz.pdf</span>    <span class="comment">← versione firmata e consegnata</span>
-│
-├── <span class="folder">📁 penalista-scadenze/</span>
-│   └── <span class="highlight">SCADENZIARIO.md</span>       <span class="comment">← hub centrale di tutte le scadenze</span>
-│
-└── <span class="folder">📁 penalista-fonti/</span>     <span class="comment">← testi normativi ufficiali (AGGIUNGERE MANUALMENTE)</span>
-    ├── <span class="file">codice-penale-2026-05.pdf</span>    <span class="comment">← da Normattiva — aggiornare dopo riforme</span>
-    ├── <span class="file">codice-cpp-2026-05.pdf</span>
-    ├── <span class="file">dlgs-231-2001.pdf</span>
-    ├── <span class="file">dlgs-74-2000-reati-fiscali.pdf</span>
-    └── <span class="file">ordinamento-penitenziario.pdf</span>
-      </div>
+└── <span class="folder">📁 documentazione/</span>        <span class="comment">← guide</span>
+</div>
 
       <div class="alert green">
         <span class="alert-icon">✅</span>
@@ -687,7 +658,7 @@
 
       <div class="alert orange">
         <span class="alert-icon">⚠️</span>
-        <p><strong>La cartella <code>penalista-fonti/</code></strong> non viene creata automaticamente — devi crearla tu e popolarla con i testi normativi ufficiali scaricati. Vedi la sezione <a href="#fonti-ufficiali" style="color: var(--accent)">Fonti Giuridiche</a>.</p>
+        <p><strong>L'unica cosa da aggiungere a mano sono i PDF delle fonti</strong> (testi da Normattiva, massimari): mettili in <code>KNOWLEDGE_BASE/01_NORMATIVA/</code> e <code>02_GIURISPRUDENZA/</code> — oppure allegali in conversazione e di' al kit "archivialo nelle fonti". Tutto il resto della struttura lo crea e lo mantiene il kit. Vedi <a href="#fonti-ufficiali" style="color: var(--accent)">Fonti Giuridiche</a>.</p>
       </div>
 
       <h3>Naming convention per i fascicoli</h3>
@@ -720,41 +691,41 @@
         <div class="step">
           <div class="step-num">1</div>
           <div class="step-content">
-            <h4>Usa il comando <code>/penalista-italia:fascicolo</code></h4>
-            <p>Il kit genera automaticamente il file .md con il formato standard, aggiorna INDEX.md e chiede le informazioni essenziali in un'unica domanda.</p>
+            <h4>Chiedi al kit: <em>"Apri il fascicolo di [cliente]"</em></h4>
+            <p>In linguaggio naturale, niente comandi. Il kit crea la cartella in <code>FASCICOLI/</code>, la scheda del fascicolo, lo scadenziario e aggiorna l'indice dello studio. Al primo utilizzo in assoluto, parti invece da <em>"Iniziamo"</em>: l'onboarding fa tutto con te.</p>
           </div>
         </div>
         <div class="step">
           <div class="step-num">2</div>
           <div class="step-content">
-            <h4>Completa il frontmatter</h4>
-            <p>Inserisci: cliente, R.G.N.R., reato con articolo, autorità procedente, fase attuale, eventuali scadenze già note. Queste informazioni vengono caricate automaticamente in ogni sessione successiva.</p>
+            <h4>Dagli quello che hai</h4>
+            <p>Capo di imputazione, CNR, ordinanza, avviso — incollati o allegati come PDF. Il kit compila la scheda (cliente, R.G.N.R., reato, autorità, fase, scadenze note) e da quel momento la ritrova in ogni sessione successiva.</p>
           </div>
         </div>
         <div class="step">
           <div class="step-num">3</div>
           <div class="step-content">
-            <h4>Aggiungi le scadenze urgenti</h4>
-            <p>Se ci sono termini già correnti (riesame da proporre, risposta a 415-bis, udienza fissata), aggiornare subito <code>SCADENZIARIO.md</code> con <code>/penalista-italia:scadenze</code>.</p>
+            <h4>Fai calcolare subito le scadenze urgenti</h4>
+            <p>Se ci sono termini già correnti (riesame da proporre, risposta a 415-bis, udienza fissata): <em>"calcola i termini"</em>. Il kit ragiona sul calendario (festivi e sospensione feriale compresi) e aggiorna lo scadenziario del fascicolo.</p>
           </div>
         </div>
         <div class="step">
           <div class="step-num">4</div>
           <div class="step-content">
             <h4>Prima analisi strategica</h4>
-            <p>Incollare il capo di imputazione e usare <code>/penalista-italia:strategia</code>. Il risultato viene salvato nella sezione "Strategia difensiva" del file fascicolo.</p>
+            <p><em>"Analizza questa accusa"</em> con il capo di imputazione. Il risultato viene salvato nella strategia difensiva del fascicolo.</p>
           </div>
         </div>
         <div class="step">
           <div class="step-num">5</div>
           <div class="step-content">
-            <h4>Linkare le fonti rilevanti</h4>
-            <p>Aggiungere nella sezione "Giurisprudenza di riferimento" i wikilinks alle sentenze rilevanti già presenti in <code>penalista-giurisprudenza/</code>. Questo costruisce la rete di conoscenza dello studio nel tempo.</p>
+            <h4>I collegamenti li fa il kit</h4>
+            <p>Sentenze, atti e note vengono collegati automaticamente alla scheda del fascicolo: è la <a href="#wikilinks" style="color: var(--accent)">memoria di studio</a> che cresce nel tempo, senza manutenzione da parte tua.</p>
           </div>
         </div>
       </div>
 
-      <h3>Formato standard del fascicolo</h3>
+      <h3>La scheda che il kit genera (esempio — non devi scriverla tu)</h3>
       <div class="folder-tree">
 <span class="comment">--- frontmatter YAML ---</span>
 <span class="highlight">cliente:</span> Mario Rossi
@@ -874,7 +845,7 @@
 
       <div class="alert blue">
         <span class="alert-icon">📂</span>
-        <p><strong>Dove salvarle:</strong> crea la cartella <code>penalista-fonti/</code> nella tua cartella di lavoro e salva i PDF lì. Per usarle, apri il file nell'app e indica al kit di leggerlo come contesto prima di rispondere.</p>
+        <p><strong>Dove salvarle:</strong> nella cartella <code>KNOWLEDGE_BASE/01_NORMATIVA/</code> della tua struttura di lavoro (creala se non c'è, o chiedi al kit di farlo). Per usarle, allega il PDF e indica al kit di leggerlo come contesto prima di rispondere.</p>
       </div>
 
       <h3>Fonti gratuite e ufficiali — priorità alta</h3>
@@ -979,7 +950,7 @@
           <div class="step-num">1</div>
           <div class="step-content">
             <h4>Scarica il testo da Normattiva o HUDOC</h4>
-            <p>Usa sempre la versione consolidata (aggiornata con tutte le modifiche). Salva il PDF come <code>codice-penale.pdf</code> nella cartella <code>penalista-fonti/</code>.</p>
+            <p>Usa sempre la versione consolidata (aggiornata con tutte le modifiche). Salva il PDF in <code>KNOWLEDGE_BASE/01_NORMATIVA/</code>.</p>
           </div>
         </div>
         <div class="step">
@@ -1020,9 +991,9 @@
         <tr><th>Tipo di fonte personale</th><th>Dove salvare</th><th>Formato suggerito</th></tr>
         <tr><td>Sentenze favorevoli ottenute</td><td><code>penalista-giurisprudenza/</code></td><td><code>cass-sezX-argomento-anno.md</code></td></tr>
         <tr><td>Orientamenti locali del Tribunale</td><td><code>penalista-giurisprudenza/</code></td><td><code>trib-[città]-argomento.md</code></td></tr>
-        <tr><td>Template atti del tuo studio</td><td><code>penalista-atti/templates/</code></td><td><code>template-memoria-415bis.md</code></td></tr>
-        <tr><td>Prassi locali GIP/GUP</td><td><code>penalista-atti/prassi/</code></td><td><code>prassi-[città]-cautelare.md</code></td></tr>
-        <tr><td>Clienti ricorrenti (categorie)</td><td><code>penalista-atti/</code></td><td>Fascicoli standard per settore</td></tr>
+        <tr><td>Template atti del tuo studio</td><td>chiedi al kit: "salvalo come template"</td><td><code>template-memoria-415bis.md</code></td></tr>
+        <tr><td>Prassi locali GIP/GUP</td><td>chiedi al kit: "annota questa prassi"</td><td><code>prassi-[città]-cautelare.md</code></td></tr>
+        <tr><td>Clienti ricorrenti (categorie)</td><td><code>FASCICOLI/</code> — li organizza il kit</td><td>Fascicoli standard per settore</td></tr>
       </table>
 
       <div class="alert green">
@@ -1053,11 +1024,11 @@
         </div>
         <p style="font-size:13px; color: var(--text2); margin-bottom:0.75rem;">File da creare: fascicolo.md + voce SCADENZIARIO con termini di fase + collegamento a giurisprudenza su gravi indizi e esigenze cautelari</p>
         <div class="mini-project-commands">
-          <span class="cmd">/fascicolo</span>
-          <span class="cmd">/cautelare</span>
-          <span class="cmd">/scadenze → termini di fase</span>
-          <span class="cmd">/atti → riesame</span>
-          <span class="cmd">/giurisprudenza → art. 274</span>
+          <span class="cmd">"Apri il fascicolo"</span>
+          <span class="cmd">penalista-cautelare</span>
+          <span class="cmd">penalista-scadenze → termini di fase</span>
+          <span class="cmd">penalista-atti → riesame</span>
+          <span class="cmd">penalista-giurisprudenza → art. 274</span>
         </div>
       </div>
 
@@ -1071,10 +1042,10 @@
         </div>
         <p style="font-size:13px; color: var(--text2); margin-bottom:0.75rem;">File da creare: fascicolo.md con il capo di imputazione + nota di strategia + memoria.docx</p>
         <div class="mini-project-commands">
-          <span class="cmd">/strategia → capo imputazione</span>
-          <span class="cmd">/giurisprudenza</span>
-          <span class="cmd">/atti → memoria 415-bis</span>
-          <span class="cmd">/scadenze → termine risposta</span>
+          <span class="cmd">penalista-strategia → capo imputazione</span>
+          <span class="cmd">penalista-giurisprudenza</span>
+          <span class="cmd">penalista-atti → memoria 415-bis</span>
+          <span class="cmd">penalista-scadenze → termine risposta</span>
         </div>
       </div>
 
@@ -1087,10 +1058,10 @@
           </div>
         </div>
         <div class="mini-project-commands">
-          <span class="cmd">/scadenze → termine appello</span>
-          <span class="cmd">/strategia → sentenza</span>
-          <span class="cmd">/atti → appello</span>
-          <span class="cmd">/giurisprudenza</span>
+          <span class="cmd">penalista-scadenze → termine appello</span>
+          <span class="cmd">penalista-strategia → sentenza</span>
+          <span class="cmd">penalista-atti → appello</span>
+          <span class="cmd">penalista-giurisprudenza</span>
         </div>
       </div>
 
@@ -1103,9 +1074,9 @@
           </div>
         </div>
         <div class="mini-project-commands">
-          <span class="cmd">/esecuzione → calcolo pena</span>
-          <span class="cmd">/scadenze → requisiti misure</span>
-          <span class="cmd">/atti → istanza affidamento</span>
+          <span class="cmd">penalista-esecuzione → calcolo pena</span>
+          <span class="cmd">penalista-scadenze → requisiti misure</span>
+          <span class="cmd">penalista-atti → istanza affidamento</span>
         </div>
       </div>
 
@@ -1118,9 +1089,9 @@
           </div>
         </div>
         <div class="mini-project-commands">
-          <span class="cmd">/strategia → reato presupposto</span>
-          <span class="cmd">/cautelare → misure interdittive</span>
-          <span class="cmd">/atti → memoria 231</span>
+          <span class="cmd">penalista-strategia → reato presupposto</span>
+          <span class="cmd">penalista-cautelare → misure interdittive</span>
+          <span class="cmd">penalista-atti → memoria 231</span>
         </div>
       </div>
     </section>
@@ -1147,7 +1118,7 @@
         <div class="mermaid-wrap">
           <div class="mermaid">
 flowchart TD
-    START([🆕 Nuovo cliente]) --> FASC["/fascicolo\nApri il fascicolo digitale"]
+    START([🆕 Nuovo cliente]) --> FASC["Apri il fascicolo di [cliente]\n(lo crea il kit)"]
     FASC --> FASE{In quale fase\nsi trova il caso?}
 
     FASE -->|📨 Indagini /\nAvviso 415-bis| IND
@@ -1165,7 +1136,7 @@ flowchart TD
 
     subgraph CAU ["🔒 Misura Cautelare"]
       direction TB
-      C1["⚠️ /cautelare\nVERIFICA TERMINI — PRIMA DI TUTTO"] --> C2{Termini\nok?}
+      C1["⚠️ VERIFICA TERMINI\nPRIMA DI TUTTO (penalista-cautelare)"] --> C2{Termini\nok?}
       C2 -->|🚨 Scaduti| C3["/atti → scarcerazione\nIstanza urgente"]
       C2 -->|✅ In tempo| C4["/atti → riesame\nCostituisci i motivi"]
     end
@@ -1194,7 +1165,7 @@ flowchart TD
         </div>
         <div class="alert blue">
           <span class="alert-icon">💡</span>
-          <p>Se il cliente ha una <strong>misura cautelare in corso</strong>, verificare <em>sempre</em> i termini di fase con <code>/cautelare</code> prima di qualsiasi altra azione. È il caso in cui il ritardo si paga con la libertà del cliente.</p>
+          <p>Se il cliente ha una <strong>misura cautelare in corso</strong>, verificare <em>sempre</em> i termini di fase (<em>"il cliente è in custodia: verifica i termini"</em>) prima di qualsiasi altra azione. È il caso in cui il ritardo si paga con la libertà del cliente.</p>
         </div>
       </div>
 
@@ -1211,9 +1182,9 @@ flowchart TD
               <div class="tl-header">
                 <div class="tl-title">Arriva l'avviso ex art. 415-bis</div>
                 <div class="tl-cmds">
-                  <span class="tl-cmd">/fascicolo</span>
-                  <span class="tl-cmd">/scadenze</span>
-                  <span class="tl-cmd">/strategia</span>
+                  <span class="tl-cmd">"Apri il fascicolo"</span>
+                  <span class="tl-cmd">penalista-scadenze</span>
+                  <span class="tl-cmd">penalista-strategia</span>
                 </div>
               </div>
               <div class="tl-text">Apri il fascicolo digitale con i dati del cliente e il capo di imputazione. Calcola il termine di risposta (20 giorni). Avvia la prima analisi difensiva.</div>
@@ -1227,7 +1198,7 @@ flowchart TD
             <div class="tl-card">
               <div class="tl-header">
                 <div class="tl-title">Ricerca giurisprudenziale</div>
-                <div class="tl-cmds"><span class="tl-cmd">/giurisprudenza</span></div>
+                <div class="tl-cmds"><span class="tl-cmd">penalista-giurisprudenza</span></div>
               </div>
               <div class="tl-text">Orientamenti favorevoli della Sesta Sezione Cassazione sull'elemento soggettivo della corruzione per la funzione (art. 318). Salvo le massime come note MD e le linko al fascicolo.</div>
               <div class="tl-output">✅ Creata cass-sez6-corruzione-2024.md · Linkato in [[rossi-2024-corruzione]]</div>
@@ -1253,7 +1224,7 @@ flowchart TD
             <div class="tl-card">
               <div class="tl-header">
                 <div class="tl-title">Redazione della memoria difensiva</div>
-                <div class="tl-cmds"><span class="tl-cmd">/atti → memoria 415-bis</span></div>
+                <div class="tl-cmds"><span class="tl-cmd">penalista-atti → memoria 415-bis</span></div>
               </div>
               <div class="tl-text">Il kit legge automaticamente il fascicolo e la giurisprudenza raccolta. Produce la bozza con le massime già incorporate. Si rivede e si salva in DOCX.</div>
               <div class="tl-output">✅ memoria-rossi-415bis-20240215.docx · Linkato al fascicolo · Depositata il 15/02</div>
@@ -1268,7 +1239,7 @@ flowchart TD
             <div class="tl-card">
               <div class="tl-header">
                 <div class="tl-title">Udienza Preliminare fissata — lista testi</div>
-                <div class="tl-cmds"><span class="tl-cmd">/scadenze</span><span class="tl-cmd">/atti → lista testi</span></div>
+                <div class="tl-cmds"><span class="tl-cmd">penalista-scadenze</span><span class="tl-cmd">penalista-atti → lista testi</span></div>
               </div>
               <div class="tl-text">Il kit ricorda tutta la strategia dal fascicolo. La lista testi è coerente con gli argomenti difensivi della memoria depositata 3 mesi prima.</div>
               <div class="tl-output">✅ Scadenza deposito lista testi calcolata · Lista prodotta in continuità con la strategia</div>
@@ -1283,7 +1254,7 @@ flowchart TD
             <div class="tl-card">
               <div class="tl-header">
                 <div class="tl-title">Sentenza di condanna — si impugna</div>
-                <div class="tl-cmds"><span class="tl-cmd">/scadenze</span><span class="tl-cmd">/strategia</span><span class="tl-cmd">/atti → appello</span></div>
+                <div class="tl-cmds"><span class="tl-cmd">penalista-scadenze</span><span class="tl-cmd">penalista-strategia</span><span class="tl-cmd">penalista-atti → appello</span></div>
               </div>
               <div class="tl-text">Si calcola il termine per l'appello (30 giorni dall'avviso di deposito). Si analizzano i vizi della sentenza. L'atto di appello è coerente con la linea difensiva di 10 mesi fa — tutta nei wikilinks.</div>
               <div class="tl-output">✅ Termini calcolati con precisione · Appello costruito sull'intera storia del fascicolo</div>

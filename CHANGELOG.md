@@ -1,5 +1,13 @@
 # Changelog — Penalista Italia
 
+## [3.2.4] — 2026-06-11
+
+### Guida metodologica allineata alla v3
+
+METODOLOGIA.html era rimasta in parte alla struttura v1: corrette le sezioni Struttura delle cartelle (albero reale con FASCICOLI/ e KNOWLEDGE_BASE/), Aprire un fascicolo (il fascicolo lo crea il kit in linguaggio naturale — niente comandi estinti), Fonti (i PDF vanno in KNOWLEDGE_BASE/01_NORMATIVA/), Mini-progetti e Workflow (nomi skill reali al posto dei vecchi comandi /fascicolo, /cautelare ecc.).
+
+---
+
 ## [3.2.3] — 2026-06-11
 
 ### Installazione: due passi, zero decisioni
