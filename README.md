@@ -1,6 +1,6 @@
 # Penalista Italia -- Kit Operativo per Avvocati Penalisti
 
-[![Versione](https://img.shields.io/badge/versione-3.2.1-blue)](https://github.com/Synthos-Logic/penalista-italia/releases)
+[![Versione](https://img.shields.io/badge/versione-3.2.2-blue)](https://github.com/Synthos-Logic/penalista-italia/releases)
 [![Licenza](https://img.shields.io/badge/licenza-MIT-green)](LICENSE)
 [![Piattaforma](https://img.shields.io/badge/piattaforma-Claude%20Cowork-orange)](https://claude.ai)
 [![Wiki](https://img.shields.io/badge/Wiki-metodologia-blueviolet)](https://github.com/Synthos-Logic/penalista-italia/wiki)
@@ -22,7 +22,9 @@ Wiki [Guida metodologica completa](https://github.com/Synthos-Logic/penalista-it
 
 ---
 
-## Installazione -- 3 passi
+## Installazione
+
+**Basta il Passo 1 per iniziare.** I Passi 2 e 3 aggiungono l'archivio dello studio — la memoria del kit sui tuoi casi — e puoi farli anche dopo.
 
 ### Passo 1 -- Installa il plugin (le 8 skill, in un colpo solo)
 
@@ -34,11 +36,11 @@ In Claude Desktop:
 
 Fatto: le 8 skill sono attive. **Gli aggiornamenti arrivano da soli** (vedi sotto).
 
-### Passo 2 -- Scarica la cartella di lavoro
+### Passo 2 -- Aggiungi la cartella dello studio (consigliato)
 
-Clicca **Code -> Download ZIP** in questa pagina. Decomprimi, rinomina la cartella in `Penale-Italia` e collegala: Claude Desktop -> Cowork -> **Seleziona cartella** -> `Penale-Italia`.
+Il plugin da solo non ricorda i tuoi casi tra una conversazione e l'altra. La cartella dello studio e' l'archivio che dà al kit la memoria: fascicoli, dati dello studio, Knowledge Base con i tuoi PDF.
 
-Dentro ci sono la Knowledge Base (massimari e schede reato), la cartella `FASCICOLI/` per i tuoi casi e il file `CLAUDE.md` con i dati del tuo studio.
+Clicca **Code -> Download ZIP** in questa pagina. Decomprimi, rinomina la cartella in `Penale-Italia` e collegala: Claude Desktop -> Cowork -> **Seleziona cartella** -> `Penale-Italia`. Puoi farlo subito o quando inizi a lavorare sui casi reali.
 
 ### Passo 3 -- Scrivi "Iniziamo"
 

@@ -2,16 +2,18 @@
 
 *Tempo richiesto: 5 minuti. Non serve alcuna competenza tecnica.*
 
-Il kit ha due parti, entrambe necessarie:
+**L'installazione vera e propria è una sola: il plugin (Parte 1).** Da quel momento le 8 skill funzionano in ogni conversazione e si aggiornano da sole.
 
-| Parte | Cosa contiene | Come si installa |
+La **cartella dello studio** (Parte 2) non è un secondo passaggio obbligatorio: è l'archivio dove il kit conserva i tuoi fascicoli, i dati del tuo studio e i massimari. Puoi aggiungerla subito o in qualsiasi momento — serve quando inizi a lavorare sui casi reali.
+
+| Componente | A cosa serve | Quando |
 |---|---|---|
-| **Plugin** | Le 8 skill (le competenze del kit) | Una volta, dal marketplace — poi si aggiorna da solo |
-| **Cartella di lavoro** | Knowledge Base, i tuoi fascicoli, i dati del tuo studio | Scaricando lo ZIP da GitHub |
+| **Plugin** (Parte 1) | Le 8 skill — il motore del kit | Subito: è l'installazione |
+| **Cartella dello studio** (Parte 2) | Fascicoli, dati studio, Knowledge Base con i tuoi PDF — la memoria del kit | Consigliata: quando lavori sui tuoi casi |
 
 ---
 
-## Parte 1 — Installa il plugin
+## Parte 1 — Installa il plugin (è tutto ciò che serve per iniziare)
 
 ### 1. Apri Personalizza
 
@@ -69,7 +71,9 @@ Apri una nuova conversazione e scrivi `/penalista-italia:versione`. Deve rispond
 
 ---
 
-## Parte 2 — La cartella di lavoro
+## Parte 2 — La cartella dello studio (consigliata, non obbligatoria)
+
+Senza questa cartella il kit funziona, ma **non ricorda**: ogni conversazione riparte da zero sui tuoi casi. Con la cartella, fascicoli, strategie e scadenze restano e si ritrovano. Puoi farlo anche in un secondo momento.
 
 ### 1. Scarica lo ZIP
 

@@ -1,5 +1,13 @@
 # Changelog — Penalista Italia
 
+## [3.2.2] — 2026-06-11
+
+### Chiarezza sull'installazione (segnalazione dal campo)
+
+La guida presentava plugin e cartella di lavoro come due passi di una sequenza obbligatoria. Ora i ruoli sono espliciti: **il plugin è l'installazione** (autosufficiente per iniziare); la **cartella dello studio è l'archivio** — consigliata, aggiungibile in qualsiasi momento, necessaria solo per avere memoria persistente di fascicoli, dati studio e massimari. Riformulati README e guida d'installazione.
+
+---
+
 ## [3.2.1] — 2026-06-11
 
 ### Immagini aggiornate nella documentazione
