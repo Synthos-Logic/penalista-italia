@@ -1,6 +1,6 @@
 # Penalista Italia -- Kit Operativo per Avvocati Penalisti
 
-[![Versione](https://img.shields.io/badge/versione-3.2.0-blue)](https://github.com/Synthos-Logic/penalista-italia/releases)
+[![Versione](https://img.shields.io/badge/versione-3.2.1-blue)](https://github.com/Synthos-Logic/penalista-italia/releases)
 [![Licenza](https://img.shields.io/badge/licenza-MIT-green)](LICENSE)
 [![Piattaforma](https://img.shields.io/badge/piattaforma-Claude%20Cowork-orange)](https://claude.ai)
 [![Wiki](https://img.shields.io/badge/Wiki-metodologia-blueviolet)](https://github.com/Synthos-Logic/penalista-italia/wiki)
@@ -82,6 +82,10 @@ La skill di onboarding la fa con te al primo "Iniziamo". Se preferisci farlo a m
 | `penalista-verifica` | Controllo qualita' pre-deposito: verifica indipendente di ogni citazione giurisprudenziale contro la Knowledge Base, ricalcolo dei termini, coerenza atto-fascicolo. Report con esito 🟢/🟡/🔴 |
 
 Comandi rapidi: `/penalista-italia:aiuto` (guida) · `/penalista-italia:versione` (versione installata)
+
+**Il kit al lavoro** — la skill cautelare raccoglie i dati del fascicolo:
+
+![Il kit al lavoro](docs/images/esempio-cautelare.png)
 
 ---
 

@@ -1,5 +1,14 @@
 # Changelog — Penalista Italia
 
+## [3.2.1] — 2026-06-11
+
+### Immagini aggiornate nella documentazione
+
+- La scheda del plugin nella guida mostra ora la versione corrente (lo screenshot precedente risaliva alla v1.1.0)
+- Nuova immagine "il kit al lavoro" (raccolta dati del fascicolo cautelare) nel README e nella guida d'installazione
+
+---
+
 ## [3.2.0] — 2026-06-11
 
 ### 🔌 Il kit diventa un plugin: aggiornamenti automatici

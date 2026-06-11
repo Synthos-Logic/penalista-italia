@@ -55,6 +55,8 @@ Cliccando sul plugin vedi versione, autore e le competenze installate:
 
 ![Dettaglio del plugin](images/installazione/07-dettaglio-installato.png)
 
+> La versione mostrata deve corrispondere all'[ultima release](https://github.com/Synthos-Logic/penalista-italia/releases).
+
 ### 5. Attiva gli aggiornamenti automatici (consigliato)
 
 Sempre in Plugin → Personale, accanto al nome `penalista-italia` ci sono **tre puntini (···)**. Cliccali e attiva **"Sincronizza automaticamente"**. Da quel momento le nuove versioni delle skill arrivano da sole.
@@ -84,6 +86,11 @@ Claude Desktop → **Cowork** → **Seleziona cartella** → scegli `Penale-Ital
 ---
 
 ## Parte 3 — Primo avvio
+
+Ecco come si presenta il kit al lavoro — qui la skill delle misure cautelari raccoglie i dati del fascicolo:
+
+![Il kit al lavoro: fascicolo cautelare](images/esempio-cautelare.png)
+
 
 Nella conversazione Cowork con la cartella selezionata, scrivi:
 
