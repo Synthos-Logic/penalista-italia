@@ -440,12 +440,12 @@
       <a class="nav-item" href="#principio"><span class="dot"></span>Il principio</a>
       <a class="nav-item" href="#formati"><span class="dot"></span>Formati documentali</a>
       <a class="nav-item" href="#struttura"><span class="dot"></span>Struttura cartelle</a>
-      <a class="nav-item" href="#wikilinks"><span class="dot"></span>Wikilinks</a>
+      <a class="nav-item" href="#wikilinks"><span class="dot"></span>La memoria di studio</a>
     </div>
 
     <div class="nav-section">
       <div class="nav-label">Riferimento</div>
-      <a class="nav-item" href="https://github.com/Synthos-Logic/penalista-italia/blob/main/documentazione/INSTALLAZIONE.md"><span class="dot"></span>Guida installazione</a>
+      <a class="nav-item" href="INSTALLAZIONE.md"><span class="dot"></span>Guida installazione</a>
       <a class="nav-item" href="https://github.com/Synthos-Logic/penalista-italia"><span class="dot"></span>Repository GitHub</a>
     </div>
   </nav>
@@ -477,7 +477,7 @@
           <div class="step-num">1</div>
           <div class="step-content">
             <h4>Giorno 1 — Tre azioni e sei operativo</h4>
-            <p>Installa il kit (<a href="https://github.com/Synthos-Logic/penalista-italia/blob/main/documentazione/INSTALLAZIONE.md">guida installazione</a>, 10 minuti). Apri <code>CLAUDE.md</code> e compila i dati del tuo studio: nome, foro, tribunale. Poi scrivi a Claude: <em>"Iniziamo"</em> — il kit ti accompagna nel primo avvio e apre con te il primo fascicolo. Non devi sapere nient'altro.</p>
+            <p>Installa il kit (<a href="INSTALLAZIONE.md">guida installazione</a>, 10 minuti). Apri <code>CLAUDE.md</code> e compila i dati del tuo studio: nome, foro, tribunale. Poi scrivi a Claude: <em>"Iniziamo"</em> — il kit ti accompagna nel primo avvio e apre con te il primo fascicolo. Non devi sapere nient'altro.</p>
           </div>
         </div>
         <div class="step">
@@ -782,17 +782,19 @@
       <div class="section-header">
         <div class="section-num purple">4</div>
         <div>
-          <div class="section-title">Il sistema wikilinks</div>
-          <div class="section-sub">Il meccanismo interno della memoria — li gestisce il kit, non tu</div>
+          <div class="section-title">La memoria di studio</div>
+          <div class="section-sub">Perché il kit ricorda i tuoi fascicoli — e perché non devi fare nulla</div>
         </div>
       </div>
 
       <div class="alert green">
         <span class="alert-icon">✅</span>
-        <p><strong>La cosa più importante di questa sezione:</strong> i wikilinks <strong>li crea e li mantiene il kit</strong>, automaticamente, ogni volta che apri un fascicolo o produci un documento. Tu devi solo saperli riconoscere: quando vedi <code>[[un-nome-tra-doppie-parentesi]]</code>, è un collegamento che il sistema usa per ritrovare i tuoi documenti. Non devi scriverli a mano. Tutto ciò che segue è per chi vuole capire il motore.</p>
+        <p><strong>La cosa più importante di questa sezione:</strong> la memoria <strong>la gestisce il kit da solo</strong>. Tu lavori, lui annota e collega.</p>
       </div>
 
-      <p>I <strong>wikilinks</strong> — nella forma <code>[[nome-file]]</code> — sono il meccanismo che trasforma una cartella di documenti in una rete di conoscenza collegata. Il kit legge solo i file necessari per il compito del giorno, evitando di ricaricare tutto il contesto ogni volta.</p>
+      <p><strong>Perché serve una memoria.</strong> Claude, da solo, riparte da zero a ogni conversazione: quello che decidete oggi, domani non lo ricorda. Il kit risolve il problema come farebbe uno studio ben organizzato: <strong>scrive ciò che conta in piccole note dentro il fascicolo</strong> — la strategia scelta, le scadenze, la giurisprudenza utile — e le collega tra loro, come i rimandi tra i faldoni di un archivio cartaceo. Alla prossima sessione il kit rilegge solo le note che servono per il compito del giorno, e riparte da dove eravate rimasti.</p>
+
+      <p>Tecnicamente questi rimandi si chiamano <em>wikilinks</em> e hanno la forma <code>[[nome-documento]]</code>: quando ne vedi uno in un file, sappi solo che è un collegamento che il kit usa per ritrovare i documenti. <strong>Non devi mai scriverli né mantenerli tu.</strong> Il resto di questa sezione spiega il motore, per chi è curioso — saltarla non toglie nulla.</p>
 
       <div class="card-grid">
         <div class="card">
@@ -1306,7 +1308,7 @@ flowchart TD
       </div>
       <div>
         <a href="https://github.com/Synthos-Logic/penalista-italia">GitHub</a> ·
-        <a href="https://github.com/Synthos-Logic/penalista-italia/blob/main/documentazione/INSTALLAZIONE.md">Installazione</a> ·
+        <a href="INSTALLAZIONE.md">Installazione</a> ·
         <a href="https://github.com/Synthos-Logic/penalista-italia/issues">Segnalazioni</a>
       </div>
     </div>

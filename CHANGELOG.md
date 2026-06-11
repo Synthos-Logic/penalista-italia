@@ -1,5 +1,24 @@
 # Changelog — Penalista Italia
 
+## [3.2.0] — 2026-06-11
+
+### 🔌 Il kit diventa un plugin: aggiornamenti automatici
+
+Le 8 skill ora si installano **in un colpo solo** dal marketplace GitHub (`Synthos-Logic/penalista-italia`) e **si aggiornano da sole** — niente più reinstallazioni manuali a ogni release. Il flusso di aggiornamento in Cowork è stato verificato sul campo con un banco di prova dedicato: sincronizzazione del catalogo dai tre puntini del marketplace ("Verifica aggiornamenti" / "Sincronizza automaticamente"), poi conversazione nuova.
+
+- Nuovi manifest `.claude-plugin/` (plugin + marketplace, versione unica 3.2.0)
+- Nuovi comandi rapidi: `/penalista-italia:aiuto` e `/penalista-italia:versione`
+- La cartella di lavoro (Knowledge Base, FASCICOLI, dati studio) resta separata dal plugin: si scarica una volta con lo ZIP e si aggiorna di rado con l'aggiornamento assistito, che non tocca mai i dati dell'utente
+
+### 📚 Documentazione riorganizzata e semplificata
+
+- `docs/INSTALLAZIONE.md` riscritta sul flusso plugin (2 parti + primo avvio, problemi comuni reali)
+- L'installazione con i file `.skill` diventa la via alternativa: `documentazione/INSTALLAZIONE_ALTERNATIVA.md` (sostituisce la vecchia guida), con avvertenza anti-doppioni
+- README: installazione in 3 passi sul plugin, sezione aggiornamenti unificata, linguaggio semplificato (la "memoria di studio" spiegata senza tecnicismi)
+- Aggiornamento assistito: le skill ora passano dal plugin; i pacchetti `.skill` restano solo per chi usa la via alternativa
+
+---
+
 ## [3.1.2] — 2026-06-10
 
 ### Fix da test sul campo

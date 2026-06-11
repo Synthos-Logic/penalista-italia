@@ -39,7 +39,7 @@
 
 5. **Elimina lo ZIP** dalla cartella di lavoro (chiedi conferma prima).
 
-6. **Skill nuove o aggiornate**: identifica dal CHANGELOG quali skill sono nuove o modificate. Per ciascuna, crea il pacchetto `.skill` (procedura in `INSTALLAZIONE_ASSISTITA.md`, incluso il passaggio per `/tmp`) e presentala all'utente con il pulsante "Salva skill". Avverti: *"Se Claude segnala che una skill esiste già, apra Personalizza → Skills, elimini la versione vecchia e clicchi di nuovo 'Salva skill'."*
+6. **Skill nuove o aggiornate**: controlla come sono installate le skill in questa sessione. Se l'utente ha il **plugin** (skill con prefisso `penalista-italia:`), le skill si aggiornano da sole: ricordagli solo di usare ··· → "Verifica aggiornamenti" sul marketplace (Personalizza → Plugin) o di attivare "Sincronizza automaticamente", e di aprire una conversazione nuova. Solo se l'utente usa le skill standalone (senza plugin): identifica dal CHANGELOG quali skill sono nuove o modificate, crea i pacchetti `.skill` (procedura in `INSTALLAZIONE_ASSISTITA.md`) e presentali con il pulsante "Salva skill", avvertendo di eliminare prima le versioni vecchie da Personalizza → Skills.
 
 7. **Verifica finale**: conferma all'utente versione installata (dal CHANGELOG), skill aggiornate, e che fascicoli e dati studio sono intatti — dillo esplicitamente: *"I suoi fascicoli e i dati dello studio non sono stati toccati."*
 
