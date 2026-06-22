@@ -10,6 +10,10 @@
 
 > **Calibrato su GIP, GUP, indagini, dibattimento, impugnazioni, misure cautelari e Cassazione penale.** Synthos Logic ha costruito questo kit insieme a professionisti del foro, in un progetto pilota reale con avvocati penalisti in attivita'.
 
+> **Parti da qui — non è un extra.**  **[▸ Come lavorare con il kit — Guida metodologica](https://synthos-logic.github.io/penalista-italia/METODOLOGIA.html)**
+>
+> È il modo in cui il kit produce valore: fascicoli che si organizzano da soli, memoria di studio tra sessioni, citazioni ancorate alle fonti. Dieci minuti di lettura che ti restituiscono ore. Saltarla significa usare il kit come una chat generica — il metodo è ciò che fa la differenza.
+
 ---
 
 ## La metodologia fa la differenza
@@ -18,7 +22,7 @@ Il kit e' un assistente che **lavora in una struttura organizzata -- e la strutt
 
 Investire dieci minuti nell'organizzazione di un fascicolo restituisce ore di lavoro nel tempo.
 
-Wiki [Guida metodologica completa](https://github.com/Synthos-Logic/penalista-italia/wiki) | Sito [Documentazione](https://synthos-logic.github.io/penalista-italia/) | Guida [Metodologia interattiva](https://synthos-logic.github.io/penalista-italia/METODOLOGIA.html)
+**Guida metodologica completa → [https://synthos-logic.github.io/penalista-italia/METODOLOGIA.html](https://synthos-logic.github.io/penalista-italia/METODOLOGIA.html)**  ·  Sito [Documentazione](https://synthos-logic.github.io/penalista-italia/)  ·  [Wiki](https://github.com/Synthos-Logic/penalista-italia/wiki)
 
 ---
 
