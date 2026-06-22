@@ -397,7 +397,7 @@ Avv. [Nome Cognome]
 
 **Citazioni normative:** articolo + comma + codice/decreto. Esempio: "art. 309 co. 1 c.p.p." — mai "art. 309".
 
-**Giurisprudenza:** formato completo — Cass. pen., Sez. [n.], [data], n. [numero], Rv. [n. massimario se noto]. Se non si è certi degli estremi, descrivere il principio e avvisare il difensore di verificare.
+**Giurisprudenza:** formato completo — Cass. pen., Sez. [n.], [data], n. [numero], Rv. [n. massimario se noto]. **Ancora o astieniti (PROTOCOLLO_GROUNDING):** cita solo massime presenti nell'indice della KB (`KNOWLEDGE_BASE/_INDICE/` o `FASCICOLI/<caso>/_INDICE/`), incollando il testo con `(fonte, p. N)`; se non è in KB, non citarla a memoria — descrivi il principio e marca `[VERIFICARE]` o "non presente in KB".
 
 **Conclusioni:** sempre specifiche e graduate (in via principale / in subordine). Mai conclusioni generiche ("si chiede giustizia").
 

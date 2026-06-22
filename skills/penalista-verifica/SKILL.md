@@ -24,8 +24,8 @@ Per OGNI sentenza citata nell'atto:
 
 | Esito | Criterio | Azione |
 |---|---|---|
-| ✅ VERIFICATA | Presente in `KNOWLEDGE_BASE/` (rassegne Massimario, note giurisprudenziali dello studio) o in un documento allegato dall'avvocato | Nessuna |
-| ⚠️ DA VERIFICARE | Citata a memoria, non riscontrata in alcuna fonte del kit | Marcare nel report con estremi completi; suggerire dove verificarla (Italgiure, DeJure, Portale del Massimario) |
+| ✅ VERIFICATA | Presente nell'indice della KB — registro citazionale di `KNOWLEDGE_BASE/_INDICE/INDICE.md` (o `FASCICOLI/<caso>/_INDICE/`) — con **riscontro testuale** della massima alla pagina indicata (PROTOCOLLO_GROUNDING) | Nessuna |
+| ⚠️ NON IN KB | Non presente nell'indice della KB (non riscontrabile nei registri) | La citazione va resa testuale dall'indice oppure dichiarata "non presente in KB"; suggerire verifica su Italgiure / DeJure / Portale del Massimario |
 | ❌ SOSPETTA | Estremi incoerenti (sezione/anno/numero non plausibili), massima che non corrisponde alla fonte | Segnalare in rosso: NON depositare senza verifica umana |
 
 **Mai declassare una citazione a "verificata" per somiglianza.** La verifica richiede riscontro testuale della massima, non solo degli estremi.

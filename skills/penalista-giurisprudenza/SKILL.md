@@ -67,7 +67,7 @@ Rv. [numero massimario], imp. [cognome imputato se noto]
 Cass. pen., Sez. [numero], n. [numero]/[anno]
 ```
 
-**Regola fondamentale:** se non si è certi degli estremi di una sentenza, descrivere il principio e avvisare l'avvocato di verificare su DeJure, OneLeagal o il Massimario della Cassazione prima di depositare l'atto. Non inventare mai numeri di sentenza.
+**Regola fondamentale — ancora o astieniti (PROTOCOLLO_GROUNDING, `KNOWLEDGE_BASE/00_META/PROTOCOLLO_GROUNDING.md`).** Prima di citare una massima cercala nell'indice della KB (`KNOWLEDGE_BASE/_INDICE/INDICE.md` e — sul caso — `FASCICOLI/<caso>/_INDICE/`): se c'è, apri il `.md` alla pagina indicata e incolla la massima testuale con `(fonte, p. N)`; se non c'è, descrivi il principio dichiarando "non presente in KB" e avvisa l'avvocato di verificare su DeJure, OneLeagal o il Massimario prima del deposito. Non inventare mai numeri di sentenza.
 
 ---
 

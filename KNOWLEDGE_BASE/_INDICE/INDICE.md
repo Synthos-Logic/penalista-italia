@@ -1,0 +1,1389 @@
+# INDICE GIURISPRUDENZA PENALE — Knowledge Base
+
+> Generato il 2026-06-22 da 3 fonti. Sentenze indicizzate (Rv): 1284.
+>
+> **Protocollo quote-then-claim.** Per citare una massima: cerca qui il numero **Rv** o la parte → ottieni *file* e *pagina* → apri il .md al marcatore `<!-- pag. N -->`, leggi e **incolla la massima testuale**. Per cercare un concetto: usa l'indice strutturale qui sotto oppure `grep` sul file .md. **Ciò che non è qui NON è nella KB**: in tal caso si dichiara 'non presente in KB', non si cita a memoria.
+
+## 1. Indice strutturale (concetto → fonte : pagina)
+
+### Massimario Penale 2023 — Volume I _( massimario )_  ·  `2023_Massimario_Penale_VolumeI.md`
+
+- **PARTE PRIMA — QUESTIONI DI DIRITTO SOSTANZIALE** — p.21
+  - **SEZIONE I — IL REATO** — p.22
+  - **CAPITOLO I — PROSPECTIVE OVERRULING E GIURISPRUDENZA SUI TEMI PENALI** — p.22
+  - **CAPITOLO II — RECIDIVA REITERATA E PREVENTIVA APPLICAZIONE DELLA RECIDIVA SEMPLICE** — p.49
+  - **CAPITOLO III — IL PROCURATORE GENERALE È LEGITTIMATO AD IMPUGNARE L’ORDINANZA DI AMMISSIONE ALLA PROVA E LA MESSA ALLA PROVA NON È APPLICABILE ALL’ENTE: LE SEZIONI UNITE, LA SPORTIVA** — p.56
+  - **CAPITOLO IV — RILEVANZA PENALE DEL MOBBING E REATO DI MALTRATTAMENTI IN AMBIENTE LAVORATIVO** — p.65
+  - **SEZIONE II — LA PENA** — p.72
+  - **SEZIONE III — REATI DEL CODICE PENALE** — p.90
+  - **SEZIONE IV — LEGISLAZIONE SPECIALE** — p.104
+  - **SEZIONE V — LE CONFISCHE** — p.119
+- **PARTE SECONDA — QUESTIONI DI DIRITTO PROCESSUALE** — p.133
+  - **SEZIONE I — ATTI, NULLITÀ, ABNORMITÀ** — p.134
+  - **CAPITOLO I — I PRINCIPI STATUITI DALLE SEZIONI UNITE IN TEMA DI NULLITÀ DELLA NOTIFICAZIONE DELLA CITAZIONE A GIUDIZIO EFFETTUATA PRESSO IL DIFENSORE DI UFFICIO CHE NON ABBIA ACCETTATO L’ELEZIONE DI** — p.134
+  - **SEZIONE II — INDAGINI PRELIMINARI** — p.141
+  - **SEZIONE III — DIBATTIMENTO** — p.160
+  - **SEZIONE IV — IMPUGNAZIONI** — p.166
+  - **CAPITOLO II — È RICORRIBILE PER CASSAZIONE L’OMESSA DICHIARAZIONE DI ESTINZIONE DEL REATO PER PRESCRIZIONE MATURATA IN EPOCA ANTECEDENTE ALLA PRONUNCIA RESA ALL’ESITO DEL CONCORDATO IN** — p.174
+  - **CAPITOLO III — SEQUESTRO PER FINALITÀ DI PROVA: NON IMPUGNABILITÀ DEL PROVVEDIMENTO REIETTIVO DELL’ISTANZA DI DISSEQUESTRO ADOTTATO DAL GIUDICE IN UDIENZA PRELIMINARE. I LIMITI DELLA INTERPRETAZIONE ADEGUATRICE** — p.179
+  - **CAPITOLO IV — NELLA SENTENZA DI PATTEGGIAMENTO L’OMESSA SUBORDINAZIONE DELLA PENA SOSPESA AGLI OBBLIGHI DI CUI ALL’ART. 165, COMMA QUINTO, COD. PEN. NON È PENA ILLEGALE** — p.185
+  - **CAPITOLO V — IL DIVIETO DI “REFORMATIO IN PEIUS” E LE SUE DECLINAZIONI NEL PROCESSO PENALE** — p.190
+  - **SEZIONE V — RAPPORTI GIURISDIZIONALI CON AUTORITÀ STRANIERE** — p.219
+  - **SEZIONE VI — ESECUZIONE** — p.231
+
+### Massimario Penale 2023 — Volume II _( massimario )_  ·  `2023_Massimario_Penale_VolumeII.md`
+
+- **PARTE PRIMA — QUESTIONI DI DIRITTO SOSTANZIALE** — p.13
+  - **CAPITOLO I — PENE SOSTITUTIVE E DISCIPLINA TRANSITORIA** — p.15
+  - **SEZIONE I — GIURISDIZIONE E COMPETENZA** — p.15
+  - **CAPITOLO II — LA PROCEDIBILITÀ A QUERELA** — p.36
+  - **CAPITOLO III — ESCLUSIONE DELLA PUNIBILITÀ PER PARTICOLARE TENUITÀ DEL FATTO E SOSPENSIONE DEL PROCEDIMENTO CON MESSA ALLA PROVA** — p.48
+- **PARTE SECONDA — QUESTIONI DI DIRITTO PROCESSUALE** — p.53
+  - **CAPITOLO I — LA GIURISPRUDENZA DI LEGITTIMITÀ IN TEMA DI DEPOSITO TELEMATICO** — p.54
+  - **CAPITOLO II — NUOVI CRITERI DI ISCRIZIONE DELLA NOTIZIA DI REATO E IMPUGNAZIONE DEL DECRETO DI PERQUISIZIONE** — p.64
+  - **CAPITOLO III — IL NUOVO ISTITUTO DEL RINVIO PREGIUDIZIALE ALLA CORTE DI CASSAZIONE PER LA DECISIONE SULLA COMPETENZA PER TERRITORIO NELLA GIURISPRUDENZA DELLA SUPREMA CORTE** — p.74
+  - **CAPITOLO IV — I RITI ALTERNATIVI.** — p.81
+  - **CAPITOLO V — INNOVAZIONI IN TEMA DI NOTIFICHE E PROCESSO IN ASSENZA** — p.88
+  - **CAPITOLO VI — OMESSO/RITARDATO DEPOSITO O INVIO DELLE CONCLUSIONI SCRITTE DEL PROCURATORE GENERALE PRESSO LA CORTE D’APPELLO O PRESSO LA CORTE DI CASSAZIONE NELLA DISCIPLINA EMERGENZIALE: LE RICADUTE SUL “CONTRADDITTORIO CARTOLARE”** — p.99
+  - **CAPITOLO VII — LE IMPUGNAZIONI PER I SOLI INTERESSI CIVILI: LE SEZIONI UNITE SULLA NON IMMEDIATA APPLICABILITÀ DEL NUOVO COMMA 1-BIS DELL’ART. 573 COD. PROC. PEN.** — p.111
+  - **CAPITOLO VIII — POTERE D’APPELLO DEL PROCURATORE GENERALE AVVERSO LA SENTENZA DI PRIMO GRADO E SUA LEGITTIMAZIONE A RICORRERE PER CASSAZIONE** — p.119
+  - **CAPITOLO IX — LA CD. REVISIONE EUROPEA** — p.127
+- **PARTE TERZA — IL CORRETTIVO “CARTABIA”** — p.135
+  - **CAPITOLO X — IL D.LGS. N. 31 DEL 2024 (ALDO NATALINI)** — p.136
+- **PARTE I: DISPOSIZIONI CORRETTIVE E INTEGRATIVE DEL CODICE PENALE E CORRELATI INTERVENTI DI — DIRITTO TRANSITORIO:** — p.136
+- **PARTE II: DISPOSIZIONI CORRETTIVE E INTEGRATIVE DEL CODICE DI PROCEDURA PENALE, DELLE — NORME DI ATTUAZIONE ED INTERVENTI CORRELATI:** — p.136
+- **PARTE III: ULTERIORI DISPOSIZIONI CORRETTIVE E INTEGRATIVE RIGUARDANTI LA LEGISLAZIONE — SPECIALE:** — p.136
+  - **CAPITOLO X — IL D.LGS. N. 31 DEL 2024** — p.137
+- **PARTE I: DISPOSIZIONI CORRETTIVE E INTEGRATIVE DEL CODICE PENALE E COR- — RELATI INTERVENTI DI DIRITTO TRANSITORIO** — p.138
+  - **CAPITOLO X — IL D.LGS. N. 31 DEL 2024** — p.139
+- **PARTE II: DISPOSIZIONI CORRETTIVE E INTEGRATIVE DEL CODICE DI PROCEDURA — PENALE, DELLE NORME DI ATTUAZIONE ED INTERVENTI CORRELATI** — p.144
+  - **CAPITOLO X — IL D.LGS. N. 31 DEL 2024** — p.145
+- **PARTE III: ULTERIORI DISPOSIZIONI CORRETTIVE E INTEGRATIVE RIGUARDANTI — LA LEGISLAZIONE SPECIALE** — p.172
+  - **CAPITOLO X — IL D.LGS. N. 31 DEL 2024** — p.173
+
+### Massimario Penale 2024 — Volume Unico _( massimario )_  ·  `2024_Massimario_Penale_VolumeUnico.md`
+
+- **PARTE PRIMA — QUESTIONI DI DIRITTO SOSTANZIALE** — p.23
+  - **SEZIONE I — LA LEGGE PENALE** — p.24
+  - **CAPITOLO I — LA NON CONVERTIBILITÀ IN EXECUTIVIS DELLA PENA DETENTIVA INFLITTA PER UN REATO CHE, DOPO IL GIUDICATO, È STATO DEVOLUTO ALLA COMPETENZA DEL GIUDICE DI PACE** — p.24
+  - **SEZIONE II — LA PENA** — p.47
+  - **SEZIONE III — IL REATO** — p.112
+  - **CAPITOLO II — LA DIVERSIFICAZIONE DEI TITOLI DI RESPONSABILITÀ DEI CORREI, TRA CONCORSO DI PERSONE NEL REATO E CONCORSO APPARENTE DI NORME: LA SENTENZA GAMBACURTA DELLE SEZIONI UNITE** — p.142
+  - **CAPITOLO III — ESCLUSIONE DELLA PUNIBILITÀ PER PARTICOLARE TENUITÀ DEL FATTO:IL PUNTO DELLA GIURISPRUDENZA** — p.151
+  - **SEZIONE IV — REATI DEL CODICE PENALE** — p.160
+  - **CAPITOLO IV — L’INDIVIDUAZIONE DEL LUOGO DI CONSUMAZIONE DELLE TRUFFE ON LINE** — p.184
+  - **CAPITOLO V — LA PERDITA DI CHANCE QUALE DANNO PATRIMONIALE NEL DELITTO DI ESTORSIONE E IL CONCORSO FORMALE TRA IL REATO DI ESTORSIONE E DI TURBATA LIBERTÀ DEGLI INCARICHI** — p.195
+  - **SEZIONE V — LEGISLAZIONE SPECIALE** — p.201
+  - **SEZIONE VI — LE CONFISCHE** — p.251
+- **PARTE SECONDA — QUESTIONI DI DIRITTO PROCESSUALE** — p.265
+  - **SEZIONE I — SOGGETTI** — p.266
+  - **CAPITOLO I — LESIONI PERSONALI (DIVENUTE) PROCEDIBILI A QUERELA DI PARTE E (INDIRETTE) RICADUTE SULLA COMPETENZA DEL GIUDICE DI PACE** — p.266
+  - **SEZIONE II — ATTI** — p.271
+  - **SEZIONE III — PROVE** — p.278
+  - **CAPITOLO II — L’ACQUISIZIONE ALL’ESTERO TRAMITE L’ORDINE EUROPEO DI INDAGINE DEI RISULTATI DELLE INTERCETTAZIONI DISPOSTE DALL’AUTORITÀ GIUDIZIARIA STRANIERA SU PIATTAFORMA INFORMATICA CRIPTATA E CRIPTOFONINI** — p.285
+  - **SEZIONE IV — MISURE CAUTELARI** — p.301
+  - **SEZIONE V — INDAGINI PRELIMINARI E UDIENZA PRELIMINARE** — p.318
+  - **SEZIONE VI — GIUDIZIO** — p.323
+  - **SEZIONE VII — IMPUGNAZIONI** — p.334
+  - **CAPITOLO III — IMPUTATO PRESENTE E ONERE DI DEPOSITO, CON L’ATTO DI IMPUGNAZIONE, DELLA DICHIARAZIONE O ELEZIONE DI DOMICILIO . LE SEZIONI UNITE “DE FELICE” SCIOLGONO I DUBBI INTERPRETATIVI** — p.348
+  - **CAPITOLO IV — REGOLA DI GIUDIZIO DA APPLICARE AL GIUDIZIO SUGLI INTERESSI CIVILI ALL’ESITO DELLA PRONUNCIA DI PRESCRIZIONE DEL REATO IN APPELLO ALLA LUCE DELLA INTERPRETAZIONE COSTITUZIONALMENTE CONFORME** — p.360
+  - **CAPITOLO V — RESCISSIONE DEL GIUDICATO E MANDATO DI ARRESTO EUROPEO ESECUTIVO: LA GARANZIA DELLA CONSEGNA PER IL DETENUTO ALL’ESTERO** — p.367
+  - **SEZIONE VIII — ESECUZIONE** — p.375
+- **PARTE TERZA** — p.391
+
+## 2. Registro citazionale (Rv → fonte : pagina → massima)
+
+Backbone del grounding: ogni riga è una sentenza realmente presente nelle Rassegne.
+
+### Massimario Penale 2023 — Volume I _( massimario )_  ·  `2023_Massimario_Penale_VolumeI.md`
+
+- `Rv 101563-01` (p.70,p.71) — Sez. 2, n. 00320 del 01/03/1966, Palumbo, Rv. 101563-01
+- `Rv 119090-01` (p.101,p.103) — Sez. 5, n. 902 del 24/06/1971, Baumgarner, Rv. 119090-01
+- `Rv 127110-01` (p.103) — Sez. 5, n. 4057 del 01/02/1974, Garofalo, Rv. 127110-01
+- `Rv 138645-01` (p.161,p.165) — Sez. 2, n. 373 del 26/01/1978, Renda, Rv. 138645-01
+- `Rv 139694-01` (p.92,p.98) — Sez. 2, n. 9411 del 06/03/1978, Sessa, Rv. 139694-01
+- `Rv 146348-01` (p.95,p.98) — Sez. 2, n. 2667 del 08/07/1980, Corucci, Rv. 146348-01
+- `Rv 149332-01` (p.95,p.98) — Sez. 1, n. 5818 del 10/04/1981, Marocco, Rv. 149332-01
+- `Rv 151053-01` (p.160,p.165) — Sez. 2, n. 10448 del 19/06/1981, Baronchelli, Rv. 151053-01
+- `Rv 160450-01` (p.100,p.103) — Sez. 5, n. 7931 del 21/06/1983, Baccigaluppi, Rv. 160450-01
+- `Rv 161352-01` (p.92,p.98) — Sez. 2, n. 9983 del 26/04/1983, Lo Nardo, Rv. 161352-01
+- `Rv 165256-01` (p.101,p.103) — Sez. 5, n. 1797 del 03/07/1984, Morellato, Rv. 165256-01
+- `Rv 166971-01` (p.247) — Sez. 2, n. 3731 del 14/11/1984, Melato, Rv. 166971-01
+- `Rv 169109-01` (p.92,p.98) — Sez. 2, n. 4471 del 12/02/1985, Bazzani, Rv. 169109-01
+- `Rv 170270-01` (p.101,p.103) — Sez. 3, n. 7783 del 30/01/1985, Accomazzo, Rv. 170270-01
+- `Rv 187851-01` (p.81,p.85) — Sez. U, n. 7707 del 21/05/1991, Volpe, Rv. 187851-01
+- `Rv 187856-01` (p.50) — Sez. U, n. 17 del 18/06/1991, Grassi, Rv. 187856-01
+- `Rv 188648-01` (p.217) — Sez. 4, n. 11607 del 17/06/1991, Sorenti, Rv. 188648-01
+- `Rv 189399-01` (p.82,p.85) — Sez. U, n. 2977 del 06/03/1992, Piccillo, Rv. 189399-01
+- `Rv 190246-01` (p.156) — Sez. U, n. 8 del 27/03/1992, Di Marco, Rv. 190246-01
+- `Rv 191786` (p.184) — Sez. U, n. 17 del 06/11/1992, Bernini, Rv. 191786
+- `Rv 191787-01` (p.183) — Sez. U, n. 17 del 06/11/1992, Bernini, Rv. 191787-01
+- `Rv 192414-01` (p.75,p.77) — Sez. 1, n. 4600 del 9/11/1992, Policastro, Rv. 192414-01
+- `Rv 192992-01` (p.142,p.159) — Sez. 1, n. 5086 del 09/12/1992, Trovato, Rv. 192992-01
+- `Rv 193632-01` (p.73,p.77) — Sez. 1, n. 837 del 27/02/1993, Di Girolamo, Rv. 193632-01
+- `Rv 194624-01` (p.75,p.77) — Sez. 1, n. 2903 del 18/6/1993, Sfara, Rv. 194624-01
+- `Rv 195127` (p.51) — Sez. 3, n. 6424 del 25/06/1993, Mighetto, Rv. 195127
+- `Rv 195127-01` (p.55) — Sez. 3, n. 6424 del 25/06/1993, Mighetto, Rv. 195127-01
+- `Rv 196803-01` (p.142,p.159) — Sez. 1, n. 622 del 31/01/1994, Giampaolo, Rv. 196803-01
+- `Rv 196894-01` (p.217) — Sez. U, n. 4460 del 19/01/1994, Cellerini, Rv. 196894-01
+- `Rv 197840-01` (p.79,p.85) — Sez. 1, n. 6217 del 07/04/1994, Pusceddu, Rv. 197840-01
+- `Rv 198941-01` (p.127,p.132) — Sez. 1, n. 2860 del 10/05/1994, Moriggi, Rv. 198941-01
+- `Rv 201034-01` (p.191,p.217) — Sez. U, n. 5978 del 12/05/1995, P., Rv. 201034-01
+- `Rv 201695-01` (p.145) — Sez. 6, n. 6159 del 24/02/1995, Galvanin, Rv. 201695-01
+- `Rv 205738` (p.127) — Sez. 1, n. 5202 del 14/10/1996, Scarcella, Rv. 205738
+- `Rv 207363-01` (p.145,p.159) — Sez. 6, n. 7 del 07/01/1997, Pacini Battaglia, Rv. 207363-01
+- `Rv 208131-01` (p.237,p.247) — Sez. 1, n. 2007 del 12/03/1997, P.G. in proc. Clemente, Rv. 208131-01
+- `Rv 208444-01` (p.70,p.71) — Sez. 3, n. 08953 del 03/07/1997, Miriani ed altro, Rv. 208444-01
+- `Rv 208512-01` (p.75,p.77) — Sez. 1, n. 4998 del 19/9/1997, Messina, Rv. 208512-01
+- `Rv 209017-01` (p.179) — Sez. 2, n. 5163 del 30/09/1997, Pietrobono, Rv. 209017-01
+- `Rv 210045-01` (p.145,p.159) — Sez. 6, n. 1972 del 16/05/1997, Pacini Battaglia, Rv. 210045-01
+- `Rv 210401-01` (p.217) — Sez. 6, n. 4075 del 17/02/1998, Ferrante, Rv. 210401-01
+- `Rv 210798-01` (p.217) — Sez. U, n. 7551 del 08/04/1998, Cerroni, Rv. 210798-01
+- `Rv 210980-01` (p.81) — Sez. U, n. 8411 del 27/05/1998, Ishaka, Rv. 210980-01
+- `Rv 211167-01` (p.146) — Sez. 1, n. 3972 del 02/07/1998, Ingrosso, Rv. 211167-01
+- `Rv 211681-01` (p.87,p.89) — Sez. 3, n. 7933 del 02/06/1998, Miuccio, Rv. 211681-01
+- `Rv 213494-01` (p.181) — Sez. U, n. 11 del 19/05/1999, Tucci, Rv. 213494-01
+- `Rv 213553-01` (p.242,p.247) — Sez. 3, n. 448 del 04/02/1999, P.M. in proc. Vitiello G., Rv. 213553-01
+- `Rv 213696-01` (p.82,p.85) — Sez. 5, n. 7200 del 12/05/1999, Di Rocca, Rv. 213696-01
+- `Rv 214355-01` (p.75,p.77) — Sez. U, n. 14 del 30/06/1999, Ronga, Rv. 214355-01
+- `Rv 215630-01` (p.244,p.247) — Sez. 5, n. 5056 del 21/10/1999, Meoni, Rv. 215630-01
+- `Rv 215799-01` (p.175,p.178) — Sez. 5, n. 14109 del 28/10/1999, Matonti, Rv. 215799-01
+- `Rv 216032-01` (p.232,p.247) — Sez. 1, n. 2420 del 03/04/2000, Pischedda, Rv. 216032-01
+- `Rv 216337-01` (p.35,p.42,p.47,p.48) — Sez. U, n. 13 del 31/05/2000, B., Rv. 216337-01
+- `Rv 217539-01` (p.146,p.159) — Sez. 6, n. 2618 del 05/06/2000, Bonalumi, Rv. 217539-01
+- `Rv 217812-01` (p.244,p.247) — Sez. 3, n. 3170 del 11/10/2000, P.M. in proc. Mag- gio, Rv. 217812-01
+- `Rv 218201-01` (p.66,p.71) — Sez. 6, n. 10090 del 12/3/2001, Erba e altro, Rv. 218201-01
+- `Rv 218375-01` (p.236,p.247) — Sez. 1, n. 15038 del 30/01/2001, Papa, Rv. 218375-01
+- `Rv 219034-01` (p.142,p.159) — Sez. 5, n. 16866 del 15/03/2001, Mus- surici, Rv. 219034-01
+- `Rv 219516-01` (p.247) — Sez. 3, n. 20693 del 30/03/2000, Micelli, Rv. 219516-01
+- `Rv 220554-01` (p.146,p.159) — Sez. 6, n. 2619 del 05/06/2000, Armento, Rv. 220554-01
+- `Rv 220736-01` (p.237,p.247) — Sez. 1, n. 38296 del 21/09/2001, Nicolao, Rv. 220736-01
+- `Rv 221076-01` (p.179,p.184) — Sez. 1, n. 12546 del 14/02/2002, Migliore, Rv. 221076-01
+- `Rv 221277-01` (p.82,p.85) — Sez. 3, n. 11515 del 15/02/2002, Ali- bani, Rv. 221277-01
+- `Rv 221368-01` (p.237,p.247) — Sez. 3, n. 13651 del 20/02/2002, P.G. in proc. De Filippo, Rv. 221368-01
+- `Rv 221999` (p.136) — Sez. U, n. 28807 del 29/05/2002, Manca, Rv. 221999
+- `Rv 221999-01` (p.140) — Sez. U, n. 28807 del 29/05/2002, Manca, Rv. 221999-01
+- `Rv 224400-01` (p.217) — Sez. 2, n. 21872 del 12/02/2003, Savignano, Rv. 224400-01
+- `Rv 224545-01` (p.137,p.140) — Sez. 5, n. 22950 del 07/04/2003, Perotti, Rv. 224545-01
+- `Rv 224819-01` (p.244,p.247) — Sez. 2, n. 11788 del 08/01/2003, Tiezzi, Rv. 224819-01
+- `Rv 225065-01` (p.137,p.140) — Sez. 1, n. 29191 del 19/06/2003, Pushkar, Rv. 225065-01
+- `Rv 225169-01` (p.244,p.247) — Sez. 2, n. 26682 del 05/05/2003, Lenzi, Rv. 225169-01
+- `Rv 225699-01` (p.207,p.217) — Sez. 5, n. 40466 del 27/09/2002, Di Ponto, Rv. 225699-01
+- `Rv 226510-01` (p.244,p.247) — Sez. 2, n. 29751 del 08/07/2003, Cotelli, Rv. 226510-01
+- `Rv 227481-01` (p.146,p.159) — Sez. 5, n. 46221 del 20/10/2003, Altamura, Rv. 227481-01
+- `Rv 227943-01` (p.86,p.89) — Sez. 6, n. 933 del 22/10/2003, Rinzivillo, Rv. 227943-01
+- `Rv 228165-01` (p.119,p.125) — Sez. U, n. 29951 del 24/05/2004, Focarelli, Rv. 228165-01
+- `Rv 228290-01` (p.82,p.85) — Sez. 1, n. 17951 del 30/03/2004, Canal, Rv. 228290-01
+- `Rv 228922-01` (p.52,p.55) — Sez. 4, n. 20309 del 16/03/2004, Marchetta, Rv. 228922-01
+- `Rv 229060-01` (p.38,p.47) — Sez. 3, n. 28397 del 16/04/2004, Giordano, Rv. 229060-01
+- `Rv 229156-01` (p.142,p.159) — Sez. 6, n. 5086 del 20/04/2004, Sanasi, Rv. 229156-01
+- `Rv 229229` (p.79) — Sez. 5, n. 18368 del 09/12/2003, Bajtrami, Rv. 229229
+- `Rv 229229-01` (p.85) — Sez. 5, n. 18368 del 09/12/2003, Bajtrami, Rv. 229229-01
+- `Rv 229857-01` (p.137,p.140) — Sez. 1, n. 41733 del 06/10/2004, Varroni, Rv. 229857-01
+- `Rv 230171-01` (p.237,p.247) — Sez. 1, n. 48512 del 18/11/2004, P.G. in proc. Zerbetto, Rv. 230171-01
+- `Rv 230895-01` (p.142,p.159) — Sez. U, n. 17706 del 22/03/2005, Petrarca, Rv. 230895-01
+- `Rv 231056-01` (p.58) — Sez. U, n. 22531 del 31/05/2005, Campagna, Rv. 231056-01
+- `Rv 231256` (p.208) — Sez. 1, n. 13011 del 11/03/2005, Tarisciotti, Rv. 231256
+- `Rv 231256-01` (p.217) — Sez. 1, n. 13011 del 11/03/2005, Tarisciotti, Rv. 231256-01
+- `Rv 232066` (p.192) — Sez. U, n. 40910 del 27/09/2005, William Morales, Rv. 232066
+- `Rv 232066-01` (p.217) — Sez. U, n. 40910 del 27/09/2005, William Morales, Rv. 232066-01
+- `Rv 232153-01` (p.198,p.217) — Sez. 5, n. 22134 del 19/05/2005, Buonomo, Rv. 232153-01
+- `Rv 233729-01` (p.217) — Sez. U, n. 17050 del 11/04/2016, Maddaloni, Rv. 233729-01
+- `Rv 234251-01` (p.52,p.55) — Sez. 1, n. 17316 del 05/04/2006, Giunta, Rv. 234251-01
+- `Rv 234535-01` (p.137,p.140) — Sez. 5, n. 12595 del 10/02/2006, Spagnuolo, Rv. 234535-01
+- `Rv 234854` (p.65,p.71) — Sez. 6, n. 31413 del 21/09/2006, Riva e altri, Rv. 234854
+- `Rv 234978-01` (p.43,p.47) — Sez. 1, n. 27858 del 13/07/2006, Mocali, Rv. 234978-01
+- `Rv 235265-01` (p.43,p.47) — Sez. 1, n. 27121 del 11/07/2006, Aliseo, Rv. 235265-01
+- `Rv 235380-01` (p.244,p.247) — Sez. 2, n. 38776 del 20/09/2006, Confidati, Rv. 235380-01
+- `Rv 236180-01` (p.99,p.103) — Sez. 5, n. 12693 del 08/03/2007, Aghohawa, Rv. 236180-01
+- `Rv 236261-01` (p.240,p.247) — Sez. 5, n. 9180 del 29/01/2007, Aloisio e altri, Rv. 236261-01
+- `Rv 236655-01` (p.87,p.89) — Sez. 2, n. 16629 del 29/03/2007, Baglivo, Rv. 236655-01
+- `Rv 236664-01` (p.235,p.247) — Sez. 1, n. 20238 del 22/03/2007, Lounici, Rv. 236664-01
+- `Rv 237692` (p.77) — Sez. U, n. 45583 del 25/10/2007, Volpe, Rv. 237692
+- `Rv 237692-01` (p.79,p.85) — Sez. U, n. 45583 del 25/10/2007, Volpe, Rv. 237692-01
+- `Rv 237692-1` (p.76) — Sez. U, n. 45583 del 25/10/2007, Volpe, Rv. 237692-1
+- `Rv 238031-01` (p.66,p.71) — Sez. 6, n. 40891 del 07/11/2007, Colazzo ed altro, Rv. 238031-01
+- `Rv 238123-01` (p.245,p.247) — Sez. 1, n. 43003 del 07/11/2007, Leone, Rv. 238123-01
+- `Rv 238216` (p.127) — Sez. 5, n. 39048 del 25/09/2007, Casavola e altri, Rv. 238216
+- `Rv 238216-01` (p.132) — Sez. 5, n. 39048 del 25/09/2007, Casavola e altri, Rv. 238216-01
+- `Rv 238240-01` (p.140) — Sez. U, n. 5307 del 20/12/2007, Battistella, Rv. 238240-01
+- `Rv 238332-01` (p.226,p.230) — Sez. 6, n. 5400 del 30/01/2008, Salkanovic, Rv. 238332-01
+- `Rv 239790-01` (p.244,p.247) — Sez. 2, n. 19704 del 23/04/2008, Lusito, Rv. 239790-01
+- `Rv 240784-01` (p.232,p.247) — Sez. 1, n. 28557 del 18/06/2008, Ribisi, Rv. 240784-01
+- `Rv 241488-01` (p.161,p.165) — Sez. 6, n. 40627 del 16/10/2008, Bozzaotra, Rv. 241488-01
+- `Rv 241727-01` (p.184) — Sez. 5, n. 43282 del 17/10/2008, Vastola, Rv. 241727-01
+- `Rv 242036-01` (p.240,p.247) — Sez. 4, n. 45716 del 11/11/2008, Peruzzini, Rv. 242036-01
+- `Rv 242133-01` (p.161,p.165) — Sez. 6, n. 44591 del 04/11/2008, Nocco, Rv. 242133-01
+- `Rv 242660-01` (p.79,p.85) — Sez. 1, n. 48204 del 10/12/2008, Abello, Rv. 242660-01
+- `Rv 243046-01` (p.244,p.247) — Sez. 1, n. 12880 del 19/02/2009, Maniago, Rv. 243046-01
+- `Rv 243316-01` (p.75,p.77) — Sez. 1, n. 15954 del 18/03/2009, Trubia, Rv. 243316-01
+- `Rv 243590-01` (p.137,p.140) — Sez. U, n. 25957 del 26/03/2009, Toni, Rv. 243590-01
+- `Rv 244029` (p.59) — Sez. U, n. 31011 del 28/05/2009, Colangelo, Rv. 244029
+- `Rv 244029-01` (p.57,p.64) — Sez. U, n. 31011 del 28/05/2009, Colangelo, Rv. 244029-01
+- `Rv 244273-74` (p.165) — Sez. U, n. 35490 del 28/05/2009, Tettamanti, Rv. 244273-74
+- `Rv 244274-01` (p.163) — Sez. U, n. 35490 del 28/05/2009, Tettamanti, Rv. 244274-01
+- `Rv 244457-01` (p.65,p.71) — Sez. 6, n. 26594 del 06/02/2009, P.G. in proc. P. e altro, Rv. 244457-01
+- `Rv 244599-01` (p.137,p.140) — Sez. 3, n. 35189 del 25/06/2009, Di Maula, Rv. 244599-01
+- `Rv 244976-01` (p.184) — Sez. 4, n. 32929 del 04/06/2009, Mariani, Rv. 244976-01
+- `Rv 245742-01` (p.91,p.92,p.98) — Sez. 4, n. 47997 del 18/09/2009, Nutu, Rv. 245742-01
+- `Rv 246056` (p.136) — Sez. 1, n. 5477 del 13/01/2010, Mofrh, Rv. 246056
+- `Rv 246056-01` (p.140) — Sez. 1, n. 5477 del 13/01/2010, Mofrh, Rv. 246056-01
+- `Rv 246637-01` (p.65) — Sez. 6, n. 28553 del 13/07/2009, Onori, Rv. 246637-01
+- `Rv 246651-01` (p.33,p.47) — Sez. U, n. 18288 del 21/01/2010, Beschi, Rv. 246651-01
+- `Rv 246664-01` (p.240,p.247) — Sez. 1, n. 13158 del 10/02/2010, Fimiani, Rv. 246664-01
+- `Rv 247066-01` (p.138,p.140) — Sez. 1, n. 17706 del 20/04/2010, Medhi, Rv. 247066-01
+- `Rv 247188-01` (p.242,p.247) — Sez. 3, n. 20567 del 28/04/2010, Ventroni, Rv. 247188-01
+- `Rv 247412-01` (p.244,p.247) — Sez. 2, n. 23662 del 20/05/2010, Cremo- nesi, Rv. 247412-01
+- `Rv 247838-01` (p.50,p.55,p.162,p.165) — Sez. U, n. 35738 del 27/05/2010, Calibè, Rv. 247838-01
+- `Rv 247994-01` (p.143,p.159) — Sez. U, n. 37501 del 15/07/2010, Donadio, Rv. 247994-01
+- `Rv 248131-01` (p.161,p.165) — Sez. 2, n. 33871 del 02/07/2010, Dodi, Rv. 248131-01
+- `Rv 248476-01` (p.137,p.140) — Sez. 1, n. 30504 del 15/06/2010, Balozi, Rv. 248476-01
+- `Rv 248924-01` (p.87,p.89) — Sez. 2, n. 41376 del 28/09/2010, Trenti, Rv. 248924-01
+- `Rv 249451` (p.38) — Sez. 6, n. 6991 del 25/01/2011, Sirignano, Rv. 249451
+- `Rv 249451-01` (p.47) — Sez. 6, n. 6991 del 25/01/2011, Sirignano, Rv. 249451-01
+- `Rv 249664-01` (p.50,p.55) — Sez. U, n. 20798 del 24/02/2011, Inde- licato, Rv. 249664-01
+- `Rv 249913-01` (p.240,p.247) — Sez. 1, n. 12823 del 03/03/2011, De Martino, Rv. 249913-01
+- `Rv 250505-01` (p.127,p.132) — Sez. 6, n. 29926 del 31/05/2011, Tarabugi e altro, Rv. 250505-01
+- `Rv 251041-01` (p.210,p.217) — Sez. 3, n. 30557 del 15/07/2011, Di Martino, Rv. 251041-01
+- `Rv 251368-01` (p.69,p.71) — Sez. 6, n. 43100 del 10/10/2011, R.C. e P., Rv. 251368-01
+- `Rv 251690-01` (p.53,p.55) — Sez. U, n. 5859 del 27/10/2011, Marcianò, Rv. 251690-01
+- `Rv 251927-01` (p.241,p.247) — Sez. 4, n. 39766 del 26/10/2011, Franzè, Rv. 251927-01
+- `Rv 252197-01` (p.38,p.47) — Sez. 2, n. 46669 del 23/11/2011, De Masi, Rv. 252197-01
+- `Rv 252609-01` (p.69,p.71) — Sez. 6, n. 16094 del 11/4/2012, I., Rv. 252609-01
+- `Rv 252679-01` (p.92,p.98) — Sez. 5, n. 19882 del 16/02/2012, Aglietta, Rv.252679-01
+- `Rv 252932-01` (p.83,p.85) — Sez. U, n. 34233 del 19/04/2012, Giannone, Rv. 252932-01
+- `Rv 253164-01` (p.237,p.247) — Sez. 3, n. 29162 del 27/06/2012, P.M.T. in proc. Palermo e altri, Rv. 253164-01
+- `Rv 253368-01` (p.240,p.247) — Sez. 1, n. 39867 del 24/09/2012, Mazzilli, Rv. 253368-01
+- `Rv 253593-01` (p.91,p.92,p.98) — Sez. 2, n. 40631 del 09/10/2012, Sesta, Rv. 253593-01
+- `Rv 253792-01` (p.245,p.247) — Sez. 1, n. 43208 del 16/10/2012, Scialpi, Rv. 253792-01
+- `Rv 254532-01` (p.127,p.132) — Sez. 1, n. 6336 del 22/01/2013, Mele e altro, Rv. 254532-01
+- `Rv 255037-01` (p.173) — Sez. U, n. 18374 del 31/01/2013, Adami, Rv. 255037-01
+- `Rv 255082-01` (p.127,p.132) — Sez. 1, n. 13425 del 21/02/2013, Coniglione, Rv. 255082-01
+- `Rv 255192-01` (p.104,p.109) — Sez. 5, n. 18544 del 27/02/2013, Strada, Rv. 255192-01
+- `Rv 255347-01` (p.80,p.85) — Sez. U, n. 25939 del 28/02/2013, Ciabotti, Rv. 255347-01
+- `Rv 255364-01` (p.43,p.47) — Sez. 1, n. 13411 del 21/02/2013, Arpaia, Rv. 255364-01
+- `Rv 255633-01` (p.127,p.132) — Sez. 1, n. 27189 del 28/05/2013, Guarnieri, Rv. 255633-01
+- `Rv 255660` (p.206) — Sez. U, n. 33752 del 18/4/2013, Papola, Rv. 255660
+- `Rv 255660-01` (p.217) — Sez. U, n. 33742 del 18/04/2013, Papola, Rv. 255660-01
+- `Rv 255891-01` (p.245,p.247) — Sez. 3, n. 19090 del 13/02/2013, Buia e altro, Rv. 255891-01
+- `Rv 255976-01` (p.69,p.71) — Sez. 6, n. 28603 del 28/03/2013, P.C. in proc. S. e altro, Rv. 255976-01
+- `Rv 256021-01` (p.160,p.165) — Sez. 1, n. 13398 del 19/02/2013, Milacic, Rv. 256021-01
+- `Rv 256473-01` (p.180,p.184) — Sez. 6, n. 18814 del 28/02/2013, Bertoncello, Rv.256473-01
+- `Rv 256648-01` (p.146,p.159) — Sez. 1, n. 28602 del 19/03/2013, Caruso, Rv. 256648-01
+- `Rv 257415` (p.136) — Sez. 1, n. 43563 del 10/10/2013, Brognara, Rv. 257415
+- `Rv 257415-01` (p.140) — Sez. 1, n. 43563 del 10/10/2013, Brognara, Rv. 257415-01
+- `Rv 257775-01` (p.206,p.217) — Sez. 1, n. 45236 del 22/10/2013, Stralaj, Rv. 257775-01
+- `Rv 258366-01` (p.127,p.132) — Sez. 6, n. 44512 del 24/10/2012, Giacobbe, Rv. 258366-01
+- `Rv 258653-01` (p.217) — Sez. U, n. 16208 del 27/03/2014, C., Rv. 258653-01
+- `Rv 258734-01` (p.160,p.165) — Sez. 3, n. 14439 del 30/01/2014, Resmini Bellotti, Rv. 258734-01
+- `Rv 259591-01` (p.65,p.71) — Sez. 6, n. 13088 del 05/03/2014, B. e altro, Rv. 259591-01
+- `Rv 259912-01` (p.244,p.247) — Sez. 1, n. 15997 del 28/02/2014, Villa, Rv. 259912-01
+- `Rv 259917-01` (p.244,p.247) — Sez. 1, n. 23333 del 16/04/2014, Pedotti, Rv. 259917-01
+- `Rv 259919-01` (p.43,p.47) — Sez. 1, n. 20476 del 24/04/2014, Preziosi, Rv. 259919-01
+- `Rv 259981-01` (p.244,p.247) — Sez. 2, n. 35665 del 16/05/2014, Lissandrello, Rv. 259981-01
+- `Rv 260063-01` (p.65,p.71) — Sez. 6, n. 24642 del 19/03/2014, P.G. in proc. L., Rv. 260063-01
+- `Rv 260066-01` (p.69,p.71) — Sez. 6, n. 24057 del 11/04/2014, Marcucci, Rv. 260066-01
+- `Rv 260118-01` (p.238,p.247) — Sez. 4, n. 34774 del 29/01/2014, P.G. in proc. Salzarulo, Rv. 260118-01
+- `Rv 260327-01` (p.199) — Sez. 2, n. 37689 del 08/07/2014, Dori, Rv. 260327-01
+- `Rv 260697-01` (p.234,p.248) — Sez. U, n. 42858 del 29/05/2014, P.M. in proc. Gatto, Rv. 260697-01
+- `Rv 260721-01` (p.232,p.248) — Sez. 1, n. 40835 del 05/06/2014, Padovan, Rv. 260721-01
+- `Rv 260903-01` (p.79,p.85) — Sez. 1, n. 38331 del 05/06/2014, Fall, Rv. 260903-01
+- `Rv 261035-01` (p.198,p.217) — Sez. 5, n. 41188 del 10/07/2014, Zavanese, Rv. 261035-01
+- `Rv 261112` (p.64) — Sez. U, n. 38343 del 24/04/2014, Espenhahn, Rv. 261112
+- `Rv 261112-01` (p.61) — Sez. U, n. 38343 del 24/04/2014, Espenhahn, Rv. 261112-01
+- `Rv 261186-01` (p.92,p.98) — Sez. U, n. 52117 del 17/07/2014, Prevete, Rv. 261186-01
+- `Rv 262062-01` (p.74) — Sez. 1, n. 35794 del 08/03/2019, Farina, Rv. 262062-01
+- `Rv 262932-01` (p.87,p.89) — Sez. 2, n. 12895 del 05/03/2015, Pulpo, Rv. 262932-01
+- `Rv 262979` (p.180) — Sez. 3, n. 11489 del 22/01/2015, Gazzola, Rv. 262979
+- `Rv 262979-01` (p.184) — Sez. 3, n. 11489 del 22/01/2015, Gazzola, Rv. 262979-01
+- `Rv 263685-01` (p.120,p.125) — Sez. U, n. 11170 del 25/09/2014, Uniland, Rv. 263685-01
+- `Rv 264205-01` (p.186,p.189) — Sez. U, n. 33040 del 26/2/2015, Jazouli, Rv. 264205-01
+- `Rv 264207-01` (p.233,p.248) — Sez. U, n. 33040 del 26/02/2015, Jazouli, Rv. 264207-01
+- `Rv 264381-01` (p.238,p.248) — Sez. U, n. 37345 del 23/04/2015, P.M. in proc. Longo, Rv. 264381-01
+- `Rv 264435-01` (p.167) — Sez. U, n. 31617 del 26/6/2015, Lucci, Rv. 264435-01
+- `Rv 264857-01` (p.186,p.189) — Sez. U, n. 27107 del 26/02/2015, Marcon, Rv. 264857-01
+- `Rv 264858-01` (p.213,p.217) — Sez. U, n. 37107 del 26/02/2015, Marcon, Rv. 264858-01
+- `Rv 265011-01` (p.240,p.248) — Sez. 1, n. 36289 del 08/05/2015, Malich, Rv. 265011-01
+- `Rv 265108-01` (p.234,p.248) — Sez. U, n. 47766 del 26/06/2015, Butera e altro, Rv. 265108-01
+- `Rv 265560-01` (p.161,p.165) — Sez. 6, n. 47499 del 22/09/2015, Bolici, Rv. 265560-01
+- `Rv 265867` (p.79) — Sez. 5, n. 43044 del 04/05/2015, Dedinca, Rv. 265867
+- `Rv 265867-01` (p.85) — Sez. 5, n. 43044 del 04/05/2015, Dedinca, Rv. 265867-01
+- `Rv 266333-01` (p.175,p.178) — Sez. U, n. 18953 del 25/02/2016, Piergotti, Rv. 266333-01
+- `Rv 266906-01` (p.146,p.159) — Sez. U, n. 26889 del 28/04/2016, Scurato, Rv. 266906-01
+- `Rv 266922-01` (p.145,p.159) — Sez. 6, n. 21740 del 01/03/2016, Masciotta, Rv. 266922-01
+- `Rv 266940` (p.125) — Sez. 3, n. 23907 del 01/03/2016, Taurino, Rv. 266940
+- `Rv 266940-01` (p.120) — Sez. 3, n. 23907 del 01/03/2016, Taurino, Rv. 266940-01
+- `Rv 266953-01` (p.215,p.217) — Sez. 6, n. 3716 del 24/11/2015, Caruso, Rv. 266953-01
+- `Rv 267044-01` (p.50,p.55) — Sez. U, n. 31669 del 23/06/2016, Filosofi, Rv. 267044-01
+- `Rv 267237-01` (p.58,p.64) — Sez. U, n. 33216 del 31/03/2016, Rigacci, Rv. 267237-01
+- `Rv 267238-01` (p.62) — Sez. U, n. 36272 del 31/03/2016, Sorcinelli, Rv. 267238-01
+- `Rv 267853-01` (p.198,p.217) — Sez. 2, n. 34837 del 06/05/2016, Savarese, Rv. 267853-01
+- `Rv 267892-01` (p.161,p.165) — Sez. 5, n. 26822 del 23/03/2016, Scanu, Rv. 267892-01
+- `Rv 267913-01` (p.208,p.217) — Sez. 2, n. 37009 del 30/06/2016, Seck, Rv. 267913-01
+- `Rv 268106-01` (p.245,p.248) — Sez. 3, n. 35200 del 26/04/2016, Prestifilippo, Rv. 268106-01
+- `Rv 268562-01` (p.240,p.248) — Sez. 1, n. 36337 del 16/03/2016, P.M. in proc. Morteo, Rv. 268562-01
+- `Rv 268776-01` (p.52,p.55) — Sez. 3, n. 55123 del 04/10/2016, Derbali, Rv. 268776-01
+- `Rv 268819-01` (p.65,p.71) — Sez. 6, n. 51591 del 28/09/2016, V., Rv. 268819-01
+- `Rv 270073` (p.80) — Sez. U, n. 28659 del 18/05/2017, Gargiulo, Rv. 270073
+- `Rv 270073-01` (p.85) — Sez. U, n. 28659 del 18/05/2017, Gargiulo, Rv. 270073-01
+- `Rv 270147` (p.52) — Sez. 3, n. 29238 del 17/02/2017, Cavallero, Rv. 270147
+- `Rv 270147-01` (p.55) — Sez. 3, n. 29238 del 17/02/2017, Cavallero, Rv. 270147-01
+- `Rv 270333-01` (p.121,p.125) — Sez. 3, n. 28077 del 09/02/2017, Marcantonini ed altro, Rv. 270333-01
+- `Rv 270667-01` (p.206,p.217) — Sez. 2, n. 25739 del 09/05/2017, Pedraza, Rv. 270667-01
+- `Rv 270953-01` (p.182,p.184) — Sez. U, n. 47970 del 20/07/2017, Rezmuves, Rv. 270953-01
+- `Rv 271072-01` (p.238,p.248) — Sez. 5, n. 39770 del 29/05/2017, A., Rv. 271072-01
+- `Rv 271182-01` (p.205,p.217) — Sez. 2, n. 41933 del 3/4/2017, Braj- dic, Rv. 271182-01
+- `Rv 271604-01` (p.200,p.217) — Sez. 5, n. 51615 del 17/10/2017, Pala, Rv. 271604-01
+- `Rv 271626-01` (p.202,p.217) — Sez. 5, n. 50083 del 29/09/2017, D’Ascanio, Rv. 271626-01
+- `Rv 271745-01` (p.161,p.165) — Sez. 6, n. 55748 del 14/09/2017, Macrì, Rv. 271745-01
+- `Rv 272429` (p.207) — Sez. 3, n. 56279 del 24/10/2017, Principalli, Rv. 272429
+- `Rv 272429-01` (p.208,p.217) — Sez. 3, n. 56279 del 24/10/2017, Principalli, Rv. 272429-01
+- `Rv 272804-01` (p.65,p.71) — Sez. 6, n. 14754 del 13/02/2018, P.C. in proc. M., Rv. 272804-01
+- `Rv 272832-01` (p.238,p.248) — Sez. 1, n. 19457 del 16/01/2018, Signoretto, Rv. 272832-01
+- `Rv 272969-01` (p.178) — Sez. 2, n. 30990 del 01/06/2018, Gueli, Rv. 272969-01
+- `Rv 273022-01` (p.99,p.103) — Sez. 5, n. 21929 del 17/04/2018, Ramos, Rv. 273022-01
+- `Rv 273059-01` (p.136,p.140) — Sez. 3, n. 28779 del 16/05/2018, Ingrassia, Rv. 273059-01
+- `Rv 273487-01` (p.244,p.248) — Sez. 1, n. 31088 del 25/06/2018, Baratta, Rv. 273487-01
+- `Rv 273561-01` (p.92,p.98) — Sez. 5, n. 30073 del 23/01/2018, Lettina, Rv. 273561-01
+- `Rv 273876-01` (p.39,p.41,p.47) — Sez. 5, n. 37857 del 24/04/2018, Fabbrizzi e altro, Rv. 273876-01
+- `Rv 273934-01` (p.233,p.248) — Sez. U, n. 40986 del 19/07/2018, P., Rv. 273934-01
+- `Rv 273951-01` (p.122,p.125) — Sez. 3, n. 45574 del 29/05/2018, E., Rv. 273951-01
+- `Rv 274025-01` (p.232,p.248) — Sez. 1, n. 42540 del 25/06/2018, C., Rv. 274025-01
+- `Rv 274087-01` (p.34,p.47) — Sez. U, n. 51815 del 31/05/2018, M., Rv. 274087-01
+- `Rv 274172-01` (p.100,p.103) — Sez. 5, n. 57004 del 27/09/2018, B., Rv. 274172-01
+- `Rv 274301-01` (p.217) — Sez. 2, n. 40989 del 11/04/2018, Malvasi, Rv. 274301-01
+- `Rv 274384-01` (p.174,p.178) — Sez. 1, n. 51169 del 11/06/2018, Porrà, Rv. 274384-01
+- `Rv 274406-01` (p.40,p.48) — Sez. 5, n. 47510 del 09/07/2018, Dilaghi, Rv. 274406-01
+- `Rv 274522-01` (p.176,p.178) — Sez. 4, n. 52803 del 14/09/2018, Bouachra, Rv. 274522-01
+- `Rv 275025-01` (p.203,p.217) — Sez. 3, n. 49163 del 04/05/2018, Khan Arif, Rv. 275025-01
+- `Rv 275027-01` (p.175) — Sez. 6, n. 5210 del 11/12/2018, Chiumiento, Rv. 275027-01
+- `Rv 275105-01` (p.39,p.47) — Sez. 5, n. 41846 del 17/05/2018, Posti- glione, Rv. 275105-01
+- `Rv 275218-01` (p.83,p.85) — Sez. 4, n. 5034 del 15/01/2019, Lazzara, Rv. 275218-01
+- `Rv 275436-01` (p.162,p.165) — Sez. U, n. 24906 del 18/04/2019, Sorge, Rv. 275436-01
+- `Rv 275670` (p.73,p.77) — Sez. 1, n. 18239 del 26/3/2019, Di Mondo, Rv. 275670
+- `Rv 275898-01` (p.185,p.189) — Sez. 6, n. 17119 del 14/03/2019, P. – rectius: B. –, Rv. 275898-01
+- `Rv 275906-01` (p.92,p.98) — Sez. 5, n. 11225 del 16/01/2019, Dolce, Rv. 275906-01
+- `Rv 276102` (p.175) — Sez. 2, n. 22002 del 10/04/2019, Mariniello, Rv. 276102
+- `Rv 276214` (p.135) — Sez. 2, n. 27935 del 03/05/2019, Betan- cur, Rv. 276214
+- `Rv 276214-01` (p.140) — Sez. 2, n. 27935 del 03/05/2019, Betancur, Rv. 276214-01
+- `Rv 276230-02` (p.235,p.248) — Sez. 6, n. 27359 del 14/06/2019, Carruggio, Rv. 276230-02
+- `Rv 276294-01` (p.42,p.48) — Sez. 7, n. 10458 del 25/01/2019, Petullà, Rv. 276294-01
+- `Rv 276408-01` (p.239,p.248) — Sez. 1, n. 30710 del 10/05/2019, Dinar, Rv. 276408-01
+- `Rv 276504-01` (p.239,p.248) — Sez. 1, n. 30709 del 10/05/2019, Coccia, Rv. 276504-01
+- `Rv 276516-01` (p.93) — Sez. 5, n. 25821 del 05/04/2019, El Sheshtawi, Rv. 276516-01
+- `Rv 276690-01` (p.180,p.184) — Sez. U, n. 40847 del 30/05/2019, Bellucci, Rv. 276690-01
+- `Rv 276723` (p.74) — Sez. 1, n. 35794 del 08/03/2019, Farina, Rv. 276723
+- `Rv 276723-01` (p.77) — Sez. 1, n. 35794 del 08/03/2019, Farina, Rv. 276723-01
+- `Rv 276838-01` (p.85) — Sez. 1, n. 37168 del 19/07/2019, Ben Salam, Rv. 276838-01
+- `Rv 276862-01` (p.115,p.118) — Sez. 4, n. 35969 del 29/5/2019, Arlotta, Rv. 276862-01
+- `Rv 276869-01` (p.83,p.85) — Sez. 1, n. 39087 del 24/05/2019, Mersini, Rv. 276869-01
+- `Rv 277138-01` (p.56,p.59,p.64) — Sez. 1, n. 41629 del 15/04/2019, Lorini, Rv. 277138-01
+- `Rv 277196-01` (p.175,p.178) — Sez. 6, n. 41254 del 04/07/2019, Leone, Rv. 277196-01
+- `Rv 277257-01` (p.120,p.125) — Sez. U, n. 45936 del 26/09/2019, Fallimento Mantova Petroli S.r.l. in liquidazione, Rv. 277257-01
+- `Rv 277319-02` (p.93,p.98) — Sez. 5, n. 40438 del 01/07/2019, Stawicka, Rv. 277319-02
+- `Rv 277389-01` (p.180,p.184) — Sez. 6, n. 46141 del 29/10/2019, Delli Carpini, Rv. 277389-01
+- `Rv 277520` (p.186) — Sez. 5, n. 49481 del 13/11/2019, PG in proc. F., Rv. 277520
+- `Rv 277520-01` (p.189) — Sez. 5, n. 49481 del 13/11/2019, PG in proc. F., Rv. 277520-01
+- `Rv 277570` (p.208) — Sez. 6, n. 51131 del 15/11/2019, Niasse Ndiaga, Rv. 277570
+- `Rv 277570-01` (p.217) — Sez. 6, n. 51131 del 15/11/2019, Niasse Ndiaga, Rv. 277570-01
+- `Rv 277631-01` (p.87,p.89) — Sez. 2, n. 42583 del 24/09/2019, De Vivo, Rv. 277631-01
+- `Rv 277632-01` (p.87,p.89) — Sez. 2, n. 45854 del 13/09/2019, Cappello, Rv. 277632-01
+- `Rv 277648-01` (p.161,p.165) — Sez. 5, n. 47241 del 02/07/2019, Cassarino, Rv. 277648-01
+- `Rv 277753-01` (p.121,p.125) — Sez. 5, n. 52060 del 30/10/2019, Angeli, Rv. 277753-01
+- `Rv 277845-01` (p.217) — Sez. 5, n. 44088 del 09/05/2019, Dzemaili, Rv. 277845-01
+- `Rv 277866-01` (p.245,p.248) — Sez. 1, n. 50974 del 29/10/2019, Costanzo, Rv. 277866-01
+- `Rv 278039-01` (p.161,p.165) — Sez. 5, n. 48205 del 10/09/2019, B., Rv.278039-01
+- `Rv 278142-01` (p.175) — Sez. 5, n. 4709 del 20/09/2019, Ferrarini, Rv. 278142-01
+- `Rv 278144-01` (p.57,p.64) — Sez. 5, n. 5093 del 14/01/2020, Cicolini, Rv. 278144-01
+- `Rv 278171-02` (p.132) — Sez. 1, n. 1778 del 11/10/2019, dep. 2020 Ruggieri, Rv. 278171-02
+- `Rv 278427-01` (p.135,p.140) — Sez. 2, n. 10358 del 14/01/2020, Romanov, Rv. 278427-01
+- `Rv 278481` (p.43) — Sez. 1, n. 35756 del 30/05/2019, Arona, Rv. 278481
+- `Rv 278481-01` (p.47) — Sez. 1, n. 35756 del 30/05/2019, Arona, Rv. 278481-01
+- `Rv 278507-01` (p.144,p.159) — Sez. 2, n. 6996 del 14/04/2020, Mango, Rv. 278507-01
+- `Rv 278573-01` (p.113) — Sez. 3, n. 5289 del 25/10/2019, dep. 2020, Rv. 278573-01
+- `Rv 278632-01` (p.186,p.189) — Sez. 2, n. 11611 del 27/01/2020, Serpillo, Rv. 278632-01
+- `Rv 278750-01` (p.39,p.48) — Sez. 6, n. 10659 del 20/02/2020, Najim, Rv. 278750-01
+- `Rv 278864-01` (p.39,p.48) — Sez. 5, n. 12747 del 03/03/2020, Rossi, Rv. 278864-01
+- `Rv 278870-01` (p.163,p.173) — Sez. U, n. 13539 del 30/01/2020, Perroni, Rv. 278870-01
+- `Rv 278870-04` (p.108) — Sez. U, n. 13539 del 30/01/2020, Perroni, Rv. 278870-04
+- `Rv 278929-01` (p.209,p.217) — Sez. 5, n. 11738 del 30/01/2020, Crescenzo, Rv. 278929-01
+- `Rv 278968-01` (p.68,p.71) — Sez. 6, n. 12026 del 24/01/2020, M., Rv. 278968-01
+- `Rv 278977-01` (p.79,p.85) — Sez. 1, n. 13756 del 21/02/2020, Morelli, Rv. 278977-01
+- `Rv 279033-01` (p.209,p.210,p.217) — Sez. 2, n. 12789 del 13/02/2020, Vinci, Rv. 279033-01
+- `Rv 279086-02` (p.205,p.217) — Sez. 5, n. 15130 del 03/03/2020, Diop Mbaye, Rv. 279086-02
+- `Rv 279107-01` (p.203,p.213,p.218) — Sez. 5, n. 19366 del 08/06/2020, Finizio, Rv. 279107-01
+- `Rv 279147` (p.82) — Sez. 2, n. 18558 del 20/02/2020, La Rosa, Rv. 279147
+- `Rv 279147-01` (p.85) — Sez. 2, n. 18558 del 20/02/2020, La Rosa, Rv. 279147-01
+- `Rv 279262-01` (p.169,p.173) — Sez. 6, n. 14041 del 9/1/2020, Malvaso, Rv. 279262-01
+- `Rv 279382-01` (p.122,p.125) — Sez. 3, n. 14766 del 26/02/2020, Sangermano, Rv. 279382-01
+- `Rv 279420-01` (p.135) — Sez. U, n. 23948 del 28/11/2019, Ismail, Rv. 279420-01
+- `Rv 279668-01` (p.137,p.140) — Sez. 2, n. 24633 del 17/07/2020, Bonculescu, Rv. 279668-01
+- `Rv 279744-02` (p.57,p.64) — Sez. 6, n. 21046 del 10/06/2020, Betti, Rv. 279744-02
+- `Rv 279875-01` (p.237) — Sez. 7, n. 31091 del 15/10/2020, Cavataio, Rv. 279875-01
+- `Rv 279906-01` (p.238,p.248) — Sez. 5, n. 23133 del 09/07/2020, Bordonaro, Rv. 279906-01
+- `Rv 280436-01` (p.51,p.55) — Sez. 2, n. 37063 del 26/11/2020, Kassimi, Rv. 280436-01
+- `Rv 280602-01` (p.210,p.218) — Sez. 1, n. 8272 del 27/01/2021, Marzi, Rv. 280602-01
+- `Rv 280847-01` (p.100,p.103) — Sez. 5, n. 10304 del 15/02/2021, Abdellatif, Rv. 280847-01
+- `Rv 280860-01` (p.232,p.248) — Sez. 1, n. 12786 del 19/03/2021, Di Costanzo, Rv. 280860-01
+- `Rv 281114-01` (p.180,p.181,p.184) — Sez. 6, n. 16801 del 24/03/2021, R., Rv. 281114-01
+- `Rv 281198-01` (p.135,p.140) — Sez. 1, n. 17096 del 09/03/2021, Austin, Rv. 281198-01
+- `Rv 281272-01` (p.56,p.57,p.59,p.64) — Sez. 6, n. 81317 del 09/04/2021, Stompanato, Rv. 281272-01
+- `Rv 281342-01` (p.170,p.173) — Sez. 3, n. 20793 del 18/03/2021, Rotondi, Rv. 281342-01
+- `Rv 281349-01` (p.219,p.230) — Sez. 6, n. 22124 del 03/06/2021, Tonuzi, Rv. 281349-01
+- `Rv 281421` (p.169) — Sez. 2, n. 19645 del 2/4/2021, Consentino, Rv. 281421
+- `Rv 281421-01` (p.173) — Sez. 2, n. 19645 del 02/04/2021, Consentino, Rv. 281421-01
+- `Rv 281428-01` (p.211,p.218) — Sez. 3, n. 24860 del 26/04/2021, M., Rv. 281428-01
+- `Rv 281432-01` (p.239,p.248) — Sez. 1, n. 24103 del 08/04/2021, Fosco, Rv. 281432-01
+- `Rv 281439-01` (p.99,p.103) — Sez. 5, n. 24227 del 28/04/2021, Tarar, Rv. 281439-01
+- `Rv 281458-01` (p.48) — Sez. 2, n. 23306 del 21/04/2021, Saidi, Rv. 281458-01
+- `Rv 28145801` (p.39) — Sez. 2, n. 23306 del 21/04/2021, Saidi, Rv. 28145801
+- `Rv 281488-01` (p.83,p.85) — Sez. 4, n. 24897 del 18/05/2021, Bara, Rv. 281488-01
+- `Rv 281533-01` (p.219,p.230) — Sez. 6, n. 25333 del 25/06/2021, Eminovic, Rv. 281533-01
+- `Rv 281547-01` (p.241,p.248) — Sez. 1, n. 25237 del 04/06/2021, C., Rv. 281547-01
+- `Rv 281814` (p.114) — Sez. 3, n. 33431 del 9/9/2021, Sfer- lazza, Rv. 281814
+- `Rv 281814-02` (p.118) — Sez. 3, n. 33431 del 4/3/2021, Sferlazza, Rv. 281814-02
+- `Rv 281829-01` (p.205) — Sez. 4, n. 34342 del 24/6/2021, Bovati, Rv. 281829-01
+- `Rv 281829-02` (p.204,p.218) — Sez. 4, n. 34342 del 24/06/2021, Bovati, Rv. 281829-02
+- `Rv 281831-01` (p.202,p.211,p.218) — Sez. 5, n. 34497 del 07/07/2021, Maccarone, Rv. 281831-01
+- `Rv 281848-01` (p.184) — Sez. U, n. 36959 del 24/06/2021, Ellade, Rv. 281848-01
+- `Rv 281945-01` (p.186,p.189) — Sez. 3, n. 35485 del 23/4/2021, P.G. in proc. T., Rv. 281945-01
+- `Rv 282076-01` (p.239,p.248) — Sez. 1, n. 39190 del 09/07/2021, Stambazzi, Rv. 282076-01
+- `Rv 282145-01` (p.205,p.218) — Sez. 1, n. 37985 del 8/6/2021, Cavallo, Rv. 282145-01
+- `Rv 282156-01` (p.56,p.64) — Sez. 1, n. 43293 del 27/10/2021, Ongaro, Rv. 282156-01
+- `Rv 282238-01` (p.42,p.48) — Sez. 3, n. 46184 del 23/11/2021, M., Rv. 282238-01
+- `Rv 282252-01` (p.100,p.103) — Sez. 5, n. 45255 del 27/10/2021, Samb Modou, Rv. 282252-01
+- `Rv 282311-01` (p.105,p.109) — Sez. 2, n. 43670 del 23/09/2021, Piromalli, Rv. 282311-01
+- `Rv 282336-01` (p.115,p.118) — Sez. 3, n. 44366 del 15/9/2021, Gulino, Rv. 282336-01
+- `Rv 282374-01` (p.170,p.173) — Sez. 3, n. 39157 del 07/09/2021, Sacrati, Rv. 282374-01
+- `Rv 282618-01` (p.122,p.125) — Sez. 3, n. 47299 del 16/11/2021, Fallimento Bellelli Engineering S.r.l., Rv. 282618-01
+- `Rv 282690-01` (p.128,p.132) — Sez. 2, n.6587 del 12/01/2022, Cuku, Rv. 282690-01
+- `Rv 282836-01` (p.170,p.173) — Sez. 3, n. 7882 del 21/01/2022, Viscovo, Rv. 282836-01
+- `Rv 282840` (p.202) — Sez. 3, n. 9737 del 10/11/2021, Hjijeb, Rv. 282840
+- `Rv 283113-01` (p.198,p.201,p.212) — Sez. 3, n. 16995 del 28/01/2022, Somma, Rv. 283113-01
+- `Rv 283121-01` (p.236,p.248) — Sez. 1, n. 21928 del 17/03/2022, Ierardi, Rv. 283121-01
+- `Rv 283145-01` (p.230) — Sez. 6, n. 15143 del 14/01/2022, P., Rv. 283145-01
+- `Rv 283186-01` (p.73,p.77) — Sez. 1, n. 24014 del 18/05/2022, Cascone, Rv. 283186-01
+- `Rv 283265` (p.39) — Sez. 6, n. 19429 del 03/05/2022, Schiavone, Rv. 283265
+- `Rv 283265-01` (p.48) — Sez. 6, n. 19429 del 03/05/2022, Schiavone, Rv. 283265-01
+- `Rv 283351-01` (p.51,p.55) — Sez. 3, n. 27450 del 29/04/2022, D’Aguì, Rv. 283351-01
+- `Rv 283360-01` (p.73,p.77) — Sez. 1, n. 26848 del 01/06/2022, Zavettieri, Rv. 283360-01
+- `Rv 283389-01` (p.136,p.140) — Sez. 1, n. 20772 del 04/03/2022, Tourè, Rv. 283389-01
+- `Rv 283459-01` (p.230) — Sez. 6, n. 26021 del 04/07/2022, Sambito, Rv. 283459-01
+- `Rv 283499-01` (p.150,p.159) — Sez. 1, n. 34895 del 30/03/2022, Di Lorenzo, Rv. 283499-01
+- `Rv 283531-01` (p.92,p.98) — Sez. 5, n. 26421 del 17/05/2022, Ettaiqi, Rv. 283531-01
+- `Rv 283535-01` (p.212,p.218) — Sez. 6, n. 29659 del 11/05/2022, Dalla Costa, Rv. 283535-01
+- `Rv 283552-01` (p.138,p.140) — Sez. U, n. 37502 del 28/04/2022, Scarlini, Rv. 283552-01
+- `Rv 283566-01` (p.135,p.140) — Sez. 5, n. 32586 del 14/06/2022, Stroe, Rv. 283566-01
+- `Rv 283577-02` (p.187,p.189) — Sez. U, n. 37503 del 23/06/2022, Liguori, Rv. 283577-02
+- `Rv 283598` (p.180) — Sez. 5, n. 37145 del 24/05/2022, Rovagnati Spa, Rv. 283598
+- `Rv 283598-01` (p.184) — Sez. 5, n. 37145 del 24/05/2022, Rovagnati s.p.a., Rv. 283598-01
+- `Rv 283639-01` (p.182,p.184) — Sez. U, n. 38810 del 13/06/2022, Banadin, Rv. 283639-01
+- `Rv 283689-01` (p.175,p.178,p.187,p.189) — Sez. U, n. 38809 del 31/3/2022, Miraglia, Rv. 283689-01
+- `Rv 283723-01` (p.186,p.189) — Sez. 6, n. 29950 del 23/06/2022, PG in proc. Sotgiu, Rv. 283723-01
+- `Rv 283732-01` (p.186,p.189) — Sez. 6, n. 35627 del 13/06/2022, PG in proc. Lena, Rv. 283732-01
+- `Rv 283736-01` (p.245,p.248) — Sez. 3, n. 43250 del 02/11/2022, Siano, Rv. 283736-01
+- `Rv 283745-01` (p.240,p.248) — Sez. 1, n. 43880 del 09/09/2022, Piscopo, Rv. 283745-01
+- `Rv 283754-03` (p.244,p.248) — Sez. U, n. 47502 del 29/09/2022, PG c. Galdini, Rv. 283754-03
+- `Rv 283774-01` (p.233,p.248) — Sez. 3, n. 44461 del 19/10/2022, Palma, Rv. 283774-01
+- `Rv 283818` (p.186) — Sez. U, n. 47182 del 31/3/2022, Savini, Rv. 283818
+- `Rv 283818-01` (p.175,p.178,p.189) — Sez. U, n. 47182 del 31/03/2022, Savini, Rv. 283818-01
+- `Rv 283829-01` (p.186,p.189) — Sez. 6, n. 36772 del 12/09/2022, PG in proc. Amato, Rv. 283829-01
+- `Rv 283845-02` (p.209,p.218) — Sez. 2, n. 34727 del 30/06/2022, Pastore, Rv. 283845-02
+- `Rv 283925-01` (p.186,p.189) — Sez. 4, n. 47202 del 18/11/2022, Loi, Rv. 283925-01
+- `Rv 284025-01` (p.215,p.218) — Sez. 6, n. 47488 del 17/11/2022, F., Rv. 284025-01
+- `Rv 284078-01` (p.218) — Sez. 6, n. 49115 del 17/10/2022, Vicentelli, Rv. 284078-01
+- `Rv 284110-01` (p.224,p.230) — Sez. 6, n. 5233 del 02/02/2023, De Siato, Rv. 284110-01
+- `Rv 284251-01` (p.228,p.230) — Sez. 6, n. 7861 del 21/02/2023, Arciszewski, Rv. 284251-01
+- `Rv 284264-01` (p.240,p.248) — Sez. 5, n. 12788 del 24/01/2023, Bifone, Rv. 284264-01
+- `Rv 284301-01` (p.199,p.218) — Sez. 2, n. 2592 del 09/12/2022, Lo Presti, Rv. 284301-01
+- `Rv 284337-01` (p.207,p.218) — Sez. 6, n. 9063 del 10/01/2023, Mad- daloni, Rv. 284337-01
+- `Rv 284353-01` (p.245,p.249) — Sez. 1, n. 12689 del 22/02/2023, Elia, Rv. 284353-01
+- `Rv 284512-01` (p.232,p.249) — Sez. 1, n. 15636 del 24/01/2023, Autostrada del Brennero S.p.A., Rv. 284512-01
+- `Rv 284531-01` (p.204,p.213,p.218) — Sez. 2, n. 17585 del 23/03/2023, Cordì, Rv. 284531-01
+- `Rv 284550-01` (p.231,p.249) — Sez. 1, n. 22719 del 08/03/2023, Turci, Rv. 284550-01
+- `Rv 284591-01` (p.199,p.218) — Sez. 6, n. 16676 del 30/03/2023, Mencaroni, Rv. 284591-01
+- `Rv 284601-01` (p.190,p.218) — Sez. 4, n. 13806 del 07/03/2023, Clemente, Rv. 284601-01
+- `Rv 284678-01` (p.241,p.249) — Sez. 5, n. 25556 del 26/04/2023, Kolaj, Rv. 284678-01
+- `Rv 284692-01` (p.41,p.48) — Sez. 3, n. 24220 del 22/02/2023, L., Rv. 284692-01
+- `Rv 284738-01` (p.204,p.213,p.218) — Sez. 2, n. 22032 del 16/03/2023, Ciavarella, Rv. 284738-01
+- `Rv 284765` (p.244) — Sez. 2, n. 22078 del 18/04/2023, Iovino, Rv. 284765
+- `Rv 284765-01` (p.249) — Sez. 2, n. 22078 del 18/04/2023, Iovino, Rv. 284765-01
+- `Rv 284820-01` (p.77) — Sez. U, n.7029 del 16/02/2024, Giampà Pasquale, Rv. 284820-01
+- `Rv 284830-01` (p.241,p.249) — Sez. 1, n. 24964 del 05/05/2023, Maisto, Rv. 284830-01
+- `Rv 284847-01` (p.186,p.189) — Sez. 5, n. 27587 del 19/04/2023, PG in proc. P. (rectius: I), Rv. 284847-01
+- `Rv 284891` (p.236) — Sez. 1, n. 26336 del 11/04/2023, PMT c. Vitale, Rv. 284891
+- `Rv 284891-01` (p.249) — Sez. 1, n. 26336 del 11/04/2023, PMT c. Vitale, Rv. 284891-01
+- `Rv 284904-01` (p.42,p.48) — Sez. 3, n. 32469 del 01/06/2023, Stea, Rv. 284904-01
+- `Rv 284930-02` (p.240,p.249) — Sez. 5, n. 25529 del 17/03/2023, Zanetti, Rv. 284930-02
+- `Rv 284970-01` (p.240,p.249) — Sez. 1, n. 28762 del 28/04/2023, El Ayari, Rv. 284970-01
+- `Rv 284972-01` (p.236,p.249) — Sez. 1, n. 29877 del 24/03/2023, Susino, Rv. 284972-01
+- `Rv 284977-01` (p.245,p.249) — Sez. 1, n. 30550 del 04/05/2023, Giromini, Rv. 284977-01
+- `Rv 284993-01` (p.184) — Sez. U, n. 32938 del 19/01/2023, L., Rv. 284993-01
+- `Rv 285046-01` (p.238,p.249) — Sez. 6, n. 30147 del 03/05/2023, P., Rv. 285046-01
+- `Rv 285054-01` (p.43,p.48) — Sez. 1, n. 40045 del 24/05/2023, Picozzi, Rv. 285054-01
+- `Rv 285081-01` (p.227,p.230) — Sez. 6, n. 31001 del 14/07/2023, Tabite, Rv. 285081-01
+- `Rv 285185-01` (p.65,p.71) — Sez. 6, n. 38306 del 14/06/2023, P., Rv. 285185-01
+- `Rv 285215-01` (p.249) — Sez. F, n. 33363 del 27/07/2023, Muca, Rv. 285215-01
+- `Rv 285246-01` (p.240,p.249) — Sez. 1, n. 36378 del 07/07/2023, Verdura, Rv. 285246-01
+- `Rv 285297-01` (p.224,p.230) — Sez. 6, n. 43252 del 19/10/2023, M., Rv. 285297-01
+- `Rv 285322-01` (p.232,p.249) — Sez. 3, n. 44669 del 12/09/2023, Moscarella, Rv. 285322-01
+- `Rv 285387-01` (p.228,p.230) — Sez. 6, n. 45291 del 08/11/2023, Marina, Rv. 285387-01
+- `Rv 285392-01` (p.243,p.249) — Sez. 1, n. 41364 del 25/05/2023, Gio- vane, Rv. 285392-01
+- `Rv 285395-01` (p.241,p.249) — Sez. 1, n. 42683 del 28/09/2023, Ceesay, Rv. 285395-01
+- `Rv 285406-01` (p.242,p.249) — Sez. 1, n. 46476 del 17/10/2023, Raimo, Rv. 285406-01
+- `Rv 285433-02` (p.221,p.230) — Sez. 6, n. 44596 del 19/10/2023, Gjeta, Rv. 285433-02
+- `Rv 285507-01` (p.233,p.249) — Sez. 1, n. 45193 del 11/07/2023, Cumino, Rv. 285507-01
+- `Rv 285563-01` (p.226,p.230) — Sez. 6, n. 50684 del 29/09/2023, Lazaj, Rv. 285563-01
+- `Rv 285600-01` (p.225,p.230) — Sez. 6, n. 51798 del 28/12/2023, Harjan, Rv. 285600-01
+- `Rv 285677-01` (p.244,p.249) — Sez. 2, n. 51692 del 02/11/2023, Columella, Rv. 285677-01
+- `Rv 285776-01` (p.229,p.230) — Sez. 6, n. 37474 del 12/09/2023, T., Rv. 285776-01
+
+### Massimario Penale 2023 — Volume II _( massimario )_  ·  `2023_Massimario_Penale_VolumeII.md`
+
+- `Rv 191735-01` (p.73) — Sez. 6, n. 3074 del 20/08/1992, Fiorito, Rv. 191735-01
+- `Rv 192893-01` (p.126) — Sez. 1, n. 11353 del 12/10/1992, D’Orazio, Rv. 192893-01
+- `Rv 192894-01` (p.123) — Sez. 1, n. 11353 del 12/10/1992, D’Orazio, Rv. 192894-01
+- `Rv 195618-01` (p.22,p.34) — Sez. U, n. 295 del 12/10/1993, Scopel, Rv. 195618-01
+- `Rv 205872-01` (p.115,p.118) — Sez. 2, n. 8723 del 07/05/1996, Schiavo, Rv. 205872-01
+- `Rv 209188-01` (p.140) — Sez. 3, n. 2733 del 08/07/1997, Frualdo, Rv. 209188-01
+- `Rv 210200-01` (p.145) — Sez. U, n. 4265 del 25/02/1998, Gerina, Rv. 210200-01
+- `Rv 211112-01` (p.145) — Sez. 6, n. 5837 del 15/04/1998, Revisore, Rv. 211112-01
+- `Rv 211192-01` (p.145) — Sez. U, n. 10086 del 13/07/1998, Citaristi, Rv. 211192-01
+- `Rv 212057` (p.131) — Sez. 1, n. 13543 del 18/11/1998, Caruso, Rv. 212057
+- `Rv 213020-01` (p.145) — Sez. 1, n. 4680 del 05/11/1998, Cacici, Rv. 213020-01
+- `Rv 216239-01` (p.34) — Sez. U, n. 1 del 19/01/2000, Tuzzolino, Rv. 216239-01
+- `Rv 216574-01` (p.73) — Sez. 3, n. 562 del 4/02/2000, Grova, Rv. 216574-01
+- `Rv 217266-01` (p.44,p.47) — Sez. U, n. 32 del 22/11/2001, D. L., Rv. 217266-01
+- `Rv 227681-01` (p.46,p.47) — Sez. U, n. 24246 del 25/02/2004, Chias- serini, Rv. 227681-01
+- `Rv 229175-01` (p.159) — Sez. U, n. 44711 del 27/10/2004, Wajib, Rv. 229175-01
+- `Rv 231164-01` (p.44,p.47) — Sez. U, n. 23428 del 22/3/2005, Bracale, Rv. 231164-01
+- `Rv 234752` (p.131) — Sez. 2, n. 16354 del 28/04/2006, Maio, Rv. 234752
+- `Rv 236537-01` (p.144) — Sez. U, n. 27614 del 29/03/2007, Lista, Rv. 236537-01
+- `Rv 238051-01` (p.144) — Sez. 1, n. 40251 del 02/10/2007, Scuto, Rv. 238051-01
+- `Rv 241862-01` (p.140) — Sez. 2, n. 40399 del 24/09/2008, Calabrò, Rv. 241862-01
+- `Rv 244376-01` (p.70,p.73) — Sez. U, n. 40538 del 24/09/2009, Lattanzi, Rv. 244376-01
+- `Rv 244378-01` (p.67) — Sez. U, n. 40538 del 24/09/2009, Lattanzi, Rv. 244378-01
+- `Rv 244810-01` (p.34) — Sez. U, n. 47008 del 29/10/2009, D’Amato, Rv. 244810-01
+- `Rv 246667` (p.131) — Sez. 6, n. 14916 del 25/03/2010, Brustenghi e altro, Rv. 246667
+- `Rv 247274-01` (p.34) — Sez. U, n. 24476 del 22/04/2010, Gagliardi, Rv. 247274-01
+- `Rv 250172-01` (p.21,p.34) — Sez. 5, n. 15079 del 18/03/2011, PG in proc. Zinno, Rv. 250172-01
+- `Rv 250196-01` (p.145) — Sez. U, n. 27919 del 31/03/2011, Ambrogio, Rv. 250196-01
+- `Rv 250350` (p.130) — Sez. U, n. 34091 del 28/04/2011, S., Rv. 250350
+- `Rv 252012-01` (p.34) — Sez. U, n. 159 del 24/11/2011, Rancan, Rv. 252012-01
+- `Rv 252215-01` (p.107,p.109) — Sez. 1, n. 8960 del 07/02/2012, Mangione, Rv. 252215-01
+- `Rv 253102-01` (p.17,p.34) — Sez. 1, n. 25833 del 23/04/2012, Testi, Rv. 253102-01
+- `Rv 256500-01` (p.115,p.118) — Sez. 5, n. 22034 del 07/03/2013, Boscolo, Rv. 256500-01
+- `Rv 259323` (p.131) — Sez. 4, n. 6783 del 23/01/2014, Di Meglio, Rv. 259323
+- `Rv 260325-01` (p.115,p.118) — Sez. 6, n. 32705 del 17/04/2014, Coccia, Rv. 260325-01
+- `Rv 260359-01` (p.61) — Sez. 2, n. 40816 del 10/07/2014, Gualtieri, Rv. 260359-01
+- `Rv 262352-01` (p.144) — Sez. 1, n. 53011 del 27/11/2014, Ministero della giustizia, Rv. 262352-01
+- `Rv 263507-01` (p.144) — Sez. 1, n. 18789 del 06/02/2015, Tenti, Rv. 263507-01
+- `Rv 263558` (p.34) — Sez. 3, n. 19326 del 27/01/2015, Pritoni, Rv. 263558
+- `Rv 263558-01` (p.17) — Sez. 3, n. 19326 del 27/01/2015, Pritoni, Rv. 263558-01
+- `Rv 264207-01` (p.44,p.47) — Sez. U, n. 33040 del 26/6/2015, Jazouli, Rv. 264207-01
+- `Rv 265107-01` (p.44,p.47) — Sez. U, n. 47766 del 26/6/2015, Butera, Rv. 265107-01
+- `Rv 265113-01` (p.102,p.106,p.109) — Sez. U, n. 51207 del 17/12/2015, Maresca, Rv. 265113-01
+- `Rv 266594-01` (p.49,p.52) — Sez. U, n. 13681 del 25/02/2016, Tushaj, Rv. 266594-01
+- `Rv 266818-01` (p.44,p.47) — Sez. U, n. 12602 del 17/12/2016, Ricci, Rv. 266818-01
+- `Rv 267239-01` (p.42,p.47) — Sez. U, n. 31668 del 23/5/2016, PG in proc. Pastore, Rv. 267239-01
+- `Rv 269125-01` (p.34,p.167) — Sez. U, n. 12872 del 19/01/2017, Punzo, Rv. 269125-01
+- `Rv 269785-01` (p.82,p.87) — Sez. U, n. 18620 del 19/01/2017, Patalano, Rv. 269785-01
+- `Rv 272536` (p.121) — Sez. 6, n. 9989 del 19/01/2018, Lillo, Rv. 272536
+- `Rv 272536-01` (p.126) — Sez. 6, n. 9989 del 19/01/2018, Lillo, Rv. 272536-01
+- `Rv 273441-01` (p.144) — Sez. 6, n. 19117 del 23/03/2018, Tardiota, Rv. 273441-01
+- `Rv 273552-01` (p.42,p.44,p.47,p.141) — Sez. U, n. 40150 del 21/6/2018, Salatino, Rv. 273552-01
+- `Rv 273843-01` (p.144) — Sez. 6, n. 40146 del 21/03/2018, Pinti, Rv. 273843-01
+- `Rv 274032-01` (p.61) — Sez. 3, n. 41048 del 17/01/2018, S., Rv. 274032-01
+- `Rv 275201-0` (p.144) — Sez. 6, n. 10260 del 08/03/2019, Cesi, Rv. 275201-0
+- `Rv 275218-01` (p.161) — Sez. 4, n. 5034 del 11/01/2019, Lazzara, Rv. 275218-01
+- `Rv 275716-01` (p.89,p.98) — Sez. U, n. 28912 del 28/02/2019, Innaro, Rv. 275716-01
+- `Rv 276414-01` (p.107,p.109) — Sez. 1, n. 28299 del 27/05/2019, R., Rv. 276414-01
+- `Rv 279197-01` (p.50,p.52) — Sez. 2, n. 14987 del 09/01/2020, Pravadelli, Rv. 279197-01
+- `Rv 279337-01` (p.73) — Sez. 2, n. 12423 del 23/01/2020, P., Rv. 279337-01
+- `Rv 279490-01` (p.115,p.118) — Sez. 2, n. 23940 del 15/07/2020, Rosati, Rv. 279490-01
+- `Rv 279552-01` (p.102,p.106,p.109) — Sez. 2, n. 24629 del 02/07/2020, Vertinelli, Rv. 279552-01
+- `Rv 279918-01` (p.124) — Sez. 4, n. 33867 del 28/10/2020, Ruberti, Rv. 279918-01
+- `Rv 279985-01` (p.124) — Sez. 5, n. 34998 del 20/10/2020, P., Rv. 279985-01
+- `Rv 280388-01` (p.107,p.109) — Sez. 4, n. 35057 del 17/11/2020, Ignazzi, Rv. 280388-01
+- `Rv 280484-01` (p.42,p.47) — Sez. 4, n. 05801 del 29/1/2021, PMT in proc. Statuetta, Rv. 280484-01
+- `Rv 280537-01` (p.146) — Sez. 5, n. 8043 del 15/01/2021, A., Rv. 280537-01
+- `Rv 280694-01` (p.61) — Sez. 3, n. 35715 del 17/09/2020, Riccardi, Rv. 280694-01
+- `Rv 281148-01` (p.107,p.109) — Sez. 6, n. 13434 del 26/1/2021, Paolini, Rv. 281148-01
+- `Rv 281152-01` (p.105,p.109) — Sez. 5, n. 20885 del 28/04/2021, H., Rv. 281152-01
+- `Rv 281228-01` (p.112,p.118) — Sez. U, n. 20065 del 28/01/2021, Cremonini, Rv. 281228-01
+- `Rv 28157-01` (p.120) — Sez. 3, n. 14242 del 03/03/2021, Anedda, Rv. 28157-01
+- `Rv 281577-01` (p.126) — Sez. 3, n. 14242 del 03/03/2021, Anedda, Rv. 281577-01
+- `Rv 281615-01` (p.144) — Sez. 1, n. 27004 del 29/04/2021, Pim- pinella, Rv. 281615-01
+- `Rv 281694-02` (p.107,p.109) — Sez. 6, n. 28032 del 30/04/2021, Simbari, Rv. 281694-02
+- `Rv 281895-01` (p.107,p.109) — Sez. 1, n. 35305 del 21/5/2021, Aiman, Rv. 281895-01
+- `Rv 281941-01` (p.103,p.109) — Sez. 2, n. 34914 del 07/09/2021, Carlino, Rv. 281941-01
+- `Rv 282175-01` (p.101,p.109) — Sez. 6, n. 26459 del 25/05/2021, Ian- none, Rv. 282175-01
+- `Rv 282373-01` (p.103,p.109) — Sez. 3, n. 38177 del 07/09/2021, Fantasia, Rv. 282373-01
+- `Rv 282478-01` (p.17,p.34) — Sez. 3, n. 35973 del 07/05/2021, Zoncada, Rv. 282478-01
+- `Rv 282673-01` (p.61) — Sez. 4, n. 7097 del 25/01/2022, M., Rv. 282673-01
+- `Rv 282905-01` (p.105,p.109) — Sez. 6, n. 7069 del 08/02/2022, El Ouizi, Rv. 282905-01
+- `Rv 283019-01` (p.93,p.98) — Sez. 4, n. 13236 del 23/03/2022, Piunti, Rv. 283019-01
+- `Rv 283048-01` (p.105,p.109) — Sez. 6, n. 10216 del 03/03/2022, M., Rv. 283048-01
+- `Rv 283064-01` (p.50,p.52) — Sez. U, n. 18891 del 27/01/2022, Ubaldi, Rv. 283064-01
+- `Rv 283116-01` (p.110) — Sez. 4, n. 21066 del 05/05/2022, O., Rv. 283116-01
+- `Rv 283197-01` (p.120,p.126) — Sez. 2, n. 15449 del 20/04/2022, Tiesi, Rv. 283197-01
+- `Rv 283262-01` (p.102,p.109) — Sez. 6, n. 18483 del 29/03/2022, Della Mina, Rv. 283262-01
+- `Rv 283307-01` (p.101,p.106,p.109) — Sez. 1, n. 14766 del 16/03/2022, Ayari, Rv. 283307-01
+- `Rv 283316-01` (p.104) — Sez. 4, n. 21066 del 05/05/2022, , Rv. 283316-01
+- `Rv 283377-01` (p.112,p.118) — Sez. 2, n. 11808 del 14/01/2022, Restaino, Rv. 283377-01
+- `Rv 283532-01` (p.105,p.110) — Sez. 5, n. 29852 del 24/06/2022, V., Rv. 283532-01
+- `Rv 283673-01` (p.146) — Sez. 5, n. 34794 del 22/06/2022, S., Rv. 283673-01
+- `Rv 283689-01` (p.44,p.47) — Sez. U, n. 38809 del 31/3/2022, Miraglia, Rv. 283689-01
+- `Rv 283739-01` (p.112,p.118) — Sez. 4, n. 37193 del 15/09/2022, Ciccarelli, Rv. 283739-01
+- `Rv 283954-01` (p.19,p.35) — Sez. 5, n. 44402 del 10/10/2022, Majer, Rv. 283954-01
+- `Rv 284010-01` (p.63) — Sez. 4, n. 47192 del 11/10/2022, Carpuz, Rv. 284010-01
+- `Rv 284012-01` (p.111,p.118) — Sez. 4, n. 2854 del 11/01/2023, Colonna, Rv. 284012-01
+- `Rv 284019-01` (p.111,p.118) — Sez. 5, n. 3990 del 20/01/2023, San- giorgi, Rv. 284019-01
+- `Rv 284121-01` (p.111,p.118) — Sez. 5, n. 4902 del 16/01/2023, Isgrò, Rv. 284121-01
+- `Rv 284133-01` (p.49,p.52) — Sez. 4, n. 9466 del 15/02/2023, Castrignano, Rv. 284133-01
+- `Rv 284155-01` (p.140,p.142) — Sez. 4, n. 2658 del 11/01/2023, Saitta, Rv. 284155-01
+- `Rv 284176-01` (p.40,p.45,p.47,p.140) — Sez. 5, n. 05223 del 17/1/2023, Colombo, Rv. 284176-01
+- `Rv 284216-01` (p.111,p.118) — Sez. 2, n. 6690 del 02/02/2023, Seno, Rv. 284216-01
+- `Rv 284241-02` (p.49,p.52) — Sez. 6, n. 7573 del 27/01/2023, Arzaroli, Rv. 284241-02
+- `Rv 284297-01` (p.104,p.110) — Sez. 2, n. 14854 del 25/01/2023, Diop, Rv. 284297-01
+- `Rv 284369-02` (p.104,p.110) — Sez. 5, n. 8131 del 24/01/2023, D., Rv. 284369-02
+- `Rv 284486-01` (p.105,p.110) — Sez. 2, n. 15657 del 19/01/2023, Castaldi, Rv. 284486-01
+- `Rv 284497-01` (p.49,p.52) — Sez. 3, n. 18029 del 04/04/2023, Hu Qinglian, Rv. 284497-01
+- `Rv 284542-01` (p.41,p.45,p.47,p.140) — Sez. 5, n. 11229 del 10/1/2023, Popa, Rv. 284542-01
+- `Rv 284545-01` (p.83,p.161) — Sez. 1, n. 16054 del 10/03/2023, Moccia , Rv. 284545-01
+- `Rv 284554-02` (p.51,p.52) — Sez. 3, n. 17214 del 14/03/2023, Gallo, Rv. 284554-02
+- `Rv 284569-01` (p.82,p.87) — Sez. 6, n. 11490 del 27/01/2023, Sheshi, Rv. 284569-01
+- `Rv 284606-01` (p.49,p.52) — Sez. 4, n. 17190 del 16/03/2023, Di Mento, Rv. 284606-01
+- `Rv 284616-01` (p.42,p.47) — Sez. 3, n. 19971 del 9/1/2023, Antonelli, Rv. 284616-01
+- `Rv 284617-01` (p.50,p.52) — Sez. 3, n. 20279 del 21/03/2023, Malgrati, Rv. 284617-01
+- `Rv 284622-01` (p.63) — Sez. 6, n. 19433 del 14/02/2023, P., Rv. 284622-01
+- `Rv 284657-01` (p.54,p.63) — Sez. 4, n. 22708 del 11/05/2023, Graziadio, Rv. 284657-01
+- `Rv 284698-01` (p.39,p.40,p.47,p.141) — Sez. 5, n. 22658 del 24/05/2023, Giurca, Rv. 284698-01
+- `Rv 284720-01` (p.75,p.76,p.78,p.80) — Sez. 1, n. 20612 del 12/04/2023, Tribunale di Latina, Rv. 284720-01
+- `Rv 284749-01` (p.40,p.41,p.47) — Sez. 5, n. 22641 del 21/4/2023, P., Rv. 284749-01
+- `Rv 284770-01` (p.128) — Sez. 4, n. 18288 del 02/02/2023, Ben Slimen, Rv. 284770-01
+- `Rv 284841-01` (p.37,p.39,p.45,p.47) — Sez. 1, n. 31451 del 7/6/2023, Colucci, Rv. 284841-01
+- `Rv 284880-01` (p.60,p.62,p.63) — Sez. 5, n. 25799 del 19/05/2023, Bevilacqua, Rv. 284880-01
+- `Rv 284898-01` (p.105) — Sez. 2, n. 27880 del 16/05/2023, Caponi, Rv. 284898-01
+- `Rv 284925-01` (p.22,p.34,p.84,p.87,p.172) — Sez. 4, n. 32357 del 09/05/2023, D’Ambrosio, Rv. 284925-01
+- `Rv 284937-01` (p.79,p.80) — Sez. 2, n. 36768 del 18/07/2023, Ciravegna, Rv. 284937-01
+- `Rv 284961-01` (p.22,p.34) — Sez. 2, n. 31488 del 12/07/2023, Terlizzi, Rv. 284961-01
+- `Rv 284967-01` (p.18,p.34,p.84,p.87) — Sez. 6, n. 30768 del 16/05/2023, F., Rv. 284967-01
+- `Rv 284975-01` (p.49,p.52) — Sez. 1, n. 30515 del 02/05/2023, Muftah, Rv. 284975-01
+- `Rv 284978-01` (p.21,p.85) — Sez. 6, n. 30767 del 28/04/2023, Lombardo, Rv. 284978-01
+- `Rv 285036-01` (p.112,p.118,p.145) — Sez. U, n. 38481 del 25/05/2023, D., Rv. 285036-01
+- `Rv 285040-01` (p.103,p.110) — Sez. 6, n. 30146 del 28/04/2023, Terracciano, Rv. 285040-01
+- `Rv 285064-01` (p.42,p.47) — Sez. 2, n. 33648 del 28/6/2023, Strada, Rv. 285064-01
+- `Rv 285074-01` (p.30,p.34) — Sez. 5, n. 33788 del 05/05/2023, Spagnolo, Rv. 285074-01
+- `Rv 285089-01` (p.75,p.79,p.80) — Sez. 6, n. 31809 del 10/05/2023, T., Rv. 285089-01
+- `Rv 285090-01` (p.20,p.25,p.34,p.168) — Sez. 6, n. 33027 del 10/05/2023, Agostino, Rv. 285090-01
+- `Rv 285114-01` (p.75,p.76,p.77,p.80) — Sez. 3, n. 41594 del 06/07/2023, Gup Tribunale di Sciacca, Rv. 285114-01
+- `Rv 285154-01` (p.28,p.34) — Sez. 6, n. 34091 del 21/06/2023, Sabatini, Rv. 285154-01
+- `Rv 285177-01` (p.91,p.98) — Sez. 6, n. 34523 del 11/05/2023, Safi, Rv. 285177-01
+- `Rv 285186-01` (p.110) — Sez. 2, n. 33455 del 20/04/2023, Mortellaro, Rv. 285186-01
+- `Rv 285213-01` (p.98) — Sez. U, n. 42603 del 13/07/2023, PMT c. El Karti, Rv. 285213-01
+- `Rv 285227-01` (p.104,p.110) — Sez. 4, n. 43706 del 12/09/2023, Dario, Rv. 285227-01
+- `Rv 285228-01` (p.29,p.34) — Sez. 4, n. 43975 del 26/09/2023, Lombardi, Rv. 285228-01
+- `Rv 285229-01` (p.29,p.34) — Sez. 5, n. 37022 del 28/06/2023, Catalano, Rv. 285229-01
+- `Rv 285231-01` (p.86,p.87,p.129,p.134) — Sez. 5, n. 39801 del 13/07/2023, Viola, Rv. 285231-01
+- `Rv 285233-01` (p.76,p.77,p.78,p.80) — Sez. 5, n. 43304 del 07/07/2023, Tribunale di Agrigento, Rv. 285233-01
+- `Rv 285251-01` (p.26,p.35) — Sez. 4, n. 4934 del 23/1/2024, Skrzys- zewski, Rv. 285251-01
+- `Rv 285266-01` (p.58,p.63) — Sez. 4, n. 44368 del 28/09/2023, Vitale, Rv. 285266-01
+- `Rv 285270-01` (p.31,p.34) — Sez. 1, n. 36885 del 04/07/2023, Sedicini, Rv. 285270-01
+- `Rv 285277-02` (p.74,p.77,p.78,p.79,p.80) — Sez. 6, n. 40715 del 15/09/2023, Tribunale di Torino, Rv. 285277-02
+- `Rv 285295-01` (p.18,p.34) — Sez. 6, n. 40433 del 19/09/2023, Diagne, Rv. 285295-01
+- `Rv 285306-01` (p.75,p.77,p.80) — Sez. 5, n. 43638 del 06/09/2023, Gip Tribunale Torino, Rv. 285306-01
+- `Rv 285307-01` (p.19,p.21,p.34) — Sez. 5, n. 43960 del 03/10/2023, Luongo, Rv. 285307-01
+- `Rv 285321-01` (p.42,p.47) — Sez. 5, n. 43636 del 5/10/2023, PMT in proc. Larocca, Rv. 285321-01
+- `Rv 285322-01` (p.61,p.62,p.63) — Sez. 3, n. 44669 del 12/09/2023, Moscarella, Rv. 285322-01
+- `Rv 285334-01` (p.75,p.76,p.77,p.78,p.80) — Sez. 3, n. 44932 del 27/09/2023, Tribunale di Parma, Rv. 285334-01
+- `Rv 285346-01` (p.110) — Sez. 2, n. 44017 del 19/09/2023, Sharaf El Din, Rv. 285346-01
+- `Rv 285349-01` (p.105,p.110) — Sez. 2, n. 47308 del 11/10/2023, B., Rv. 285349-01
+- `Rv 285358-01` (p.17,p.20,p.34) — Sez. 6, n. 43263 del 13/09/2023, Lo Monaco, Rv. 285358-01
+- `Rv 285360-01` (p.51,p.52) — Sez. 6, n. 43941 del 03/10/2023, Hamdi, Rv. 285360-01
+- `Rv 285365-01` (p.22,p.34) — Sez. 6, n. 43947 del 19/09/2023, Tarellari, Rv. 285365-01
+- `Rv 285394-01` (p.83,p.87,p.161) — Sez. 1, n. 42681 del 27/09/2023, Proshka, Rv. 285394-01
+- `Rv 285398-01` (p.129,p.130) — Sez. 5, n. 47183 del 12/10/2023, K., Rv. 285398-01
+- `Rv 28539801-02` (p.134) — Sez. 5, n. 47183 del 12/10/2023, K., Rv. 28539801-02
+- `Rv 285399-01` (p.58,p.63) — Sez. 4, n. 48804 del 14/11/2023, Ciattaglia, Rv. 285399-01
+- `Rv 285408-01` (p.50,p.52) — Sez. 1, n. 46924 del 13/07/2023, Sassano, Rv. 285408-01
+- `Rv 285410-01` (p.77,p.80) — Sez. 1, n. 46937 del 13/07/2023, Gip Tribunale di Velletri, Rv. 285410-01
+- `Rv 285412-01` (p.20,p.26,p.34) — Sez. 2, n. 43848 del 29/09/2023, D., Rv. 285412-01
+- `Rv 285420-01` (p.27,p.34) — Sez. 3, n. 47042 del 26/09/2023, Buscaglia, Rv. 285420-01
+- `Rv 285421-01` (p.40,p.47) — Sez. 4, n. 47769 del 22/11/2023, PMT in proc. D’Amico, Rv. 285421-01
+- `Rv 285424-01` (p.78,p.80) — Sez. 4, n. 46181 del 25/10/2023, Bar- bieri, Rv. 285424-01
+- `Rv 285426-01` (p.83,p.87) — Sez. 4, n. 48556 del 14/11/2023, Coppolaro, Rv. 285426-01
+- `Rv 285451-01` (p.84,p.87) — Sez. 6, n. 45903 del 25/10/2023, PMC c.D’Amico, Rv. 285451-01
+- `Rv 285467-01` (p.44,p.47,p.140) — Sez. 4, n. 49499 del 15/11/2023, Platon, Rv. 285467-01
+- `Rv 285468-01` (p.142) — Sez. 4, n. 49513 del 15/11/2023, Pagano, Rv. 285468-01
+- `Rv 285471-01` (p.47) — Sez. 4, n. 50258 del 22/11/2023, PMT in proc. Gentile, Rv. 285471-01
+- `Rv 285474-01` (p.79,p.80) — Sez. 6, n. 46034 del 25/10/2023, T., Rv. 285474-01
+- `Rv 285484-01` (p.26,p.35) — Sez. 4, n. 43980 del 26/10/2023, Cruz, Rv. 285484-01
+- `Rv 285490-02` (p.81,p.87) — Sez. 5, n. 49667 del 10/11/2023, Fossatocci , Rv. 285490-02
+- `Rv 285491-01` (p.26,p.34) — Sez. 6, n. 46013 del 28/09/2023, Fancellu, Rv. 285491-01
+- `Rv 285493-01` (p.93,p.98) — Sez. 6, n. 46795 del 12/10/2023, Kebe, Rv. 285493-01
+- `Rv 285510-01` (p.29,p.34) — Sez. 1, n. 46445 del 20/09/2023, Bonafede, Rv. 285510-01
+- `Rv 285513-01` (p.76,p.80) — Sez. 1, n. 46466 del 22/09/2023, Gip Cuneo, Rv. 285513-01
+- `Rv 285564-01` (p.26,p.34) — Sez. 6, n. 46782 del 29/09/2023, Borazio, Rv. 285564-01
+- `Rv 285570-01` (p.23,p.35,p.87) — Sez. 4, n. 48348 del 14/11/2023, Petullà, Rv. 285570-01
+- `Rv 285572-01` (p.92,p.98) — Sez. 4, n. 48776 del 15/11/2023, Esposito, Rv. 285572-01
+- `Rv 285628-01` (p.29,p.35) — Sez. 3, n. 51557 del 04/11/2023, Spina, Rv. 285628-01
+- `Rv 285645-01` (p.110) — Sez. 2, n. 49964 del 14/11/2023, Corridore, Rv. 285645-01
+- `Rv 285647-01` (p.39,p.47) — Sez. 4, n. 44157 del 3/10/2023, PMT in proc. Rampone, Rv. 285647-01
+- `Rv 285653-01` (p.94,p.98) — Sez. 6, n. 50237 del 12/10/2023, D., Rv. 285653-01
+- `Rv 285672-01` (p.82,p.87) — Sez. 1, n. 48565 del 11/10/2023, Sella, Rv. 285672-01
+- `Rv 285683-01` (p.161) — Sez. 1, n. 49255 del 26/09/2023, Bartolomeo, Rv. 285683-01
+- `Rv 285684-01` (p.29) — Sez. 1, n. 48579 del 11/10/2023, Bianchi, Rv. 285684-01
+- `Rv 285686-01` (p.90,p.98,p.142) — Sez. 2, n. 50426 del 26/10/2023, P., Rv. 285686-01
+- `Rv 285687-01` (p.50,p.52) — Sez. 2, n. 50427 del 31/10/2023, Maci, Rv. 285687-01
+- `Rv 285690-01` (p.22,p.35) — Sez. 2, n. 50010 del 10/10/2023, Melluso, Rv. 285690-01
+- `Rv 285691-01` (p.43,p.47) — Sez. 2, n. 50672 del 10/11/2023, PMT in proc. Ongaro, Rv. 285691-01
+- `Rv 285708-01` (p.25,p.34,p.168) — Sez. 6, n. 41313 del 27/09/2023, PG c. Amato, Rv. 285708-01
+- `Rv 285751-01` (p.168) — Sez. 4, n. 4934 del 21/1/2024, Skrzyszewski, Rv. 285751-01
+- `Rv 285780-01` (p.88,p.98) — Sez. 5, n. 809 del 28/09/2023, dep. 2024, Rv. 285780-01
+- `Rv 285836-02` (p.35) — Sez. 1, n. 1776 del 20/10/2023, Corrotto, Rv. 285836-02
+- `Rv 285874-01` (p.103,p.110) — Sez. 5, n. 27419 del 17/02/2023, R.M., Rv. 285874-01
+- `Rv 286031-01` (p.17,p.35) — Sez. 3, n. 9708 del 16/02/2024, Tornese, Rv. 286031-01
+- `Rv 286153-01` (p.139) — Sez. U, n. 12759 del 14/12/2023, L., Rv. 286153-01
+
+### Massimario Penale 2024 — Volume Unico _( massimario )_  ·  `2024_Massimario_Penale_VolumeUnico.md`
+
+- `Rv 098479-01` (p.84) — Sez. U, n. 1 del 27/05/1961, Papò, Rv. 098479-01
+- `Rv 101843-01` (p.56) — Sez. 2, n. 163 del 01/02/1966, Fulcone, Rv. 101843-01
+- `Rv 113265` (p.57) — Sez. 1, n. 1327 del 22/10/1969, Cosoleto, Rv. 113265
+- `Rv 118011` (p.71) — Sez. U, n. 1 del 23/01/1971, Urbinati, Rv. 118011
+- `Rv 118936-01` (p.61) — Sez. 1, n. 443 del 10/05/1971, Oliverio, Rv. 118936-01
+- `Rv 119661-01` (p.65) — Sez. 2, n. 873 del 02/04/1971, Ferro, Rv. 119661-01
+- `Rv 128668` (p.67) — Sez. 6, n. 9366 del 27/02/1974, Lomardi, Rv. 128668
+- `Rv 140139-01` (p.63,p.65) — Sez. 2, n. 12241 del 14/04/1978, Riccardi, Rv. 140139-01
+- `Rv 142072-01` (p.63) — Sez. 6, n. 4727 del 09/01/1979, Argentieri, Rv. 142072-01
+- `Rv 142252-01` (p.50) — Sez. U, n. 5519 del 21/04/1979, Pelosi, Rv. 142252-01
+- `Rv 143340-01` (p.63) — Sez. 4, n. 9220 del 20/02/1979, Mazzei, Rv. 143340-01
+- `Rv 145716-01` (p.62) — Sez. 5, n. 7969 del 28/03/1980, Lotrecchio, Rv. 145716-01
+- `Rv 149263-01` (p.75) — Sez. U, n. 5690 del 07/02/1981, Viola, Rv. 149263-01
+- `Rv 164181-01` (p.68) — Sez. 2, n. 4467 del 02/02/1984, Garbegnati, Rv. 164181-01
+- `Rv 165179` (p.71) — Sez. U, n. 6300 del 26/05/1984, Falato, Rv. 165179
+- `Rv 166800-01` (p.140) — Sez. 1, n. 10437 del 24/10/1984, Scarpiello, Rv. 166800-01
+- `Rv 170757-01` (p.100) — Sez. 1, n. 9349 del 03/06/1985, Passi, Rv. 170757-01
+- `Rv 175354-01` (p.84) — Sez. U, n. 3152 del 31/01/1987, Paolini, Rv. 175354-01
+- `Rv 179848-01` (p.115,p.140) — Sez. 1, n. 2538 del 14/11/1988, Gentilini, Rv. 179848-01
+- `Rv 185131-01` (p.81) — Sez. 5, n. 11498 del 05/07/1990, Casarola, Rv. 185131-01
+- `Rv 186020-01` (p.115,p.140) — Sez. 6, n. 16609 del 22/03/1990, Pergolesi, Rv. 186020-01
+- `Rv 187856` (p.85) — Sez. U, n. 17 del 18/06/1991, Grassi, Rv. 187856
+- `Rv 188177-01` (p.236,p.237) — Sez. 3, n. 7209 del 07/06/1991, Pisano, Rv. 188177-01
+- `Rv 189611` (p.108) — Sez. 1, n. 326 del 24/01/1992, Galati, Rv. 189611
+- `Rv 189947-01` (p.275,p.277) — Sez. 4, n. 4789 del 19/02/1992, Sità, Rv. 189947-01
+- `Rv 191311` (p.108) — Sez. 1, n. 2328 del 22/05/1992, Mazzanti, Rv. 191311
+- `Rv 191627-01` (p.90) — Sez. 1, n. 8863 del 18/06/1992, Varone, Rv. 191627-01
+- `Rv 193743-01` (p.217,p.232) — Sez. U, n. 6203 del 11/05/1993, Amato, Rv. 193743-01
+- `Rv 194773-01` (p.140) — Sez. 1, n. 7566 del 28/05/1993, Cimare, Rv. 194773-01
+- `Rv 194888-01` (p.100) — Sez. 6, n. 7957 del 15/04/1993, La Torre, Rv. 194888-01
+- `Rv 194918` (p.100) — Sez. 6, n. 7989 del 31/05/1993, Spreafico, Rv. 194918
+- `Rv 196866-01` (p.29) — Sez. 1, n. 681 del 02/02/1994, Dalla Guardia, Rv. 196866-01
+- `Rv 198511-01` (p.211,p.232) — Sez. 6, n. 6337 del 10/03/1994, Sorrentino, Rv. 198511-01
+- `Rv 201323-01` (p.140) — Sez. 5, n. 5139 del 05/04/1995, Russo, Rv. 201323-01
+- `Rv 201549` (p.71) — Sez. U, n. 7930 del 21/04/1995, Zouine, Rv. 201549
+- `Rv 201549-01` (p.70) — Sez. U, n. 7930 del 21/05/1995, Zuoine, Rv. 201549-01
+- `Rv 202018-01` (p.217,p.232) — Sez. U, n. 9616 del 24/03/1995, Boido, Rv. 202018-01
+- `Rv 202165-01` (p.67,p.83) — Sez. 6, n. 7946 del 10/04/1995, Faletto, Rv. 202165-01
+- `Rv 203205-01` (p.35,p.46) — Sez. 3, n. 3877 del 14/11/1995, Prati, Rv. 203205-01
+- `Rv 204167-01` (p.234,p.237) — Sez. U, n. 3571 del 14/02/1996, Mele, Rv. 204167-01
+- `Rv 205540-01` (p.60) — Sez. 6, n. 8156 del 12/01/1996, Moscato, Rv. 205540-01
+- `Rv 205707` (p.253) — Sez. U, n. 9194 del 03/07/1996, Chabni, Rv. 205707
+- `Rv 206467` (p.99) — Sez. 3, n. 9575 del 08/10/1996, Paterno, Rv. 206467
+- `Rv 207002-01` (p.29) — Sez. 5, n. 2117 del 04/02/1997, Celani, Rv. 207002-01
+- `Rv 207274-01` (p.140) — Sez. 1, n. 2955 del 29/01/1997, Sambataro, Rv. 207274-01
+- `Rv 207917-01` (p.148) — Sez. U, n. 35737 del 24/06/2010, Rico, Rv. 207917-01
+- `Rv 209341-01` (p.99) — Sez. 3, n. 11836 del 18/11/1997, Pasini, Rv. 209341-01
+- `Rv 210798-01` (p.385) — Sez. U, n. 7551 del 08/04/1998, Cerroni, Rv. 210798-01
+- `Rv 211611-01` (p.123,p.140) — Sez. 1, n. 11055 del 19/10/1998, D’Agata, Rv. 211611-01
+- `Rv 211870-01` (p.247,p.249) — Sez. 1, n. 13291 del 18/11/1998, Senneca, Rv. 211870-01
+- `Rv 213857-01` (p.331) — Sez. U, n. 12 del 19/05/1999, Pediconi, Rv. 213857-01
+- `Rv 214560-01` (p.331) — Sez. 5, n. 4076 del 20/09/1999, Valeri, Rv. 214560-01
+- `Rv 216280-01` (p.310) — Sez. 1, n. 3679 del 19/05/2000, Di Bella, Rv. 216280-01
+- `Rv 216429-01` (p.184) — Sez. U, n. 18 del 21/06/2000, Franzo, Rv. 216429-01
+- `Rv 216991` (p.221) — Sez. 3, n. 1961 del 12/05/2000, Masiello, Rv. 216991
+- `Rv 216991-01` (p.232) — Sez. 3, n. 1961 del 12/05/2000, Masiello, Rv. 216991-01
+- `Rv 217160-01` (p.331) — Sez. 4, n. 4521 del 04/10/2000, Spollero, Rv. 217160-01
+- `Rv 217746-01` (p.314,p.317) — Sez. 6, n. 3092 del 04/07/2000, Scarci, Rv. 217746-01
+- `Rv 218673` (p.181) — Sez. 2, n. 10792 del 23/01/2001, Delfino, Rv. 218673
+- `Rv 218673-01` (p.183) — Sez. 2, n. 10792 del 23/01/2001, Delfino, Rv. 218673-01
+- `Rv 219263-01` (p.65) — Sez. 1, n. 15542 del 16/02/2001, Pelini, Rv. 219263-01
+- `Rv 221636-01` (p.312,p.317) — Sez. 1, n. 23061 del 12/02/2002, Leuzzo, Rv. 221636-01
+- `Rv 222138` (p.197) — Sez. U, n. 30328 del 10/07/2002, Franzese, Rv. 222138
+- `Rv 222138-01` (p.200) — Sez. U, n. 30328 del 10/07/2002, Franzese, Rv. 222138-01
+- `Rv 224607-01` (p.179,p.183) — Sez. U, n. 25887 del 26/03/2003, Giordano, Rv. 224607-01
+- `Rv 224903-01` (p.140) — Sez. 5, n. 3946 del 03/12/2002, Belquacem, Rv. 224903-01
+- `Rv 225693-01` (p.35,p.46) — Sez. 4, n. 39631 del 24/09/2002, Gambini, Rv. 225693-01
+- `Rv 225853-01` (p.27,p.46) — Sez. 4, n. 25946 del 29/04/2003, Mayr, Rv. 225853-01
+- `Rv 225949-01` (p.101) — Sez. 5, n. 25770 del 27/05/2003, Sarti, Rv. 225949-01
+- `Rv 226475-01` (p.41,p.46) — Sez. 1, n. 40915 del 02/10/2003, Fittipaldi, Rv. 226475-01
+- `Rv 226713` (p.263) — Sez. U, n. 5876 del 28/10/2004, Bevilacqua, Rv. 226713
+- `Rv 226846-01` (p.314,p.317) — Sez. 1, n. 7642 del 05/03/2003, Pignatelli, Rv. 226846-01
+- `Rv 227523-01` (p.140) — Sez. U, n. 23016 del 31/03/2004, Pezzella, Rv. 227523-01
+- `Rv 228166` (p.257) — Sez. U, n. 29951 del 24/05/2004, Focarelli, Rv. 228166
+- `Rv 228179-01` (p.28,p.46) — Sez. 4, n. 17610 del 04/02/2004, Seghezzi, Rv. 228179-01
+- `Rv 228393-01` (p.310) — Sez. F, n. 34554 del 25/07/2003, Jovanovic, Rv. 228393-01
+- `Rv 228750` (p.260) — Sez. 5, n. 15445 del 16/01/2004, Napolitano, Rv. 228750
+- `Rv 228896-01` (p.249) — Sez. 1, n. 14923 del 19/02/2004, Rocchi, Rv. 228896-01
+- `Rv 228964` (p.198) — Sez. 6, n. 19607 del 03/03/2004, Del Regno, Rv. 228964
+- `Rv 228964-01` (p.200) — Sez. 6, n. 19607 del 03/03/2004, Del Regno, Rv. 228964-01
+- `Rv 229110-01` (p.243,p.249) — Sez. U, n. 44273 del 27/10/2004, Labbia, Rv. 229110-01
+- `Rv 229112-01` (p.244) — Sez. U, n. 44273 del 27/10/2004, Labbia, Rv. 229112-01
+- `Rv 229245-01` (p.296,p.300) — Sez. U, n. 45189 del 17/11/2004, Esposito, Rv. 229245-01
+- `Rv 229298-01` (p.63) — Sez. 3, n. 26908 del 22/04/2004, Ronzoni, Rv. 229298-01
+- `Rv 229362-01` (p.243,p.249) — Sez. 1, n. 48369 del 18/11/2004, Morelli, Rv. 229362-01
+- `Rv 229750` (p.99) — Sez. 1, n. 45482 del 04/11/2004, Zheng, Rv. 229750
+- `Rv 230758-01` (p.80) — Sez. 6, n. 4445 del 02/12/2004, Messaoudi, Rv. 230758-01
+- `Rv 231157-01` (p.173,p.176) — Sez. 2, n. 11026 del 3/03/2005, Bec- chiglia, Rv. 231157-01
+- `Rv 232164` (p.253) — Sez. U, n. 41936 del 25/10/2005, Muci, Rv. 232164
+- `Rv 232302` (p.197) — Sez. U, n. 47164 del 20/12/2005, Marino, Rv. 232302
+- `Rv 232302-01` (p.200) — Sez. U, n. 47164 del 20/12/2005, Marino, Rv. 232302-01
+- `Rv 232593-01` (p.275,p.277) — Sez. 2, n. 40807 del 06/10/2005, Sokolovych, Rv. 232593-01
+- `Rv 232711-01` (p.248,p.249) — Sez. U, n. 04441 del 29/11/2005, Zito, Rv. 232711-01
+- `Rv 233346` (p.197) — Sez. 2, n. 4925 del 26/01/2006, Piselli, Rv. 233346
+- `Rv 233346-01` (p.200) — Sez. 2, n. 4925 del 26/01/2006, Piselli, Rv. 233346-01
+- `Rv 233642-01` (p.273,p.277) — Sez. 5, n. 16185 del 6/10/2004, Fusha, Rv. 233642-01
+- `Rv 234270-01` (p.294,p.300) — Sez. U, n. 26795 del 28/03/2006, Prisco, Rv. 234270-01
+- `Rv 234417-01` (p.304,p.310) — Sez. 5, n. 25595 del 17/05/2006, Rotolo, Rv. 234417-01
+- `Rv 234552-01` (p.140) — Sez. 5, n. 13673 del 08/03/2006, Haile, Rv. 234552-01
+- `Rv 235751` (p.99) — Sez. 3, n. 29878 del 28/06/2006, Gangi, Rv. 235751
+- `Rv 236421-01` (p.331) — Sez. 6, n. 17612 del 19/03/2017, Belnudo, Rv. 236421-01
+- `Rv 236536-01` (p.355) — Sez. U, n. 27614 del 29/03/2007, Lista, Rv. 236536-01
+- `Rv 236537-01` (p.358) — Sez. U, n. 27614 del 29/03/2007, Lista, Rv. 236537-01
+- `Rv 236880-01` (p.215,p.232) — Sez. 3, n. 22853 del 29/03/2007, Coluzzi, Rv. 236880-01
+- `Rv 236992-01` (p.65) — Sez. 4, n. 25532 del 23/05/2007, Montanino, Rv. 236992-01
+- `Rv 236994-01` (p.246,p.249) — Sez. 4, n. 26468 del 17/05/2007, Beben, Rv. 236994-01
+- `Rv 237311-01` (p.204,p.209) — Sez. 3, n. 37390 del 10/07/2007, Sposato, Rv. 237311-01
+- `Rv 238258-01` (p.221,p.232) — Sez. 3, n. 41577 del 20/09/2007, Ferraioli, Rv. 238258-01
+- `Rv 238300-01` (p.157,p.159) — Sez. 4, n. 43383 del 28/09/2007, Corsini, Rv. 238300-01
+- `Rv 239397-01` (p.217,p.232) — Sez. U, n. 18253 del 24/04/2008, Tchmil, Rv. 239397-01
+- `Rv 239435-01` (p.184) — Sez. 2, n. 7181 del 17/01/2008, Damiani, Rv. 239435-01
+- `Rv 239753` (p.197) — Sez. 2, n. 12266 del 27/02/2008, Magni, Rv. 239753
+- `Rv 239753-01` (p.200) — Sez. 2, n. 12266 del 27/02/2008, Magni, Rv. 239753-01
+- `Rv 239924` (p.252,p.253) — Sez. U, n. 26654 del 27/03/2008, Fisia Italimpianti, Rv. 239924
+- `Rv 240134-01` (p.140) — Sez. 1, n. 14346 del 22/01/2008, Oglialoro, Rv. 240134-01
+- `Rv 240659-01` (p.184) — Sez. 2, n. 31044 del 11/07/2008, Miano, Rv. 240659-01
+- `Rv 241094-01` (p.221,p.232) — Sez. 3, n. 35919 del 26/06/2008, Savoni, Rv. 241094-01
+- `Rv 241129-01` (p.140) — Sez. 1, n. 29292 del 23/09/2008, Letizia, Rv. 241129-01
+- `Rv 241189-01` (p.58) — Sez. 6, n. 35346 del 12/06/2008, Bonarrigo, Rv. 241189-01
+- `Rv 241356` (p.333) — Sez. U, n. 47803 del 27/11/2008, D’Avino, Rv. 241356
+- `Rv 241559-01` (p.315) — Sez. 1, n. 43814 del 08/10/2008, Sutera, Rv. 241559-01
+- `Rv 241979-01` (p.153,p.159) — Sez. 2, n. 45049 del 25/11/2008, Bodea, Rv. 241979-01
+- `Rv 242419-01` (p.66) — Sez. 6, n. 42688 del 24/09/2008, Caridi, Rv. 242419-01
+- `Rv 242879-01` (p.55) — Sez. 1, n. 10735 del 05/03/2009, Provvidenti, Rv. 242879-01
+- `Rv 242932-01` (p.51) — Sez. 6, n. 11564 del 12/03/2009, Masti, Rv. 242932-01
+- `Rv 243381-01` (p.140) — Sez. U, n. 22676 del 22/01/2009, Ronci, Rv. 243381-01
+- `Rv 243585-01` (p.179,p.183) — Sez. U, n. 24468 del 26/02/2009, Rizzoli, Rv. 243585-01
+- `Rv 243589-01` (p.69) — Sez. U, n. 25956 del 26/3/2009, Vitale, Rv. 243589-01
+- `Rv 243590-01` (p.321,p.322) — Sez. U, n. 25957 del 26/03/2009, Toni, Rv. 243590-01
+- `Rv 243608-01` (p.184,p.186) — Sez. 5, n. 14905 del 29/01/2009, Coppola, Rv. 243608-01
+- `Rv 243792-01` (p.204) — Sez. 1, n. 25184 del 04/03/2009, Saccardi, Rv. 243792-01
+- `Rv 243905-01` (p.229,p.231) — Sez. 3, n. 25485 del 18/06/2009, Consolo, Rv. 243905-01
+- `Rv 244189-01` (p.373) — Sez. U, n. 38691 del 25/06/2009, Caruso, Rv. 244189-01
+- `Rv 244273-01` (p.366) — Sez. U, n. 35490 del 28/05/2009, Tettamanti, Rv. 244273-01
+- `Rv 244329` (p.300) — Sez. U, n. 39061 del 16/07/2009, De Iorio, Rv. 244329
+- `Rv 244329-01` (p.296) — Sez. U, n. 39061 del 16/07/2009, De Iorio, Rv. 244329-01
+- `Rv 244612-01` (p.215,p.231) — Sez. 3, n. 39322 del 13/07/2009, Berardi, Rv. 244612-01
+- `Rv 244779-01` (p.243,p.249) — Sez. 3, n. 33532 del 05/05/2009, Brodosi, Rv. 244779-01
+- `Rv 244839` (p.252) — Sez. F, n. 33409 del 28/07/2009, Alloum, Rv. 244839
+- `Rv 244883` (p.100) — Sez. 2, n. 29468 del 31/03/2009, Frison, Rv. 244883
+- `Rv 244891-01` (p.218,p.232) — Sez. 3, n. 39075 del 21/05/2009, Bifulco, Rv. 244891-01
+- `Rv 245353` (p.60) — Sez. 1, n. 40176 del 01/10/2009, Russo, Rv. 245353
+- `Rv 245403-01` (p.231) — Sez. 3, n. 47281 del 21/10/2009, Arrigoni, Rv. 245403-01
+- `Rv 245404-01` (p.212) — Sez. 3, n. 47281 del 21/10/2009, Arrigoni, Rv. 245404-01
+- `Rv 245575-01` (p.375) — Sez. 1, n. 42661 del 28/10/2009, P.M. in proc. Shera, Rv. 245575-01
+- `Rv 245596-01` (p.58) — Sez. 2, n. 36245 del 26/06/2009, Denaro, Rv. 245596-01
+- `Rv 245893-01` (p.239,p.249) — Sez. 3, n. 49408 del 19/11/2009, Brocca, Rv. 245893-01
+- `Rv 245918-01` (p.210,p.231) — Sez. 3, n. 48925 del 22/10/2009, Viesti e altri, Rv. 245918-01
+- `Rv 245931-01` (p.63) — Sez. U, n. 10713 del 25/02/2010, Contaldo, Rv. 245931-01
+- `Rv 246270-01` (p.178,p.183) — Sez. U, n. 12822 del 21/01/2010, Marcarino, Rv. 246270-01
+- `Rv 246693-01` (p.174,p.176) — Sez. 6, n. 11145 del 02/03/2010, Maione, Rv. 246693-01
+- `Rv 247185-01` (p.248,p.249) — Sez. 3, n. 20785 del 15/04/2010, Venneri, Rv. 247185-01
+- `Rv 247186-01` (p.243,p.249) — Sez. 3, n. 20789 del 15/04/2010, Beani, Rv. 247186-01
+- `Rv 247274-01` (p.110) — Sez. U, n. 24476 del 22/04/2010, Gagliardi, Rv. 247274-01
+- `Rv 247606-01` (p.248,p.249) — Sez. 3, n. 20772 del 15/04/2010, Frioni, Rv. 247606-01
+- `Rv 247653-01` (p.218,p.231) — Sez. 3, n. 22237 del 22/04/2010, Gotti, Rv. 247653-01
+- `Rv 247838` (p.88) — Sez. U, n. 35738 del 27/05/2010, Calibè e altro, Rv. 247838
+- `Rv 247838-01` (p.84,p.85) — Sez. U, n. 35738 del 27/05/2010, Calibè, Rv. 247838-01
+- `Rv 247853` (p.108) — Sez. 2, n. 25085 del 18/06/2010, Amato, Rv. 247853
+- `Rv 247892` (p.395) — Sez. 5, n. 26155 del 21/04/2010, Rv. 247892; Sez. 5 n. 23692 del 07/05/2021, Rv. 281319-01
+- `Rv 247892-01` (p.395,p.409) — Sez. 5, n. 26155 del 21/04/2010, Rv. 247892-01; Sez. 5 n. 32984 del 16/06/2014, Rv. 261653-01
+- `Rv 248438-01` (p.140) — Sez. 1, n. 40202 del 13/10/2010, Gesuito, Rv. 248438-01
+- `Rv 248458-01` (p.51) — Sez. 4, n. 41569 del 27/10/2010, Negro, Rv. 248458-01
+- `Rv 248983` (p.100) — Sez. 6, n. 43444 del 26/11/2010, Giordano, Rv. 248983
+- `Rv 249104-01` (p.175) — Sez. U, n. 7537 del 16/12/2010, Pizzuto, Rv. 249104-01
+- `Rv 249317` (p.215) — Sez. 3, n. 3861 del 18/01/2011, Baldinucci, Rv. 249317
+- `Rv 249363-01` (p.241,p.249) — Sez. 3, n. 08435 del 16/02/2011, Fratea, Rv. 249363-01
+- `Rv 249451-01` (p.208,p.209) — Sez. 6, n. 6991 del 25/01/2011, Sirignano, Rv. 249451-01
+- `Rv 249664` (p.84,p.88) — Sez. U, n. 20798 del 24/02/2011, Indelicato, Rv. 249664
+- `Rv 249664-01` (p.85) — Sez. U, n. 20798 del 24/02/2011, Indelicato, Rv. 249664-01
+- `Rv 249717` (p.108) — Sez. 5, n. 10941 del 26/01/2011, Orabona, Rv. 249717
+- `Rv 249861-01` (p.186) — Sez. 2, n. 12795 del 09/03/2011, Beleniuc, Rv. 249861-01
+- `Rv 250336-01` (p.231) — Sez. 3, n. 19742 del 14/04/2011, Mercurio, Rv. 250336-01
+- `Rv 250372-01` (p.247,p.249) — Sez. 3, n. 21788 del 16/02/2011, Trentacoste, Rv. 250372-01
+- `Rv 250503` (p.333) — Sez. 6, n. 22512 del 24/05/2011, T., Rv. 250503
+- `Rv 250579-01` (p.312,p.317) — Sez. 5, n. 32852 del 05/07/2011, Nigro, Rv. 250579-01
+- `Rv 250975` (p.196) — Sez. U, n. 37954 del 25/05/2011, Orlando, Rv. 250975
+- `Rv 250975-01` (p.200) — Sez. U, n. 37954 del 25/05/2011, Orlando, Rv. 250975-01
+- `Rv 251031-01` (p.239,p.249) — Sez. 3, n. 36276 del 04/05/2011, Ferretti, Rv. 251031-01
+- `Rv 251041-01` (p.93) — Sez.3, n. 30557 del 15/7/2011, Di Martino, Rv. 251041-01
+- `Rv 251290` (p.225) — Sez. 3, n. 41079 del 20/09/2011, Latone, Rv. 251290
+- `Rv 251290-01` (p.231) — Sez. 3, n. 41079 del 20/09/2011, Latone, Rv. 251290-01
+- `Rv 251931-01` (p.101) — Sez. 4, n. 42015 del 12/10/2011, Diop, Rv. 251931-01
+- `Rv 252197-01` (p.208,p.209) — Sez. 2, n. 46669 del 23/11/2011, De Masi, Rv. 252197-01
+- `Rv 252453-05` (p.146,p.150) — Sez. U, n. 22225 del 19/01/2012, Micheli, Rv. 252453-05
+- `Rv 252682-01` (p.59) — Sez. 4, n. 20228 del 15/03/2012, Lucky, Rv. 252682-01
+- `Rv 252874-01` (p.304,p.311) — Sez. 6, n. 19008 del 17/04/2021, Senese, Rv. 252874-01
+- `Rv 253102` (p.108) — Sez. 1, n. 25833 del 23/04/2012, Testi, Rv. 253102
+- `Rv 253250` (p.275) — Sez. 6, n. 28697 del 17/04/2012, Wu, Rv. 253250
+- `Rv 253250-01` (p.277) — Sez. 6, n. 28697 del 17/04/2012, Wu, Rv. 253250-01
+- `Rv 253357-01` (p.140) — Sez. 5, n. 40389 del 17/05/2012, Perini, Rv. 253357-01
+- `Rv 253645-01` (p.55) — Sez. 4, n. 45751 del 08/11/2012, Longo, Rv. 253645-01
+- `Rv 253763-01` (p.35,p.46) — Sez. 5, n. 24128 del 27/04/2012, Di Cristo, Rv. 253763-01
+- `Rv 254043-01` (p.185) — Sez. F, n. 31497 del 26/07/2012, Abatematteo, Rv. 254043-01
+- `Rv 254341-01` (p.87) — Sez. 2, n. 40218 del 19/06/2012, Fatale, Rv. 254341-01
+- `Rv 255037` (p.255) — Sez. U, n. 18374 del 31/01/2013, Adami, Rv. 255037
+- `Rv 255052-01` (p.71) — Sez. 6, n. 7777 del 29/01/2013, Bardeggia, Rv. 255052-01
+- `Rv 255118-01` (p.308,p.310) — Sez. 3, n. 12641 del 05/02/2013, Pisano, Rv. 255118-01
+- `Rv 255153-01` (p.58) — Sez. 3, n. 10095 del 10/01/2013, Monte- rosso, Rv. 255153-01
+- `Rv 255347-01` (p.70) — Sez. U, n. 25939 del 28/02/2013, Ciabotti, Rv. 255347-01
+- `Rv 255665-01` (p.94) — Sez. 2, n. 22342 del 15/02/2013, Cafagna, Rv. 255665-01
+- `Rv 256431-01` (p.226,p.231) — Sez. 3, n. 38947 del 09/07/2013, Amore, Rv. 256431-01
+- `Rv 256464-01` (p.57) — Sez. 2, n. 28852 del 08/05/2013, Taurasi, Rv. 256464-01
+- `Rv 256502` (p.197) — Sez. 5, n. 22200 del 10/04/2013, Del Giudice, Rv. 256502
+- `Rv 256502-01` (p.200) — Sez. 5, n. 22200 del 10/04/2013, Del Giudice, Rv. 256502-01
+- `Rv 257055-01` (p.375) — Sez. 3, n. 42167 del 09/07/2013, Di Meo, Rv. 257055-01
+- `Rv 257296-01` (p.181,p.183) — Sez. 1, n. 42890 del 27/09/2013, Paterlini, Rv. 257296-01
+- `Rv 257350-01` (p.246,p.250) — Sez. F, n. 41688 del 27/08/2023, Di Giu- seppe, Rv. 257350-01
+- `Rv 257431-01` (p.173,p.176) — Sez. 2, n. 48820 del 23/10/2013, Brunialti, Rv. 257431-01
+- `Rv 258054-01` (p.157,p.159) — Sez. 3, n. 48096 del 06/11/2013, Tavernaro, Rv. 258054-01
+- `Rv 258356-01` (p.58) — Sez. 4, n. 27959 del 18/06/2013, Dell’Utri, Rv. 258356-01
+- `Rv 258646` (p.255) — Sez. U, n. 10561 del 30/01/2014, Gubert, Rv. 258646
+- `Rv 258652-01` (p.70) — Sez. U, n. 16208 del 27/03/2014, C., Rv. 258652-01
+- `Rv 258661-01` (p.309,p.310) — Sez. 5, n. 43382 del 19/09/2013, Punturiero, Rv. 258661-01
+- `Rv 259253-01` (p.51) — Sez. 6, n. 15157 del 20/03/2014, La Rosa, Rv. 259253-01
+- `Rv 259657-01` (p.249) — Sez. 3, n. 23958 del 04/03/2014, Valeri, Rv. 259657-01
+- `Rv 259659-01` (p.241,p.249) — Sez. 3, n. 23958 del 04/03/2014, Valeri, Rv. 259659-01
+- `Rv 259826-01` (p.203,p.209) — Sez. 1, n. 37577 del 25/03/2014, Bonazza, Rv. 259826-01
+- `Rv 259992-01` (p.373) — Sez. U, n. 36848 del 17/07/2014, Burba, Rv. 259992-01
+- `Rv 260565-01` (p.401,p.410) — Sez. 5, n. 27177 del 19/03/2014, V., Rv. 260565-01
+- `Rv 260642-01` (p.41,p.46) — Sez. 4, n. 44119 del 26/09/2014, Calogero, Rv. 260642-01
+- `Rv 260695` (p.36,p.45) — Sez. U, n. 42858 del 29/05/2014, Gatto, Rv. 260695
+- `Rv 260696` (p.77) — Sez. U, n. 42858 del 29/05/2014, Gatto, Rv. 260696
+- `Rv 261116` (p.253) — Sez. U, n. 38343 del 24/04/2014, Espenhahn, Rv. 261116
+- `Rv 261118` (p.263) — Sez. U, n. 51660 del 25/09/2014, Zambito, Rv. 261118
+- `Rv 261132-01` (p.315) — Sez. 1, n. 45140 del 20/06/2014, De Biase, Rv. 261132-01
+- `Rv 261140-01` (p.168,p.176) — Sez. 2, n. 48663 del 17/10/2014, Talone, Rv. 261140-01
+- `Rv 261537-01` (p.273,p.277) — Sez. 6, n. 50766 del 12/11/2014, Awoh, Rv. 261537-01
+- `Rv 261640-01` (p.275,p.277) — Sez. 5, n. 33775 del 27/02/2014, Ilie, Rv. 261640-01
+- `Rv 261998-01` (p.275,p.277) — Sez. 1, n. 2263 del 14/05/2014, Tahiri, Rv. 261998-01
+- `Rv 262108-01` (p.35,p.46) — Sez. 5, n. 46122 del 13/06/2014, Oguekemma, Rv. 262108-01
+- `Rv 262206` (p.101) — Sez. 5, n. 38771 del 17/06/2014, Popa, Rv. 262206
+- `Rv 262290-01` (p.70) — Sez. 2, n. 4984 del 21/01/2015, Giannone, Rv. 262290-01
+- `Rv 263124` (p.258) — Sez. 6, n. 15923 del 26/03/2015, Antonelli, Rv. 263124
+- `Rv 263236-01` (p.273,p.277) — Sez. 3, n. 14990 del 18/02/2015, Vervaeren, Rv.263236-01
+- `Rv 263558` (p.108) — Sez. 3, n. 19326 del 27/01/2015, Pritoni, Rv. 263558
+- `Rv 263675-01` (p.94) — Sez. 5, n. 21557 del 02/02/2015, Solazzo, Rv. 263675-01
+- `Rv 263714` (p.37,p.45) — Sez. U, n. 22471 del 26/02/2015, Sebbar, Rv. 263714
+- `Rv 263717-01` (p.70) — Sez. U, n. 22471 del 26/2/2015, Sebbar, Rv. 263717-01
+- `Rv 263936-01` (p.304,p.310) — Sez. 6, n. 237229 del 23/04/2015, Ciervo, Rv. 263936-01
+- `Rv 263962-01` (p.188) — Sez. 1, n. 25230 del 13/03/2015, Confl. comp. in proc. Migliorati, Rv. 263962-01
+- `Rv 264205` (p.36,p.45,p.78) — Sez. U, n. 33040 del 26/02/2015, Jazouli, Rv. 264205
+- `Rv 264223-01` (p.154,p.159) — Sez. 2, n. 32989 del 10/04/2015, Lupatteli, Rv. 264223-01
+- `Rv 264343` (p.252) — Sez. 3, n. 27072 del 12/05/2015, Bertelli, Rv. 264343
+- `Rv 264381-01` (p.375) — Sez. U, n. 37345 del 23/04/2015, P.M. in proc. Longo, Rv. 264381-01
+- `Rv 264436` (p.253) — Sez. U, n. 31617 del 26/06/2015, Lucci, Rv. 264436
+- `Rv 264437` (p.257) — Sez. U, n. 31617 del 26/06/2015, Lucci, Rv. 264437
+- `Rv 264490-01` (p.148) — Sez. 3, n. 32695 del 27/03/2015, Genco, Rv. 264490-01
+- `Rv 264533-01` (p.87) — Sez. 2, n. 39743 del 17/09/2015, De Vento, Rv. 264533-01
+- `Rv 264726-01` (p.49,p.60) — Sez. 3, n. 37867 del 18/06/2015, Di Santo, Rv. 264726-01
+- `Rv 264736-01` (p.231) — Sez. 3, n. 36387 del 07/07/2015, Formisano, Rv. 264736-01
+- `Rv 264857` (p.37,p.45) — Sez. U, n. 37107 del 26/02/2015, Marcon, Rv. 264857
+- `Rv 264857-01` (p.77) — Sez. U, n. 37107 del 26/02/2015, Marcon, Rv. 264857-01
+- `Rv 265106` (p.45) — Sez. U, n. 47766 del 26/06/2015, Butera, Rv. 265106
+- `Rv 265108-01` (p.26) — Sez. U, n. 47766 del 26/06/2015, Butera, Rv. 265108-01
+- `Rv 265109-01` (p.31,p.77) — Sez. U, n. 47766 del 26/06/2015, Butera, Rv. 265109-01
+- `Rv 265110` (p.37,p.45) — Sez. U, n. 46653 del 26/06/2015, Della Fazia, Rv. 265110
+- `Rv 265111` (p.77) — Sez. U, n. 46653 del 26/06/2015, Della Fazia, Rv. 265111
+- `Rv 265213-01` (p.275,p.277) — Sez. 2, n. 46139 del 28/10/2015, Reznikov, Rv. 265213-01
+- `Rv 265283-01` (p.51,p.57) — Sez. 4, n. 46412 del 05/11/2015, Scaramozzino, Rv. 265283-01
+- `Rv 265292` (p.252) — Sez. 5, n. 25560 del 20/05/2015, Gilardi, Rv. 265292
+- `Rv 265540-01` (p.211,p.231) — Sez. 3, n. 49331 del 10/11/2015, Delorier, Rv. 265540-01
+- `Rv 265775-01` (p.340) — Sez. 2, n. 2291 del 27/10/2015, Harca, Rv. 265775-01
+- `Rv 266223-01` (p.246,p.249) — Sez. 3, n. 06640 del 27/01/2016, Michelotto, Rv. 266223-01
+- `Rv 266488-01` (p.239,p.249) — Sez. 3, n. 10977 del 28/01/2016, P.M. in proc. Balducci, Rv. 266488-01
+- `Rv 266514-01` (p.82) — Sez. 6, n. 10169 del 10/02/2016, Tamburini, Rv. 266514-01
+- `Rv 266520-01` (p.168,p.175) — Sez. 2, n. 15989 del 16/03/2016, Fiesta, Rv. 266520-01
+- `Rv 26659-01` (p.155,p.159) — Sez. U, n. 13681 del 25/02/2016, Tushaj, Rv. 26659-01
+- `Rv 266632-01` (p.246,p.249) — Sez. 3, n. 15089 del 27/01/2016, D’Urso, Rv. 266632-01
+- `Rv 266650-01` (p.402,p.409) — Sez. U, n. 20769 del 28/04/2016, Lovisi, Rv. 266650-01
+- `Rv 266769-01` (p.246,p.249) — Sez. 3, n. 08678 del 04/02/2016, La Marca, Rv. 266769-01
+- `Rv 266833-01` (p.55) — Sez. 3, n. 14738 del 11/02/2016, Lupo, Rv. 266833-01
+- `Rv 266871-01` (p.162,p.165) — Sez. 6, n. 12658 del 2/3/2016, Tripodi, Rv. 266871-01
+- `Rv 266905-01` (p.294,p.300) — Sez. U, n. 26889 del 28/04/2016, Scurato, Rv. 266905-01
+- `Rv 267023-01` (p.247,p.250) — Sez. 3, n. 20753 del 04/02/2016, Villani, Rv. 267023-01
+- `Rv 267146-01` (p.245,p.250) — Sez. 3, n. 22266 del 02/02/2016, Cassanelli e altri, Rv. 267146-01
+- `Rv 267209-01` (p.306,p.310) — Sez. 6, n. 19008 del 21/4/2016, S., Rv. 267209-01
+- `Rv 267237-01` (p.103) — Sez. U, n. 33216 del 31/03/2016, Rigacci, Rv. 267237-01
+- `Rv 267238` (p.103) — Sez. U, n. 36272 del 31/03/2016, Sorcinelli, Rv. 267238
+- `Rv 267294-01` (p.243,p.250) — Sez. 3, n. 23305 del 28/01/2016, Califano, Rv. 267294-01
+- `Rv 267676-01` (p.218,p.231) — Sez. 3, n. 23718 del 08/04/2016, Pacera, Rv. 267676-01
+- `Rv 267885-01` (p.366) — Sez. U, n. 46688 del 29/09/2016, Schirru, Rv. 267885-01
+- `Rv 267896` (p.329,p.333) — Sez.4, n. 39527 del 6/7/2016, Sigolo, Rv. 267896
+- `Rv 267906-01` (p.91) — Sez. 3, n. 42737 del 06/07/2016, R, Rv. 267906-01
+- `Rv 268011-01` (p.189) — Sez. F, n. 37400 del 30/08/2016, F., Rv. 268011-01
+- `Rv 268133-01` (p.218,p.231) — Sez. 3, n. 45432 del 25/05/2016, Ligorio, Rv. 268133-01
+- `Rv 268229-01` (p.80) — Sez. 4, n. 40903 del 28/06/2016, Grassi, Rv. 268229-01
+- `Rv 268241-01` (p.241) — Sez. 3, n. 41501 del 28/06/2016, Orchide, Rv. 268241-01
+- `Rv 268299-01` (p.141) — Sez. 5, n. 44986 del 21/09/2016, Mulé, Rv. 268299-01
+- `Rv 268353` (p.245) — Sez. 5, n. 52294 del 15/11/2016, Costantini e altri, Rv. 268353
+- `Rv 268353-01` (p.250) — Sez. 5, n. 52294 del 15/11/2016, Costantini e altri, Rv. 268353-01
+- `Rv 268369-01` (p.190) — Sez. 2, n. 48027 del 20/10/2016, Vallelonga, Rv. 268369-01
+- `Rv 268526-01` (p.188) — Sez. 2, n. 49321 del 25/10/2016, Alfano, Rv. 268526-01
+- `Rv 268844-01` (p.231) — Sez. 3, n. 55295 del 22/09/2016, Fontana, Rv. 268844-01
+- `Rv 269085-01` (p.240,p.249) — Sez. 3, n. 01767 del 07/04/2016, Flore, Rv. 269085-01
+- `Rv 269125-01` (p.388) — Sez. U, n. 12872 del 19/01/2017, Punzo, Rv. 269125-01
+- `Rv 269381-01` (p.173,p.176) — Sez. 2, n. 53667 del 2/12/2016, Bellucci, Rv. 269381-01
+- `Rv 269429-01` (p.188) — Sez. 2, n. 14730 del 10/01/2017, Spagnolo, Rv. 269429-01
+- `Rv 269668` (p.198) — Sez. U, n. 20664 del 23/02/2017, Stalla, Rv. 269668
+- `Rv 269668-01` (p.200,p.209) — Sez. U, n. 20664 del 23/02/2017, Stalla, Rv. 269668-01
+- `Rv 269688-01` (p.185) — Sez. 2, n. 11102 del 14/02/2017, Giannelli, Rv. 269688-01
+- `Rv 269745-01` (p.89) — Sez. 2, n. 13826 del 17/02/2017, Bolognese, Rv. 269745-01
+- `Rv 269753-01` (p.203,p.209) — Sez. 1, n. 11038 del 02/03/2016, Goglio, Rv. 269753-01
+- `Rv 269822-01` (p.68) — Sez. 1, n. 17832 del 24/01/2017, Dogali, Rv. 269822-01
+- `Rv 270316` (p.89) — Sez. 2, n. 29707 del 08/03/2017, Galdi, Rv. 270316
+- `Rv 270348` (p.104) — Sez. 6, n. 29796 del 25/05/2017, Feraboli, Rv. 270348
+- `Rv 270450-01` (p.65) — Sez. 2, n. 31543 del 08/06/2017, Pennelli, Rv. 270450-01
+- `Rv 270610-01` (p.273) — Sez. 4, n. 33802 del 18/05/2017, Ojeareghan, Rv. 270610-01
+- `Rv 270694` (p.68) — Sez. 3, n. 35570 del 30/05/2017, Di Luca, Rv. 270694
+- `Rv 270694-01` (p.66) — Sez. 3, n. 35570 del 30/05/2017, Di Luca, Rv. 270694-01
+- `Rv 270788-01` (p.241,p.250) — Sez. 3, n. 35557 del 11/05/2017, Zazzaro, Rv. 270788-01
+- `Rv 271243-01` (p.49,p.57) — Sez. 2, n. 36104 del 27/04/2017, Mastro, Rv. 271243-01
+- `Rv 271283-01` (p.162,p.165) — Sez. 6, n. 41768 del 22/6/2017, Fitto, Rv. 271283-01
+- `Rv 271315` (p.68) — Sez. 1, n. 46568 del 18/05/2017, Lamin, Rv. 271315
+- `Rv 271484-01` (p.51) — Sez. 6, n. 44874 del 11/09/2017, Dessi, Rv. 271484-01
+- `Rv 271642` (p.104) — Sez. 3, n. 39455 del 10/05/2017, La Barbera, Rv. 271642
+- `Rv 271655-01` (p.272,p.277) — Sez. 6, n. 51951 del 17/10/2017, Minte, Rv.271655-01
+- `Rv 271675` (p.100) — Sez. 6, n. 56297 del 16/11/2017, Alvarez, Rv. 271675
+- `Rv 271731-01` (p.94) — Sez. 6, n. 52730 del 28/09/2017, S., Rv. 271731-01
+- `Rv 272019-01` (p.51) — Sez. 2, n. 4594 del 17/01/2018, Can- tile, Rv. 272019-01
+- `Rv 272444-01` (p.309,p.310) — Sez. 5, n. 5458 del 9/01/2018, Bernini, Rv. 272444-01
+- `Rv 272458-01` (p.54) — Sez. 6, n. 12391 del 18/01/2018, Pupo, Rv. 272458-01
+- `Rv 272715-01` (p.153,p.159,p.321,p.322) — Sez. U, n. 20569 del 18/01/2018, Ksouri, Rv. 272715-01
+- `Rv 272778-01` (p.243,p.250) — Sez. 3, n. 17753 del 06/03/2018, Fici, Rv. 272778-01
+- `Rv 272832-01` (p.382) — Sez. 1, n. 19457 del 16/01/2018, Signoretto, Rv. 272832-01
+- `Rv 272968` (p.252) — Sez. 2, n. 29395 del 26/04/2018, Pasero, Rv. 272968
+- `Rv 273156` (p.333) — Sez. 3, n. 14008 del 14/12/2017, B., Rv. 273156
+- `Rv 273218-01` (p.229,p.231) — Sez. 3, n. 46477 del 13/07/2017, Menga e altri, Rv. 273218-01
+- `Rv 273256` (p.252) — Sez. 6, n. 26621 del 10/04/2018, Ahmed, Rv. 273256
+- `Rv 273284-01` (p.141) — Sez. 5, n. 23606 del 04/04/2018, Perrone, Rv. 273284-01
+- `Rv 273320-01` (p.92) — Sez. 3, n. 26259 del 10/05/2018, Madaghiele, Rv. 273320-01
+- `Rv 273368-01` (p.220,p.231) — Sez. 3, n. 24882 del 26/04/2018, Ferrante, Rv. 273368-01
+- `Rv 273548` (p.263) — Sez. U, n. 36072 del 19/04/2018, Botti- celli, Rv. 273548
+- `Rv 273604` (p.252) — Sez. 3, n. 56451 del 05/12/2017, Maiorana, Rv. 273604
+- `Rv 273750` (p.70) — Sez. U, n. 40983 del 21/6/2018, Giglia, Rv. 273750
+- `Rv 273783` (p.162,p.165) — Sez. 6, n. 19484 del 23/1/2018, Bellinazzo, Rv. 273783
+- `Rv 274076-01` (p.144,p.148,p.150) — Sez. U, n. 51063 del 27/09/2018, Murolo, Rv. 274076-01
+- `Rv 274141` (p.329,p.333) — Sez.5, n. 48342 del 28/6/2018, G., Rv. 274141
+- `Rv 274141-01` (p.324) — Sez. 5, n. 48342 del 28/06/2018, G., Rv. 274141-01
+- `Rv 274375-01` (p.41,p.46) — Sez. 5, n. 49865 del 14/09/2018, G., Rv. 274375-01
+- `Rv 274413-01` (p.96) — Sez. 5, n. 5882 del 29/01/2019, Baù, Rv. 274413-01
+- `Rv 274446-01` (p.85) — Sez. 5, n. 50510 del 20/09/2018, La Cava, Rv. 274446-01
+- `Rv 274617-01` (p.397,p.409) — Sez. 6, n. 4935 del 23/01/2019, M., Rv. 274617-01
+- `Rv 275048` (p.258) — Sez. 6, n. 6816 del 29/01/2019, Sena, Rv. 275048
+- `Rv 275085-01` (p.403,p.409) — Sez. 6, n. 7139 del 16/01/2019, G., Rv. 275085-01
+- `Rv 275315-02` (p.397,p.409) — Sez. 5, n. 21133 del 25/03/2019, C., Rv. 275315-02
+- `Rv 275716` (p.373) — Sez. U, n. 28912 del 28/02/2019, Innaro, Rv. 275716
+- `Rv 275730-01` (p.178,p.183) — Sez. 6, n. 17980 del 14/04/2019, Nigro, Rv. 275730-01
+- `Rv 275894-02` (p.209) — Sez. 1, n. 21409 del 27/03/2019, Leccisi, Rv. 275894-02
+- `Rv 275953-02` (p.217,p.231) — Sez. U, n. 28911 del 28/09/2019, Massaria, Rv. 275953-02
+- `Rv 276248` (p.92) — Sez. 5, n. 19721 del 11/04/2019, P., Rv. 276248
+- `Rv 276274` (p.218,p.231) — Sez. 3, n. 30547 del 06/03/2019, Chiocchio, Rv. 276274
+- `Rv 276288-01` (p.51,p.57) — Sez. 3, n. 29968 del 22/02/2019, Del Papa, Rv. 276288-01
+- `Rv 276408-01` (p.378) — Sez. 1, n. 30710 del 10/05/2019, Dinar, Rv. 276408-01
+- `Rv 276463-01` (p.154,p.159) — Sez. U, n. 38954 del 30/05/2019, De Martino, Rv. 276463-01
+- `Rv 276504-01` (p.378) — Sez. 1, n. 30709 del 10/05/2019, Coccia, Rv. 276504-01
+- `Rv 276583-01` (p.147) — Sez. 4, n. 29920 del 17/01/2019, Padricelli, Rv. 276583-01
+- `Rv 276629-01` (p.159) — Sez. 5, n. 17348 del 9/01/2019, Giuliani, Rv. 276629-01
+- `Rv 276676-02` (p.143,p.150) — Sez. 4, n. 34413 del 18/06/2019, Khess, Rv. 276676-02
+- `Rv 276689` (p.104) — Sez. 4, n. 33260 del 09/07/2019, Marinelli, Rv. 276689
+- `Rv 276697-01` (p.397,p.409) — Sez. 6, n. 37628 del 25/06/2019, C., Rv. 276697-01
+- `Rv 276804-01` (p.141) — Sez. 6, n. 25390 del 31/01/2019, Gorbunova, Rv. 276804-01
+- `Rv 276887-01` (p.374) — Sez. 3, n. 37132 del 22/05/2019, Sepulveda Santander, Rv. 276887-01
+- `Rv 276932-01` (p.58) — Sez. 5, n. 35100 del 27/06/2019, Torre, Rv. 276932-01
+- `Rv 277058-01` (p.57,p.61) — Sez. 3, n. 42121 del 08/04/2019, Egbule, Rv. 277058-01
+- `Rv 277078-01` (p.304,p.310) — Sez. 2, n. 36125 del 26/06/2019, Polichetti, Rv. 277078-01
+- `Rv 277084-01` (p.141) — Sez. 5, n. 45356 del 02/10/2019, C., Rv. 277084-01
+- `Rv 277335-01` (p.153,p.159) — Sez. 1, n. 46433 del 13/09/2019, Hrurtic, Rv. 277335-01
+- `Rv 277349-01` (p.225,p.231) — Sez. 3, n. 48026 del 10/10/2019, Casola, Rv. 277349-01
+- `Rv 277500-01` (p.218,p.231) — Sez. 3, n. 35203 del 18/06/2019, Centioni, Rv. 277500-01
+- `Rv 277519` (p.104) — Sez. 5, n. 49478 del 13/11/2019, Annunziata, Rv. 277519
+- `Rv 277521-01` (p.403,p.410) — Sez. 5, n. 19759 del 16/04/2019, G., Rv. 277521-01
+- `Rv 277526` (p.203) — Sez. 1, n. 36162 del 18/04/2019, Alberga, Rv. 277526
+- `Rv 277526-01` (p.209) — Sez. 5, n. 36162 del 18/04/2013, Alberga, Rv. 277526-01
+- `Rv 277551` (p.104) — Sez. 5, n. 48258 del 04/11/2019, Cusimano, Rv. 277551
+- `Rv 277569-01` (p.178,p.183) — Sez. 6, n. 51124 del 19/06/2019, Duccoli, Rv. 277569-01
+- `Rv 277582` (p.225) — Sez. 3, n. 36215 del 15/05/2019, Sorini, Rv. 277582
+- `Rv 277604-01` (p.94) — Sez. 5, n. 40041 del 18/06/2019, Peron, Rv. 277604-01
+- `Rv 277686-01` (p.319,p.322) — Sez. 3, n. 34091 del 16/05/2019, P., Rv. 277686-01
+- `Rv 277756-01` (p.319,p.322) — Sez. 3, n. 47572 del 10/10/2019, P., Rv. 277756-01
+- `Rv 277861-01` (p.188) — Sez. 1, n. 52003 del 22/11/2019, Trib. Napoli, Rv. 277861-01
+- `Rv 277949-03` (p.296,p.300) — Sez. 4, n. 49896 del 05/10/2019, Brandimarte, Rv. 277949-03
+- `Rv 277972-01` (p.95) — Sez. 3, n. 41061 del 20/06/2019, Paternò, Rv. 277972-01
+- `Rv 277994-01` (p.220,p.231) — Sez. 3, n. 48021 del 11/09/2019, Gior- dano, Rv. 277994-01
+- `Rv 278166-02` (p.296,p.300) — Sez. 3, n. 38009 del 11/09/2019, Assisi, Rv. 278166-02
+- `Rv 278381-02` (p.94) — Sez. 5, n. 40480 del 24/06/2019, P., Rv. 278381-02
+- `Rv 278421-01` (p.236,p.237) — Sez. 3, n. 9417 del 14/01/2020, Quattri, Rv. 278421-01
+- `Rv 278455-01` (p.168,p.175) — Sez. 6, n. 7963 del 26/11/2019, Romano, Rv. 278455-01
+- `Rv 278653` (p.104) — Sez. 4, n. 10787 del 14/01/2020, Buemi, Rv. 278653
+- `Rv 278661-01` (p.369,p.374) — Sez. 5, n. 8464 del 24/01/2020, Nure, Rv. 278661-01
+- `Rv 278725` (p.92) — Sez. 6, n. 12079 del 20/02/2020, Taher, Rv. 278725
+- `Rv 278845-01` (p.394,p.409) — Sez. 6, n. 14172 del 29/01/2020, M., Rv. 278845-01
+- `Rv 278869` (p.58) — Sez. U, n. 12778 del 27/02/2020, S., Rv. 278869
+- `Rv 278929-01` (p.93) — Sez.5, n. 11738 del 30/1/2020, Crescenzo, Rv. 278929-01
+- `Rv 278945-01` (p.143,p.144,p.150) — Sez. 3, n. 16598 del 20/02/2020, Graziani, Rv. 278945-01
+- `Rv 278965-01` (p.404) — Sez. 6, n. 17680 del 27/05/2020, P., Rv. 278965-01
+- `Rv 278988` (p.196) — Sez. 2, n. 12434 del 19/02/2020, Di Grazia, Rv. 278988
+- `Rv 278988-01` (p.200) — Sez. 2, n. 12434 del 19/02/2020, Di Grazia, Rv. 278988-01
+- `Rv 279033-01` (p.93) — Sez.2, n. 12789 del 13/2/2020, Vinci, Rv. 279033-01
+- `Rv 279115` (p.333) — Sez. 5, n. 17272 del 6/03/2020, Amico, Rv. 279115
+- `Rv 279115-01` (p.324) — Sez. 5, n. 17272 del 06/03/2020, Amico, Rv. 279115-01
+- `Rv 279233-01` (p.148) — Sez. 3, n. 13120 del 06/02/2020, Ilardi, Rv. 279233-01
+- `Rv 279447` (p.272) — Sez.5, n.22065 del 06/07/2020, Bhiari Zsolt, Rv. 279447
+- `Rv 279447-01` (p.277) — Sez.5, n.22065 del 06/07/2020, Bhiari Zsolt, Rv. 279447-01
+- `Rv 279484-01` (p.188) — Sez. 2, n. 23781 del 17/07/2020, Onnis, Rv. 279484-01
+- `Rv 279494` (p.252,p.260) — Sez. 5, n. 19091 del 26/02/2020, Buonpensiere, Rv. 279494
+- `Rv 279549-02` (p.67) — Sez. 2, n. 23903 del 15/07/2020, Marigliano, Rv. 279549-02
+- `Rv 279604-01` (p.319,p.322) — Sez. 6, n. 24996 del 15/07/2020, P., Rv. 279604-01
+- `Rv 279648-01` (p.94) — Sez. 2, n. 26958 del 24/07/2020, Valente, Rv. 279648-01
+- `Rv 279677` (p.162) — Sez. 6, n. 27910 del 23/09/2020, Perricone, Rv. 279677
+- `Rv 279677-01` (p.162,p.165) — Sez. 6, n. 27910 del 23/9/2020, Perric- cone, Rv. 279677-01
+- `Rv 279773` (p.92) — Sez. 2, n. 29001 del 29/09/2020, Bongi, Rv. 279773
+- `Rv 279823-01` (p.245,p.250) — Sez. 3, n. 23514 del 08/07/2020, Bozzi, Rv. 279823-01
+- `Rv 279827` (p.258) — Sez. 3, n. 23040 del 01/07/2020, Multi Service s.r.l., Rv. 279827
+- `Rv 279906-01` (p.382) — Sez. 5, n. 23133 del 09/07/2020, Bordonaro, Rv. 279906-01
+- `Rv 279950` (p.394,p.409) — Sez. 6, n. 29672 del 14/09/2020, F., Rv. 279950
+- `Rv 279979` (p.333) — Sez. 5, n. 34530 del 12/10/2020, Gaetani, Rv. 279979
+- `Rv 279979-01` (p.324) — Sez. 5, n. 34530 del 12/10/2020, Gaetani, Rv. 279979-01
+- `Rv 279994-01` (p.367,p.374) — Sez. 1, n. 32267 del 30/10/2020, Scimone, Rv. 279994-01
+- `Rv 280137-01` (p.374) — Sez. 5, n. 31201 del 15/09/2020, Ramadze, Rv. 280137-01
+- `Rv 280322` (p.252) — Sez. 5, n. 36069 del 20/10/2020, Carbone, Rv. 280322
+- `Rv 280445-01` (p.82) — Sez. 3, n. 35695 del 18/09/2020, L, Rv. 280445-01
+- `Rv 280596` (p.253,p.260) — Sez. 6, n. 4727 del 20/01/2021, Russo, Rv. 280596
+- `Rv 280796-01` (p.247,p.250) — Sez. 3, n. 15973 del 04/03/2020, Belviso, Rv. 280796-01
+- `Rv 280846-01` (p.394,p.409) — Sez. 6, n. 13439 del 28/01/2021, B., Rv. 280846-01
+- `Rv 280853-01` (p.104) — Sez. 6, n. 13747 del 10/02/2021, El Moutaouakil, Rv. 280853-01
+- `Rv 280866-01` (p.66) — Sez. 3, n. 13274 del 05/03/2021, G, Rv. 280866-01
+- `Rv 281046` (p.253) — Sez. 6, n. 6607 del 21/10/2020, Venuti, Rv. 281046
+- `Rv 281084-01` (p.173,p.176) — Sez. 6, n. 10790 del 08/01/2021, Caruso, Rv. 281084-01
+- `Rv 281092-01` (p.397,p.409) — Sez. 6, n. 17888 del 11/02/2021, O., Rv. 281092-01
+- `Rv 281180-01` (p.153,p.159) — Sez. 5, n. 20595 del 15/02/2021, Ferrante, Rv. 281180-01
+- `Rv 281240-01` (p.228,p.231) — Sez. 3, n. 12950 del 25/01/2021, Mirra, Rv. 281240-01
+- `Rv 281331-01` (p.304,p.310) — Sez. 3, n. 23113 del 16/02/2021, Strazzeri, Rv. 281331-01
+- `Rv 281432-01` (p.379) — Sez. 1, n. 24103 del 08/04/2021, Fosco, Rv. 281432-01
+- `Rv 281453-01` (p.35,p.46) — Sez. 2, n. 22494 del 25/05/2021, Karis, Rv. 281453-01
+- `Rv 281456-01` (p.85) — Sez. 2, n. 22966 del 09/03/2021, Virgilio, Rv. 281456-01
+- `Rv 281510-01` (p.94) — Sez. 6, n. 22094 del 18/03/2021, Orsi, Rv. 281510-01
+- `Rv 281583-01` (p.178,p.183) — Sez. 6, n. 26437 del 08/06/2021, Casanova, Rv. 281583-01
+- `Rv 281614-01` (p.178,p.183) — Sez. 1, n. 23877 del 05/05/2021, Abbondan- dolo, Rv. 281614-01
+- `Rv 281718-01` (p.318,p.322) — Sez. 3, n. 29594 del 28/05/2021, P., Rv. 281718-01
+- `Rv 281765-01` (p.367,p.374) — Sez. 3, n. 29592 del 20/05/2021, Carroc- cia, Rv. 281765-01
+- `Rv 281836-01` (p.142,p.143,p.150) — Sez. 4, n. 30233 del 07/07/2021, D’Agostino, Rv. 281836-01
+- `Rv 281848` (p.263) — Sez. U, n. 36959 del 24/06/2021, Ellade, Rv. 281848
+- `Rv 281923-01` (p.149,p.150) — Sez. 4, n. 36535 del 15/09/2021, A., Rv. 281923-01
+- `Rv 281925` (p.374) — Sez. 4, n. 36560 del 22/09/2021, Vezuli, Rv. 281925
+- `Rv 281925-01` (p.367) — Sez. 4, n. 36560 del 22/09/2021, Vezuli, Rv. 281925-01
+- `Rv 281980-01` (p.178,p.183) — Sez. 6, n. 29657 del 02/02/2021, Lepore, Rv. 281980-01
+- `Rv 281996-01` (p.178,p.183) — Sez. 6, n. 35581 del 12/05/2021, Grasso, Rv. 281996-01
+- `Rv 281997-17` (p.141) — Sez. 4, n. 32899 del 08/01/2021, Castaldo, Rv. 281997-17
+- `Rv 282` (p.94) — Sez. 6, n. 46959 del 19/10/2021, P., Rv. 282
+- `Rv 282012` (p.252) — Sez. 1, n. 38034 del 09/07/2021, Degennaro, Rv. 282012
+- `Rv 282025-01` (p.399,p.409) — Sez. 5, n. 37460 del 22/09/2021, P., Rv. 282025-01
+- `Rv 282037` (p.258) — Sez. U, n. 42415 del 27/05/2021, C., Rv. 282037
+- `Rv 282037-01` (p.191) — Sez. U, n. 42415 del 27/05/2021, C., Rv. 282037-01
+- `Rv 282076-01` (p.380) — Sez. 1, n. 39190 del 09/07/2021, Stambazzi, Rv. 282076-01
+- `Rv 282105` (p.174) — Sez. 6, n. 31223 del 24/06/2021, Ciccarini, Rv. 282105
+- `Rv 282228-01` (p.304,p.311) — Sez. 1, n. 44595 del 19/10/2021, Macheda, Rv. 282228-01
+- `Rv 282269-01` (p.60,p.68,p.69) — Sez. U, n. 47127 del 24/06/2021, Pizzone, Rv. 282269-01
+- `Rv 282293-01` (p.175,p.176) — Sez. 6, n. 45917 del 23/09/2021, Prigitano, Rv. 282293-01
+- `Rv 282354-01` (p.318,p.322) — Sez. 6, n. 46109 del 28/10/2021, P., Rv. 282354-01
+- `Rv 282380-01` (p.366) — Sez. 5, n. 46780 del 20/09/2021, Nobile, Rv. 282380-01
+- `Rv 282460-01` (p.274,p.277) — Sez. 3, n. 41786 del 26/10/2021, Gabbianelli, Rv. 282460-01
+- `Rv 282500-01` (p.209) — Sez. 1, n. 3806 del 19/11/2021, Buzzi, Rv. 282500-01
+- `Rv 282675-01` (p.168,p.175) — Sez. 6, n. 2125 del 24/11/2021, Bonfanti, Rv. 282675-01
+- `Rv 282910-01` (p.88) — Sez. 6, n. 8291 del 10/02/2022, Castrofilippo, Rv. 282910-01
+- `Rv 282914` (p.203) — Sez. 1, n. 7904 del 12/10/2021, Scordo, Rv. 282914
+- `Rv 282942-01` (p.173,p.176) — Sez. 6, n. 9661 del 03/02/2022, Canzi, Rv. 282942-01
+- `Rv 282950-01` (p.220,p.230) — Sez. 3, n. 5822 del 18/01/2022, D’Au- ria, Rv. 282950-01
+- `Rv 282956` (p.104) — Sez. 2, n. 5837 del 04/02/2022, Bruno, Rv. 282956
+- `Rv 283016-01` (p.141) — Sez. 5, n. 15269 del 21/01/2022, Bouimadaghen, Rv. 283016-01
+- `Rv 283044` (p.106) — Sez. 7, n. 10481 del 19/01/2022, Deplano, Rv. 283044
+- `Rv 283081` (p.324,p.329,p.333) — Sez. 2, n. 13915 del 05/04/2022, Anastasio, Rv. 283081
+- `Rv 283106-01` (p.168,p.175) — Sez. 6, n. 11246 del 13/01/2022, Pressiani, Rv. 283106-01
+- `Rv 283114-01` (p.51,p.54) — Sez. 2, n. 17010 del 17/03/2022, Rosafio, Rv. 283114-01
+- `Rv 283122-01` (p.31,p.46) — Sez. 1, n. 22215 del 10/01/2022, Valeriani, Rv. 283122-01
+- `Rv 283203-01` (p.144,p.150) — Sez. 3, n. 20234 del 04/02/2022, Marcarini, Rv. 283203-01
+- `Rv 283235-01` (p.148) — Sez. 3, n. 23082 del 22/02/2022, Radicchi, Rv. 283235-01
+- `Rv 283270-01` (p.178,p.183) — Sez. 6, n. 20935 del 22/03/2022, Cobalchini, Rv. 283270-01
+- `Rv 283271` (p.397) — Sez. 6, n. 21087 del 10/05/2022, C., Rv. 283271
+- `Rv 283271-02` (p.409) — Sez. 6, n. 21087 del 10/05/2022, C., Rv. 283271-02
+- `Rv 283328-01` (p.84) — Sez. U, n. 30046 del 23/06/2022, Cirelli, Rv. 283328-01
+- `Rv 283348-01` (p.178,p.183) — Sez. 6, n. 23407 del 10/03/2022, Ferrara, Rv. 283348-01
+- `Rv 283383-01` (p.304,p.311) — Sez. 1, n. 29640 del 31/03/2022, Giorgio, Rv. 283383-01
+- `Rv 283454-01` (p.296,p.300) — Sez. 3, n. 30395 del 21/04/2022, Chiancano, Rv. 283454-01
+- `Rv 283473-01` (p.228) — Sez. 3, n. 33642 del 21/04/2022, Laudani, Rv. 283473-01
+- `Rv 283518` (p.326) — Sez.3, n. 32768 del 6/7/2022, G., Rv. 283518
+- `Rv 283518-01` (p.326,p.327) — Sez.3, n. 32768 del 6/7/2022, G., Rv. 283518-01
+- `Rv 283552-01` (p.321,p.322) — Sez. U, n. 37502 del 28/04/2022, Scarlini, Rv. 283552-01
+- `Rv 283612-01` (p.168,p.175) — Sez. 6, n. 29674 del 21/06/2022, Sindoni, Rv. 283612-01
+- `Rv 283639-01` (p.269,p.270) — Sez. U, n. 38810 del 13/06/2022, Banadin, Rv. 283639-01
+- `Rv 283664` (p.104) — Sez. 3, n. 36822 del 14/09/2022, Aquaro, Rv. 283664
+- `Rv 283724-01` (p.178,p.183) — Sez. 6, n. 32574 del 26/06/2022, Lucchese, Rv. 283724-01
+- `Rv 283800-01` (p.395,p.409) — Sez. 5, n. 38219 del 15/09/2022, D., Rv. 283800-01
+- `Rv 283818-01` (p.77) — Sez. U, n. 47182 del 31/03/2022, Savini, Rv. 283818-01
+- `Rv 283828` (p.253) — Sez. 6, n. 33757 del 10/06/2022, Primitivo, Rv. 283828
+- `Rv 283845-02` (p.93) — Sez.2, n. 34727 del 30/6/2022, Pastore, Rv.283845-02
+- `Rv 283874` (p.284) — Sez. 5, n. 37169 del 20/07/2022, S., Rv. 283874
+- `Rv 283874-02` (p.280) — Sez. 5, n. 37169 del 20/07/2022, S., Rv. 283874-02
+- `Rv 283892-02` (p.124) — Sez. 5, n. 46467 del 27/09/2022, D., Rv. 283892-02
+- `Rv 283954-01` (p.110) — Sez. 5, n. 44402 del 10/10/2022, dep. 22/11/2022, Rv. 283954-01
+- `Rv 284005-01` (p.57) — Sez. 6, n. 44428 del 05/10/2022, Spampinato, Rv. 284005-01
+- `Rv 284007-01` (p.327) — Sez. 6, n. 45070 del 20/10/2022, S., Rv. 284007-01
+- `Rv 284133-01` (p.159) — Sez. 4, n. 9466 del 15/02/2023, Castrignano, Rv. 284133-01
+- `Rv 284185-01` (p.404) — Sez. 5, n. 4572 del 13/01/2023, P., Rv. 284185-01
+- `Rv 284241` (p.152) — Sez. 6, n. 7573 del 27/01/2023, Arzaroli, Rv. 284241
+- `Rv 284241-02` (p.159) — Sez. 6, n. 7573 del 27/01/2023, Arzaroli, Rv. 284241-02
+- `Rv 284293` (p.326,p.333) — Sez. 5, n. 11257 del 13/1/2023, Riccio, Rv. 284293
+- `Rv 284293-01` (p.326,p.327) — Sez. 5, n. 11257 del 13/1/2023, Riccio, Rv. 284293-01
+- `Rv 284337-02` (p.92,p.93) — Sez. 6, n. 9063 del 10/01/2023, Maddaloni, Rv. 284337-02
+- `Rv 284371-01` (p.267,p.270) — Sez. 5, n. 10669 del 31/01/2023, T., Rv. 284371-01
+- `Rv 284375-01` (p.46) — Sez. 5, n. 12517 del 10/01/2023, Cinquina, Rv. 284375-01
+- `Rv 284424-01` (p.190) — Sez. 2, n. 10570 del 21/02/2023, Di Caterino, Rv. 284424-01
+- `Rv 284440-01` (p.290,p.300) — Sez. 1, n. 19082 del 13/01/2023, Costacurta, Rv. 284440-01
+- `Rv 284462-01` (p.304,p.311) — Sez. 3, n. 15256 del 13/01/2023, Piscitelli, Rv. 284462-01
+- `Rv 284467` (p.394) — Sez. 6, n. 10905 del 31/01/2023, C., Rv. 284467
+- `Rv 284467-01` (p.409) — Sez. 6, n. 10905 del 31/01/2023, C., Rv. 284467-01
+- `Rv 284467-02` (p.394,p.409) — Sez. 6, n. 10905 del 31/01/2023, C., Rv. 284467-02
+- `Rv 284475-01` (p.270) — Sez. 5, n. 12517 del 10/01/2023, Cinquina, Rv. 284475-01
+- `Rv 284563-01` (p.290,p.300) — Sez. 4, n. 16347 del 05/04/2023, Papalia, Rv. 284563-01
+- `Rv 284576-01` (p.395) — Sez. 5, n. 14927 del 22/02/2023, T., Rv. 284576-01
+- `Rv 284576-02` (p.409) — Sez. 5, n. 14927 del 22/02/2023, T., Rv. 284576-02
+- `Rv 284586-01` (p.267) — Sez. 5, n. 15728 del 11/01/2023, Turco, Rv. 284586-01
+- `Rv 284627` (p.219) — Sez. 3, n. 21198 del 15/02/2023, Esposito, Rv. 284627
+- `Rv 284627-01` (p.230) — Sez. 3, n. 21198 del 15/02/2023, Esposito, Rv. 284627-01
+- `Rv 284660-01` (p.250) — Sez. 3, n. 17411 del 30/03/2023, Salvador, Rv. 284660-01
+- `Rv 284660-02` (p.247) — Sez. 3, n. 17411 del 30/03/2023, Salvador, Rv. 284660-02
+- `Rv 284661-01` (p.230) — Sez. 3, n. 17418 del 04/04/2023, Vicinanza, Rv. 284661-01
+- `Rv 284667-01` (p.248,p.250) — Sez. 3, n. 24260 del 28/04/2023, Da Villanova, Rv. 284667-01
+- `Rv 284740` (p.252) — Sez. 2, n. 22073 del 17/03/2023, Fiordigigli, Rv. 284740
+- `Rv 284788-01` (p.398,p.409) — Sez. 6, n. 28218 del 24/01/2023, S., Rv. 284788-01
+- `Rv 284790-01` (p.162,p.165) — Sez. 6, n. 25173 del 13/04/2023, Costa, Rv. 284790-01
+- `Rv 284878` (p.89) — Sez. U, n. 32318 del 30/03/2023, Sabbatini, Rv. 284878
+- `Rv 284878-01` (p.81) — Sez. U, n. 32318 del 30/03/2023, Sabbatini, Rv. 284878-01
+- `Rv 284962-01` (p.319,p.322) — Sez. 2, n. 29363 del 24/03/2023, P., Rv. 284962-01
+- `Rv 285002` (p.196) — Sez. 2, n. 32083 del 12/05/2023, De Luca, Rv. 285002
+- `Rv 285002-01` (p.200) — Sez. 2, n. 32083 del 12/05/2023, De Luca, Rv. 285002-01
+- `Rv 285046-01` (p.93) — Sez. 6, n. 30147 del 03/05/2023, P, Rv. 285046-01
+- `Rv 285072` (p.258) — Sez. 5, n. 31186 del 27/06/2023, Orsini, Rv. 285072
+- `Rv 285137-01` (p.151,p.159) — Sez. 5, n. 38447 del 08/06/2023, Bimbi Salvini, Rv. 285137-01
+- `Rv 285143-01` (p.185) — Sez. 2, n. 33588 del 13/07/2023, Colusso, Rv. 285143-01
+- `Rv 285145` (p.196) — Sez. U, n. 41570 del 25/05/2023, C., Rv. 285145
+- `Rv 285145-01` (p.200) — Sez. U, n. 41570 del 25/05/2023, C., Rv. 285145-01
+- `Rv 285172-01` (p.267,p.270) — Sez. 5, n. 40719 del 20/09/2023, K., Rv. 285172-01
+- `Rv 285186-01` (p.275,p.277) — Sez. 2, n. 33455 del 20/04/2023, Mortellaro, Rv. 285186-01
+- `Rv 285213-02` (p.321,p.322) — Sez. U, n. 42603 del 13/07/2023, El Karti, Rv. 285213-02
+- `Rv 285214-02` (p.394,p.409) — Sez. 6, n. 38126 del 11/07/2023, M., Rv. 285214-02
+- `Rv 285273-01` (p.396,p.409) — Sez. 6, n. 37978 del 03/07/2023, B., Rv. 285273-01
+- `Rv 285275-01` (p.91) — Sez. 6, n. 39341 del 26/06/2023, T, Rv. 285275-01
+- `Rv 285284-01` (p.286,p.290,p.300) — Sez. 6, n. 44154 del 26/10/2023, Iaria, Rv. 285284-01
+- `Rv 285286-01` (p.244,p.250) — Sez. 3, n. 41899 del 16/10/2023, Daniele, Rv. 285286-01
+- `Rv 285350-01` (p.290,p.300) — Sez. 3, n. 47201 del 19/10/2023, Bruzzaniti, Rv. 285350-01
+- `Rv 285358-01` (p.108) — Sez. 6, n. 43263 del 13/09/2023, Lo Monaco, Rv. 285358-01
+- `Rv 285362-01` (p.290,p.300) — Sez. 6, n. 44155 del 26/10/2023, Kolgjokaj, Rv. 285362-01
+- `Rv 285363-01` (p.291,p.300) — Sez. 6, n. 46482 del 27/09/2023, Bruzzaniti, Rv. 285363-01
+- `Rv 285381-01` (p.108) — Sez. 4, n. 42847 del 11/10/2023, Palumbo, Rv. 285381-01
+- `Rv 285386-01` (p.295,p.300) — Sez. 6, n. 44882 del 04/10/2023, Barbaro, Rv. 285386-01
+- `Rv 285455-01` (p.318,p.322) — Sez. 1, n. 46821 del 08/06/2023, Favia, Rv. 285455-01
+- `Rv 285479-01` (p.397,p.409) — Sez. 6, n. 47121 del 05/10/2023, M., Rv. 285479-01
+- `Rv 285490-01` (p.141) — Sez. 5, n. 49667 del 10/11/2023, Fossatocci, Rv. 285490-01
+- `Rv 285543-01` (p.291,p.300) — Sez. 6, n. 46833 del 26/10/2023, Bruzzaniti, Rv. 285543-01
+- `Rv 285563-01` (p.374) — Sez. 6, n. 50684 del 29/09/2023, Lazaj, Rv. 285563-01
+- `Rv 285674-01` (p.341,p.347) — Sez. 2, n. 49644 del 02/11/2023, Delle Fratte, Rv. 285674-01
+- `Rv 285743` (p.219) — Sez. 3, n. 2785 del 23/01/2024, De Simone, Rv. 285743
+- `Rv 285743-01` (p.230) — Sez. 3, n. 2785 del 23/01/2024, De Simone, Rv. 285743-01
+- `Rv 285747` (p.171) — Sez. 3, n. 3038 del 14/11/2023, MC Tex s.r.l., Rv. 285747
+- `Rv 285747-01` (p.175) — Sez. 3, n. 3038 del 14/11/2023, MC Tex s.r.l., Rv. 285747-01
+- `Rv 285756-02` (p.221,p.230) — Sez. 3, n. 48820 del 02/11/2023, F., Rv. 285756-02
+- `Rv 285796` (p.341) — Sez. 4, n. 48056 del 16/11/2023, Toto, Rv. 285796
+- `Rv 285796-01` (p.347) — Sez. 4, n. 48056 del 16/11/2023, Toto, Rv. 285796-01
+- `Rv 285805-01` (p.352,p.358) — Sez. 5, n. 3118 del 10/01/2024, Mohamed Ahmad Hasa, Rv. 285805-01
+- `Rv 285876-01` (p.267,p.270) — Sez. 5, n. 41372 del 05/07/2023, N., Rv. 285876-01
+- `Rv 285912-01` (p.342,p.347) — Sez. 5, n. 5347 del 02/02/2024, Pedata, Rv. 285912-01
+- `Rv 285936-01` (p.358) — Sez. 2, n. 8014 del 11/01/2024, El Janati, Rv. 285936-01
+- `Rv 285944-01` (p.240,p.250) — Sez. 3, n. 05173 del 25/10/2023, Salustri, Rv. 285944-01
+- `Rv 285945-01` (p.341,p.347) — Sez. 3, n. 5481 del 24/01/2024, Dottore, Rv. 285945-01
+- `Rv 285985` (p.352,p.358) — Sez. 6, n. 7020 del 16/1/2024, Mirabile, Rv. 285985
+- `Rv 286003-01` (p.342,p.347) — Sez. 2, n. 7990 del 31/01/2024, Monaco, Rv. 286003-01
+- `Rv 286054-01` (p.409) — Sez. 5, n. 6401 del 23/01/2024, M., Rv. 286054-01
+- `Rv 286101-02` (p.159) — Sez. 3, n. 13657 del 16/02/2024, Strongone, Rv. 286101-02
+- `Rv 286145-01` (p.159) — Sez. 3, n. 13081 del 10/01/2024, Bellini, Rv. 286145-01
+- `Rv 286151-01` (p.217,p.230) — Sez. 3, n. 16470 del 28/03/2024, Di.Mo.Lat. s.a.s. di Bacco Antonio, Rv. 286151-01
+- `Rv 286154-01` (p.159) — Sez. 1, n. 9858 del 24/01/2024, S., Rv. 286154-01
+- `Rv 286175-01` (p.159) — Sez. 4, n. 14073 del 05/03/2024, Campana, Rv. 286175-01
+- `Rv 286175-02` (p.159) — Sez. 4, n. 14073 del 05/03/2024, Campana, Rv. 286175-02
+- `Rv 286190-01` (p.341,p.347) — Sez. 6, n. 12157 del 20/02/2024, Giusto, Rv. 286190-01
+- `Rv 286204-01` (p.250) — Sez. 3, n. 16468 del 28/03/2024, Galimberti, Rv. 286204-01
+- `Rv 286241-01` (p.209) — Sez. U, n. 16153 del 18/01/2024, Clemente ed altri, Rv. 286241-01
+- `Rv 286241-02` (p.209) — Sez. U, n. 16153 del 18/01/2024, Clemente ed altri, Rv. 286241-02
+- `Rv 286269-01` (p.354,p.358) — Sez. 2, n. 16480 del 19/04/2024, Miraoui, Rv. 286269-01
+- `Rv 286276-01` (p.340) — Sez. 5, n. 20140 del 23/02/2024, Stojanovic, Rv. 286276-01
+- `Rv 286289-01` (p.410) — Sez. 4, n. 13398 del 30/01/2024, L., Rv. 286289-01
+- `Rv 286293-01` (p.410) — Sez. 6, n. 10621 del 20/02/2024, P., Rv. 286293-01
+- `Rv 286304-01` (p.347) — Sez. U, n. 19357 del 29/02/2024, Mazzarella, Rv. 286304-01
+- `Rv 286308-01` (p.212,p.230) — Sez. 3, n. 17809 del 18/01/2024, PMT C\Mazzeo, Rv. 286308-01
+- `Rv 286357-01` (p.352,p.358) — Sez. 5, n. 17055 del 23/04/2024, Cappiello, Rv. 286357-01
+- `Rv 286361-01` (p.354,p.359) — Sez. 2, n. 23275 del 10/06/2024, Recchia, Rv. 286361-01
+- `Rv 286374-01` (p.352,p.358) — Sez. 2, n. 23462 del 12/04/2024, Cosentino, Rv. 286374-01
+- `Rv 286392-01` (p.410) — Sez. 5, n. 19201 del 23/02/2024, L., Rv. 286392-01
+- `Rv 286399-01` (p.410) — Sez. 1, n. 19769 del 10/04/2024, P., Rv. 286399-01
+- `Rv 286478-01` (p.410) — Sez. 6, n. 20004 del 12/03/2024, S., Rv. 286478-01
+- `Rv 286521-01` (p.358) — Sez. 2, n. 19547 del 14/3/2024, Deidda, Rv. 286521-01
+- `Rv 286523-01` (p.250) — Sez. 3, n. 19640 del 01/02/2024, Gentile, Rv. 286523-01
+- `Rv 286558-01` (p.159) — Sez. 3, n. 24326 del 27/02/2024, Fonti, Rv. 286558-01
+- `Rv 286560-02` (p.237) — Sez. 3, n. 24254 del 14/02/2024, Bonicelli, Rv. 286560-02
+- `Rv 286563` (p.159) — Sez. 5, n. 23582 del 08/05/2024, Visca, Rv. 286563
+- `Rv 286574-01` (p.141) — Sez. 5, n. 23926 del 02/05/2024, Sansone, Rv. 286574-01
+- `Rv 286596-02` (p.141) — Sez. 1, n. 25445 del 22/03/2024, Velluso, Rv. 286596-02
+- `Rv 286616-01` (p.410) — Sez. 6, n. 23204 del 12/03/2024, P., Rv. 286616-01
+- `Rv 286620-01` (p.410) — Sez. 3, n. 29356 del 18/04/2024, G., Rv. 286620-01
+- `Rv 286625-01` (p.354,p.359) — Sez. 6, n. 22287 del 3/06/2024, Fall, Rv. 286625-01
+- `Rv 286629-01` (p.159) — Sez. 6, n. 23623 del 21/05/2024, Hasan Masun, Rv. 286629-01
+- `Rv 286648-01` (p.410) — Sez. 6, n. 24388 del 13/03/2024, A., Rv. 286648-01
+- `Rv 286705-01` (p.410) — Sez. 3, n. 32764 del 11/07/2024, C., Rv. 286705-01
+- `Rv 286707-01` (p.250) — Sez. 3, n. 28489 del 08/02/2024, Ragnoli, Rv. 286707-01
+- `Rv 286731-01` (p.221,p.230) — Sez. 3, n. 29117 del 17/04/2024, Aurioso, Rv. 286731-01
+- `Rv 286767-01` (p.410) — Sez. 6, n. 26263 del 30/05/2024, N., Rv. 286767-01
+- `Rv 286782-01` (p.410) — Sez. 5, n. 31704 del 02/05/2024, P., Rv. 286782-01
+- `Rv 286792-05` (p.159) — Sez. 3, n. 26527 del 11/04/2024, Gobbo, Rv. 286792-05
+- `Rv 286797-01` (p.277) — Sez. 6, n.27103 del 02/05/2024, L., Rv. 286797-01
+- `Rv 286812-01` (p.159) — Sez. 4, n. 28657 del 05/07/2024, Goleanu, Rv. 286812-01
+- `Rv 286818-01` (p.159) — Sez. 4, n. 30042 del 29/05/2024, Lamarmora, Rv. 286818-01
+- `Rv 286832-01` (p.410) — Sez. 6, n. 30720 del 23/05/2024, A., Rv. 286832-01
+- `Rv 286854-02` (p.410) — Sez. 6, n. 32042 del 08/07/2024, F., Rv. 286854-02
+- `Rv 286856-02` (p.409) — Sez. 6, n. 32351 del 04/07/2024, P., Rv. 286856-02
+- `Rv 286867-01` (p.410) — Sez. 6, n. 31929 del 25/06/2024, C., Rv. 286867-01
+- `Rv 286874-01` (p.141) — Sez. 5, n. 32162 del 19/06/2024, M., Rv. 286874-01
+- `Rv 286907-01` (p.410) — Sez. 2, n. 27743 del 13/06/2024, N., Rv. 286907-01
+- `Rv 286931-01` (p.141) — Sez. 5, n. 34342 del 05/07/2024, Matin, Rv. 286931-01
+- `Rv 286962-01` (p.410) — Sez. 6, n. 33860 del 13/06/2024, C., Rv. 286962-01
+- `Rv 287019-01` (p.223,p.230) — Sez. 3, n. 39602 del 03/10/2024, Romano, Rv. 287019-01
+- `Rv 287020-01` (p.237) — Sez. 3, n. 37131 del 04/07/2024, Pandolfini, Rv. 287020-01
+- `Rv 287093-01` (p.237) — Sez. 3, n. 42819 del 01/10/2024, Giardino Alfonso, Rv. 287093-01
+- `Rv 287110-01` (p.237) — Sez. 3, n. 42822 del 14/10/2024, Beninati, Rv. 287110-01
+- `Rv 287126-01` (p.159) — Sez. 4, n. 43740 del 07/11/2024, Egghembrergher, Rv. 287126-01
+- `Rv 287173-02` (p.159) — Sez. 5, n. 42357 del 10/10/2024, Bellani, Rv. 287173-02
+- `Rv 287244-01` (p.141) — Sez. 5, n. 43093 del 16/10/2024, Loi, Rv. 287244-01
+- `Rv 287336-01` (p.159) — Sez. 3, n. 46231 del 14/11/2024, Nesca, Rv. 287336-01
+- `Rv 287363-01` (p.277) — Sez.2, n.45013 del 28/11/2024, Gjetani, Rv.287363-01
+- `Rv 287368-01` (p.250) — Sez. 3, n. 28526 del 17/05/2024, De Cofano, Rv. 287368-01

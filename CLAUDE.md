@@ -25,15 +25,15 @@ PEC:               [facoltativa]
 
 ## Regole operative fondamentali
 
-1. **Mai inventare giurisprudenza.** Ogni sentenza citata a memoria va marcata [VERIFICARE]. Prima di citare, consulta `KNOWLEDGE_BASE/`.
+1. **Mai inventare giurisprudenza — ancora o astieniti.** Vale il **PROTOCOLLO_GROUNDING** (`KNOWLEDGE_BASE/00_META/PROTOCOLLO_GROUNDING.md`, quote-then-claim): prima di citare una massima cerca nell'indice/registro → apri la pagina → incolla la massima testuale con `(fonte, p. N)`. Se non è in KB, dichiara **"non presente in KB"**: non citare a memoria, non ricostruire numeri di sentenza.
 2. **Distingui fatto da valutazione.** "L'informativa riferisce che..." ≠ "È accaduto che..."
 3. **Segnala sempre la fonte.** Ogni affermazione → atto specifico + pagina.
 4. **Ragiona in termini di utilizzabilità processuale.** Informazione vera ma inutilizzabile: distinzione cruciale.
 5. **Presunzione di innocenza** nel linguaggio: "indagato/imputato", mai "colpevole".
 6. **Termini conservativi.** Nel dubbio, indica la scadenza più breve.
 7. **Tutti gli atti prodotti sono BOZZE.** Richiedono sempre revisione del difensore prima del deposito.
-8. **Usa la Knowledge Base.** Prima di citare giurisprudenza, verifica se è in `KNOWLEDGE_BASE/`. Le rassegne Massimario 2023-2024 sono la fonte primaria.
-9. **Rispetta la gerarchia delle fonti.** Sezioni Unite > sezioni semplici > Corte Cost. (ablative) > CEDU > dottrina > merito.
+8. **Usa la Knowledge Base via indice.** Le fonti consultabili sono **solo** quelle nei registri: zona GLOBALE `KNOWLEDGE_BASE/_INDICE/` (INDICE.md + REGISTRO_FONTI.md) e, sul caso, `FASCICOLI/<caso>/_INDICE/`. Cerca per concetto nell'indice o con `grep` sul `.md`; per sentenza con `grep` del numero **Rv**. Aggiungere una fonte = indicizzarla con `penalista-archivio` (`scripts/aggiorna_indice.py <zona>`). Ciò che non è nel registro NON è in KB.
+9. **Rispetta la gerarchia delle fonti — consultabile ≠ stessa autorità.** Sezioni Unite > sezioni semplici > Corte Cost. (ablative) > CEDU > dottrina > merito. Cita ogni fonte col suo **tipo** (massimario / sentenza / dottrina / nota-studio / atto-causa): una nota interna dello studio non pesa come una Sezioni Unite.
 
 ---
 
@@ -43,7 +43,8 @@ PEC:               [facoltativa]
 Penale-Italia/
 ├── skills/                    ← sorgenti delle 8 skill (si installano col plugin — vedi README)
 ├── KNOWLEDGE_BASE/            ← massimari, schede reato, gerarchia fonti
-│   ├── 00_META/               ← gerarchia fonti + registro documenti
+│   ├── _INDICE/               ← zona GLOBALE: INDICE.md + REGISTRO_FONTI.md + MD convertiti
+│   ├── 00_META/               ← PROTOCOLLO_GROUNDING + gerarchia fonti + registro documenti
 │   ├── 02_GIURISPRUDENZA/     ← massimari Cassazione 2023-2024 (aggiungere localmente)
 │   └── 06_SCHEDE_REATO/       ← 13 schede operative per reato
 ├── FASCICOLI/                 ← fascicoli reali dello studio
@@ -53,10 +54,11 @@ Penale-Italia/
 
 ---
 
-## Le 8 skill
+## Le 9 skill
 
 | Skill | Trigger principali |
 |---|---|
+| `penalista-archivio` | "converti questo PDF", "metti in memoria", "aggiungi alla KB", "indicizza i massimari", "aggiorna l'indice" |
 | `penalista-inizia` | "iniziamo", "primi passi", "da dove comincio", primo avvio del kit |
 | `penalista-strategia` | "analizza questa accusa", "che strategia adottiamo", "come mi difendo" |
 | `penalista-atti` | "scrivi la memoria", "prepara il riesame", "bozza il ricorso" |

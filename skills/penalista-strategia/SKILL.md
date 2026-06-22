@@ -123,7 +123,7 @@ Indica le direzioni giurisprudenziali rilevanti per il caso. Per ogni orientamen
 - Il principio di diritto favorevole alla difesa
 - Eventuali contrasti tra sezioni (e se le Sezioni Unite si sono pronunciate)
 
-**Avviso importante**: cita orientamenti giurisprudenziali che conosci con certezza. Se non ricordi gli estremi precisi di una sentenza, descrivi il principio e avvisa l'avvocato di verificare la massima aggiornata su DeJure o OneLeagal. Non inventare numeri di sentenza.
+**Avviso importante — ancora o astieniti (PROTOCOLLO_GROUNDING, `KNOWLEDGE_BASE/00_META/PROTOCOLLO_GROUNDING.md`):** cerca prima l'orientamento nell'indice della KB (`KNOWLEDGE_BASE/_INDICE/` e, sul caso, `FASCICOLI/<caso>/_INDICE/`); se c'è, cita la massima testuale con `(fonte, p. N)`. Se non c'è, descrivi il principio dichiarando "non presente in KB" e invita l'avvocato a verificarlo su DeJure/Italgiure. Non citare né inventare numeri di sentenza a memoria.
 
 Se rilevante, segnala orientamenti favorevoli della Corte EDU (art. 6 equo processo, art. 7 legalità, art. 5 libertà personale).
 

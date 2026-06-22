@@ -8,7 +8,7 @@
     {
       "name": "penalista-italia",
       "description": "Kit operativo per avvocati penalisti italiani — strategia difensiva, redazione atti processuali, calcolo termini, misure cautelari, giurisprudenza, esecuzione penale. 8 skill specializzate sul diritto penale italiano.",
-      "version": "3.2.4",
+      "version": "3.3.0",
       "source": "./",
       "author": {
         "name": "Synthos Logic"

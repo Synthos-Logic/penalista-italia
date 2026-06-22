@@ -1,6 +1,6 @@
 # Penalista Italia -- Kit Operativo per Avvocati Penalisti
 
-[![Versione](https://img.shields.io/badge/versione-3.2.4-blue)](https://github.com/Synthos-Logic/penalista-italia/releases)
+[![Versione](https://img.shields.io/badge/versione-3.3.0-blue)](https://github.com/Synthos-Logic/penalista-italia/releases)
 [![Licenza](https://img.shields.io/badge/licenza-MIT-green)](LICENSE)
 [![Piattaforma](https://img.shields.io/badge/piattaforma-Claude%20Cowork-orange)](https://claude.ai)
 [![Wiki](https://img.shields.io/badge/Wiki-metodologia-blueviolet)](https://github.com/Synthos-Logic/penalista-italia/wiki)
@@ -68,11 +68,12 @@ La skill di onboarding la fa con te al primo "Iniziamo". Se preferisci farlo a m
 
 ---
 
-## 8 Skill specializzate
+## 9 Skill specializzate
 
 | Skill | Cosa fa |
 |---|---|
 | `penalista-inizia` | Onboarding guidato: dal primo "Iniziamo" al primo fascicolo operativo in 15 minuti, su un caso vero |
+| `penalista-archivio` | Converte i documenti (PDF) in fonti indicizzate e ancorabili; governa l'indice e il registro delle fonti della KB (grounding anti-allucinazione) |
 | `penalista-strategia` | Analisi difensiva del capo di imputazione: elementi costitutivi, criticita' dell'accusa, eccezioni processuali, strategie graduate, giurisprudenza Cassazione e CEDU |
 | `penalista-atti` | Redazione di tutti i principali atti: memoria 415-bis, appello, ricorso Cassazione, riesame, revoca cautelare, patteggiamento, abbreviato, messa alla prova |
 | `penalista-scadenze` | Calcolo preciso di ogni termine processuale: impugnazioni, prescrizione ante/post Bonafede, custodia cautelare, improcedibilita' Cartabia, udienza di convalida |

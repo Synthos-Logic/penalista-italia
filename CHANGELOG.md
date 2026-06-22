@@ -1,5 +1,19 @@
 # Changelog — Penalista Italia
 
+## [3.3.0] — Giugno 2026
+**Aggiornamento skill necessario: Sì (nuova skill `penalista-archivio`)**
+
+### Aggiunto
+- Skill **`penalista-archivio`**: conversione PDF→Markdown indicizzato e governo dell'indice/registro delle fonti (`scripts/converti_indicizza.py`, `genera_indice_master.py`, `aggiorna_indice.py`).
+- **Sistema fonti a due zone**: globale `KNOWLEDGE_BASE/_INDICE/` (INDICE.md + REGISTRO_FONTI.md) e per-fascicolo `FASCICOLI/<caso>/_INDICE/` (scoped). Tag tipo-fonte (massimario/sentenza/dottrina/nota-studio/atto-causa).
+- I 3 Massimari penali 2023-2024 convertiti e indicizzati: 1284 sentenze ancorabili (Rv→pagina→massima testuale), in `KNOWLEDGE_BASE/_INDICE/`.
+- `KNOWLEDGE_BASE/00_META/PROTOCOLLO_GROUNDING.md`: protocollo *quote-then-claim* (ancora o astieniti).
+- `documentazione/GUIDA_FONTI_E_GROUNDING.md`: guida utente al sistema fonti.
+
+### Modificato
+- `CLAUDE.md`: regole 1/8/9 da dichiarative a procedurali (grounding obbligatorio); struttura KB e tabella skill aggiornate.
+- `penalista-giurisprudenza`, `penalista-strategia`, `penalista-atti`, `penalista-verifica`: cablato il rinvio al PROTOCOLLO_GROUNDING al posto del generico "consulta la KB".
+
 ## [3.2.4] — 2026-06-11
 
 ### Guida metodologica allineata alla v3
