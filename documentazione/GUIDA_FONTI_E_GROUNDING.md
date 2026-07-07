@@ -56,6 +56,12 @@ access (solo data, fonte, titolo e link). Il radar è informativo, **non citabil
 se un provvedimento segnalato ti serve in un atto, apri il link, scarica il PDF e chiedi al
 kit di ingerirlo in KB — da lì diventa citabile come ogni altra fonte.
 
+Nel repo della banca dati vive anche l'**archivio completo della Corte costituzionale**
+(dal 1956, oltre 22.000 pronunce con dispositivo integrale e massime ufficiali, costruito dal
+servizio open data della Consulta e aggiornato ogni settimana): l'integrazione automatica nella
+Knowledge Base arriverà con il prossimo aggiornamento del kit — nel frattempo è consultabile
+direttamente sul repo.
+
 Attenzione: la cartella `SEGNALATE/` appartiene alla pipeline — le modifiche manuali
 vengono sovrascritte all'aggiornamento successivo. Le tue note vanno nelle altre cartelle.
 

@@ -59,9 +59,12 @@ Il kit si presenta, ti chiede i dati dello studio (una volta sola) e apre con te
 **La banca dati giurisprudenziale** si aggiorna da sola: ogni lunedi' una pipeline
 automatica pubblica sul repo [`cassazione-penale-db`](https://github.com/Synthos-Logic/cassazione-penale-db)
 le pronunce penali segnalate dall'Ufficio del Massimario (massima ufficiale, esito in sintesi,
-link al PDF autentico della Corte). Per portarle nella tua Knowledge Base basta dire a Claude
-*"aggiorna la banca dati"* (o lanciare `sincronizza_segnalate.py`): scarica e indicizza tutto,
-senza che ti serva alcun account GitHub.
+link al PDF autentico della Corte), il radar del merito dalle riviste open access e
+l'**archivio completo della Corte costituzionale dal 1956** (oltre 22.000 pronunce con
+dispositivi e massime ufficiali, dal servizio open data della Consulta). Per portare le
+segnalate nella tua Knowledge Base basta dire a Claude *"aggiorna la banca dati"* (nessun
+account GitHub richiesto); l'integrazione dell'archivio costituzionale nella KB arriva col
+prossimo aggiornamento del kit.
 
 **La cartella di lavoro** (Knowledge Base, guide) si aggiorna piu' raramente: quando il changelog lo segnala, scarica il nuovo ZIP, trascinalo **dentro** la cartella `Penale-Italia` senza decomprimerlo e incolla a Claude:
 
@@ -123,7 +126,7 @@ Un kit costruito da chi conosce il processo penale italiano -- testato sul campo
 - **Fonti deterministiche** -- Normativa ufficiale, HUDOC, Massimario Cassazione. Quando usi i testi come contesto, le risposte sono precise, tracciabili e citabili.
 - **Template operativi** -- Pratiche ricorrenti gia' strutturate: gestione cautelare, risposta 415-bis, appello, ricorso Cassazione, esecuzione penale, D.Lgs. 231.
 - **Riforma Cartabia come strumento difensivo** -- L'improcedibilita' ex art. 344-bis c.p.p. trattata come leva della difesa, con calcolo integrato nei termini processuali.
-- **Giurisprudenza che si aggiorna da sola** -- Banca dati delle pronunce segnalate dal Massimario, alimentata ogni settimana da una pipeline automatica: ogni citazione porta la massima ufficiale e il link al PDF autentico della Corte. Fonti verificabili con un clic.
+- **Giurisprudenza che si aggiorna da sola** -- Banca dati alimentata ogni settimana da una pipeline automatica: pronunce segnalate dal Massimario della Cassazione, archivio completo della Corte costituzionale dal 1956 (22.000+ pronunce con massime ufficiali) e radar del merito. Ogni citazione porta la fonte ufficiale verificabile con un clic.
 - **Aggiornato con la prassi reale** -- Knowledge Base con schede operative per i reati piu' frequenti negli studi penali italiani, e aggiornamenti che arrivano da soli tramite il plugin.
 
 ---
