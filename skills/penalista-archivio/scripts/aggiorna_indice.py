@@ -43,6 +43,11 @@ def main():
         sys.stdout.write("  " + (r.stdout or r.stderr))
         if r.returncode == 3: scansioni += 1
         elif r.returncode == 0: nuovi += 1
+    # indicizza le pronunce segnalate (cassazione-penale-db) se presenti nella zona
+    SCH = os.path.join(HERE, "indicizza_schede.py")
+    if os.path.isdir(os.path.join(zona, "02_GIURISPRUDENZA", "SEGNALATE")):
+        r = subprocess.run([sys.executable, SCH, zona], capture_output=True, text=True)
+        sys.stdout.write(r.stdout or r.stderr)
     # rigenera master
     subprocess.run([sys.executable, MAST, out, os.path.join(out, "INDICE.md")], check=False)
     # registro fonti (manifest)
@@ -51,7 +56,7 @@ def main():
          f"> Aggiornato il {datetime.date.today().isoformat()}. "
          f"Queste sono **tutte e sole** le fonti consultabili in questa zona. "
          f"Ciò che non è elencato qui NON è nella KB.", "",
-         "| Fonte | Tipo | Pagine | Sentenze (Rv) | File |", "|---|---|---|---|---|"]
+         "| Fonte | Tipo | Pagine | Sentenze (Rv/schede) | File |", "|---|---|---|---|---|"]
     for v in vols:
         R.append(f"| {v['fonte']} | {v.get('tipo','documento')} | "
                  f"{v.get('pagine_con_testo','?')} | {v['sentenze_rv']} | `{v['file_md']}` |")

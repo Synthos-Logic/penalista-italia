@@ -29,6 +29,18 @@ Ogni fonte porta un **tipo** (massimario | sentenza | dottrina | nota-studio | a
 Cita con l'etichetta corretta ("secondo la nota interna dello studio…" ≠ "Cass. SU n. …")
 e pesa secondo `GERARCHIA_FONTI.md`. Una nota di studio non vale come una Sezioni Unite.
 
+## Pronunce segnalate (flusso settimanale, senza Rv)
+Le pronunce segnalate dall'Ufficio del Massimario (repo `cassazione-penale-db`, aggiornato
+ogni lunedì) stanno nella **sezione 3 dell'INDICE** ("Registro segnalate"). Procedura:
+1. cerca per numero/anno o materia nella sezione 3 → apri la **scheda** indicata;
+2. incolla la **massima testuale** (campo "Massima ufficiale");
+3. cita per numero/anno con etichetta corretta e **link al PDF ufficiale** presente nella scheda
+   (es.: *Cass. pen., Sez. III, n. 23006 del 2026, massima ufficiale segnalata dall'Ufficio del
+   Massimario — PDF ufficiale linkato in scheda*);
+4. le **questioni SU pendenti non sono precedenti**: solo segnalazione del contrasto rimesso, con data d'udienza;
+5. quando la pronuncia riceve il numero **Rv** (campo `rv` della scheda valorizzato), la citazione con Rv è preferita.
+Aggiornamento: `python3 skills/penalista-archivio/scripts/sincronizza_segnalate.py KNOWLEDGE_BASE`.
+
 ## Aggiungere una fonte (per l'avvocato)
 1. Metti il PDF nella zona giusta: globale → in `KNOWLEDGE_BASE/…`; di causa → in `FASCICOLI/<caso>/…`.
 2. Lancia: `python3 skills/penalista-archivio/scripts/aggiorna_indice.py <dir_zona>`.

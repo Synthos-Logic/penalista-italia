@@ -1,5 +1,30 @@
 # Changelog — Penalista Italia
 
+## [3.4.0] — Luglio 2026
+**Aggiornamento skill necessario: Sì (`penalista-archivio` e `penalista-giurisprudenza` aggiornate)**
+
+### Aggiunto
+- **Banca dati "Pronunce segnalate"**: integrazione col nuovo repo pubblico
+  [`cassazione-penale-db`](https://github.com/Synthos-Logic/cassazione-penale-db) — le pronunce
+  penali segnalate dall'Ufficio del Massimario (sentenze, ordinanze, Sezioni Unite, questioni SU),
+  aggiornate automaticamente ogni lunedì da una pipeline centralizzata. Ogni scheda: massima
+  ufficiale, esito in sintesi, link al PDF autentico della Corte (fonti verificabili).
+- `scripts/sincronizza_segnalate.py` (penalista-archivio): scarica/aggiorna la banca dati in
+  `KNOWLEDGE_BASE/02_GIURISPRUDENZA/SEGNALATE/` e reindicizza — repo pubblico, nessun account GitHub richiesto.
+- `scripts/indicizza_schede.py` (penalista-archivio): indicizza le schede nel sistema di grounding —
+  riga per anno nel REGISTRO_FONTI (tipo `massimario-segnalate`) e nuova **sezione 3 dell'INDICE master**
+  ("Registro segnalate: numero/anno → scheda → massima").
+- `penalista-giurisprudenza`: **MODULO 0 — freschezza delle fonti** (check 7 giorni + proposta di
+  aggiornamento) e regole di citazione delle segnalate (numero/anno + scheda + PDF ufficiale;
+  questioni SU pendenti mai come autorità; preferenza Rv al raccordo col massimario annuale).
+
+### Modificato
+- `CLAUDE.md` (regola 8), `PROTOCOLLO_GROUNDING.md` e `GERARCHIA_FONTI.md`: procedura di citazione
+  delle segnalate cablata nel protocollo quote-then-claim e nella gerarchia (SU segnalate = Livello 1;
+  sezioni semplici = Livello 2).
+- `genera_indice_master.py` / `aggiorna_indice.py`: supporto ai manifest-schede, conteggi separati
+  Rv vs segnalate.
+
 ## [3.3.0] — Giugno 2026
 **Aggiornamento skill necessario: Sì (nuova skill `penalista-archivio`)**
 

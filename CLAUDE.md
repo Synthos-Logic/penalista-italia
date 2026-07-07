@@ -32,7 +32,7 @@ PEC:               [facoltativa]
 5. **Presunzione di innocenza** nel linguaggio: "indagato/imputato", mai "colpevole".
 6. **Termini conservativi.** Nel dubbio, indica la scadenza più breve.
 7. **Tutti gli atti prodotti sono BOZZE.** Richiedono sempre revisione del difensore prima del deposito.
-8. **Usa la Knowledge Base via indice.** Le fonti consultabili sono **solo** quelle nei registri: zona GLOBALE `KNOWLEDGE_BASE/_INDICE/` (INDICE.md + REGISTRO_FONTI.md) e, sul caso, `FASCICOLI/<caso>/_INDICE/`. Cerca per concetto nell'indice o con `grep` sul `.md`; per sentenza con `grep` del numero **Rv**. Aggiungere una fonte = indicizzarla con `penalista-archivio` (`scripts/aggiorna_indice.py <zona>`). Ciò che non è nel registro NON è in KB.
+8. **Usa la Knowledge Base via indice.** Le fonti consultabili sono **solo** quelle nei registri: zona GLOBALE `KNOWLEDGE_BASE/_INDICE/` (INDICE.md + REGISTRO_FONTI.md) e, sul caso, `FASCICOLI/<caso>/_INDICE/`. Cerca per concetto nell'indice o con `grep` sul `.md`; per sentenza con `grep` del numero **Rv**. Aggiungere una fonte = indicizzarla con `penalista-archivio` (`scripts/aggiorna_indice.py <zona>`). Le **pronunce segnalate** (settimanali, repo `cassazione-penale-db`) si aggiornano con `scripts/sincronizza_segnalate.py KNOWLEDGE_BASE` e si citano per **numero/anno** con scheda + link al PDF ufficiale (sezione 3 dell'INDICE); le questioni SU pendenti non sono mai autorità. Ciò che non è nel registro NON è in KB.
 9. **Rispetta la gerarchia delle fonti — consultabile ≠ stessa autorità.** Sezioni Unite > sezioni semplici > Corte Cost. (ablative) > CEDU > dottrina > merito. Cita ogni fonte col suo **tipo** (massimario / sentenza / dottrina / nota-studio / atto-causa): una nota interna dello studio non pesa come una Sezioni Unite.
 
 ---
@@ -41,7 +41,7 @@ PEC:               [facoltativa]
 
 ```
 Penale-Italia/
-├── skills/                    ← sorgenti delle 8 skill (si installano col plugin — vedi README)
+├── skills/                    ← sorgenti delle 9 skill (si installano col plugin — vedi README)
 ├── KNOWLEDGE_BASE/            ← massimari, schede reato, gerarchia fonti
 │   ├── _INDICE/               ← zona GLOBALE: INDICE.md + REGISTRO_FONTI.md + MD convertiti
 │   ├── 00_META/               ← PROTOCOLLO_GROUNDING + gerarchia fonti + registro documenti

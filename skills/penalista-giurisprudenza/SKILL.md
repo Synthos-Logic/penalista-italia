@@ -1,6 +1,6 @@
 ---
 name: penalista-giurisprudenza
-description: "Ricerca e organizzazione della giurisprudenza penale italiana per la difesa. ATTIVARE SEMPRE quando l'avvocato cerca sentenze, massime o orientamenti della Cassazione penale, della Corte EDU o di altri organi giurisdizionali, o dice: 'cerca giurisprudenza su', 'ci sono sentenze favorevoli su', 'cosa dice la Cassazione su', 'quale sezione si occupa di', 'c'e un contrasto tra sezioni su', 'cerca massime su', 'trova precedenti su', 'giurisprudenza favorevole su', 'orientamento della Corte EDU su'. Attivare anche per: costruire la sezione giurisprudenziale di una memoria difensiva o di un ricorso, individuare contrasti giurisprudenziali da portare alle Sezioni Unite, creare o aggiornare note di giurisprudenza nel sistema wikilinks, verificare se un principio di diritto e consolidato o controverso."
+description: "Ricerca e organizzazione della giurisprudenza penale italiana per la difesa. ATTIVARE SEMPRE quando l'avvocato cerca sentenze, massime o orientamenti della Cassazione penale, della Corte EDU o di altri organi giurisdizionali, o dice: 'cerca giurisprudenza su', 'ci sono sentenze favorevoli su', 'cosa dice la Cassazione su', 'quale sezione si occupa di', 'c'e un contrasto tra sezioni su', 'cerca massime su', 'trova precedenti su', 'giurisprudenza favorevole su', 'orientamento della Corte EDU su', 'ci sono novita' dalla Cassazione', 'ultime sentenze segnalate', 'questioni pendenti alle Sezioni Unite'. Attivare anche per: costruire la sezione giurisprudenziale di una memoria difensiva o di un ricorso, individuare contrasti giurisprudenziali da portare alle Sezioni Unite, creare o aggiornare note di giurisprudenza nel sistema wikilinks, verificare se un principio di diritto e consolidato o controverso."
 ---
 
 # Skill — Ricerca Giurisprudenziale Penale
@@ -16,6 +16,35 @@ Se la richiesta non è già precisa, chiedi in un'unica domanda:
 - **L'argomento giuridico specifico** (non "corruzione" ma "elemento soggettivo della corruzione per la funzione" o "distinzione corruzione/istigazione alla corruzione")
 - **L'obiettivo** (trovare orientamenti favorevoli alla difesa / verificare un principio / identificare un contrasto tra sezioni / costruire una citazione per un atto)
 - **Il livello di certezza richiesto** (orientamento consolidato / massima specifica / contrasto da segnalare)
+
+---
+
+## MODULO 0 — FRESCHEZZA DELLE FONTI (sempre, prima di ogni ricerca)
+
+La KB contiene due binari di giurisprudenza:
+
+1. **Massimari annuali** (stock consolidato, citazioni con numero **Rv**) — sezioni 1 e 2 dell'INDICE.
+2. **Pronunce segnalate** dall'Ufficio del Massimario (flusso settimanale, repo
+   `cassazione-penale-db`) — **sezione 3 dell'INDICE** ("Registro segnalate").
+
+**Check di freschezza obbligatorio**: leggi la data di generazione in testa a
+`KNOWLEDGE_BASE/_INDICE/INDICE.md`. Se più vecchia di **7 giorni** — o se la cartella
+`02_GIURISPRUDENZA/SEGNALATE/` manca — proponi all'avvocato l'aggiornamento:
+`python3 skills/penalista-archivio/scripts/sincronizza_segnalate.py KNOWLEDGE_BASE`
+(repo pubblico, nessun account richiesto; la pipeline centrale aggiorna ogni lunedì).
+
+**Come si cita una segnalata** (quote-then-claim, sempre):
+apri la scheda indicata dal registro → incolla la massima testuale → cita così:
+`Cass. pen., Sez. III, n. 23006 del 2026 (dep. 22/06/2026) — massima ufficiale segnalata
+dall'Ufficio del Massimario (scheda in KB; PDF ufficiale: <url_pdf dalla scheda>)`.
+Il link al PDF autentico VA SEMPRE riportato: è la fonte verificabile con un clic.
+
+**Questioni SU pendenti**: non sono precedenti. Si usano SOLO come segnalazione del
+contrasto rimesso alle Sezioni Unite (con data d'udienza) — preziose per istanze di
+rinvio, motivi in subordine, strategia. Mai citarle come autorità.
+
+**Raccordo Rv**: quando una segnalata compare nel massimario annuale con numero Rv
+(campo `rv` valorizzato nella scheda), la citazione con Rv è quella preferita.
 
 ---
 

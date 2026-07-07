@@ -6,7 +6,7 @@ description: >
   l'avvocato dice: 'converti questo PDF', 'metti questa sentenza in memoria',
   'aggiungi alla knowledge base', 'indicizza i massimari', 'trasforma in markdown',
   'carica il documento nella KB', 'aggiorna l'indice della giurisprudenza',
-  'prepara il documento per la consultazione', 'converti la rassegna'. Attivare anche
+  'prepara il documento per la consultazione', 'converti la rassegna', 'aggiorna la banca dati', 'scarica le pronunce segnalate', 'sincronizza le segnalate', 'ci sono nuove sentenze della Cassazione?'. Attivare anche
   quando un documento PDF va consultato ripetutamente e conviene convertirlo una volta
   per risparmiare token. È la skill che alimenta il protocollo quote-then-claim:
   produce il materiale ancorabile su cui si fonda ogni citazione verificata.
@@ -66,6 +66,34 @@ Dipendenza: `pdfplumber` (`pip install pdfplumber`).
   Citazioni con formattazione anomala possono sfuggire: vanno aggiunte a mano se rilevanti.
 - **Tutto il prodotto è materiale di lavoro**: la conversione non sostituisce la lettura
   della fonte ufficiale da parte del difensore.
+
+## Banca dati pronunce segnalate — sincronizzazione settimanale
+
+Il kit ha una banca dati centralizzata delle **pronunce penali segnalate dall'Ufficio del
+Massimario** (sentenze e ordinanze di rilievo nomofilattico, Sezioni Unite, questioni SU
+pendenti e decise), aggiornata **ogni lunedì** da una pipeline automatica nel repo pubblico
+`Synthos-Logic/cassazione-penale-db`. Ogni scheda contiene la massima ufficiale, "l'esito
+in sintesi" e il **link al PDF autentico** sul sito della Corte: fonti verificabili con un clic.
+
+Per scaricarla o aggiornarla (repo pubblico: **non serve alcun account GitHub**):
+
+```bash
+python3 skills/penalista-archivio/scripts/sincronizza_segnalate.py KNOWLEDGE_BASE
+```
+
+Lo script clona il repo dati, aggiorna `KNOWLEDGE_BASE/02_GIURISPRUDENZA/SEGNALATE/` e
+reindicizza la zona: le schede compaiono nel REGISTRO_FONTI (una riga per anno, tipo
+`massimario-segnalate`) e nella **sezione 3 dell'INDICE master** ("Registro segnalate:
+numero/anno → scheda → massima").
+
+Avvertenze:
+- la cartella `SEGNALATE/` è di proprietà della pipeline: **le modifiche locali vengono
+  sovrascritte** alla sincronizzazione successiva. Le note personali vanno altrove in KB.
+- le segnalate **non hanno ancora numero Rv** (arriva col massimario annuale): si citano
+  per numero/anno con riferimento alla scheda e al PDF ufficiale. Quando la stessa pronuncia
+  comparirà nel massimario annuale con Rv, si preferisce la citazione con Rv.
+- se il clone fallisce (rete assente), si può scaricare lo ZIP del repo dal browser e
+  copiare a mano la cartella `SEGNALATE/`.
 
 ## PROTOCOLLO quote-then-claim (grounding obbligatorio)
 

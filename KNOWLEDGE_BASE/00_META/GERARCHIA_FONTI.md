@@ -41,6 +41,13 @@ Non tutte le fonti hanno lo stesso valore giuridico. Un orientamento del Tribuna
 - Non sostituiscono le sentenze originali, ma le rappresentano fedelmente
 - Citarle come: "Rassegna Massimario [Penale/Civile] [anno], p. [pagina]"
 
+**Pronunce segnalate dall'Ufficio del Massimario** (tipo `massimario-segnalate`) ← *aggiornamento settimanale in questa KB*
+- Massime ufficiali delle pronunce di rilievo nomofilattico, pubblicate dalla Corte stessa (3–5/settimana)
+- Se la pronuncia è delle **Sezioni Unite** → pesa come LIVELLO 1
+- Non hanno ancora numero Rv: citare per numero/anno + scheda + PDF ufficiale linkato
+- Le **questioni SU pendenti** NON sono precedenti: solo segnalazione del contrasto rimesso
+- Cartella: `02_GIURISPRUDENZA/SEGNALATE/` · registro: sezione 3 dell'INDICE
+
 **Corte Costituzionale — sentenze interpretative / additive**
 - Non abrogano la norma, ma ne fissano l'interpretazione costituzionalmente orientata
 - Hanno forza di orientamento vincolante per l'interpretazione
