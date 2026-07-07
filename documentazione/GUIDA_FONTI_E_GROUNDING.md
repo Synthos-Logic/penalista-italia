@@ -50,6 +50,12 @@ particolarità: non hanno ancora il numero Rv (arriva col massimario annuale), q
 citano per numero/anno — e ogni citazione porta con sé il link al PDF ufficiale, che puoi
 aprire e verificare con un clic.
 
+Insieme alle schede arriva anche il **Radar del merito** (`SEGNALATE/RADAR/RADAR_MERITO.md`):
+segnalazioni settimanali di giurisprudenza di merito raccolte dalle riviste scientifiche open
+access (solo data, fonte, titolo e link). Il radar è informativo, **non citabile negli atti**:
+se un provvedimento segnalato ti serve in un atto, apri il link, scarica il PDF e chiedi al
+kit di ingerirlo in KB — da lì diventa citabile come ogni altra fonte.
+
 Attenzione: la cartella `SEGNALATE/` appartiene alla pipeline — le modifiche manuali
 vengono sovrascritte all'aggiornamento successivo. Le tue note vanno nelle altre cartelle.
 
