@@ -46,7 +46,7 @@ Clicca **Code -> Download ZIP** in questa pagina. Decomprimi, rinomina la cartel
 
 Il kit si presenta, ti chiede i dati dello studio (una volta sola) e apre con te il primo fascicolo.
 
-> **Che cosa hai appena installato?** Il Passo 1 monta il **motore**: le competenze del kit (le 8 skill). Il Passo 2 monta l'**archivio**: la cartella dove il kit conserva i tuoi fascicoli, le scadenze e i dati del tuo studio. Servono entrambi: il motore senza archivio risponde alle domande, ma non conserva il lavoro sui tuoi casi.
+> **Che cosa hai appena installato?** Il Passo 1 monta il **motore**: le competenze del kit (le 9 skill). Il Passo 2 monta l'**archivio**: la cartella dove il kit conserva i tuoi fascicoli, le scadenze e i dati del tuo studio. Servono entrambi: il motore senza archivio risponde alle domande, ma non conserva il lavoro sui tuoi casi.
 
 > Guida con immagini passo-passo: [Installazione dettagliata](docs/INSTALLAZIONE.md) · Senza GitHub/marketplace? [Installazione alternativa](documentazione/INSTALLAZIONE_ALTERNATIVA.md)
 
@@ -55,6 +55,13 @@ Il kit si presenta, ti chiede i dati dello studio (una volta sola) e apre con te
 ## Aggiornamenti
 
 **Le skill si aggiornano da sole con il plugin.** Per attivare gli aggiornamenti automatici (una volta sola): Personalizza -> Plugin -> Personale -> clicca i **tre puntini** accanto a `penalista-italia` -> attiva **"Sincronizza automaticamente"**. In alternativa, dallo stesso menu, **"Verifica aggiornamenti"** quando vuoi. Dopo un aggiornamento, apri una conversazione nuova.
+
+**La banca dati giurisprudenziale** si aggiorna da sola: ogni lunedi' una pipeline
+automatica pubblica sul repo [`cassazione-penale-db`](https://github.com/Synthos-Logic/cassazione-penale-db)
+le pronunce penali segnalate dall'Ufficio del Massimario (massima ufficiale, esito in sintesi,
+link al PDF autentico della Corte). Per portarle nella tua Knowledge Base basta dire a Claude
+*"aggiorna la banca dati"* (o lanciare `sincronizza_segnalate.py`): scarica e indicizza tutto,
+senza che ti serva alcun account GitHub.
 
 **La cartella di lavoro** (Knowledge Base, guide) si aggiorna piu' raramente: quando il changelog lo segnala, scarica il nuovo ZIP, trascinalo **dentro** la cartella `Penale-Italia` senza decomprimerlo e incolla a Claude:
 
@@ -77,7 +84,7 @@ La skill di onboarding la fa con te al primo "Iniziamo". Se preferisci farlo a m
 | Skill | Cosa fa |
 |---|---|
 | `penalista-inizia` | Onboarding guidato: dal primo "Iniziamo" al primo fascicolo operativo in 15 minuti, su un caso vero |
-| `penalista-archivio` | Converte i documenti (PDF) in fonti indicizzate e ancorabili; governa l'indice e il registro delle fonti della KB (grounding anti-allucinazione) |
+| `penalista-archivio` | Converte i documenti (PDF) in fonti indicizzate e ancorabili; governa l'indice e il registro delle fonti della KB (grounding anti-allucinazione); sincronizza la banca dati settimanale delle pronunce segnalate |
 | `penalista-strategia` | Analisi difensiva del capo di imputazione: elementi costitutivi, criticita' dell'accusa, eccezioni processuali, strategie graduate, giurisprudenza Cassazione e CEDU |
 | `penalista-atti` | Redazione di tutti i principali atti: memoria 415-bis, appello, ricorso Cassazione, riesame, revoca cautelare, patteggiamento, abbreviato, messa alla prova |
 | `penalista-scadenze` | Calcolo preciso di ogni termine processuale: impugnazioni, prescrizione ante/post Bonafede, custodia cautelare, improcedibilita' Cartabia, udienza di convalida |
@@ -116,6 +123,7 @@ Un kit costruito da chi conosce il processo penale italiano -- testato sul campo
 - **Fonti deterministiche** -- Normativa ufficiale, HUDOC, Massimario Cassazione. Quando usi i testi come contesto, le risposte sono precise, tracciabili e citabili.
 - **Template operativi** -- Pratiche ricorrenti gia' strutturate: gestione cautelare, risposta 415-bis, appello, ricorso Cassazione, esecuzione penale, D.Lgs. 231.
 - **Riforma Cartabia come strumento difensivo** -- L'improcedibilita' ex art. 344-bis c.p.p. trattata come leva della difesa, con calcolo integrato nei termini processuali.
+- **Giurisprudenza che si aggiorna da sola** -- Banca dati delle pronunce segnalate dal Massimario, alimentata ogni settimana da una pipeline automatica: ogni citazione porta la massima ufficiale e il link al PDF autentico della Corte. Fonti verificabili con un clic.
 - **Aggiornato con la prassi reale** -- Knowledge Base con schede operative per i reati piu' frequenti negli studi penali italiani, e aggiornamenti che arrivano da soli tramite il plugin.
 
 ---

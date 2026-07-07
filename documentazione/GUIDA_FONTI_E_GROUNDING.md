@@ -35,6 +35,24 @@ Quello che non è nel registro, per il kit non esiste.
 > I documenti **scansionati** (immagini) vanno prima passati per un OCR: il kit se ne
 > accorge e te lo segnala, non li indicizza "alla cieca".
 
+## La banca dati delle pronunce segnalate (si aggiorna da sola)
+
+Oltre alle fonti che aggiungi tu, il kit ha una banca dati che **si alimenta da sola**:
+le pronunce penali che l'Ufficio del Massimario segnala ogni settimana sul sito della
+Corte di Cassazione (le 3-5 di rilievo nomofilattico, comprese le Sezioni Unite e le
+questioni rimesse). Una pipeline automatica le trasforma in schede — massima ufficiale,
+esito in sintesi, **link al PDF autentico della Corte** — e le pubblica ogni lunedì.
+
+Per averle (o aggiornarle) nella tua Knowledge Base, di' a Claude: **"aggiorna la banca dati"**.
+Non serve alcun account: il comando scarica le schede in `02_GIURISPRUDENZA/SEGNALATE/`
+e le indicizza. Da quel momento sono citabili come ogni altra fonte del registro, con una
+particolarità: non hanno ancora il numero Rv (arriva col massimario annuale), quindi si
+citano per numero/anno — e ogni citazione porta con sé il link al PDF ufficiale, che puoi
+aprire e verificare con un clic.
+
+Attenzione: la cartella `SEGNALATE/` appartiene alla pipeline — le modifiche manuali
+vengono sovrascritte all'aggiornamento successivo. Le tue note vanno nelle altre cartelle.
+
 ## Cosa vuol dire "non presente in KB"
 Significa che la sentenza/principio che serve non è tra le fonti caricate. Non è un errore:
 è il sistema che ti avvisa di **non avere un appiglio documentale**. Da lì puoi (a) caricare
