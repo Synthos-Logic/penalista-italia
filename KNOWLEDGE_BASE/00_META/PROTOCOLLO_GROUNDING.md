@@ -41,6 +41,16 @@ ogni lunedì) stanno nella **sezione 3 dell'INDICE** ("Registro segnalate"). Pro
 5. quando la pronuncia riceve il numero **Rv** (campo `rv` della scheda valorizzato), la citazione con Rv è preferita.
 Aggiornamento: `python3 skills/penalista-archivio/scripts/sincronizza_segnalate.py KNOWLEDGE_BASE`.
 
+## Corte costituzionale (archivio completo, registro dedicato)
+L'archivio della Consulta (1956→oggi, sezione 4 dell'INDICE) si consulta così:
+1. per numero/anno → scheda diretta in `02_GIURISPRUDENZA/CONSULTA/<anno>/`;
+   per norma → `grep -rl "<norma>" 02_GIURISPRUDENZA/CONSULTA/` sulle schede;
+2. apri la scheda → incolla la **massima ufficiale testuale** (o il dispositivo);
+3. cita: *Corte cost., sent. n. X del ANNO — massima ufficiale (scheda in KB; testo
+   integrale sul sito della Corte, link in scheda)*. Le declaratorie di illegittimità = Livello 1;
+4. epigrafe e testo integrale NON sono in KB (dati delle parti): per affermazioni sul testo
+   pieno, seguire il link ufficiale (eventualmente ingerirlo nel fascicolo).
+
 ## Aggiungere una fonte (per l'avvocato)
 1. Metti il PDF nella zona giusta: globale → in `KNOWLEDGE_BASE/…`; di causa → in `FASCICOLI/<caso>/…`.
 2. Lancia: `python3 skills/penalista-archivio/scripts/aggiorna_indice.py <dir_zona>`.

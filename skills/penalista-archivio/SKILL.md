@@ -81,10 +81,14 @@ Per scaricarla o aggiornarla (repo pubblico: **non serve alcun account GitHub**)
 python3 skills/penalista-archivio/scripts/sincronizza_segnalate.py KNOWLEDGE_BASE
 ```
 
-Lo script clona il repo dati, aggiorna `KNOWLEDGE_BASE/02_GIURISPRUDENZA/SEGNALATE/` e
-reindicizza la zona: le schede compaiono nel REGISTRO_FONTI (una riga per anno, tipo
-`massimario-segnalate`) e nella **sezione 3 dell'INDICE master** ("Registro segnalate:
-numero/anno → scheda → massima").
+Lo script mantiene una cache git locale (primo scaricamento ~160 MB una tantum, poi solo
+differenze), aggiorna `02_GIURISPRUDENZA/SEGNALATE/` (pronunce segnalate + Radar del merito)
+e `02_GIURISPRUDENZA/CONSULTA/` (**archivio completo della Corte costituzionale dal 1956**:
+22.000+ pronunce con dispositivi e massime ufficiali) e reindicizza la zona: segnalate nel
+REGISTRO_FONTI (riga per anno, tipo `massimario-segnalate`) e sezione 3 dell'INDICE;
+Consulta come fonte unica (tipo `corte-costituzionale`) con **registro dedicato**
+(`CONSULTA/INDICE_CONSULTA.md`, sezione 4 dell'INDICE). Con `--solo-segnalate` si evita
+la copia dell'archivio costituzionale.
 
 Avvertenze:
 - la cartella `SEGNALATE/` è di proprietà della pipeline: **le modifiche locali vengono

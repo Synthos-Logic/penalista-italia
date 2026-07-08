@@ -1,6 +1,6 @@
 # Penalista Italia -- Kit Operativo per Avvocati Penalisti
 
-[![Versione](https://img.shields.io/badge/versione-3.4.0-blue)](https://github.com/Synthos-Logic/penalista-italia/releases)
+[![Versione](https://img.shields.io/badge/versione-3.5.0-blue)](https://github.com/Synthos-Logic/penalista-italia/releases)
 [![Licenza](https://img.shields.io/badge/licenza-MIT-green)](LICENSE)
 [![Piattaforma](https://img.shields.io/badge/piattaforma-Claude%20Cowork-orange)](https://claude.ai)
 [![Wiki](https://img.shields.io/badge/Wiki-metodologia-blueviolet)](https://github.com/Synthos-Logic/penalista-italia/wiki)
@@ -61,10 +61,9 @@ automatica pubblica sul repo [`cassazione-penale-db`](https://github.com/Synthos
 le pronunce penali segnalate dall'Ufficio del Massimario (massima ufficiale, esito in sintesi,
 link al PDF autentico della Corte), il radar del merito dalle riviste open access e
 l'**archivio completo della Corte costituzionale dal 1956** (oltre 22.000 pronunce con
-dispositivi e massime ufficiali, dal servizio open data della Consulta). Per portare le
-segnalate nella tua Knowledge Base basta dire a Claude *"aggiorna la banca dati"* (nessun
-account GitHub richiesto); l'integrazione dell'archivio costituzionale nella KB arriva col
-prossimo aggiornamento del kit.
+dispositivi e massime ufficiali, dal servizio open data della Consulta). Per portare tutto nella
+tua Knowledge Base basta dire a Claude *"aggiorna la banca dati"* (nessun account GitHub
+richiesto): il primo scaricamento è una tantum (~160 MB), poi solo le differenze.
 
 **La cartella di lavoro** (Knowledge Base, guide) si aggiorna piu' raramente: quando il changelog lo segnala, scarica il nuovo ZIP, trascinalo **dentro** la cartella `Penale-Italia` senza decomprimerlo e incolla a Claude:
 

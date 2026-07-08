@@ -1,6 +1,6 @@
 ---
 name: penalista-giurisprudenza
-description: "Ricerca e organizzazione della giurisprudenza penale italiana per la difesa. ATTIVARE SEMPRE quando l'avvocato cerca sentenze, massime o orientamenti della Cassazione penale, della Corte EDU o di altri organi giurisdizionali, o dice: 'cerca giurisprudenza su', 'ci sono sentenze favorevoli su', 'cosa dice la Cassazione su', 'quale sezione si occupa di', 'c'e un contrasto tra sezioni su', 'cerca massime su', 'trova precedenti su', 'giurisprudenza favorevole su', 'orientamento della Corte EDU su', 'ci sono novita' dalla Cassazione', 'ultime sentenze segnalate', 'questioni pendenti alle Sezioni Unite'. Attivare anche per: costruire la sezione giurisprudenziale di una memoria difensiva o di un ricorso, individuare contrasti giurisprudenziali da portare alle Sezioni Unite, creare o aggiornare note di giurisprudenza nel sistema wikilinks, verificare se un principio di diritto e consolidato o controverso."
+description: "Ricerca e organizzazione della giurisprudenza penale italiana per la difesa. ATTIVARE SEMPRE quando l'avvocato cerca sentenze, massime o orientamenti della Cassazione penale, della Corte EDU o di altri organi giurisdizionali, o dice: 'cerca giurisprudenza su', 'ci sono sentenze favorevoli su', 'cosa dice la Cassazione su', 'quale sezione si occupa di', 'c'e un contrasto tra sezioni su', 'cerca massime su', 'trova precedenti su', 'giurisprudenza favorevole su', 'orientamento della Corte EDU su', 'ci sono novita' dalla Cassazione', 'ultime sentenze segnalate', 'questioni pendenti alle Sezioni Unite', 'la Consulta si e' mai pronunciata su', 'questione di legittimita' costituzionale su', 'sentenze della Corte costituzionale su'. Attivare anche per: costruire la sezione giurisprudenziale di una memoria difensiva o di un ricorso, individuare contrasti giurisprudenziali da portare alle Sezioni Unite, creare o aggiornare note di giurisprudenza nel sistema wikilinks, verificare se un principio di diritto e consolidato o controverso."
 ---
 
 # Skill — Ricerca Giurisprudenziale Penale
@@ -42,6 +42,19 @@ Il link al PDF autentico VA SEMPRE riportato: è la fonte verificabile con un cl
 **Questioni SU pendenti**: non sono precedenti. Si usano SOLO come segnalazione del
 contrasto rimesso alle Sezioni Unite (con data d'udienza) — preziose per istanze di
 rinvio, motivi in subordine, strategia. Mai citarle come autorità.
+
+**Corte costituzionale (archivio completo dal 1956, sezione 4 dell'INDICE)**: la KB
+contiene TUTTE le pronunce della Consulta — dispositivo integrale e massime ufficiali con
+parametri normativi (fonte: open data ufficiale). Come si cerca:
+- per **numero/anno**: la scheda è `02_GIURISPRUDENZA/CONSULTA/<anno>/{S|O}_<numero>_<anno>.md`;
+- per **norma**: `grep -rl "131-bis" KNOWLEDGE_BASE/02_GIURISPRUDENZA/CONSULTA/` (i dispositivi
+  e le massime citano le norme testualmente); restringere per anno se servono le recenti.
+Come si cita (quote-then-claim): apri la scheda → incolla la massima ufficiale testuale →
+`Corte cost., sent. n. 44 del 2026 — massima ufficiale (scheda in KB; testo integrale:
+<url_scheda> sul sito della Corte)`. Le declaratorie di illegittimità pesano al **Livello 1**
+della gerarchia e travolgono la norma colpita: verificarle SEMPRE quando si lavora su una
+fattispecie. Nelle schede non ci sono epigrafe né testo integrale (dati delle parti):
+per il testo pieno si segue il link.
 
 **Raccordo Rv**: quando una segnalata compare nel massimario annuale con numero Rv
 (campo `rv` valorizzato nella scheda), la citazione con Rv è quella preferita.

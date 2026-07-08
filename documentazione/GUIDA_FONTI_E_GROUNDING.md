@@ -58,9 +58,10 @@ kit di ingerirlo in KB — da lì diventa citabile come ogni altra fonte.
 
 Nel repo della banca dati vive anche l'**archivio completo della Corte costituzionale**
 (dal 1956, oltre 22.000 pronunce con dispositivo integrale e massime ufficiali, costruito dal
-servizio open data della Consulta e aggiornato ogni settimana): l'integrazione automatica nella
-Knowledge Base arriverà con il prossimo aggiornamento del kit — nel frattempo è consultabile
-direttamente sul repo.
+servizio open data della Consulta e aggiornato ogni settimana): con "aggiorna la banca dati"
+arriva anche lui nella tua KB, in `02_GIURISPRUDENZA/CONSULTA/`, con registro dedicato.
+Per cercare per norma: chiedi a Claude (es. "la Consulta si è mai pronunciata sul 131-bis?") —
+il kit fa grep sulle schede e cita la massima ufficiale con il link al testo integrale.
 
 Attenzione: la cartella `SEGNALATE/` appartiene alla pipeline — le modifiche manuali
 vengono sovrascritte all'aggiornamento successivo. Le tue note vanno nelle altre cartelle.

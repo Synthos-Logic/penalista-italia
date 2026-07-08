@@ -1,5 +1,25 @@
 # Changelog — Penalista Italia
 
+## [3.5.0] — Luglio 2026
+**Aggiornamento skill necessario: Sì (`penalista-archivio` e `penalista-giurisprudenza` aggiornate)**
+
+### Aggiunto
+- **Archivio completo della Corte costituzionale nella KB**: con *"aggiorna la banca dati"*
+  arrivano anche le 22.357 pronunce della Consulta dal 1956 (dispositivo integrale, massime
+  ufficiali con parametri normativi, link alla scheda della Corte), costruite dal servizio
+  open data ufficiale (CC BY-SA 3.0). Registro dedicato `CONSULTA/INDICE_CONSULTA.md`,
+  nuova **sezione 4 dell'INDICE master**; ricerca per norma via grep sulle schede.
+- **Sincronizzazione incrementale**: `sincronizza_segnalate.py` ora usa una cache git locale —
+  primo scaricamento una tantum (~160 MB), poi solo le differenze. Opzione `--solo-segnalate`
+  per chi vuole la KB leggera.
+- `penalista-giurisprudenza`: ricerca e citazione della giurisprudenza costituzionale nel
+  MODULO 0 (per numero/anno e per norma; declaratorie di illegittimità = Livello 1).
+
+### Modificato
+- `CLAUDE.md` (regola 8), `PROTOCOLLO_GROUNDING.md`, `GERARCHIA_FONTI.md`: procedura di
+  citazione della Consulta cablata nel quote-then-claim; conteggi dell'INDICE separati
+  (Rv / segnalate / archivi dedicati).
+
 ## [3.4.0] — Luglio 2026
 **Aggiornamento skill necessario: Sì (`penalista-archivio` e `penalista-giurisprudenza` aggiornate)**
 

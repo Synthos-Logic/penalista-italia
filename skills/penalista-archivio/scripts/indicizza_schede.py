@@ -78,6 +78,26 @@ def main():
     for f in glob.glob(os.path.join(out, "Pronunce_Segnalate_*.index.json")):
         os.remove(f)
 
+    # ---- CONSULTA: una sola fonte-riga per l'intero archivio (registro dedicato)
+    cons = os.path.join(zona, "02_GIURISPRUDENZA", "CONSULTA")
+    for f in glob.glob(os.path.join(out, "Corte_Costituzionale.index.json")):
+        os.remove(f)
+    if os.path.isdir(cons):
+        n_cons = sum(1 for dp, dn, fn in os.walk(cons) for x in fn
+                     if x.endswith(".md") and not x.startswith("INDICE"))
+        anni = sorted(d for d in os.listdir(cons) if d.isdigit())
+        man = {"fonte": f"Corte costituzionale — archivio completo {anni[0]}–{anni[-1]}" if anni
+                        else "Corte costituzionale — archivio",
+               "tipo": "corte-costituzionale",
+               "file_md": "02_GIURISPRUDENZA/CONSULTA/",
+               "pagine_con_testo": "—",
+               "sentenze_rv": n_cons,
+               "strutturale": [], "citazioni": [],
+               "registro_dedicato": "02_GIURISPRUDENZA/CONSULTA/INDICE_CONSULTA.md"}
+        json.dump(man, open(os.path.join(out, "Corte_Costituzionale.index.json"), "w",
+                            encoding="utf-8"), ensure_ascii=False, indent=1)
+        print(f"[indicizza_schede] CONSULTA: {n_cons} pronunce -> Corte_Costituzionale.index.json")
+
     tot = 0
     for anno, schede in sorted(per_anno.items()):
         man = {"fonte": f"Pronunce segnalate Massimario {anno}",

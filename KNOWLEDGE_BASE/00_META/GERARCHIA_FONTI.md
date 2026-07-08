@@ -21,11 +21,11 @@ Non tutte le fonti hanno lo stesso valore giuridico. Un orientamento del Tribuna
 - Rimettere alle Sezioni Unite è l'unica via per discostarsi dal principio enunciato
 - Cartella: `02_GIURISPRUDENZA/sezioni_unite_penali/`
 
-**Corte Costituzionale — sentenze ablative**
+**Corte Costituzionale — sentenze ablative** ← *archivio completo in questa KB (tipo `corte-costituzionale`)*
 - Una norma penale dichiarata illegittima cessa di esistere nell'ordinamento
 - Qualsiasi ragionamento su quella norma (prescrizione, elementi costitutivi, pena) deve tenere conto della declaratoria di illegittimità
 - L'AI deve segnalare immediatamente se la norma discussa è stata oggetto di pronuncia della Corte Costituzionale
-- Cartella: `02_GIURISPRUDENZA/corte_costituzionale/sentenze_ablative_penali/`
+- Cartella: `02_GIURISPRUDENZA/CONSULTA/` (archivio completo 1956→oggi, registro dedicato `INDICE_CONSULTA.md`)
 
 ### LIVELLO 2 — Alta autorità (orientamento dominante)
 
