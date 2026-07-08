@@ -1,5 +1,16 @@
 # Changelog — Penalista Italia
 
+## [3.5.1] — Luglio 2026
+**Aggiornamento skill necessario: No**
+
+### Corretto
+- `/versione`: la versione dichiarata era rimasta ferma alla 3.2.4 — ora e allineata e
+  soprattutto il comando esegue un **auto-check contro GitHub**: confronta la versione
+  installata con quella pubblicata su `main` e, se il kit e rimasto indietro, avvisa
+  l'utente e fornisce la procedura di sblocco (rimozione e ri-aggiunta del marketplace).
+  Contromisura al problema noto dell'app Claude per cui la sincronizzazione automatica
+  del marketplace puo bloccarsi in silenzio mostrando "aggiornato" anche quando non lo e.
+
 ## [3.5.0] — Luglio 2026
 **Aggiornamento skill necessario: Sì (`penalista-archivio` e `penalista-giurisprudenza` aggiornate)**
 
