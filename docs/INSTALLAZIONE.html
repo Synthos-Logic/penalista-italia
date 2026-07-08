@@ -459,6 +459,7 @@
 
     <div class="nav-section">
       <div class="nav-label">Se qualcosa non torna</div>
+      <a class="nav-item" href="#aggiornare"><span class="dot"></span>Aggiornare il kit</a>
       <a class="nav-item" href="#cosa"><span class="dot"></span>Cosa hai installato</a>
       <a class="nav-item" href="#problemi"><span class="dot"></span>Problemi comuni</a>
     </div>
@@ -667,6 +668,39 @@
       </div>
     </section>
 
+    <!-- AGGIORNARE IL KIT -->
+    <section id="aggiornare">
+      <div class="section-header">
+        <div class="section-num">↻</div>
+        <div>
+          <div class="section-title">Aggiornare il kit</div>
+          <div class="section-sub">Quando esce una nuova release</div>
+        </div>
+      </div>
+
+      <p>Quando esce una nuova versione (la trovi tra le <a href="https://github.com/Synthos-Logic/penalista-italia/releases">release</a>), il plugin si aggiorna così:</p>
+
+      <div class="card">
+        <div class="card-title">1. Apri la Directory dei plugin</div>
+        <p style="margin:0;font-size:13px"><strong>Impostazioni</strong> → <strong>Plugin</strong> → clicca <strong>Sfoglia</strong>. Si apre la Directory: vai su <strong>Plugin</strong> → <strong>Personale</strong>.</p>
+      </div>
+
+      <div class="card">
+        <div class="card-title">2. Sincronizza il catalogo</div>
+        <p style="margin:0;font-size:13px">Accanto al nome del marketplace <code>penalista-italia</code> clicca i <strong>tre puntini (···)</strong> → <strong>«Verifica aggiornamenti»</strong>. Il «Commit sincronizzato» mostrato nel menu deve cambiare: è il segno che il catalogo si è allineato a GitHub.</p>
+      </div>
+
+      <div class="card">
+        <div class="card-title">3. Applica e verifica</div>
+        <p style="margin:0;font-size:13px">Riavvia l'app, apri una <strong>conversazione nuova</strong> e scrivi <code>/penalista-italia:versione</code>: il comando confronta da solo la versione installata con l'ultima pubblicata su GitHub e ti dice se sei aggiornato.</p>
+      </div>
+
+      <div class="alert orange">
+        <span class="alert-icon">⚠️</span>
+        <p><strong>Se il kit resta fermo (dice «aggiornato» ma non lo è).</strong> Problema noto dell'app Claude: la sincronizzazione del marketplace può bloccarsi in silenzio. Procedura di sblocco garantita — <strong>non tocca fascicoli né Knowledge Base</strong>: sul chip <code>penalista-italia</code> clicca <strong>··· → Rimuovi</strong>; poi <strong>+</strong> → Aggiungi marketplace → incolla <code>Synthos-Logic/penalista-italia</code> → Sincronizza; reinstalla il plugin (<strong>+</strong> sulla scheda); riavvia l'app e verifica in una conversazione nuova con <code>/penalista-italia:versione</code>.</p>
+      </div>
+    </section>
+
     <!-- PROBLEMI COMUNI -->
     <section id="problemi">
       <div class="section-header">
@@ -695,6 +729,11 @@
       <div class="card">
         <div class="card-title">Il pulsante «Aggiorna» sulla scheda del plugin è grigio</div>
         <p style="margin:0;font-size:13px">È normale: prima va sincronizzato il catalogo. Usa i <strong>tre puntini (···)</strong> accanto al nome del marketplace → <strong>«Verifica aggiornamenti»</strong>.</p>
+      </div>
+
+      <div class="card">
+        <div class="card-title">Il kit dice «aggiornato» ma /versione segnala una versione vecchia</div>
+        <p style="margin:0;font-size:13px">È il blocco silenzioso della sincronizzazione (problema noto dell'app). Segui la procedura di sblocco nella sezione <a href="#aggiornare">Aggiornare il kit</a>: rimuovi e ri-aggiungi il marketplace. Fascicoli e Knowledge Base non vengono toccati.</p>
       </div>
 
       <div class="card">

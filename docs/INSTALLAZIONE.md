@@ -101,6 +101,34 @@ Il kit si presenta, raccoglie i dati del tuo studio (nome, foro, tribunale — l
 
 ---
 
+## Aggiornare il kit
+
+Quando esce una nuova versione (la trovi tra le [release](https://github.com/Synthos-Logic/penalista-italia/releases)), il plugin si aggiorna così:
+
+### 1. Apri la Directory dei plugin
+
+**Impostazioni** → **Plugin** → clicca **Sfoglia**. Si apre la Directory: vai su **Plugin** → **Personale**.
+
+### 2. Sincronizza il catalogo
+
+Accanto al nome del marketplace `penalista-italia` clicca i **tre puntini (···)** → **"Verifica aggiornamenti"**. Il "Commit sincronizzato" mostrato nel menu deve cambiare: è il segno che il catalogo si è allineato a GitHub.
+
+### 3. Applica e verifica
+
+Riavvia l'app, apri una **conversazione nuova** e scrivi `/penalista-italia:versione`: il comando confronta da solo la versione installata con l'ultima pubblicata su GitHub e ti dice se sei aggiornato.
+
+### Se il kit resta fermo (dice "aggiornato" ma non lo è)
+
+Esiste un problema noto dell'app Claude: la sincronizzazione del marketplace può bloccarsi in silenzio e il client continua a rispondere "aggiornato" restando fermo a una versione vecchia (`/versione` te lo segnala). La procedura di sblocco è garantita e **non tocca i tuoi fascicoli né la Knowledge Base** — rimuove solo il catalogo:
+
+1. **Impostazioni** → **Plugin** → **Sfoglia** → **Plugin** → **Personale**;
+2. sul chip `penalista-italia` clicca **···** → **Rimuovi**;
+3. clicca il **+** → **Aggiungi marketplace** → incolla `Synthos-Logic/penalista-italia` → **Sincronizza**;
+4. reinstalla il plugin (**+** sulla scheda Penalista Italia): arriva l'ultima versione;
+5. riavvia l'app, apri una conversazione nuova e verifica con `/penalista-italia:versione`.
+
+---
+
 ## Problemi comuni
 
 **"Questo repository non è un marketplace"** — Controlla di aver scritto esattamente `Synthos-Logic/penalista-italia` (con il trattino).
@@ -110,6 +138,8 @@ Il kit si presenta, raccoglie i dati del tuo studio (nome, foro, tribunale — l
 **Ho installato un aggiornamento ma non lo vedo** — Gli aggiornamenti valgono per le conversazioni nuove: chiudi quella aperta e aprine un'altra.
 
 **Il pulsante "Aggiorna" sulla scheda del plugin è grigio** — È normale: prima va sincronizzato il catalogo. Usa i **tre puntini (···)** accanto al nome del marketplace → **"Verifica aggiornamenti"**.
+
+**Il kit dice "aggiornato" ma `/versione` segnala una versione vecchia** — È il blocco silenzioso della sincronizzazione (problema noto dell'app). Segui la procedura di sblocco nella sezione [Aggiornare il kit](#aggiornare-il-kit): rimuovi e ri-aggiungi il marketplace. Fascicoli e Knowledge Base non vengono toccati.
 
 **Non voglio usare GitHub** — [Installazione alternativa senza marketplace](../documentazione/INSTALLAZIONE_ALTERNATIVA.md).
 

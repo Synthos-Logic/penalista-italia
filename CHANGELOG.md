@@ -1,5 +1,18 @@
 # Changelog — Penalista Italia
 
+## [3.5.2] — Luglio 2026
+**Aggiornamento skill necessario: No**
+
+### Aggiunto
+- **Guida "Aggiornare il kit"** in `docs/INSTALLAZIONE.md` e nella pagina HTML: procedura
+  passo passo con il percorso verificato (Impostazioni → Plugin → Sfoglia → Directory) e
+  la procedura di sblocco quando la sincronizzazione del marketplace resta bloccata in
+  silenzio (rimozione e ri-aggiunta del marketplace — fascicoli e KB non vengono toccati).
+
+### Corretto
+- `AGGIORNAMENTO_ASSISTITO.md` (punto 6) e `/versione`: percorso di navigazione corretto
+  per raggiungere la Directory dei plugin.
+
 ## [3.5.1] — Luglio 2026
 **Aggiornamento skill necessario: No**
 
