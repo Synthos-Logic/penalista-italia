@@ -1,11 +1,11 @@
 ---
 description: Mostra la versione installata del Kit Penalista Italiano e verifica se su GitHub esiste una versione piu recente
 ---
-La versione installata di questo plugin e la **3.5.2** (luglio 2026), con 9 skill: strategia, atti, scadenze, cautelare, giurisprudenza, esecuzione, archivio, inizia, verifica.
+La versione installata di questo plugin e la **3.6.0** (luglio 2026), con 9 skill: strategia, atti, scadenze, cautelare, giurisprudenza, esecuzione, archivio, inizia, verifica.
 
 Esegui questi passi nell'ordine:
 
-1. **Comunica la versione installata** (3.5.1) all'utente.
+1. **Comunica la versione installata** (3.6.0) all'utente.
 
 2. **Verifica la versione pubblicata su GitHub**: scarica `https://raw.githubusercontent.com/Synthos-Logic/penalista-italia/main/.claude-plugin/plugin.json` (con web fetch oppure `curl -s` da shell) e leggi il campo `version`.
    - Se il fetch fallisce (offline, restrizioni di rete): dillo esplicitamente e salta al punto 4. Non dedurre nulla sulla versione remota.

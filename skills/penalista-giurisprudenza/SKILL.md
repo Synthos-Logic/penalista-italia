@@ -43,9 +43,15 @@ Il link al PDF autentico VA SEMPRE riportato: è la fonte verificabile con un cl
 contrasto rimesso alle Sezioni Unite (con data d'udienza) — preziose per istanze di
 rinvio, motivi in subordine, strategia. Mai citarle come autorità.
 
-**Corte costituzionale (archivio completo dal 1956, sezione 4 dell'INDICE)**: la KB
-contiene TUTTE le pronunce della Consulta — dispositivo integrale e massime ufficiali con
-parametri normativi (fonte: open data ufficiale). Come si cerca:
+**Corte costituzionale (sezione 4 dell'INDICE)**: la KB contiene di default le pronunce
+della Consulta degli **ultimi 10 anni** — dispositivo integrale e massime ufficiali con
+parametri normativi (fonte: open data ufficiale); l'archivio completo dal 1956 si scarica
+con `--tutto`. Se una pronuncia storica citata non è in KB, dillo ("anteriore alla finestra
+sincronizzata") e proponi il sync completo o il link alla scheda ufficiale della Corte —
+mai citarla a memoria. Le pronunce scelte dalla Corte per il proprio **Annuario** (rassegna
+annuale, dal 2021) portano in frontmatter `annuario:` e `tema_annuario:` e il marcatore
+`★ Annuario` nel registro dedicato: utilissime come selezione autorevole per tema
+(`grep -rl 'tema_annuario' ...` o grep sul tema). Come si cerca:
 - per **numero/anno**: la scheda è `02_GIURISPRUDENZA/CONSULTA/<anno>/{S|O}_<numero>_<anno>.md`;
 - per **norma**: `grep -rl "131-bis" KNOWLEDGE_BASE/02_GIURISPRUDENZA/CONSULTA/` (i dispositivi
   e le massime citano le norme testualmente); restringere per anno se servono le recenti.

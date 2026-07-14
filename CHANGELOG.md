@@ -1,5 +1,29 @@
 # Changelog — Penalista Italia
 
+## [3.6.0] — Luglio 2026
+**Aggiornamento skill necessario: Sì (`penalista-archivio` e `penalista-giurisprudenza` aggiornate)**
+
+### Modificato
+- **Consulta: sincronizzazione a finestra (feedback del pilota).** Di default
+  `sincronizza_segnalate.py` porta in KB gli **ultimi 10 anni** della Corte
+  costituzionale (~2.700 pronunce, poche decine di MB invece di ~160): per il
+  lavoro quotidiano 22.000 pronunce dal 1956 sono rumore. L'archivio completo
+  resta sul repo dati e si scarica con `--tutto` (o soglia scelta con
+  `--da-anno N`). Il primo scaricamento usa ora lo sparse checkout: i nuovi
+  utenti scaricano solo la finestra. L'indice dedicato della Consulta copiato
+  in KB segnala la finestra attiva; la skill `penalista-giurisprudenza` sa
+  dichiarare "anteriore alla finestra sincronizzata" e proporre il sync
+  completo invece di citare a memoria.
+
+### Aggiunto
+- **Fonte "Annuario della Corte costituzionale"** (banca dati, dal 2021): le
+  decisioni che la Corte seleziona ogni anno nella propria rassegna ufficiale
+  arrivano marcate in frontmatter (`annuario:` + `tema_annuario:`) e con
+  `★ Annuario (tema)` nel registro dedicato — una selezione autorevole per
+  tema, senza copiare testo redazionale (solo fatti + link). Nessun nuovo
+  comando: i flag arrivano con la normale sincronizzazione settimanale.
+
+
 ## [3.5.2] — Luglio 2026
 **Aggiornamento skill necessario: No**
 

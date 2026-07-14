@@ -1,6 +1,6 @@
 # Penalista Italia -- Kit Operativo per Avvocati Penalisti
 
-[![Versione](https://img.shields.io/badge/versione-3.5.0-blue)](https://github.com/Synthos-Logic/penalista-italia/releases)
+[![Versione](https://img.shields.io/badge/versione-3.6.0-blue)](https://github.com/Synthos-Logic/penalista-italia/releases)
 [![Licenza](https://img.shields.io/badge/licenza-MIT-green)](LICENSE)
 [![Piattaforma](https://img.shields.io/badge/piattaforma-Claude%20Cowork-orange)](https://claude.ai)
 [![Wiki](https://img.shields.io/badge/Wiki-metodologia-blueviolet)](https://github.com/Synthos-Logic/penalista-italia/wiki)
@@ -60,10 +60,13 @@ Il kit si presenta, ti chiede i dati dello studio (una volta sola) e apre con te
 automatica pubblica sul repo [`cassazione-penale-db`](https://github.com/Synthos-Logic/cassazione-penale-db)
 le pronunce penali segnalate dall'Ufficio del Massimario (massima ufficiale, esito in sintesi,
 link al PDF autentico della Corte), il radar del merito dalle riviste open access e
-l'**archivio completo della Corte costituzionale dal 1956** (oltre 22.000 pronunce con
-dispositivi e massime ufficiali, dal servizio open data della Consulta). Per portare tutto nella
-tua Knowledge Base basta dire a Claude *"aggiorna la banca dati"* (nessun account GitHub
-richiesto): il primo scaricamento è una tantum (~160 MB), poi solo le differenze.
+l'**archivio della Corte costituzionale** (dispositivi e massime ufficiali dal servizio
+open data della Consulta, con le decisioni scelte nell'Annuario della Corte marcate per tema).
+Per portare tutto nella tua Knowledge Base basta dire a Claude *"aggiorna la banca dati"*
+(nessun account GitHub richiesto): di default arrivano gli **ultimi 10 anni** della Consulta
+(poche decine di MB, il taglio giusto per il lavoro quotidiano); l'archivio completo dal 1956
+(22.000+ pronunce, ~160 MB) resta disponibile a richiesta. Il primo scaricamento è una tantum,
+poi solo le differenze.
 
 **La cartella di lavoro** (Knowledge Base, guide) si aggiorna piu' raramente: quando il changelog lo segnala, scarica il nuovo ZIP, trascinalo **dentro** la cartella `Penale-Italia` senza decomprimerlo e incolla a Claude:
 
@@ -125,7 +128,7 @@ Un kit costruito da chi conosce il processo penale italiano -- testato sul campo
 - **Fonti deterministiche** -- Normativa ufficiale, HUDOC, Massimario Cassazione. Quando usi i testi come contesto, le risposte sono precise, tracciabili e citabili.
 - **Template operativi** -- Pratiche ricorrenti gia' strutturate: gestione cautelare, risposta 415-bis, appello, ricorso Cassazione, esecuzione penale, D.Lgs. 231.
 - **Riforma Cartabia come strumento difensivo** -- L'improcedibilita' ex art. 344-bis c.p.p. trattata come leva della difesa, con calcolo integrato nei termini processuali.
-- **Giurisprudenza che si aggiorna da sola** -- Banca dati alimentata ogni settimana da una pipeline automatica: pronunce segnalate dal Massimario della Cassazione, archivio completo della Corte costituzionale dal 1956 (22.000+ pronunce con massime ufficiali) e radar del merito. Ogni citazione porta la fonte ufficiale verificabile con un clic.
+- **Giurisprudenza che si aggiorna da sola** -- Banca dati alimentata ogni settimana da una pipeline automatica: pronunce segnalate dal Massimario della Cassazione, archivio della Corte costituzionale (ultimi 10 anni di default, completo dal 1956 a richiesta, con le decisioni dell'Annuario marcate per tema) e radar del merito. Ogni citazione porta la fonte ufficiale verificabile con un clic.
 - **Aggiornato con la prassi reale** -- Knowledge Base con schede operative per i reati piu' frequenti negli studi penali italiani, e aggiornamenti che arrivano da soli tramite il plugin.
 
 ---

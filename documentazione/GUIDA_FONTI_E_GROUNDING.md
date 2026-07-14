@@ -56,10 +56,16 @@ access (solo data, fonte, titolo e link). Il radar è informativo, **non citabil
 se un provvedimento segnalato ti serve in un atto, apri il link, scarica il PDF e chiedi al
 kit di ingerirlo in KB — da lì diventa citabile come ogni altra fonte.
 
-Nel repo della banca dati vive anche l'**archivio completo della Corte costituzionale**
-(dal 1956, oltre 22.000 pronunce con dispositivo integrale e massime ufficiali, costruito dal
-servizio open data della Consulta e aggiornato ogni settimana): con "aggiorna la banca dati"
-arriva anche lui nella tua KB, in `02_GIURISPRUDENZA/CONSULTA/`, con registro dedicato.
+Nel repo della banca dati vive anche l'**archivio della Corte costituzionale**
+(dispositivo integrale e massime ufficiali dal servizio open data della Consulta, aggiornato
+ogni settimana): con "aggiorna la banca dati" arriva anche lui nella tua KB, in
+`02_GIURISPRUDENZA/CONSULTA/`, con registro dedicato. Di default arrivano gli **ultimi
+10 anni** (~2.700 pronunce, poche decine di MB): è il taglio giusto per il lavoro
+quotidiano. L'archivio completo dal 1956 (22.000+ pronunce, ~160 MB) si scarica dicendo
+"aggiorna la banca dati, archivio completo" (opzione `--tutto`). Le decisioni che la Corte
+stessa seleziona ogni anno nel proprio **Annuario** (dal 2021) sono marcate nelle schede
+con il tema (`annuario:`/`tema_annuario:`) e con `★ Annuario` nel registro: una selezione
+autorevole quando cerchi "le pronunce che contano" su un tema.
 Per cercare per norma: chiedi a Claude (es. "la Consulta si è mai pronunciata sul 131-bis?") —
 il kit fa grep sulle schede e cita la massima ufficiale con il link al testo integrale.
 
