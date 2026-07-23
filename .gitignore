@@ -17,3 +17,13 @@ Thumbs.db
 
 # Massimari PDF (troppo grandi — aggiungere localmente)
 KNOWLEDGE_BASE/**/*.pdf
+
+# Banca dati sincronizzata (proprietà della pipeline cassazione-penale-db:
+# arriva con sincronizza_segnalate.py, non si versiona nel kit)
+KNOWLEDGE_BASE/02_GIURISPRUDENZA/SEGNALATE/
+KNOWLEDGE_BASE/02_GIURISPRUDENZA/CONSULTA/
+KNOWLEDGE_BASE/.banca_dati_cache/
+KNOWLEDGE_BASE/_INDICE/Pronunce_Segnalate_*.index.json
+KNOWLEDGE_BASE/_INDICE/Corte_Costituzionale.index.json
+FASCICOLI/*/_INDICE/Pronunce_Segnalate_*.index.json
+FASCICOLI/*/.banca_dati_cache/
