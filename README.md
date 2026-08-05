@@ -57,7 +57,7 @@ Il kit si presenta, ti chiede i dati dello studio (una volta sola) e apre con te
 **Le skill si aggiornano da sole con il plugin.** Per attivare gli aggiornamenti automatici (una volta sola): Personalizza -> Plugin -> Personale -> clicca i **tre puntini** accanto a `penalista-italia` -> attiva **"Sincronizza automaticamente"**. In alternativa, dallo stesso menu, **"Verifica aggiornamenti"** quando vuoi. Dopo un aggiornamento, apri una conversazione nuova.
 
 **La banca dati giurisprudenziale** si aggiorna da sola: ogni lunedi' una pipeline
-automatica pubblica sul repo [`cassazione-penale-db`](https://github.com/Synthos-Logic/cassazione-penale-db)
+automatica pubblica sul repo [`giurisprudenza-db`](https://github.com/Synthos-Logic/giurisprudenza-db)
 le pronunce penali segnalate dall'Ufficio del Massimario (massima ufficiale, esito in sintesi,
 link al PDF autentico della Corte), il radar del merito dalle riviste open access e
 l'**archivio della Corte costituzionale** (dispositivi e massime ufficiali dal servizio

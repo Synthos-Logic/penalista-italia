@@ -44,7 +44,7 @@ def main():
     if seg:
         L += ["## 3. Registro segnalate (numero/anno \u2192 scheda \u2192 massima)", "",
               "Pronunce segnalate dall'Ufficio del Massimario (aggiornamento settimanale via "
-              "cassazione-penale-db). Non hanno ancora numero Rv: si citano per numero/anno "
+              "giurisprudenza-db). Non hanno ancora numero Rv: si citano per numero/anno "
               "con riferimento alla scheda e al PDF ufficiale linkato nella scheda. "
               "Le questioni SU PENDENTI non sono precedenti citabili come autorit\u00e0.", ""]
         for v in seg:

@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 indicizza_schede.py — Kit Penalista Italia
-Indicizza le schede delle PRONUNCE SEGNALATE (repo cassazione-penale-db) presenti in
+Indicizza le schede delle PRONUNCE SEGNALATE (repo giurisprudenza-db) presenti in
 <zona>/02_GIURISPRUDENZA/SEGNALATE/: genera in <zona>/_INDICE/ un manifest
 *.index.json per anno, compatibile con genera_indice_master.py e con il
 REGISTRO_FONTI (una riga per collezione/anno — decisione D2 della spec).

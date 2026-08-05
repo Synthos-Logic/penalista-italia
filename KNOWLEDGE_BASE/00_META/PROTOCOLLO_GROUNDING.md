@@ -30,7 +30,7 @@ Cita con l'etichetta corretta ("secondo la nota interna dello studio…" ≠ "Ca
 e pesa secondo `GERARCHIA_FONTI.md`. Una nota di studio non vale come una Sezioni Unite.
 
 ## Pronunce segnalate (flusso settimanale, senza Rv)
-Le pronunce segnalate dall'Ufficio del Massimario (repo `cassazione-penale-db`, aggiornato
+Le pronunce segnalate dall'Ufficio del Massimario (repo `giurisprudenza-db`, aggiornato
 ogni lunedì) stanno nella **sezione 3 dell'INDICE** ("Registro segnalate"). Procedura:
 1. cerca per numero/anno o materia nella sezione 3 → apri la **scheda** indicata;
 2. incolla la **massima testuale** (campo "Massima ufficiale");

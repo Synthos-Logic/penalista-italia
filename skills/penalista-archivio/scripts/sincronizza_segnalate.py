@@ -2,7 +2,7 @@
 """
 sincronizza_segnalate.py — Kit Penalista Italia (v3.6.0)
 Scarica/aggiorna la BANCA DATI GIURISPRUDENZIALE del kit (repo pubblico
-Synthos-Logic/cassazione-penale-db — nessun account GitHub richiesto):
+Synthos-Logic/giurisprudenza-db — nessun account GitHub richiesto):
 
   - SEGNALATE/  -> KNOWLEDGE_BASE/02_GIURISPRUDENZA/SEGNALATE/
                    (pronunce segnalate dal Massimario + Radar del merito)
@@ -27,7 +27,7 @@ Uso: python3 sincronizza_segnalate.py <dir_zona> [--tutto] [--da-anno N] [--solo
 """
 import argparse, datetime, os, shutil, subprocess, sys
 
-REPO_URL = "https://github.com/Synthos-Logic/cassazione-penale-db.git"
+REPO_URL = "https://github.com/Synthos-Logic/giurisprudenza-db.git"
 ANNI_FINESTRA = 10  # default richiesto dall'uso di studio: ultimi 10 anni
 
 

@@ -1,5 +1,20 @@
 # Changelog — Penalista Italia
 
+## [3.6.1] — 2026-08-05
+Manutenzione: il repository della banca dati e' stato rinominato.
+
+### Cambiato
+- Il repo dei dati **`cassazione-penale-db` si chiama ora `giurisprudenza-db`**: accoglie anche il
+  settore civile (kit `civilista-italia`), e la Corte costituzionale — che nei suoi open data non e'
+  segmentata per materia — resta condivisa tra le due materie invece di essere duplicata.
+- Aggiornato il nome in `sincronizza_segnalate.py` (URL del clone) e nei testi di skill, CLAUDE.md,
+  PROTOCOLLO_GROUNDING, README e sito della metodologia.
+
+### Nota per chi ha gia' il kit installato
+**Non serve fare nulla con urgenza**: GitHub mantiene i redirect permanenti, quindi anche la versione
+precedente dello script continua a sincronizzare correttamente dall'URL vecchio. Questo aggiornamento
+allinea i riferimenti per evitare confusione quando il repo ospitera' anche le pronunce civili.
+
 ## [3.6.0] — Luglio 2026
 **Aggiornamento skill necessario: Sì (`penalista-archivio` e `penalista-giurisprudenza` aggiornate)**
 

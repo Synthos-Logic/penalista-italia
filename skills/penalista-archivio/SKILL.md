@@ -72,7 +72,7 @@ Dipendenza: `pdfplumber` (`pip install pdfplumber`).
 Il kit ha una banca dati centralizzata delle **pronunce penali segnalate dall'Ufficio del
 Massimario** (sentenze e ordinanze di rilievo nomofilattico, Sezioni Unite, questioni SU
 pendenti e decise), aggiornata **ogni lunedì** da una pipeline automatica nel repo pubblico
-`Synthos-Logic/cassazione-penale-db`. Ogni scheda contiene la massima ufficiale, "l'esito
+`Synthos-Logic/giurisprudenza-db`. Ogni scheda contiene la massima ufficiale, "l'esito
 in sintesi" e il **link al PDF autentico** sul sito della Corte: fonti verificabili con un clic.
 
 Per scaricarla o aggiornarla (repo pubblico: **non serve alcun account GitHub**):

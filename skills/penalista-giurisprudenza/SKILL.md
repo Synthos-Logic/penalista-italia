@@ -25,7 +25,7 @@ La KB contiene due binari di giurisprudenza:
 
 1. **Massimari annuali** (stock consolidato, citazioni con numero **Rv**) — sezioni 1 e 2 dell'INDICE.
 2. **Pronunce segnalate** dall'Ufficio del Massimario (flusso settimanale, repo
-   `cassazione-penale-db`) — **sezione 3 dell'INDICE** ("Registro segnalate").
+   `giurisprudenza-db`) — **sezione 3 dell'INDICE** ("Registro segnalate").
 
 **Check di freschezza obbligatorio**: leggi la data di generazione in testa a
 `KNOWLEDGE_BASE/_INDICE/INDICE.md`. Se più vecchia di **7 giorni** — o se la cartella

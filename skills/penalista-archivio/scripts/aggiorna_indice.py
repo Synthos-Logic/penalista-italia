@@ -43,7 +43,7 @@ def main():
         sys.stdout.write("  " + (r.stdout or r.stderr))
         if r.returncode == 3: scansioni += 1
         elif r.returncode == 0: nuovi += 1
-    # indicizza le pronunce segnalate (cassazione-penale-db) se presenti nella zona
+    # indicizza le pronunce segnalate (giurisprudenza-db) se presenti nella zona
     SCH = os.path.join(HERE, "indicizza_schede.py")
     if os.path.isdir(os.path.join(zona, "02_GIURISPRUDENZA", "SEGNALATE")):
         r = subprocess.run([sys.executable, SCH, zona], capture_output=True, text=True)
