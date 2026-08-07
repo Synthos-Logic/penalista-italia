@@ -14,11 +14,13 @@ Thumbs.db
 *.tmp
 *.log
 ~$*
+__pycache__/
+*.pyc
 
 # Massimari PDF (troppo grandi — aggiungere localmente)
 KNOWLEDGE_BASE/**/*.pdf
 
-# Banca dati sincronizzata (proprietà della pipeline cassazione-penale-db:
+# Banca dati sincronizzata (proprietà della pipeline giurisprudenza-db:
 # arriva con sincronizza_segnalate.py, non si versiona nel kit)
 KNOWLEDGE_BASE/02_GIURISPRUDENZA/SEGNALATE/
 KNOWLEDGE_BASE/02_GIURISPRUDENZA/CONSULTA/

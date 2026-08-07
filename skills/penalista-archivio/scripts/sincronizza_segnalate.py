@@ -40,6 +40,25 @@ def conta_schede(radice):
                if f.endswith(".md") and not f.startswith(("INDICE", "RASSEGNE", "LOG_", "RADAR_")))
 
 
+def risolvi(cache, candidati):
+    """Primo percorso esistente nella cache, fra i candidati elencati dal piu' nuovo
+    al piu' vecchio.
+
+    Serve perche' il posto delle segnalate penali nel repo dati puo' cambiare: oggi
+    stanno in SEGNALATE/, un domani potrebbero stare in PENALE/SEGNALATE/ per simmetria
+    con CIVILE/. GitHub reindirizza le rinomine di REPOSITORY, non i percorsi INTERNI:
+    senza questo ripiego uno spostamento romperebbe ogni installazione non aggiornata.
+
+    VINCOLO: i candidati devono riferirsi tutti alla STESSA materia. Un ripiego su una
+    materia diversa riempirebbe la Knowledge Base penale di giurisprudenza civile senza
+    dirlo — ed e' esattamente il genere di errore che questo kit esiste per non fare.
+    """
+    for c in candidati:
+        if os.path.isdir(os.path.join(cache, c)):
+            return c
+    return None
+
+
 def imposta_sparse(cache, da_anno, tutto):
     """Limita il working tree della cache alla finestra scelta (e, sui cloni
     parziali, il download). Non bloccante: su git molto vecchi si prosegue
@@ -48,7 +67,9 @@ def imposta_sparse(cache, da_anno, tutto):
         r = run(["git", "-C", cache, "sparse-checkout", "disable"])
         return r.returncode == 0
     anno_max = datetime.date.today().year
-    dirs = ["SEGNALATE"] + [f"CONSULTA/{a}" for a in range(da_anno, anno_max + 1)]
+    # entrambi i percorsi possibili delle segnalate penali: in cone mode un pattern che
+    # non esiste nel repo e' un no-op, quindi elencarli tutti e due non costa nulla
+    dirs = ["PENALE/SEGNALATE", "SEGNALATE"] + [f"CONSULTA/{a}" for a in range(da_anno, anno_max + 1)]
     # init --cone PRIMA del set: su git meno recenti (es. 2.34) '--cone' passato
     # a 'set' viene scambiato per un percorso; il cone mode serve anche a
     # includere i file radice (README, CONSULTA/INDICE_CONSULTA.md, ...)
@@ -102,12 +123,18 @@ def main():
     imposta_sparse(cache, da_anno, a.tutto)
 
     # ---- copia nelle zone di destinazione
-    da_copiare = ["SEGNALATE"] + ([] if a.solo_segnalate else ["CONSULTA"])
-    for nome in da_copiare:
-        src = os.path.join(cache, nome)
-        if not os.path.isdir(src):
-            print(f"[sync][ERRORE] il repo scaricato non contiene {nome}/: struttura cambiata?")
+    # (candidati nel repo dati, nome della cartella locale). Il nome locale non cambia
+    # mai: le skill e gli indici puntano a 02_GIURISPRUDENZA/SEGNALATE/ e li' restano.
+    da_copiare = ([(("PENALE/SEGNALATE", "SEGNALATE"), "SEGNALATE")]
+                  + ([] if a.solo_segnalate else [(("CONSULTA",), "CONSULTA")]))
+    for candidati, nome in da_copiare:
+        percorso = risolvi(cache, candidati)
+        if percorso is None:
+            elenco = ", ".join(c + "/" for c in candidati)
+            print(f"[sync][ERRORE] il repo scaricato non contiene nessuno di questi percorsi: "
+                  f"{elenco} — struttura cambiata?")
             sys.exit(1)
+        src = os.path.join(cache, percorso)
         dest = os.path.join(zona, "02_GIURISPRUDENZA", nome)
         if os.path.isdir(dest):
             shutil.rmtree(dest)
@@ -131,7 +158,7 @@ def main():
                           "> non sono presenti in locale. Per averle: sincronizza con `--tutto`.\n\n")
                 open(indice, "w", encoding="utf-8").write(t.replace("# INDICE", avviso + "# INDICE", 1)
                                                           if t.startswith("# INDICE") else avviso + t)
-        print(f"[sync] {nome} aggiornata: {conta_schede(dest)} schede in {dest}{finestra}")
+        print(f"[sync] {nome} aggiornata: {conta_schede(dest)} schede da {percorso}/ del repo{finestra}")
 
     # ---- reindicizzazione della zona
     print("[sync] reindicizzazione della zona ...")

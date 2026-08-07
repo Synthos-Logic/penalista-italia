@@ -1,5 +1,36 @@
 # Changelog — Penalista Italia
 
+## [3.6.2] — 2026-08-06
+Manutenzione. Nessun cambiamento di comportamento nell'uso quotidiano.
+
+### Aggiunto — tolleranza al percorso nella sincronizzazione
+`sincronizza_segnalate.py` accetta ora le segnalate penali sia in `SEGNALATE/` (posizione
+attuale) sia in `PENALE/SEGNALATE/`, e usa la prima che trova. Il repository dati ospita da
+agosto anche il settore civile sotto `CIVILE/`, e prima o poi conviene dare al penale lo stesso
+prefisso per simmetria: GitHub reindirizza le rinomine di *repository* ma **non i percorsi
+interni**, quindi senza questo ripiego lo spostamento romperebbe la sincronizzazione di ogni
+installazione non aggiornata. Da questa versione lo spostamento sara' indolore.
+
+Il ripiego e' vincolato alla **stessa materia**: il kit penale non ripiega mai su un percorso
+civile e viceversa. Se nessun percorso valido esiste, si ferma con un errore esplicito invece
+di indicizzare la materia sbagliata in silenzio.
+
+Verificato che la sincronizzazione attuale non cambia (308 schede) e che, contro un repository
+con la struttura futura, vengono lette le schede penali e non quelle civili.
+
+### Pulizia
+Rimossi dal versionamento cinque file di bytecode Python (`__pycache__/*.pyc`, compilati con una
+versione precedente degli script) che erano finiti nel repository, e aggiunta la regola in
+`.gitignore` perche' non tornino. Non cambiavano il comportamento — Python ricompila da se' quando
+il sorgente non corrisponde — ma erano cinque file binari morti in un progetto che chiede di
+essere ispezionato. Corretto anche un riferimento al vecchio nome del repository dati rimasto
+in un commento del `.gitignore`.
+
+### Corretto
+`/penalista-italia:versione` dichiarava la **3.6.0** mentre il plugin era alla 3.6.1: chi
+verificava la versione leggeva un numero sbagliato. Allineato.
+
+
 ## [3.6.1] — 2026-08-05
 Manutenzione: il repository della banca dati e' stato rinominato.
 
