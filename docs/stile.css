@@ -1,0 +1,96 @@
+/* ------------------------------------------------------------------
+   Synthos Logic — foglio di stile comune ai kit Penalista e Civilista.
+   Registro sobrio e istituzionale: il pubblico sono avvocati, e con loro
+   il tono pubblicitario insospettisce invece di convincere.
+   Copia identica nei due repository (sono repo separati, non c'e' modo
+   di condividere un file: se lo cambi qui, cambialo anche nell'altro).
+   ------------------------------------------------------------------ */
+
+:root{
+  --ink:#12161D; --text:#1B212B; --muted:#5C6675; --line:#DDE1E7;
+  --bg:#FFFFFF; --soft:#F6F7F9; --accent:#1D4F91; --accent-soft:#E8EEF7;
+  --ok:#166F4E; --ok-soft:#E4F1EB; --warn-soft:#FDF3E7; --warn-ink:#5A4326;
+  --hero-bg:#12161D; --hero-text:#FFFFFF; --hero-muted:#C3CBD6;
+  --hero-line:#333C4A; --hero-rule:#7FA8DC; --code-bg:#EDEFF3;
+}
+html[data-theme="dark"]{
+  --ink:#E6EAF0; --text:#DDE3EB; --muted:#96A1B0; --line:#2E3742;
+  --bg:#12161D; --soft:#1A2029; --accent:#8FB4E2; --accent-soft:#1E2A3A;
+  --ok:#6FC7A0; --ok-soft:#182A24; --warn-soft:#2A2318; --warn-ink:#E0C89B;
+  --hero-bg:#0C1015; --code-bg:#1A2029;
+}
+
+*{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{
+  font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Inter,Roboto,Helvetica,Arial,sans-serif;
+  color:var(--text); background:var(--bg); line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:980px;margin:0 auto;padding:0 24px;}
+img{max-width:100%;height:auto;display:block;}
+a{color:var(--accent);}
+
+/* intestazione */
+header{background:var(--hero-bg);color:var(--hero-text);padding:76px 0 72px;}
+.rule{width:56px;height:4px;background:var(--hero-rule);border-radius:2px;margin-bottom:26px;}
+h1{font-size:clamp(34px,5.4vw,52px);font-weight:800;letter-spacing:-.025em;line-height:1.06;color:var(--hero-text);}
+.claim{margin-top:20px;font-size:clamp(17px,2.3vw,22px);color:var(--hero-muted);max-width:720px;}
+.claim b{color:var(--hero-text);font-weight:600;}
+.chips{margin-top:28px;display:flex;flex-wrap:wrap;gap:10px;}
+.chip{font-size:14px;color:#B9C4D2;border:1px solid var(--hero-line);border-radius:999px;padding:7px 16px;}
+.cta{margin-top:34px;display:flex;flex-wrap:wrap;gap:12px;}
+.btn{display:inline-block;padding:13px 24px;border-radius:9px;font-size:16px;font-weight:600;text-decoration:none;transition:opacity .15s;}
+.btn:hover{opacity:.88;}
+.btn-p{background:#fff;color:#12161D;}
+.btn-s{border:1px solid #414B5A;color:#DCE3EB;}
+.btn-dark{background:var(--ink);color:var(--bg);}
+.btn-line{border:1px solid var(--line);color:var(--accent);}
+
+/* sezioni */
+section{padding:64px 0;border-bottom:1px solid var(--line);}
+section.alt{background:var(--soft);}
+.eyebrow{font-size:12.5px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-bottom:10px;}
+h2{font-size:clamp(24px,3.4vw,31px);font-weight:750;letter-spacing:-.015em;color:var(--ink);line-height:1.2;}
+section > .wrap > p{margin-top:14px;font-size:17.5px;color:var(--text);max-width:760px;}
+section > .wrap > p + p{margin-top:12px;}
+.fig{margin-top:32px;border:1px solid var(--line);border-radius:12px;overflow:hidden;}
+.cap{margin-top:10px;font-size:14.5px;color:var(--muted);}
+
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:18px;margin-top:32px;}
+.card{background:var(--bg);border:1px solid var(--line);border-radius:12px;padding:22px 22px 24px;}
+.card h3{font-size:17.5px;font-weight:680;color:var(--ink);margin-bottom:8px;}
+.card p{font-size:15.5px;color:var(--muted);}
+
+.callout{margin-top:30px;background:var(--ok-soft);border-radius:11px;padding:20px 24px;font-size:16.5px;color:var(--ok);}
+.callout b{font-weight:680;}
+.callout.warn{background:var(--warn-soft);color:var(--warn-ink);}
+
+ol.steps{margin-top:28px;list-style:none;counter-reset:s;}
+ol.steps li{counter-increment:s;position:relative;padding-left:52px;margin-bottom:22px;}
+ol.steps li::before{
+  content:counter(s);position:absolute;left:0;top:1px;width:32px;height:32px;border-radius:9px;
+  background:var(--accent-soft);color:var(--accent);font-weight:700;font-size:15px;
+  display:flex;align-items:center;justify-content:center;
+}
+ol.steps h3{font-size:17.5px;font-weight:680;color:var(--ink);margin-bottom:4px;}
+ol.steps p{font-size:16px;color:var(--text);}
+
+table.skills{width:100%;border-collapse:collapse;margin-top:28px;font-size:15.5px;}
+table.skills th{text-align:left;padding:10px 14px;border-bottom:2px solid var(--line);color:var(--muted);font-size:12.5px;letter-spacing:.1em;text-transform:uppercase;}
+table.skills td{padding:13px 14px;border-bottom:1px solid var(--line);vertical-align:top;color:var(--muted);}
+table.skills td:first-child{white-space:nowrap;color:var(--ink);font-weight:650;width:1%;}
+
+code{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;background:var(--code-bg);border-radius:5px;padding:2px 7px;font-size:.92em;color:var(--text);}
+
+/* interruttore giorno/notte */
+.tema{
+  position:fixed;top:16px;right:18px;z-index:10;
+  background:var(--soft);border:1px solid var(--line);color:var(--muted);
+  border-radius:999px;padding:7px 15px;font-size:13.5px;font-weight:600;
+  cursor:pointer;font-family:inherit;
+}
+.tema:hover{color:var(--ink);}
+
+footer{padding:44px 0 60px;font-size:15px;color:var(--muted);}
+footer p{margin-bottom:10px;}

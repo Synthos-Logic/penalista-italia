@@ -7,40 +7,40 @@
 <style>
   /* ── DARK MODE (default) ── */
   :root {
-    --bg: #0f1117;
-    --bg2: #1a1d26;
-    --bg3: #22263a;
-    --border: #2e3347;
-    --accent: #4f8ef7;
-    --accent2: #7c3aed;
-    --text: #e2e8f0;
-    --text2: #94a3b8;
-    --text3: #64748b;
-    --green: #10b981;
-    --orange: #f59e0b;
-    --red: #ef4444;
-    --code-bg: #161b2e;
-    --shadow: rgba(0,0,0,0.4);
-    --toggle-bg: #22263a;
+    --bg: #12161D;
+    --bg2: #1A2029;
+    --bg3: #232B36;
+    --border: #2E3742;
+    --accent: #8FB4E2;
+    --accent2: #8FB4E2;
+    --text: #DDE3EB;
+    --text2: #C3CBD6;
+    --text3: #96A1B0;
+    --green: #6FC7A0;
+    --orange: #D6A054;
+    --red: #E08585;
+    --code-bg: #1A2029;
+    --shadow: rgba(0,0,0,0.45);
+    --toggle-bg: #232B36;
   }
 
   /* ── LIGHT MODE ── */
   html[data-theme="light"] {
-    --bg: #f7f8fa;
-    --bg2: #ffffff;
-    --bg3: #f0f2f5;
-    --border: #dde1ea;
-    --accent: #1d5fc0;
-    --accent2: #6d28d9;
-    --text: #111827;
-    --text2: #374151;
-    --text3: #9ca3af;
-    --green: #047857;
-    --orange: #b45309;
-    --red: #b91c1c;
-    --code-bg: #f0f2f5;
-    --shadow: rgba(0,0,0,0.1);
-    --toggle-bg: #e5e7eb;
+    --bg: #FFFFFF;
+    --bg2: #F6F7F9;
+    --bg3: #EDEFF3;
+    --border: #DDE1E7;
+    --accent: #1D4F91;
+    --accent2: #1D4F91;
+    --text: #1B212B;
+    --text2: #39414E;
+    --text3: #5C6675;
+    --green: #166F4E;
+    --orange: #8A5A17;
+    --red: #A32B2B;
+    --code-bg: #EDEFF3;
+    --shadow: rgba(18,22,29,0.08);
+    --toggle-bg: #EDEFF3;
   }
 
   * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -486,7 +486,7 @@
       <div class="ts">
         <div class="ts-num">1</div>
         <h4>Il plugin</h4>
-        <p>Il motore: le 8 competenze del penalista, installate da Claude Desktop in pochi clic.</p>
+        <p>Il motore: le competenze del penalista, installate da Claude Desktop in pochi clic.</p>
       </div>
       <div class="ts">
         <div class="ts-num">2</div>
@@ -593,7 +593,7 @@
           <div class="step-num">6</div>
           <div class="step-content">
             <h4>Verifica</h4>
-            <p>Apri una nuova conversazione e scrivi <code>/penalista-italia:versione</code>. Deve rispondere con la versione del kit e l'elenco delle 8 skill.</p>
+            <p>Apri una nuova conversazione e scrivi <code>/penalista-italia:versione</code>. Deve rispondere con la versione del kit e l'elenco delle competenze del kit.</p>
           </div>
         </div>
 
@@ -664,7 +664,7 @@
 
       <div class="alert green" id="cosa">
         <span class="alert-icon">🧩</span>
-        <p><strong>Che cosa hai appena installato?</strong> Il Passo 1 monta il <strong>motore</strong>: le competenze del kit (le 8 skill). Il Passo 2 monta l'<strong>archivio</strong>: la cartella dove il kit conserva i tuoi fascicoli, le scadenze e i dati del tuo studio. Servono entrambi — il motore senza archivio risponde alle domande, ma non conserva il lavoro sui tuoi casi.</p>
+        <p><strong>Che cosa hai appena installato?</strong> Il Passo 1 monta il <strong>motore</strong>: le competenze del kit (le competenze del kit). Il Passo 2 monta l'<strong>archivio</strong>: la cartella dove il kit conserva i tuoi fascicoli, le scadenze e i dati del tuo studio. Servono entrambi — il motore senza archivio risponde alle domande, ma non conserva il lavoro sui tuoi casi.</p>
       </div>
     </section>
 
@@ -717,7 +717,7 @@
       </div>
 
       <div class="card">
-        <div class="card-title">Claude parla di «6 skill» o risponde con versioni vecchie</div>
+        <div class="card-title">Claude parla di «le competenze» o risponde con versioni vecchie</div>
         <p style="margin:0;font-size:13px">Sul computer ci sono residui di versioni precedenti. Pulizia: <strong>Personalizza → Skills</strong> → elimina le eventuali skill <code>penalista-*</code> caricate singolarmente (il plugin le sostituisce tutte). Poi apri una conversazione nuova.</p>
       </div>
 
@@ -777,11 +777,11 @@
     localStorage.setItem('penalista-theme', theme);
   }
   function toggleTheme() {
-    const current = document.documentElement.getAttribute('data-theme') || 'dark';
+    const current = document.documentElement.getAttribute('data-theme') || 'light';
     applyTheme(current === 'dark' ? 'light' : 'dark');
   }
   (function() {
-    const saved = localStorage.getItem('penalista-theme') || 'dark';
+    const saved = localStorage.getItem('penalista-theme') || 'light';
     applyTheme(saved);
   })();
 

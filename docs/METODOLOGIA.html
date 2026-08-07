@@ -8,40 +8,40 @@
 <style>
   /* ── DARK MODE (default) ── */
   :root {
-    --bg: #0f1117;
-    --bg2: #1a1d26;
-    --bg3: #22263a;
-    --border: #2e3347;
-    --accent: #4f8ef7;
-    --accent2: #7c3aed;
-    --text: #e2e8f0;
-    --text2: #94a3b8;
-    --text3: #64748b;
-    --green: #10b981;
-    --orange: #f59e0b;
-    --red: #ef4444;
-    --code-bg: #161b2e;
-    --shadow: rgba(0,0,0,0.4);
-    --toggle-bg: #22263a;
+    --bg: #12161D;
+    --bg2: #1A2029;
+    --bg3: #232B36;
+    --border: #2E3742;
+    --accent: #8FB4E2;
+    --accent2: #8FB4E2;
+    --text: #DDE3EB;
+    --text2: #C3CBD6;
+    --text3: #96A1B0;
+    --green: #6FC7A0;
+    --orange: #D6A054;
+    --red: #E08585;
+    --code-bg: #1A2029;
+    --shadow: rgba(0,0,0,0.45);
+    --toggle-bg: #232B36;
   }
 
   /* ── LIGHT MODE ── */
   html[data-theme="light"] {
-    --bg: #f7f8fa;
-    --bg2: #ffffff;
-    --bg3: #f0f2f5;
-    --border: #dde1ea;
-    --accent: #1d5fc0;
-    --accent2: #6d28d9;
-    --text: #111827;
-    --text2: #374151;
-    --text3: #9ca3af;
-    --green: #047857;
-    --orange: #b45309;
-    --red: #b91c1c;
-    --code-bg: #f0f2f5;
-    --shadow: rgba(0,0,0,0.1);
-    --toggle-bg: #e5e7eb;
+    --bg: #FFFFFF;
+    --bg2: #F6F7F9;
+    --bg3: #EDEFF3;
+    --border: #DDE1E7;
+    --accent: #1D4F91;
+    --accent2: #1D4F91;
+    --text: #1B212B;
+    --text2: #39414E;
+    --text3: #5C6675;
+    --green: #166F4E;
+    --orange: #8A5A17;
+    --red: #A32B2B;
+    --code-bg: #EDEFF3;
+    --shadow: rgba(18,22,29,0.08);
+    --toggle-bg: #EDEFF3;
   }
 
   * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -404,7 +404,7 @@
       <div class="icon">⚖️</div>
       <div>
         <div class="name">Penalista Italia</div>
-        <div class="version">v3.1.2 — Synthos Logic</div>
+        <div class="version">Synthos Logic</div>
       </div>
     </div>
 
@@ -646,7 +646,7 @@
 ├── <span class="folder">📁 KNOWLEDGE_BASE/</span>        <span class="comment">← massimari, schede reato, gerarchia fonti</span>
 │   ├── <span class="folder">📁 01_NORMATIVA/</span>      <span class="comment">← i tuoi PDF da Normattiva (aggiungili qui)</span>
 │   ├── <span class="folder">📁 02_GIURISPRUDENZA/</span> <span class="comment">← massimari Cassazione (PDF)</span>
-│   └── <span class="folder">📁 06_SCHEDE_REATO/</span>   <span class="comment">← 13 schede operative per reato</span>
+│   └── <span class="folder">📁 06_SCHEDE_REATO/</span>   <span class="comment">← schede operative per reato</span>
 │
 └── <span class="folder">📁 documentazione/</span>        <span class="comment">← guide</span>
 </div>
@@ -1322,13 +1322,13 @@ flowchart TD
   }
 
   function toggleTheme() {
-    const current = document.documentElement.getAttribute('data-theme') || 'dark';
+    const current = document.documentElement.getAttribute('data-theme') || 'light';
     applyTheme(current === 'dark' ? 'light' : 'dark');
   }
 
   // Apply saved theme on load (before paint to avoid flash)
   (function() {
-    const saved = localStorage.getItem('penalista-theme') || 'dark';
+    const saved = localStorage.getItem('penalista-theme') || 'light';
     applyTheme(saved);
   })();
 

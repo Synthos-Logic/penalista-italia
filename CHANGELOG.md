@@ -1,5 +1,26 @@
 # Changelog — Penalista Italia
 
+## [3.6.3] — 2026-08-07
+
+### Corretto — il sito di presentazione era fermo a cinque versioni fa
+`docs/index.html` dichiarava **v3.1.2** nel piede e **"8 Skill specializzate"**, mentre il kit e'
+alla 3.6.x e le competenze sono nove: mancava `/archivio` dall'elenco. `METODOLOGIA.html` diceva
+"6 skill", `INSTALLAZIONE.html` "le 8 skill". Un avvocato che apriva la presentazione leggeva sei,
+otto o nove competenze a seconda della pagina.
+
+La correzione non e' aggiornare i numeri: e' **toglierli**. Sulle pagine di presentazione non
+compare piu' alcun conteggio ne' alcun numero di versione — quelli vivono nel README, nel comando
+`/penalista-italia:versione` e nelle release, dove si aggiornano da soli o insieme al codice.
+Un numero su una pagina statica invecchia in silenzio, ed e' esattamente quello che era successo.
+
+### Cambiato — le due pagine dei kit gemelli ora si somigliano
+Il kit civile ha introdotto un registro visivo sobrio, pensato per un pubblico di avvocati.
+`docs/index.html` e' stato riscritto in quel linguaggio e `METODOLOGIA.html` / `INSTALLAZIONE.html`
+ne hanno adottato la palette, mantenendo intatta la loro struttura. Il tema **chiaro diventa il
+default** (l'interruttore giorno/notte resta), e lo stile comune vive in `docs/stile.css`.
+
+Aggiunto in fondo a entrambe le pagine il rimando al kit gemello.
+
 ## [3.6.2] — 2026-08-06
 Manutenzione. Nessun cambiamento di comportamento nell'uso quotidiano.
 
