@@ -1,6 +1,6 @@
 ---
 name: penalista-atti
-description: "Redazione di atti processuali penali italiani con formule corrette e struttura giuridicamente appropriata. ATTIVARE SEMPRE quando l'avvocato chiede di scrivere, redigere, preparare o impostare uno di questi atti: memoria difensiva, atto di appello, ricorso per Cassazione, istanza di riesame, istanza di revoca o sostituzione misura cautelare, richiesta di patteggiamento, richiesta di giudizio abbreviato, richiesta di messa alla prova, lista testi o periti, istanza di scarcerazione, memoria ex art. 415-bis, note difensive. Attivare anche per: 'scrivi la memoria', 'prepara il ricorso', 'imposta i motivi di appello', 'bozza l'istanza', 'come si imposta il riesame', o qualsiasi richiesta di produrre un documento processuale penale."
+description: "Redazione di atti processuali penali italiani con formule corrette e struttura giuridicamente appropriata. ATTIVARE SEMPRE quando l'avvocato chiede di scrivere, redigere, preparare o impostare uno di questi atti: memoria difensiva, atto di appello, ricorso per Cassazione, istanza di riesame, istanza di revoca o sostituzione misura cautelare, richiesta di patteggiamento, richiesta di giudizio abbreviato, richiesta di messa alla prova, lista testi o periti, istanza di scarcerazione, memoria ex art. 415-bis, note difensive. Attivare anche per: 'scrivi la memoria', 'prepara il ricorso', 'imposta i motivi di appello', 'bozza l'istanza', 'come si imposta il riesame', 'usa i miei atti come modello', 'segui il mio stile', 'scrivi come scrivo io', 'ricava il mio stile dai modelli', o qualsiasi richiesta di produrre un documento processuale penale."
 ---
 
 # Skill — Redazione Atti Processuali Penali
@@ -388,6 +388,82 @@ Avv. [Nome Cognome]
 ```
 
 **Avvertenze:** Termine: almeno 7 giorni prima dell'udienza (art. 468 c.p.p.). Indicare le circostanze specifiche sulle quali ogni testimone deve essere esaminato — il giudice può escludere i testi se i capitoli sono irrilevanti o superflui.
+
+---
+
+## Lo stile dello studio — scrivere come scrive l'avvocato
+
+Un atto tecnicamente corretto ma scritto con un'impostazione che non è la sua costringe
+l'avvocato a riscriverlo. Il kit **non ricava da solo uno stile** osservando i fascicoli: lavora
+su ciò che gli viene indicato. Questa è la procedura per indicarglielo.
+
+### Dove stanno i riferimenti
+
+```
+Penale-Italia/
+├── STILE_STUDIO.md        ← la scheda di stile: ha la precedenza su tutto
+└── MODELLI/               ← atti dello studio già depositati
+    ├── <materia>/         ← sottocartelle facoltative, per materia o per rito
+    └── ...
+```
+
+Entrambi sono **esclusi dal versionamento**: contengono il lavoro dello studio.
+
+### Regola operativa, vincolante
+
+Prima di redigere qualsiasi atto, **in quest'ordine**:
+
+1. se esiste `STILE_STUDIO.md`, leggilo: è la fonte prevalente, perché è stata rivista
+   dall'avvocato;
+2. altrimenti, se esiste `MODELLI/` con un atto pertinente per tipo o materia, aprilo e
+   seguine l'impostazione;
+3. in mancanza di entrambi, usa l'impostazione predefinita di questa skill e **dillo una
+   volta sola**, senza insistere: *"Non ho modelli dello studio: ho usato l'impostazione
+   standard. Se mi indica due o tre atti già depositati, le prossime bozze seguiranno la sua."*
+
+**Dichiara sempre su cosa ti sei basato**, in chiusura e in una riga: *"Impostazione presa da
+`MODELLI/monitorio/opposizione_2025.docx`"* oppure *"Impostazione da `STILE_STUDIO.md`"*. È la
+stessa logica dell'ancoraggio delle massime: l'avvocato deve poter risalire alla fonte di ciò
+che legge, anche quando la fonte è un suo atto.
+
+Lo stile riguarda **la forma, mai il contenuto**: non si trasportano da un modello fatti,
+importi, nomi, numeri di ruolo o argomenti di merito. Si prendono la struttura, l'ordine
+dell'esposizione, il registro e le formule.
+
+### Costruire la scheda di stile
+
+Quando l'avvocato lo chiede — *"ricava il mio stile dai modelli"*, *"impara come scrivo"* — o
+quando `MODELLI/` contiene almeno tre atti e la scheda non esiste ancora, proponilo tu una volta.
+
+Leggi gli atti in `MODELLI/` e scrivi `STILE_STUDIO.md` con queste voci, **solo quelle che i
+modelli documentano davvero**:
+
+| Voce | Che cosa registrare |
+|---|---|
+| Intestazione ed epigrafe | Come si apre l'atto, come si indicano parti e difensore, dove vanno PEC e codice fiscale |
+| Ordine delle parti | In che sequenza compaiono fatti, diritto, istanze istruttorie, conclusioni |
+| Esposizione dei fatti | Numerati o discorsivi, con o senza titoletti, in che tempo verbale |
+| Trattazione in diritto | Come si introducono le norme, come si innestano le massime, se si usano note |
+| Conclusioni | Formula di apertura, ordine delle domande, come si gradua il subordine, come si chiedono le spese |
+| Formule ricorrenti | Aperture e chiusure che tornano in più atti, riportate testualmente |
+| Lessico | Termini che l'avvocato usa e termini che evita sistematicamente |
+| Lunghezza tipica | Cartelle per tipo di atto, come indicazione e non come vincolo |
+
+**Vincolo di riservatezza, non negoziabile.** La scheda registra **come** si scrive, mai **che
+cosa** si è scritto: nessun nome di parte, nessun numero di causa, nessun importo, nessun fatto
+tratto dai modelli. Le formule si riportano con segnaposto tra parentesi quadre. È la scheda che
+più facilmente verrà condivisa fra colleghi dello stesso studio, e deve poter circolare.
+
+Chiudi dicendo che il file è **modificabile a mano**: se l'avvocato corregge una voce, da quel
+momento vale la sua. La scheda non si riscrive da sola a ogni atto — si rigenera solo su
+richiesta, quando i modelli cambiano.
+
+### Quando l'avvocato corregge la bozza
+
+Se indica una differenza rispetto alla sua impostazione — un'intestazione diversa, le conclusioni
+in altro ordine — applicala per il resto della sessione e **proponi di annotarla in
+`STILE_STUDIO.md`**, così non va ripetuta la volta dopo. È il modo in cui la scheda migliora:
+dalle correzioni, non dalle congetture.
 
 ---
 

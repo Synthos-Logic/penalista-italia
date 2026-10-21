@@ -29,3 +29,9 @@ KNOWLEDGE_BASE/_INDICE/Pronunce_Segnalate_*.index.json
 KNOWLEDGE_BASE/_INDICE/Corte_Costituzionale.index.json
 FASCICOLI/*/_INDICE/Pronunce_Segnalate_*.index.json
 FASCICOLI/*/.banca_dati_cache/
+
+# Lavoro dello studio — contiene dati di clienti reali: non va mai versionato
+FASCICOLI/*
+!FASCICOLI/.gitkeep
+MODELLI/
+STILE_STUDIO.md

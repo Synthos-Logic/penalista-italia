@@ -1,5 +1,29 @@
 # Changelog — Penalista Italia
 
+## [3.7.0] — 2026-10-21
+
+### Aggiunto — lo stile dello studio
+Il kit puo' ora redigere gli atti seguendo l'impostazione dello studio invece di una standard.
+Non e' apprendimento automatico — non esiste: e' la documentazione dello studio usata come
+riferimento, indicata una volta e poi applicata da sola.
+
+- cartella **`MODELLI/`**, creata dall'avvio guidato, con gli atti gia' depositati. Prima di
+  redigere, `penalista-atti` cerca un modello pertinente, ne segue struttura, ordine, registro e
+  formule, e **dichiara su quale si e' basato**;
+- scheda **`STILE_STUDIO.md`**, ricavata su richiesta leggendo i modelli una volta sola,
+  **correggibile a mano** e da quel momento prevalente;
+- vincolo di riservatezza: la scheda registra **come** si scrive, mai **che cosa** si e' scritto.
+  Nessun nome, nessun numero di procedimento, nessun fatto tratto dai modelli.
+
+Documentato nella guida metodologica, sezione 7.
+
+### Corretto
+- `MODELLI/` e `STILE_STUDIO.md` aggiunti al `.gitignore` insieme al contenuto di `FASCICOLI/`:
+  sono il lavoro dello studio e contengono dati di assistiti;
+- la numerazione delle sezioni della guida metodologica saltava un passaggio (due sezioni «4» e
+  due «6»): rinumerata da 1 a 12.
+
+
 ## [3.6.3] — 2026-08-07
 
 ### Corretto — il sito di presentazione era fermo a cinque versioni fa

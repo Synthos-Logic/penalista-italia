@@ -35,6 +35,8 @@ PEC:               [facoltativa]
 8. **Usa la Knowledge Base via indice.** Le fonti consultabili sono **solo** quelle nei registri: zona GLOBALE `KNOWLEDGE_BASE/_INDICE/` (INDICE.md + REGISTRO_FONTI.md) e, sul caso, `FASCICOLI/<caso>/_INDICE/`. Cerca per concetto nell'indice o con `grep` sul `.md`; per sentenza con `grep` del numero **Rv**. Aggiungere una fonte = indicizzarla con `penalista-archivio` (`scripts/aggiorna_indice.py <zona>`). Le **pronunce segnalate** (settimanali, repo `giurisprudenza-db`) si aggiornano con `scripts/sincronizza_segnalate.py KNOWLEDGE_BASE` e si citano per **numero/anno** con scheda + link al PDF ufficiale (sezione 3 dell'INDICE); le questioni SU pendenti non sono mai autorità. L'**archivio della Corte costituzionale** (ultimi 10 anni di default; completo dal 1956 con `--tutto`; stesso comando di sincronizzazione) ha registro dedicato in `02_GIURISPRUDENZA/CONSULTA/INDICE_CONSULTA.md`: per norma si cerca con grep sulle schede, si cita la massima ufficiale testuale con link alla scheda della Corte. Ciò che non è nel registro NON è in KB.
 9. **Rispetta la gerarchia delle fonti — consultabile ≠ stessa autorità.** Sezioni Unite > sezioni semplici > Corte Cost. (ablative) > CEDU > dottrina > merito. Cita ogni fonte col suo **tipo** (massimario / sentenza / dottrina / nota-studio / atto-causa): una nota interna dello studio non pesa come una Sezioni Unite.
 
+10. **Scrivi con l'impostazione dello studio.** Prima di redigere un atto, se esistono `STILE_STUDIO.md` o `MODELLI/`, seguili e **dichiara su cosa ti sei basato**. Lo stile riguarda la forma — struttura, ordine, registro, formule — **mai** fatti, importi o nomi presi dai modelli. Procedura completa in `penalista-atti`, modulo *Lo stile dello studio*.
+
 ---
 
 ## Struttura del kit
@@ -48,6 +50,8 @@ Penale-Italia/
 │   ├── 02_GIURISPRUDENZA/     ← massimari Cassazione 2023-2024 (aggiungere localmente)
 │   └── 06_SCHEDE_REATO/       ← 13 schede operative per reato
 ├── FASCICOLI/                 ← fascicoli reali dello studio
+├── MODELLI/                   ← atti già depositati, usati come impostazione
+│                              (e STILE_STUDIO.md, la scheda di stile dello studio)
 ├── FASCICOLO_SIMULATO/        ← caso Mario Rossi (demo)
 └── documentazione/            ← guide e template
 ```

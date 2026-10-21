@@ -25,6 +25,12 @@ Leggi `CLAUDE.md` nella cartella di lavoro.
 
 Controlla che esistano: `INDEX.md`, `SCADENZIARIO.md` (in `penalista-scadenze/` o nella radice), le cartelle di lavoro. **Crea tu ciò che manca**, senza chiedere il permesso per ogni file — riassumi a cose fatte: "Ho preparato l'indice dello studio e lo scadenziario: sono i due file che terrò aggiornati per te."
 
+Crea anche la cartella `MODELLI/` e fai **una domanda sola**, senza insistere se la risposta è no:
+
+> "Ho creato anche una cartella **MODELLI**. Se ci metti tre o quattro atti già depositati — una memoria, un appello, un'istanza — le bozze che ti preparo seguiranno la tua impostazione invece di una standard. Puoi farlo anche più avanti."
+
+Se li indica subito, leggili e proponi di ricavarne la scheda `STILE_STUDIO.md` (procedura in `penalista-atti`, modulo *Lo stile dello studio*). Se rimanda, annota il punto e **non tornarci sopra**.
+
 ## FASE 3 — Il primo fascicolo
 
 Chiedi: *"Ha un caso sul tavolo da cui partire? Mi basta il nome del cliente e di cosa è accusato — al resto penso io."*
