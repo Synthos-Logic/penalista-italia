@@ -1,5 +1,17 @@
 # Changelog — Penalista Italia
 
+## [3.7.1] — 2026-10-23
+
+### Corretto — una descrizione oltre il limite di 1.024 caratteri
+La descrizione di `penalista-giurisprudenza` misurava 1.041 caratteri, oltre il limite previsto
+per il campo `description` del frontmatter. Una skill che lo supera viene rifiutata
+dall'installazione, quindi la ricerca giurisprudenziale poteva risultare assente senza che nulla
+lo segnalasse. Riscritta a 781 caratteri, conservando le formule di attivazione distintive.
+
+Il kit civile presentava lo stesso difetto su otto competenze su dodici (corretto nella 0.9.1).
+Lo script di pubblicazione ora rifiuta il rilascio se una descrizione supera il limite.
+
+
 ## [3.7.0] — 2026-10-21
 
 ### Aggiunto — lo stile dello studio

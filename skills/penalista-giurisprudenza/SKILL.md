@@ -1,6 +1,15 @@
 ---
 name: penalista-giurisprudenza
-description: "Ricerca e organizzazione della giurisprudenza penale italiana per la difesa. ATTIVARE SEMPRE quando l'avvocato cerca sentenze, massime o orientamenti della Cassazione penale, della Corte EDU o di altri organi giurisdizionali, o dice: 'cerca giurisprudenza su', 'ci sono sentenze favorevoli su', 'cosa dice la Cassazione su', 'quale sezione si occupa di', 'c'e un contrasto tra sezioni su', 'cerca massime su', 'trova precedenti su', 'giurisprudenza favorevole su', 'orientamento della Corte EDU su', 'ci sono novita' dalla Cassazione', 'ultime sentenze segnalate', 'questioni pendenti alle Sezioni Unite', 'la Consulta si e' mai pronunciata su', 'questione di legittimita' costituzionale su', 'sentenze della Corte costituzionale su'. Attivare anche per: costruire la sezione giurisprudenziale di una memoria difensiva o di un ricorso, individuare contrasti giurisprudenziali da portare alle Sezioni Unite, creare o aggiornare note di giurisprudenza nel sistema wikilinks, verificare se un principio di diritto e consolidato o controverso."
+description: >
+  Ricerca e organizzazione della giurisprudenza penale italiana per la difesa. ATTIVARE SEMPRE
+  quando l'avvocato cerca sentenze, massime o orientamenti della Cassazione penale o della Corte
+  EDU, o dice: 'cerca giurisprudenza su', 'ci sono sentenze favorevoli su', 'cosa dice la
+  Cassazione su', 'quale sezione si occupa di', 'c'è un contrasto tra sezioni su', 'trova
+  precedenti su', 'orientamento della Corte EDU su', 'ultime sentenze segnalate', 'questioni
+  pendenti alle Sezioni Unite', 'la Consulta si è mai pronunciata su', 'questione di legittimità
+  costituzionale su'. Attivare anche per costruire la sezione giurisprudenziale di una memoria o
+  di un ricorso, individuare contrasti da portare alle Sezioni Unite, e verificare se un principio
+  di diritto è consolidato o controverso.
 ---
 
 # Skill — Ricerca Giurisprudenziale Penale
